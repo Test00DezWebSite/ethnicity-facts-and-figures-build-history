@@ -75,9 +75,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -3400,6 +3400,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.3">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="United Kingdom">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -3407,9 +3412,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.ons.gov.uk/releases/civilservicestatistics2016" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Civil Service Workforce">
+            <p itemprop="name"><a href="https://www.ons.gov.uk/releases/civilservicestatistics2016" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Civil Service Workforce" itemprop="url">
                 Annual Civil Service Employment Survey</a>
             </p>
 
@@ -3420,7 +3425,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Cabinet Office</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Cabinet Office</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -3429,6 +3434,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>The Annual Civil Service Employment Survey (ACSES) is carried out to measure the numbers employed in the Civil Service, and to measure diversity across the workforce.</p>
 
+            </div>
 
           </div>
 
@@ -3440,16 +3446,32 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/workforce-and-business/workforce-diversity/civil-service-workforce/1.3/downloads/civil-service-flatfile.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="civil_service_flatfile">
-                      civil_service_flatfile
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      12 KB
-                </a>
-                  <p>This file contains the following: ethnicity, year, gender, geography, age group, median pay, grade</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Civil Service Workforce">
+            <meta itemprop="description" content="in the 2011 Census, 86% of the population of England and Wales described themselves as White">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="12 KB">
+                  <meta itemprop="name" content="civil_service_flatfile">
+                  <a itemprop="contentUrl" href="/workforce-and-business/workforce-diversity/civil-service-workforce/1.3/downloads/civil-service-flatfile.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="civil_service_flatfile">
+                        civil_service_flatfile
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        12 KB
+                  </a>
+                    <p>This file contains the following: ethnicity, year, gender, geography, age group, median pay, grade</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

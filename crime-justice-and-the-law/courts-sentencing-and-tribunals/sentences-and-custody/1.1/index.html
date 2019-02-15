@@ -75,9 +75,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -4527,6 +4527,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.1">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England and Wales">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -4534,9 +4539,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.gov.uk/government/collections/criminal-justice-statistics" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Sentences and custody">
+            <p itemprop="name"><a href="https://www.gov.uk/government/collections/criminal-justice-statistics" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Sentences and custody" itemprop="url">
                 Criminal justice statistics</a>
             </p>
 
@@ -4547,7 +4552,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Ministry of Justice</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Ministry of Justice</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -4556,6 +4561,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>The data is used by the government to develop, monitor and evaluate criminal justice policy. It reports on activity in the criminal justice system for England and Wales, giving information for the latest year and longer-term trends.</p>
 
+            </div>
 
           </div>
 
@@ -4567,52 +4573,92 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/crime-justice-and-the-law/courts-sentencing-and-tribunals/sentences-and-custody/1.1/downloads/sentencing-outcomes-by-ethnicity.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Sentencing outcomes by ethnicity">
-                      Sentencing outcomes by ethnicity
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      4 KB
-                </a>
-                  <p>This file contains the following: ethnicity, outcome, number sentenced, denominator, value.</p>
-                <a href="/crime-justice-and-the-law/courts-sentencing-and-tribunals/sentences-and-custody/1.1/downloads/custody-rate-by-age.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Custody rate by age">
-                      Custody rate by age
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      6 KB
-                </a>
-                  <p>This file contains the following: year, ethnicity, age group and custody rate.</p>
-                <a href="/crime-justice-and-the-law/courts-sentencing-and-tribunals/sentences-and-custody/1.1/downloads/sentencing-by-ethnicity.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Sentencing by ethnicity">
-                      Sentencing by ethnicity
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      268 bytes
-                </a>
-                  <p>This file contains the following: ethnicity, number sentenced, value and denominator.</p>
-                <a href="/crime-justice-and-the-law/courts-sentencing-and-tribunals/sentences-and-custody/1.1/downloads/custody-rate-by-gender.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Custody rate by gender">
-                      Custody rate by gender
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      900 bytes
-                </a>
-                  <p>This file contains the following: ethnicity, sex, value and count.</p>
-                <a href="/crime-justice-and-the-law/courts-sentencing-and-tribunals/sentences-and-custody/1.1/downloads/custody-rate-by-ethnicity.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Custody rate by ethnicity">
-                      Custody rate by ethnicity
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      4 KB
-                </a>
-                  <p>This file contains the following: year, sentence outcome, ethnicity, sex, custody rate, count, denominator.</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Sentences and custody">
+            <meta itemprop="description" content="from 2009 to 2016, the percentage of offenders given an immediate custodial sentence increased for White, Black, Asian and Mixed offenders">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="4 KB">
+                  <meta itemprop="name" content="Sentencing outcomes by ethnicity">
+                  <a itemprop="contentUrl" href="/crime-justice-and-the-law/courts-sentencing-and-tribunals/sentences-and-custody/1.1/downloads/sentencing-outcomes-by-ethnicity.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Sentencing outcomes by ethnicity">
+                        Sentencing outcomes by ethnicity
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        4 KB
+                  </a>
+                    <p>This file contains the following: ethnicity, outcome, number sentenced, denominator, value.</p>
+                </div>
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="6 KB">
+                  <meta itemprop="name" content="Custody rate by age">
+                  <a itemprop="contentUrl" href="/crime-justice-and-the-law/courts-sentencing-and-tribunals/sentences-and-custody/1.1/downloads/custody-rate-by-age.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Custody rate by age">
+                        Custody rate by age
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        6 KB
+                  </a>
+                    <p>This file contains the following: year, ethnicity, age group and custody rate.</p>
+                </div>
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="268 bytes">
+                  <meta itemprop="name" content="Sentencing by ethnicity">
+                  <a itemprop="contentUrl" href="/crime-justice-and-the-law/courts-sentencing-and-tribunals/sentences-and-custody/1.1/downloads/sentencing-by-ethnicity.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Sentencing by ethnicity">
+                        Sentencing by ethnicity
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        268 bytes
+                  </a>
+                    <p>This file contains the following: ethnicity, number sentenced, value and denominator.</p>
+                </div>
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="900 bytes">
+                  <meta itemprop="name" content="Custody rate by gender">
+                  <a itemprop="contentUrl" href="/crime-justice-and-the-law/courts-sentencing-and-tribunals/sentences-and-custody/1.1/downloads/custody-rate-by-gender.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Custody rate by gender">
+                        Custody rate by gender
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        900 bytes
+                  </a>
+                    <p>This file contains the following: ethnicity, sex, value and count.</p>
+                </div>
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="4 KB">
+                  <meta itemprop="name" content="Custody rate by ethnicity">
+                  <a itemprop="contentUrl" href="/crime-justice-and-the-law/courts-sentencing-and-tribunals/sentences-and-custody/1.1/downloads/custody-rate-by-ethnicity.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Custody rate by ethnicity">
+                        Custody rate by ethnicity
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        4 KB
+                  </a>
+                    <p>This file contains the following: year, sentence outcome, ethnicity, sex, custody rate, count, denominator.</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

@@ -74,9 +74,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -506,6 +506,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.3">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -513,9 +518,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://digital.nhs.uk/catalogue/PUB19244" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Cigarette smoking among 15 year olds">
+            <p itemprop="name"><a href="https://digital.nhs.uk/catalogue/PUB19244" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Cigarette smoking among 15 year olds" itemprop="url">
                 What About YOUth (WAY) survey</a>
             </p>
 
@@ -526,7 +531,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>Official statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>NHS Digital</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">NHS Digital</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -537,6 +542,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 <p>The Health and Social Care Information Centre (HSCIC) was commissioned by the Department of Health to run the survey in direct response to the Children and Young People’s Health Outcomes Forum. This Forum identified gaps in the Public Health Outcomes Framework (PHOF) and other key health behaviour measures relating to young people. HSCIC contracted Ipsos MORI to carry out the survey. </p>
 <p>WAY 2014 is the first survey to be conducted of its kind and it is hoped that the survey will be repeated in order to form a time series of comparable data on a range of indicators for 15 year olds across England. Data has been collected on general health, diet, use of free time, physical activity, smoking, drinking, emotional wellbeing, drugs and bullying.</p>
 
+            </div>
 
           </div>
 
@@ -548,16 +554,32 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/health/preventing-illness/cigarette-smoking-among-15-year-olds/latest/downloads/cigarette-smoking-among-15-year-olds.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Cigarette smoking among 15 year olds">
-                      Cigarette smoking among 15 year olds
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      1 KB
-                </a>
-                  <p>This file contains the following: ethnicity, year, geography, value, confidence intervals, unweighted sample size</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Cigarette smoking among 15 year olds">
+            <meta itemprop="description" content="8.2% of 15 year olds responding to the 2014/15 survey were smokers">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="1 KB">
+                  <meta itemprop="name" content="Cigarette smoking among 15 year olds">
+                  <a itemprop="contentUrl" href="/health/preventing-illness/cigarette-smoking-among-15-year-olds/latest/downloads/cigarette-smoking-among-15-year-olds.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Cigarette smoking among 15 year olds">
+                        Cigarette smoking among 15 year olds
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        1 KB
+                  </a>
+                    <p>This file contains the following: ethnicity, year, geography, value, confidence intervals, unweighted sample size</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

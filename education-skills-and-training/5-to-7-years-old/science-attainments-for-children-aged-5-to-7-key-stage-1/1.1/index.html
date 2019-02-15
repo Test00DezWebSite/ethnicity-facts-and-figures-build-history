@@ -75,9 +75,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -20523,6 +20523,11 @@ Other ethnic group</p>
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.1">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -20530,9 +20535,9 @@ Other ethnic group</p>
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.gov.uk/government/statistics/phonics-screening-check-and-key-stage-1-assessments-england-2016" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Science attainments for children aged 5 to 7 (key stage 1)">
+            <p itemprop="name"><a href="https://www.gov.uk/government/statistics/phonics-screening-check-and-key-stage-1-assessments-england-2016" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Science attainments for children aged 5 to 7 (key stage 1)" itemprop="url">
                 Key stage 1 statistics</a>
             </p>
 
@@ -20543,7 +20548,7 @@ Other ethnic group</p>
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Department for Education</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Department for Education</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -20552,6 +20557,7 @@ Other ethnic group</p>
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>This data provides results for the 2016 phonics screening checks and key stage 1 national curriculum assessments for pupils in schools in England. The results are used to monitor pupils’ attainment and progress in reading, writing, science and mathematics.</p>
 
+            </div>
 
           </div>
 
@@ -20563,25 +20569,47 @@ Other ethnic group</p>
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/education-skills-and-training/5-to-7-years-old/science-attainments-for-children-aged-5-to-7-key-stage-1/1.1/downloads/expected-standard-in-science-for-children-aged-5-to-7-key-stage-1-national.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Expected standard in science  for children aged 5 to 7 (key stage 1) - national">
-                      Expected standard in science  for children aged 5 to 7 (key stage 1) - national
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      58 KB
-                </a>
-                  <p>This file contains: ethnicity, year, gender, FSM status, denominator</p>
-                <a href="/education-skills-and-training/5-to-7-years-old/science-attainments-for-children-aged-5-to-7-key-stage-1/1.1/downloads/expected-standard-in-science-for-children-aged-5-to-7-local-authority.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Expected standard in science for children aged 5 to 7 - local authority">
-                      Expected standard in science for children aged 5 to 7 - local authority
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      577 KB
-                </a>
-                  <p>This file contains: ethnicity, year, gender, denominator, region, local authority</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Science attainments for children aged 5 to 7 (key stage 1)">
+            <meta itemprop="description" content="in 2015/16, there were 641,590 pupils in key stage 1 at state-funded mainstream schools in England, of which ethnicity was known for 634,052 (99%)">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="58 KB">
+                  <meta itemprop="name" content="Expected standard in science for children aged 5 to 7 (key stage 1) - national">
+                  <a itemprop="contentUrl" href="/education-skills-and-training/5-to-7-years-old/science-attainments-for-children-aged-5-to-7-key-stage-1/1.1/downloads/expected-standard-in-science-for-children-aged-5-to-7-key-stage-1-national.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Expected standard in science  for children aged 5 to 7 (key stage 1) - national">
+                        Expected standard in science  for children aged 5 to 7 (key stage 1) - national
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        58 KB
+                  </a>
+                    <p>This file contains: ethnicity, year, gender, FSM status, denominator</p>
+                </div>
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="577 KB">
+                  <meta itemprop="name" content="Expected standard in science for children aged 5 to 7 - local authority">
+                  <a itemprop="contentUrl" href="/education-skills-and-training/5-to-7-years-old/science-attainments-for-children-aged-5-to-7-key-stage-1/1.1/downloads/expected-standard-in-science-for-children-aged-5-to-7-local-authority.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Expected standard in science for children aged 5 to 7 - local authority">
+                        Expected standard in science for children aged 5 to 7 - local authority
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        577 KB
+                  </a>
+                    <p>This file contains: ethnicity, year, gender, denominator, region, local authority</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

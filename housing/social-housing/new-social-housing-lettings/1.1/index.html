@@ -75,9 +75,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -19384,6 +19384,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.1">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -19391,9 +19396,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.gov.uk/government/statistics/social-housing-lettings-in-england-april-2015-to-march-2016" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="New social housing lettings">
+            <p itemprop="name"><a href="https://www.gov.uk/government/statistics/social-housing-lettings-in-england-april-2015-to-march-2016" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="New social housing lettings" itemprop="url">
                 Social housing lettings in England: April 2015 to March 2016</a>
             </p>
 
@@ -19404,7 +19409,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Ministry of Housing, Communities and Local Government</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Ministry of Housing, Communities and Local Government</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -19414,6 +19419,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <p>The aim of Continuous Recording of Lettings and Sales in Social Housing in England (CORE) is to provide information about new social housing lettings, sales, tenants and buyers across England.</p>
 <p>This national information is used by government bodies and organisations to inform social housing funding, regulatory and housing policy decisions.</p>
 
+            </div>
 
           </div>
 
@@ -19425,16 +19431,32 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/housing/social-housing/new-social-housing-lettings/1.1/downloads/new-social-housing-lettings.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="New Social Housing Lettings">
-                      New Social Housing Lettings
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      261 KB
-                </a>
-                  <p>This file contains the following: ethnicity, income, geography, age, value, numerator, population estimate</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="New social housing lettings">
+            <meta itemprop="description" content="in 2015/16 there were 355,898 new social housing lettings in England">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="261 KB">
+                  <meta itemprop="name" content="New Social Housing Lettings">
+                  <a itemprop="contentUrl" href="/housing/social-housing/new-social-housing-lettings/1.1/downloads/new-social-housing-lettings.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="New Social Housing Lettings">
+                        New Social Housing Lettings
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        261 KB
+                  </a>
+                    <p>This file contains the following: ethnicity, income, geography, age, value, numerator, population estimate</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

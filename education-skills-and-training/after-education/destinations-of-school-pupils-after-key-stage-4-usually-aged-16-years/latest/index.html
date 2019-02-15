@@ -74,9 +74,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -2511,6 +2511,11 @@ Along with local authority data, LEO data is used to calculate employment destin
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 2.0">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -2518,9 +2523,9 @@ Along with local authority data, LEO data is used to calculate employment destin
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.gov.uk/government/collections/statistics-destinations" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Destinations of school pupils after key stage 4 (usually aged 16 years)">
+            <p itemprop="name"><a href="https://www.gov.uk/government/collections/statistics-destinations" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Destinations of school pupils after key stage 4 (usually aged 16 years)" itemprop="url">
                 Statistics: destinations of key stage 4 and key stage 5 pupils</a>
             </p>
 
@@ -2531,7 +2536,7 @@ Along with local authority data, LEO data is used to calculate employment destin
                 <p>Official statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Department for Education</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Department for Education</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -2540,6 +2545,7 @@ Along with local authority data, LEO data is used to calculate employment destin
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>The data is collected to help provide clear and comparable information on the success of schools and colleges in helping their students continue in education or employment.</p>
 
+            </div>
 
           </div>
 
@@ -2551,16 +2557,32 @@ Along with local authority data, LEO data is used to calculate employment destin
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/education-skills-and-training/after-education/destinations-of-school-pupils-after-key-stage-4-usually-aged-16-years/latest/downloads/destinations-of-school-pupils-after-key-stage-4.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Destinations of school pupils after key stage 4">
-                      Destinations of school pupils after key stage 4
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      130 KB
-                </a>
-                  <p>This file contains: Measure, Ethnicity, Ethnicity type, Time, Time type, Geography, Geography type, Geography code, Gender, Gender type, Destination, Value, Value type, Denominator, Numerator</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Destinations of school pupils after key stage 4 (usually aged 16 years)">
+            <meta itemprop="description" content="overall, 94% of pupils went into education, employment or training for at least 2 terms after finishing key stage 4 in 2015; 5% of pupils had no sustained education, employment or training, and the destination was unknown for a further 1%">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="130 KB">
+                  <meta itemprop="name" content="Destinations of school pupils after key stage 4">
+                  <a itemprop="contentUrl" href="/education-skills-and-training/after-education/destinations-of-school-pupils-after-key-stage-4-usually-aged-16-years/latest/downloads/destinations-of-school-pupils-after-key-stage-4.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Destinations of school pupils after key stage 4">
+                        Destinations of school pupils after key stage 4
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        130 KB
+                  </a>
+                    <p>This file contains: Measure, Ethnicity, Ethnicity type, Time, Time type, Geography, Geography type, Geography code, Gender, Gender type, Destination, Value, Value type, Denominator, Numerator</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

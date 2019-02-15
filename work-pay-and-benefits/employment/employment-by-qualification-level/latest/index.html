@@ -74,9 +74,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -1591,6 +1591,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 2.0">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England, Wales and Scotland">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -1598,9 +1603,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.nomisweb.co.uk/query/select/getdatasetbytheme.asp?opt%3D3%26theme%3D%26subgrp%3D&amp;sa=D&amp;ust=1505757273319000&amp;usg=AFQjCNFnS64ZDSibYXaOTf54ZPpw97wNXg" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Employment by qualification level">
+            <p itemprop="name"><a href="https://www.nomisweb.co.uk/query/select/getdatasetbytheme.asp?opt%3D3%26theme%3D%26subgrp%3D&amp;sa=D&amp;ust=1505757273319000&amp;usg=AFQjCNFnS64ZDSibYXaOTf54ZPpw97wNXg" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Employment by qualification level" itemprop="url">
                 Annual Population Survey</a>
             </p>
 
@@ -1611,7 +1616,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>Official statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Department for Education</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Department for Education</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -1631,6 +1636,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 <p>The published statistics also allow government to monitor estimates on a range of issues between censuses.</p>
 <p>The survey data presented here has been collected to allow analysis of labour market and related topics at a more detailed level than is possible in the Labour Force Survey.</p>
 
+            </div>
 
           </div>
 
@@ -1642,16 +1648,32 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/work-pay-and-benefits/employment/employment-by-qualification-level/latest/downloads/employment-by-qualification-level.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Employment by qualification level">
-                      Employment by qualification level
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      187 KB
-                </a>
-                  <p>This file contains: ethnicity, time, gender, age, highest qualification level, value, denominator, numerator, sample size</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Employment by qualification level">
+            <meta itemprop="description" content="overall, 86% of people aged 16 to 64 years with a level 4 qualification (like a degree) or above were in employment in 2017; this figure dropped to 83% for people with a level 3 qualification, 76% for those with a level 2 qualification, and 46% for those with no qualifications">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="187 KB">
+                  <meta itemprop="name" content="Employment by qualification level">
+                  <a itemprop="contentUrl" href="/work-pay-and-benefits/employment/employment-by-qualification-level/latest/downloads/employment-by-qualification-level.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Employment by qualification level">
+                        Employment by qualification level
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        187 KB
+                  </a>
+                    <p>This file contains: ethnicity, time, gender, age, highest qualification level, value, denominator, numerator, sample size</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

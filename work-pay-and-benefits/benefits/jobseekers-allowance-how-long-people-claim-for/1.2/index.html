@@ -75,9 +75,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -2045,6 +2045,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.2">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England, Wales and Scotland">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -2052,9 +2057,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.nomisweb.co.uk/home/news.asp?cat=24" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Jobseeker’s Allowance: how long people claim for">
+            <p itemprop="name"><a href="https://www.nomisweb.co.uk/home/news.asp?cat=24" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Jobseeker’s Allowance: how long people claim for" itemprop="url">
                 Official Labour Market Statistics (NOMIS)</a>
             </p>
 
@@ -2065,7 +2070,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>Official statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Department for Work and Pensions</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Department for Work and Pensions</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -2074,6 +2079,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>The data is an administrative source collected to enable Department for Work and Pensions (DWP) to monitor and report on claims for Jobseeker’s Allowance (JSA) and other benefits.</p>
 
+            </div>
 
           </div>
 
@@ -2085,29 +2091,51 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/work-pay-and-benefits/benefits/jobseekers-allowance-how-long-people-claim-for/1.2/downloads/jobseeker-s-allowance-how-long-people-claim-for-v-2.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Jobseeker&#39;s Allowance how long people claim for v.2">
-                      Jobseeker&#39;s Allowance how long people claim for v.2
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      3 MB
-                </a>
-                  <p>This file contains data for January 2012 to July 2018. This is the latest data available, but does not reflect the figures shown in the charts, tables and commentary on this page.
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Jobseeker’s Allowance: how long people claim for">
+            <meta itemprop="description" content="people from the White Other group were more likely than any other ethnicity to claim Jobseeker’s Allowance (JSA) for the shortest time period studied (13 weeks or less)">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="3 MB">
+                  <meta itemprop="name" content="Jobseeker&#39;s Allowance how long people claim for v.2">
+                  <a itemprop="contentUrl" href="/work-pay-and-benefits/benefits/jobseekers-allowance-how-long-people-claim-for/1.2/downloads/jobseeker-s-allowance-how-long-people-claim-for-v-2.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Jobseeker&#39;s Allowance how long people claim for v.2">
+                        Jobseeker&#39;s Allowance how long people claim for v.2
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        3 MB
+                  </a>
+                    <p>This file contains data for January 2012 to July 2018. This is the latest data available, but does not reflect the figures shown in the charts, tables and commentary on this page.
 
 This file contains: ethnicity, time, geography, duration, number of cases, value </p>
-                <a href="/work-pay-and-benefits/benefits/jobseekers-allowance-how-long-people-claim-for/1.2/downloads/jobseeker-s-allowance-how-long-people-claim-for.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Jobseeker&#39;s Allowance how long people claim for">
-                      Jobseeker&#39;s Allowance how long people claim for
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      3 MB
-                </a>
-                  <p>This file contains data for January 2012 to April 2017. This is the data used in the charts, tables and commentary shown on this page.
+                </div>
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="3 MB">
+                  <meta itemprop="name" content="Jobseeker&#39;s Allowance how long people claim for">
+                  <a itemprop="contentUrl" href="/work-pay-and-benefits/benefits/jobseekers-allowance-how-long-people-claim-for/1.2/downloads/jobseeker-s-allowance-how-long-people-claim-for.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Jobseeker&#39;s Allowance how long people claim for">
+                        Jobseeker&#39;s Allowance how long people claim for
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        3 MB
+                  </a>
+                    <p>This file contains data for January 2012 to April 2017. This is the data used in the charts, tables and commentary shown on this page.
 
 This file contains: ethnicity, time, geography, duration, number of cases, value</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

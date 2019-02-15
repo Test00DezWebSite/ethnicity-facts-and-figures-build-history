@@ -75,9 +75,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -16122,6 +16122,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.2">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -16129,9 +16134,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.gov.uk/government/collections/statistics-pupil-absence" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Absence from school">
+            <p itemprop="name"><a href="https://www.gov.uk/government/collections/statistics-pupil-absence" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Absence from school" itemprop="url">
                 Statistics: pupil absence</a>
             </p>
 
@@ -16142,7 +16147,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Department for Education</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Department for Education</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -16151,6 +16156,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>The data helps schools, local authorities and the government have a greater understanding of the level of absence and the reasons for it.</p>
 
+            </div>
 
           </div>
 
@@ -16162,25 +16168,47 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/education-skills-and-training/absence-and-exclusions/absence-from-school/1.2/downloads/absence-from-school-england.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Absence from school - England">
-                      Absence from school - England
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      23 KB
-                </a>
-                  <p>This file contains the following: measure, ethnicity, school type, value, denominator and numerator.</p>
-                <a href="/education-skills-and-training/absence-and-exclusions/absence-from-school/1.2/downloads/absence-from-school-local-authority.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Absence from school - local authority">
-                      Absence from school - local authority
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      3 MB
-                </a>
-                  <p>This file contains the following: measure, ethnicity, local authority, school type, value, denominator and numerator.</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Absence from school">
+            <meta itemprop="description" content="in 2015/16, 6.93 million pupils were at state-funded primary, secondary or special school in England – 69% were White British, 10% were Asian, 6% were Black, 6% were from the Other White ethnic group, 5% had Mixed ethnicity, and 0.4% were Chinese">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="23 KB">
+                  <meta itemprop="name" content="Absence from school - England">
+                  <a itemprop="contentUrl" href="/education-skills-and-training/absence-and-exclusions/absence-from-school/1.2/downloads/absence-from-school-england.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Absence from school - England">
+                        Absence from school - England
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        23 KB
+                  </a>
+                    <p>This file contains the following: measure, ethnicity, school type, value, denominator and numerator.</p>
+                </div>
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="3 MB">
+                  <meta itemprop="name" content="Absence from school - local authority">
+                  <a itemprop="contentUrl" href="/education-skills-and-training/absence-and-exclusions/absence-from-school/1.2/downloads/absence-from-school-local-authority.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Absence from school - local authority">
+                        Absence from school - local authority
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        3 MB
+                  </a>
+                    <p>This file contains the following: measure, ethnicity, local authority, school type, value, denominator and numerator.</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

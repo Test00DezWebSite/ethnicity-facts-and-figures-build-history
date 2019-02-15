@@ -74,9 +74,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -605,6 +605,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 2.0">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -612,9 +617,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.gov.uk/government/collections/community-life-survey--2" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Influencing local decisions">
+            <p itemprop="name"><a href="https://www.gov.uk/government/collections/community-life-survey--2" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Influencing local decisions" itemprop="url">
                 Community Life Survey</a>
             </p>
 
@@ -625,7 +630,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>Official statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Department for Digital, Culture, Media and Sport</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Department for Digital, Culture, Media and Sport</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -640,6 +645,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 <li>well-being</li>
 </ul>
 
+            </div>
 
           </div>
 
@@ -651,16 +657,32 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/culture-and-community/civic-participation/influencing-local-decisions/latest/downloads/influencing-local-decisions.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Influencing local decisions">
-                      Influencing local decisions
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      852 bytes
-                </a>
-                  <p>This file contains the following: ethnicity, year</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Influencing local decisions">
+            <meta itemprop="description" content="overall, in 2017/18, 26% of people aged 16 and over in England said they felt they could influence decisions affecting their local area, a similar percentage to the previous year (2016/17)">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="852 bytes">
+                  <meta itemprop="name" content="Influencing local decisions">
+                  <a itemprop="contentUrl" href="/culture-and-community/civic-participation/influencing-local-decisions/latest/downloads/influencing-local-decisions.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Influencing local decisions">
+                        Influencing local decisions
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        852 bytes
+                  </a>
+                    <p>This file contains the following: ethnicity, year</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

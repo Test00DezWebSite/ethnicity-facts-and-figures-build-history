@@ -74,9 +74,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -21935,6 +21935,11 @@ FSM is used as an indicator of disadvantage, but when drawing conclusions, it sh
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 2.0">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -21942,9 +21947,9 @@ FSM is used as an indicator of disadvantage, but when drawing conclusions, it sh
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.gov.uk/government/statistics/early-years-foundation-stage-profile-results-2017-to-2018" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Attainment of development goals by children aged 4 to 5 years">
+            <p itemprop="name"><a href="https://www.gov.uk/government/statistics/early-years-foundation-stage-profile-results-2017-to-2018" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Attainment of development goals by children aged 4 to 5 years" itemprop="url">
                 Early years foundation stage profile results: 2017 to 2018</a>
             </p>
 
@@ -21955,7 +21960,7 @@ FSM is used as an indicator of disadvantage, but when drawing conclusions, it sh
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Department for Education</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Department for Education</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -21965,6 +21970,7 @@ FSM is used as an indicator of disadvantage, but when drawing conclusions, it sh
                   <p>The early years foundation stage profile (EYFSP) supports pupils's transition to key stage 1 (KS1). It should improve professional dialogue between EYFS and KS1 teachers, helping teachers to plan an effective, responsive and appropriate curriculum to meet the needs of all pupils.</p>
 <p>The profile also informs parents or carers about their child’s development against early learning goals.</p>
 
+            </div>
 
           </div>
 
@@ -21976,25 +21982,47 @@ FSM is used as an indicator of disadvantage, but when drawing conclusions, it sh
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/education-skills-and-training/early-years/attainment-of-development-goals-by-children-aged-4-to-5-years/latest/downloads/early-learning-goals-national.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Early learning goals- national">
-                      Early learning goals- national
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      23 KB
-                </a>
-                  <p>This file contains the following: ethnicity, gender, FSM eligibility, value and denominator.</p>
-                <a href="/education-skills-and-training/early-years/attainment-of-development-goals-by-children-aged-4-to-5-years/latest/downloads/early-learning-goals-local-authority.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Early learning goals- local authority">
-                      Early learning goals- local authority
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      630 KB
-                </a>
-                  <p>This file contains the following: ethnicity, geography, gender, value, denominator, value notes and geography name.</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Attainment of development goals by children aged 4 to 5 years">
+            <meta itemprop="description" content="in 2017/18 there were 652,349 pupils at the end of the early years foundation stage, and ethnicity was known for 632,430 (97%) of them">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="23 KB">
+                  <meta itemprop="name" content="Early learning goals- national">
+                  <a itemprop="contentUrl" href="/education-skills-and-training/early-years/attainment-of-development-goals-by-children-aged-4-to-5-years/latest/downloads/early-learning-goals-national.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Early learning goals- national">
+                        Early learning goals- national
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        23 KB
+                  </a>
+                    <p>This file contains the following: ethnicity, gender, FSM eligibility, value and denominator.</p>
+                </div>
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="630 KB">
+                  <meta itemprop="name" content="Early learning goals- local authority">
+                  <a itemprop="contentUrl" href="/education-skills-and-training/early-years/attainment-of-development-goals-by-children-aged-4-to-5-years/latest/downloads/early-learning-goals-local-authority.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Early learning goals- local authority">
+                        Early learning goals- local authority
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        630 KB
+                  </a>
+                    <p>This file contains the following: ethnicity, geography, gender, value, denominator, value notes and geography name.</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

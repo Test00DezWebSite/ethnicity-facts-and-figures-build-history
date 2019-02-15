@@ -74,9 +74,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -793,6 +793,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.0">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -800,9 +805,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="http://www.nhsstaffsurveys.com/Page/1064/Latest-Results/2017-Results/" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="NHS staff believing career progression is fair at work for all staff">
+            <p itemprop="name"><a href="http://www.nhsstaffsurveys.com/Page/1064/Latest-Results/2017-Results/" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="NHS staff believing career progression is fair at work for all staff" itemprop="url">
                 Workforce Race Equality Standard (WRES)</a>
             </p>
 
@@ -813,7 +818,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>Official statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>NHS England</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">NHS England</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -823,6 +828,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <p>The purpose of the Workforce Race Equality Standard (WRES) is to collect information on differences in the experience and treatment of NHS staff depending on their ethnicity, with a view to reducing these differences.</p>
 <p>The NHS Staff Survey has been conducted every year since 2003. It asks NHS staff in England about their experiences of working for the NHS. The survey provides information about staff experience across the NHS in England and aims to highlight it to stakeholders and employers. All NHS trusts have to take part in the survey.</p>
 
+            </div>
 
           </div>
 
@@ -834,16 +840,32 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/workforce-and-business/nhs-staff-experience/nhs-staff-believing-career-progression-is-fair-at-work-for-all-staff/latest/downloads/nhs-staff-believing-career-progression-is-fair-at-work-for-all-staff.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="NHS staff believing career progression is fair at work for all staff">
-                      NHS staff believing career progression is fair at work for all staff
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      4 KB
-                </a>
-                  <p>This file contains the following: ethnicity, NHS trust, NHS trust code, geography, NHS trust type, numerator, denominator, value</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="NHS staff believing career progression is fair at work for all staff">
+            <meta itemprop="description" content="in 2017, overall 84% of NHS staff said that their NHS trust gave all staff an equal chance of promotion or career progression – 87% of White staff believed this, compared with 72% of staff from all other ethnic groups combined">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="4 KB">
+                  <meta itemprop="name" content="NHS staff believing career progression is fair at work for all staff">
+                  <a itemprop="contentUrl" href="/workforce-and-business/nhs-staff-experience/nhs-staff-believing-career-progression-is-fair-at-work-for-all-staff/latest/downloads/nhs-staff-believing-career-progression-is-fair-at-work-for-all-staff.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="NHS staff believing career progression is fair at work for all staff">
+                        NHS staff believing career progression is fair at work for all staff
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        4 KB
+                  </a>
+                    <p>This file contains the following: ethnicity, NHS trust, NHS trust code, geography, NHS trust type, numerator, denominator, value</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

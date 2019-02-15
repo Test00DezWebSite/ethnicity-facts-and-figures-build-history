@@ -75,9 +75,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -1034,6 +1034,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.2">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -1041,9 +1046,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="http://www.phoutcomes.info/" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Overweight children">
+            <p itemprop="name"><a href="http://www.phoutcomes.info/" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Overweight children" itemprop="url">
                 Public Health Outcomes Framework</a>
             </p>
 
@@ -1054,7 +1059,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>Official statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Department of Health and Social Care</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Department of Health and Social Care</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -1064,16 +1069,17 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <p>The National Child Measurement Programme (NCMP) measures the height and weight of children in reception class (aged 4 to 5 years) and year 6 (aged 10 to 11 years) to assess overweight and obesity levels in children within primary schools. This data can be used at a national level to support local public health initiatives and inform the local planning and delivery of services for children.</p>
 <p>The programme is recognised internationally as a world-class source of public health intelligence and holds UK National Statistics status.</p>
 
-              <div class="secondary-source">
+            </div>
+              <div class="secondary-source" itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
                 <h3 class="heading-small">Secondary source</h3>
-                <p><a href="http://content.digital.nhs.uk/ncmp" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="National Child Measurement Programme">
+                <p itemprop="name"><a href="http://content.digital.nhs.uk/ncmp" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="National Child Measurement Programme" itemprop="url">
                     National Child Measurement Programme
                 </a></p>
 
 
 
                   <h3 class="heading-small">Publisher</h3>
-                  <p>NHS Digital</p>
+                  <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">NHS Digital</span></p>
 
 
 
@@ -1093,16 +1099,32 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/health/preventing-illness/overweight-children/1.2/downloads/overweight-children.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Overweight children">
-                      Overweight children
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      15 KB
-                </a>
-                  <p>This file contains the following: ethnicity, year, age group, value, denominator, numerator and confidence intervals</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Overweight children">
+            <meta itemprop="description" content="in 2015/16, an estimated 22.1% of children aged 4 to 5 and 34.2% of children aged 10 to 11 in England were overweight">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="15 KB">
+                  <meta itemprop="name" content="Overweight children">
+                  <a itemprop="contentUrl" href="/health/preventing-illness/overweight-children/1.2/downloads/overweight-children.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Overweight children">
+                        Overweight children
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        15 KB
+                  </a>
+                    <p>This file contains the following: ethnicity, year, age group, value, denominator, numerator and confidence intervals</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

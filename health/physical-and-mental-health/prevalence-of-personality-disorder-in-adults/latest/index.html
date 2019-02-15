@@ -74,9 +74,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -560,6 +560,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.1">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -567,9 +572,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="http://content.digital.nhs.uk/catalogue/PUB21748" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Prevalence of personality disorder in adults">
+            <p itemprop="name"><a href="http://content.digital.nhs.uk/catalogue/PUB21748" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Prevalence of personality disorder in adults" itemprop="url">
                 Adult Psychiatric Morbidity Survey: Survey of Mental Health and Wellbeing, England, 2014</a>
             </p>
 
@@ -580,7 +585,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>NHS Digital</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">NHS Digital</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -589,6 +594,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>The APMS series provides England's National Statistics for the prevalence of mental illness and treatment access in the household population.</p>
 
+            </div>
 
           </div>
 
@@ -600,16 +606,32 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/health/physical-and-mental-health/prevalence-of-personality-disorder-in-adults/latest/downloads/apms-screen-positive-for-personality-disorder.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="APMS_screen_positive_for_personality_disorder">
-                      APMS_screen_positive_for_personality_disorder
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      1 KB
-                </a>
-                  <p>The percentages of individuals who screened positive for any personality disorder in England, 2014, by sex and broad age group with 95% confidence intervals. </p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Prevalence of personality disorder in adults">
+            <meta itemprop="description" content="there were no meaningful differences between ethnic groups in the percentage of people aged 16 years and over who would screen positive for a personality disorder, so these figures shouldn’t be used as evidence of real differences in the population as a whole">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="1 KB">
+                  <meta itemprop="name" content="APMS_screen_positive_for_personality_disorder">
+                  <a itemprop="contentUrl" href="/health/physical-and-mental-health/prevalence-of-personality-disorder-in-adults/latest/downloads/apms-screen-positive-for-personality-disorder.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="APMS_screen_positive_for_personality_disorder">
+                        APMS_screen_positive_for_personality_disorder
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        1 KB
+                  </a>
+                    <p>The percentages of individuals who screened positive for any personality disorder in England, 2014, by sex and broad age group with 95% confidence intervals. </p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

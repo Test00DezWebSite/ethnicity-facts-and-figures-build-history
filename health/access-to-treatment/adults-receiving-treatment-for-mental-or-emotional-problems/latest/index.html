@@ -74,9 +74,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -632,6 +632,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.2">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -639,9 +644,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="http://content.digital.nhs.uk/catalogue/PUB21748" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Adults receiving treatment for mental or emotional problems">
+            <p itemprop="name"><a href="http://content.digital.nhs.uk/catalogue/PUB21748" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Adults receiving treatment for mental or emotional problems" itemprop="url">
                 Adult Psychiatric Morbidity Survey: Survey of Mental Health and Wellbeing, England, 2014</a>
             </p>
 
@@ -652,7 +657,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>NHS Digital</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">NHS Digital</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -662,6 +667,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <p>The Adult Psychiatric Morbidity Survey (APMS) series shows the proportion of adults in England who have or exhibit symptoms of mental illness and/or are receiving treatment for mental illness. 
 It doesn’t include the homeless or people in hostels, hospitals, prisons or other institutional settings.</p>
 
+            </div>
 
           </div>
 
@@ -673,16 +679,32 @@ It doesn’t include the homeless or people in hostels, hospitals, prisons or ot
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/health/access-to-treatment/adults-receiving-treatment-for-mental-or-emotional-problems/latest/downloads/apms-treatment-for-mental-emotional-problems.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="APMS_treatment_for_mental_emotional_problems">
-                      APMS_treatment_for_mental_emotional_problems
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      3 KB
-                </a>
-                  <p>Percentage of individuals estimated to be receiving treatment for mental or emotional problems by broad ethnic group, sex and treatment with 95% confidence intervals. </p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Adults receiving treatment for mental or emotional problems">
+            <meta itemprop="description" content="White British people were around twice as likely as other ethnic groups to be receiving some form of treatment for mental or emotional problems at the time of the survey">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="3 KB">
+                  <meta itemprop="name" content="APMS_treatment_for_mental_emotional_problems">
+                  <a itemprop="contentUrl" href="/health/access-to-treatment/adults-receiving-treatment-for-mental-or-emotional-problems/latest/downloads/apms-treatment-for-mental-emotional-problems.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="APMS_treatment_for_mental_emotional_problems">
+                        APMS_treatment_for_mental_emotional_problems
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        3 KB
+                  </a>
+                    <p>Percentage of individuals estimated to be receiving treatment for mental or emotional problems by broad ethnic group, sex and treatment with 95% confidence intervals. </p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

@@ -75,9 +75,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -1223,6 +1223,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.5">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -1230,9 +1235,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://indicators.hscic.gov.uk/webview/index.jsp?v=2&amp;submode=ddi&amp;study=http%3A%2F%2F192.168.229.23%3A80%2Fobj%2FfStudy%2FP01774&amp;mode=documentation&amp;top=yes" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Inpatient satisfaction with hospital care">
+            <p itemprop="name"><a href="https://indicators.hscic.gov.uk/webview/index.jsp?v=2&amp;submode=ddi&amp;study=http%3A%2F%2F192.168.229.23%3A80%2Fobj%2FfStudy%2FP01774&amp;mode=documentation&amp;top=yes" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Inpatient satisfaction with hospital care" itemprop="url">
                 NHS Outcomes Framework</a>
             </p>
 
@@ -1243,7 +1248,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>NHS Digital</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">NHS Digital</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -1252,6 +1257,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>The Care Quality Commission (CQC) Adult inpatient survey helps healthcare providers understand what a stay in hospital is like for patients. This understanding can be used to encourage improvements both nationally and locally and to measure and compare the performance of individual NHS trusts.</p>
 
+            </div>
 
           </div>
 
@@ -1263,29 +1269,51 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/health/patient-experiences/inpatient-satisfaction-with-hospital-care/1.5/downloads/inpatient-satisfaction-with-hospital-care.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Inpatient satisfaction with hospital care">
-                      Inpatient satisfaction with hospital care
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      7 KB
-                </a>
-                  <p>This file contains data for the years 2013/14 to 2016/17. This is the data used in the charts, tables and commentary shown on this page.
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Inpatient satisfaction with hospital care">
+            <meta itemprop="description" content="the average score for satisfaction with hospital inpatient care in 2016/17 was 76.7 out of 100">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="7 KB">
+                  <meta itemprop="name" content="Inpatient satisfaction with hospital care">
+                  <a itemprop="contentUrl" href="/health/patient-experiences/inpatient-satisfaction-with-hospital-care/1.5/downloads/inpatient-satisfaction-with-hospital-care.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Inpatient satisfaction with hospital care">
+                        Inpatient satisfaction with hospital care
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        7 KB
+                  </a>
+                    <p>This file contains data for the years 2013/14 to 2016/17. This is the data used in the charts, tables and commentary shown on this page.
 
 This file contains the following: ethnicity, year, value, unweighted sample size</p>
-                <a href="/health/patient-experiences/inpatient-satisfaction-with-hospital-care/1.5/downloads/inpatient-satisfaction-with-hospital-care-v-2.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Inpatient satisfaction with hospital care v.2">
-                      Inpatient satisfaction with hospital care v.2
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      15 KB
-                </a>
-                  <p>This file contains data for the years 2013/14 to 2017/18. This is the latest data available, but does not reflect the figures shown in the charts, tables and commentary on this page.
+                </div>
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="15 KB">
+                  <meta itemprop="name" content="Inpatient satisfaction with hospital care v.2">
+                  <a itemprop="contentUrl" href="/health/patient-experiences/inpatient-satisfaction-with-hospital-care/1.5/downloads/inpatient-satisfaction-with-hospital-care-v-2.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Inpatient satisfaction with hospital care v.2">
+                        Inpatient satisfaction with hospital care v.2
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        15 KB
+                  </a>
+                    <p>This file contains data for the years 2013/14 to 2017/18. This is the latest data available, but does not reflect the figures shown in the charts, tables and commentary on this page.
 
 This file contains the following: ethnicity, year, value, unweighted sample size</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

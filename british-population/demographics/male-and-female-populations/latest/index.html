@@ -74,9 +74,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -899,6 +899,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.0">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England and Wales">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -906,9 +911,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.ons.gov.uk/census/2011census" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Male and female populations">
+            <p itemprop="name"><a href="https://www.ons.gov.uk/census/2011census" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Male and female populations" itemprop="url">
                 Census 2011</a>
             </p>
 
@@ -919,7 +924,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Office for National Statistics</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Office for National Statistics</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -928,6 +933,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>The government uses Census data to develop policies, plan and run public services, and allocate funding. The Census also helps illustrate differences between various groups of the population.</p>
 
+            </div>
 
           </div>
 
@@ -939,16 +945,32 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/british-population/demographics/male-and-female-populations/latest/downloads/ethnic-groups-in-england-and-wales-by-sex.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Ethnic groups in England and Wales by sex">
-                      Ethnic groups in England and Wales by sex
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      4 KB
-                </a>
-                  <p>This file contains: measure, time, ethnicity, ethnicity_type, gender, gender_type, value, value_note, source</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Male and female populations">
+            <meta itemprop="description" content="according to the 2011 Census, women and girls made up 51% of the population of England and Wales, and men and boys made up 49%">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="4 KB">
+                  <meta itemprop="name" content="Ethnic groups in England and Wales by sex">
+                  <a itemprop="contentUrl" href="/british-population/demographics/male-and-female-populations/latest/downloads/ethnic-groups-in-england-and-wales-by-sex.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Ethnic groups in England and Wales by sex">
+                        Ethnic groups in England and Wales by sex
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        4 KB
+                  </a>
+                    <p>This file contains: measure, time, ethnicity, ethnicity_type, gender, gender_type, value, value_note, source</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

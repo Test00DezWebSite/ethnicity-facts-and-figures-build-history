@@ -74,9 +74,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -26896,6 +26896,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 2.1">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -26903,9 +26908,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.gov.uk/government/statistical-data-sets/live-tables-on-homelessness#homelessness-summary-local-authority-level-tables" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Statutory homelessness">
+            <p itemprop="name"><a href="https://www.gov.uk/government/statistical-data-sets/live-tables-on-homelessness#homelessness-summary-local-authority-level-tables" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Statutory homelessness" itemprop="url">
                 Live tables on homelessness (table 784)</a>
             </p>
 
@@ -26916,7 +26921,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Ministry of Housing, Communities and Local Government</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Ministry of Housing, Communities and Local Government</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -26925,6 +26930,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>Homelessness statistics monitor trends in statutory homelessness, rough sleeping and homelessness prevention and relief.</p>
 
+            </div>
 
           </div>
 
@@ -26936,26 +26942,48 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/housing/homelessness/statutory-homelessness/latest/downloads/homelessness-file1.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="homelessness-file1">
-                      homelessness-file1
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      2 MB
-                </a>
-                  <p>This file contains the following: ethnicity (ONS 2011 5+1), year, region, local authority, value, denominator, numerator and rate</p>
-                <a href="/housing/homelessness/statutory-homelessness/latest/downloads/homelessness-file2.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="homelessness-file2">
-                      homelessness-file2
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      6 KB
-                </a>
-                  <p>This file contains the following: ethnicity (White, Other), year, region, local authority, value, denominator, numerator and rate
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Statutory homelessness">
+            <meta itemprop="description" content="in 2017/18, there were 56,580 households in England in &#39;statutory homelessness&#39;, which is when a household is unintentionally homeless and is considered a priority (for example, because it has dependent children) – of those, 35,020 (or 62%) were White households (including White ethnic minorities)">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="2 MB">
+                  <meta itemprop="name" content="homelessness-file1">
+                  <a itemprop="contentUrl" href="/housing/homelessness/statutory-homelessness/latest/downloads/homelessness-file1.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="homelessness-file1">
+                        homelessness-file1
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        2 MB
+                  </a>
+                    <p>This file contains the following: ethnicity (ONS 2011 5+1), year, region, local authority, value, denominator, numerator and rate</p>
+                </div>
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="6 KB">
+                  <meta itemprop="name" content="homelessness-file2">
+                  <a itemprop="contentUrl" href="/housing/homelessness/statutory-homelessness/latest/downloads/homelessness-file2.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="homelessness-file2">
+                        homelessness-file2
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        6 KB
+                  </a>
+                    <p>This file contains the following: ethnicity (White, Other), year, region, local authority, value, denominator, numerator and rate
 </p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

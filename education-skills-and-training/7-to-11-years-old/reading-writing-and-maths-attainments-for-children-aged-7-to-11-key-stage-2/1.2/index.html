@@ -75,9 +75,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -8502,6 +8502,11 @@ Records are matched, using fields such as surname, forename, date of birth, UPN 
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.2">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -8509,9 +8514,9 @@ Records are matched, using fields such as surname, forename, date of birth, UPN 
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.gov.uk/government/statistics/national-curriculum-assessments-key-stage-2-2016-revised" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Reading, writing and maths attainments for children aged 7 to 11 (key stage 2)">
+            <p itemprop="name"><a href="https://www.gov.uk/government/statistics/national-curriculum-assessments-key-stage-2-2016-revised" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Reading, writing and maths attainments for children aged 7 to 11 (key stage 2)" itemprop="url">
                 Key stage 2 statistics</a>
             </p>
 
@@ -8522,7 +8527,7 @@ Records are matched, using fields such as surname, forename, date of birth, UPN 
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Department for Education</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Department for Education</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -8531,6 +8536,7 @@ Records are matched, using fields such as surname, forename, date of birth, UPN 
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>The main purpose is to measure schools' and pupils' progress and performance from key stage 1 to key stage 2 to monitor and improve standards and inform parental choice when applying to local schools.</p>
 
+            </div>
 
           </div>
 
@@ -8542,34 +8548,62 @@ Records are matched, using fields such as surname, forename, date of birth, UPN 
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/education-skills-and-training/7-to-11-years-old/reading-writing-and-maths-attainments-for-children-aged-7-to-11-key-stage-2/1.2/downloads/expected-standard-in-reading-writing-and-maths-local-authority.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Expected standard in reading, writing and maths (Local Authority)">
-                      Expected standard in reading, writing and maths (Local Authority)
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      172 KB
-                </a>
-                  <p>This file contains the following: ethnicity, year, geography, value and denominator</p>
-                <a href="/education-skills-and-training/7-to-11-years-old/reading-writing-and-maths-attainments-for-children-aged-7-to-11-key-stage-2/1.2/downloads/expected-standard-in-reading-writing-and-maths-national.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Expected standard in reading, writing and maths (National)">
-                      Expected standard in reading, writing and maths (National)
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      50 KB
-                </a>
-                  <p>This file contains the following: ethnicity, year, geography, gender, value and denominator</p>
-                <a href="/education-skills-and-training/7-to-11-years-old/reading-writing-and-maths-attainments-for-children-aged-7-to-11-key-stage-2/1.2/downloads/higher-standard-in-reading-writing-and-maths-national.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Higher standard in reading, writing and maths (National)">
-                      Higher standard in reading, writing and maths (National)
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      15 KB
-                </a>
-                  <p>This file contains the following: ethnicity, year, geography, gender, value and denominator</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Reading, writing and maths attainments for children aged 7 to 11 (key stage 2)">
+            <meta itemprop="description" content="in 2015/16, there were 585,565 pupils in key stage 2 at state-funded mainstream schools in England, and ethnicity was known for 580,718 (99%) of them">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="172 KB">
+                  <meta itemprop="name" content="Expected standard in reading, writing and maths (Local Authority)">
+                  <a itemprop="contentUrl" href="/education-skills-and-training/7-to-11-years-old/reading-writing-and-maths-attainments-for-children-aged-7-to-11-key-stage-2/1.2/downloads/expected-standard-in-reading-writing-and-maths-local-authority.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Expected standard in reading, writing and maths (Local Authority)">
+                        Expected standard in reading, writing and maths (Local Authority)
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        172 KB
+                  </a>
+                    <p>This file contains the following: ethnicity, year, geography, value and denominator</p>
+                </div>
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="50 KB">
+                  <meta itemprop="name" content="Expected standard in reading, writing and maths (National)">
+                  <a itemprop="contentUrl" href="/education-skills-and-training/7-to-11-years-old/reading-writing-and-maths-attainments-for-children-aged-7-to-11-key-stage-2/1.2/downloads/expected-standard-in-reading-writing-and-maths-national.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Expected standard in reading, writing and maths (National)">
+                        Expected standard in reading, writing and maths (National)
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        50 KB
+                  </a>
+                    <p>This file contains the following: ethnicity, year, geography, gender, value and denominator</p>
+                </div>
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="15 KB">
+                  <meta itemprop="name" content="Higher standard in reading, writing and maths (National)">
+                  <a itemprop="contentUrl" href="/education-skills-and-training/7-to-11-years-old/reading-writing-and-maths-attainments-for-children-aged-7-to-11-key-stage-2/1.2/downloads/higher-standard-in-reading-writing-and-maths-national.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Higher standard in reading, writing and maths (National)">
+                        Higher standard in reading, writing and maths (National)
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        15 KB
+                  </a>
+                    <p>This file contains the following: ethnicity, year, geography, gender, value and denominator</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

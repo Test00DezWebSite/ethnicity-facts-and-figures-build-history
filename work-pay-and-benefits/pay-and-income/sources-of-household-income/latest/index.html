@@ -74,9 +74,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -2538,6 +2538,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 2.0">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="United Kingdom">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -2545,9 +2550,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.gov.uk/government/statistics/family-resources-survey-financial-year-201617" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Sources of household income">
+            <p itemprop="name"><a href="https://www.gov.uk/government/statistics/family-resources-survey-financial-year-201617" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Sources of household income" itemprop="url">
                 Family Resources Survey</a>
             </p>
 
@@ -2558,7 +2563,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Department for Work and Pensions</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Department for Work and Pensions</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -2568,6 +2573,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <p>The Family Resources Survey (FRS) provides the Department for Work and Pensions (DWP) with data to inform the development, monitoring and evaluation of social welfare policy.</p>
 <p>The survey is used by many other government departments, and for tax and benefit policy modelling by HM Treasury and HM Revenue and Customs. The FRS is also used extensively by academics and research institutes for social and economic research.</p>
 
+            </div>
 
           </div>
 
@@ -2579,19 +2585,35 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/work-pay-and-benefits/pay-and-income/sources-of-household-income/latest/downloads/sources-of-household-income.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Sources of household income ">
-                      Sources of household income 
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      19 KB
-                </a>
-                  <p>This file contains data for the 3-year period 2009/10 to 2016/17. 
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Sources of household income">
+            <meta itemprop="description" content="on average, income from employment – earnings, salaries and self-employment – made up just under three-quarters of UK households’ total income (before tax and National Insurance was deducted) in the 3-year period 2014/15 to 2016/17">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="19 KB">
+                  <meta itemprop="name" content="Sources of household income">
+                  <a itemprop="contentUrl" href="/work-pay-and-benefits/pay-and-income/sources-of-household-income/latest/downloads/sources-of-household-income.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Sources of household income ">
+                        Sources of household income 
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        19 KB
+                  </a>
+                    <p>This file contains data for the 3-year period 2009/10 to 2016/17. 
 This is the latest data available.
 This file contains: measure, ethnicity, year, value
 </p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

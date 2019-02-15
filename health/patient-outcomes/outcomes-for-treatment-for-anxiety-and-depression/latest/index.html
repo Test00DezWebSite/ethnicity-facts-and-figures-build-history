@@ -74,9 +74,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -1974,6 +1974,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.2">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -1981,9 +1986,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="http://www.content.digital.nhs.uk/iapt" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Outcomes for treatment for anxiety and depression">
+            <p itemprop="name"><a href="http://www.content.digital.nhs.uk/iapt" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Outcomes for treatment for anxiety and depression" itemprop="url">
                 Improving Access to Psychological Therapies (IAPT) dataset</a>
             </p>
 
@@ -1994,7 +1999,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>Official statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>NHS Digital</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">NHS Digital</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -2003,6 +2008,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>The data is used to to monitor and improve the provision of talking therapies services for the treatment of people with anxiety and/or depression.</p>
 
+            </div>
 
           </div>
 
@@ -2014,27 +2020,49 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/health/patient-outcomes/outcomes-for-treatment-for-anxiety-and-depression/latest/downloads/outcomes-for-treatment-for-anxiety-and-depression.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Outcomes for treatment for anxiety and depression">
-                      Outcomes for treatment for anxiety and depression
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      7 MB
-                </a>
-                  <p>This file contains data for 2015/16 (not revised). This is the data used in the charts, tables and commentary shown on this page.
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Outcomes for treatment for anxiety and depression">
+            <meta itemprop="description" content="new data has been published for the year 2016/17, and data for 2015/16 has been revised for the ‘no reliable change’ category – this data isn’t currently reflected in the charts, tables and commentary on this page, but the findings for 2015/16 presented here are broadly the same despite the revision, and you can get a CSV file with the latest figures if you download the data">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="7 MB">
+                  <meta itemprop="name" content="Outcomes for treatment for anxiety and depression">
+                  <a itemprop="contentUrl" href="/health/patient-outcomes/outcomes-for-treatment-for-anxiety-and-depression/latest/downloads/outcomes-for-treatment-for-anxiety-and-depression.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Outcomes for treatment for anxiety and depression">
+                        Outcomes for treatment for anxiety and depression
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        7 MB
+                  </a>
+                    <p>This file contains data for 2015/16 (not revised). This is the data used in the charts, tables and commentary shown on this page.
 This file contains the following: ethnicity, geography, gender, outcome, value, denominator, numerator</p>
-                <a href="/health/patient-outcomes/outcomes-for-treatment-for-anxiety-and-depression/latest/downloads/outcomes-for-treatment-for-anxiety-and-depression-v2.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Outcomes for treatment for anxiety and depression v2">
-                      Outcomes for treatment for anxiety and depression v2
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      16 MB
-                </a>
-                  <p>This file contains data for 2015/16 (revised) and 2016/17. This is the latest data available, but does not reflect the figures shown in the charts, tables and commentary on this page.
+                </div>
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="16 MB">
+                  <meta itemprop="name" content="Outcomes for treatment for anxiety and depression v2">
+                  <a itemprop="contentUrl" href="/health/patient-outcomes/outcomes-for-treatment-for-anxiety-and-depression/latest/downloads/outcomes-for-treatment-for-anxiety-and-depression-v2.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Outcomes for treatment for anxiety and depression v2">
+                        Outcomes for treatment for anxiety and depression v2
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        16 MB
+                  </a>
+                    <p>This file contains data for 2015/16 (revised) and 2016/17. This is the latest data available, but does not reflect the figures shown in the charts, tables and commentary on this page.
 This file contains the following: ethnicity, geography, gender, outcome, value, denominator, numerator</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

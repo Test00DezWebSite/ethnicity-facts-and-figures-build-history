@@ -74,9 +74,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -8782,6 +8782,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 2.0">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -8789,9 +8794,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.gov.uk/government/statistics/national-curriculum-assessments-key-stage-2-2017-revised" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Maths attainments for children aged 10 to 11 (key stage 2)">
+            <p itemprop="name"><a href="https://www.gov.uk/government/statistics/national-curriculum-assessments-key-stage-2-2017-revised" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Maths attainments for children aged 10 to 11 (key stage 2)" itemprop="url">
                 Key stage 2 statistics</a>
             </p>
 
@@ -8802,7 +8807,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Department for Education</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Department for Education</span></p>
 
                 <h3 class="heading-small">Note on corrections or updates</h3>
                 <p><p>The Department for Education (DfE) published an updated version of these statistics on 25 January 2018.</p></p>
@@ -8813,6 +8818,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>The main purpose is to measure schools' and pupils' progress and performance from key stage 1 to key stage 2, in order to monitor and improve standards and inform parental choice when applying to local schools.</p>
 
+            </div>
 
           </div>
 
@@ -8824,25 +8830,47 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/education-skills-and-training/7-to-11-years-old/maths-attainments-for-children-aged-7-to-11-key-stage-2/latest/downloads/maths-attainments-for-children-aged-10-to-11-key-stage-2-national.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Maths attainments for children aged 10 to 11 (key stage 2) - national">
-                      Maths attainments for children aged 10 to 11 (key stage 2) - national
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      118 KB
-                </a>
-                  <p>This file contains the following variables: Measure, Ethnicity, Ethnicity_Type, Time, Time_Type, Geography (England), Geography_Code, Gender, Value, Value_Type, Denominator, Lower_CI, Upper_CI.</p>
-                <a href="/education-skills-and-training/7-to-11-years-old/maths-attainments-for-children-aged-7-to-11-key-stage-2/latest/downloads/maths-attainments-for-children-aged-10-to-11-key-stage-2-local-authorities.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Maths attainments for children aged 10 to 11 (key stage 2) - local authorities">
-                      Maths attainments for children aged 10 to 11 (key stage 2) - local authorities
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      328 KB
-                </a>
-                  <p>This file contains the following variables: Measure, Ethnicity, Ethnicity_Type, Time, Time_Type, Region, Local_Authority, Local_Authority_Code, Value, Value_Type, Denominator.</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Maths attainments for children aged 10 to 11 (key stage 2)">
+            <meta itemprop="description" content="overall, in 2016/17, 75% of pupils met the expected standard in maths by the end of key stage 2 (when they are usually aged 10 or 11 years), and 23% met the higher standard">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="118 KB">
+                  <meta itemprop="name" content="Maths attainments for children aged 10 to 11 (key stage 2) - national">
+                  <a itemprop="contentUrl" href="/education-skills-and-training/7-to-11-years-old/maths-attainments-for-children-aged-7-to-11-key-stage-2/latest/downloads/maths-attainments-for-children-aged-10-to-11-key-stage-2-national.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Maths attainments for children aged 10 to 11 (key stage 2) - national">
+                        Maths attainments for children aged 10 to 11 (key stage 2) - national
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        118 KB
+                  </a>
+                    <p>This file contains the following variables: Measure, Ethnicity, Ethnicity_Type, Time, Time_Type, Geography (England), Geography_Code, Gender, Value, Value_Type, Denominator, Lower_CI, Upper_CI.</p>
+                </div>
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="328 KB">
+                  <meta itemprop="name" content="Maths attainments for children aged 10 to 11 (key stage 2) - local authorities">
+                  <a itemprop="contentUrl" href="/education-skills-and-training/7-to-11-years-old/maths-attainments-for-children-aged-7-to-11-key-stage-2/latest/downloads/maths-attainments-for-children-aged-10-to-11-key-stage-2-local-authorities.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Maths attainments for children aged 10 to 11 (key stage 2) - local authorities">
+                        Maths attainments for children aged 10 to 11 (key stage 2) - local authorities
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        328 KB
+                  </a>
+                    <p>This file contains the following variables: Measure, Ethnicity, Ethnicity_Type, Time, Time_Type, Region, Local_Authority, Local_Authority_Code, Value, Value_Type, Denominator.</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

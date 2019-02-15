@@ -74,9 +74,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -632,6 +632,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 2.0">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -639,9 +644,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.gov.uk/government/collections/english-housing-survey" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Deposits paid by first-time buyers">
+            <p itemprop="name"><a href="https://www.gov.uk/government/collections/english-housing-survey" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Deposits paid by first-time buyers" itemprop="url">
                 English Housing Survey</a>
             </p>
 
@@ -652,7 +657,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Ministry of Housing, Communities and Local Government</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Ministry of Housing, Communities and Local Government</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -661,6 +666,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>The English Housing Survey is a continuous national survey commissioned by the Ministry of Housing, Communities and Local Government (MHCLG). It collects information about people’s housing circumstances and the condition and energy efficiency of housing in England.</p>
 
+            </div>
 
           </div>
 
@@ -672,16 +678,32 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/housing/owning-and-renting/deposits-paid-by-first-time-buyers/latest/downloads/deposits-paid-by-first-time-buyers.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Deposits paid by first-time buyers">
-                      Deposits paid by first-time buyers
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      1 KB
-                </a>
-                  <p>This files contains: ethnicity, time, NS-SEC, value, sample size</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Deposits paid by first-time buyers">
+            <meta itemprop="description" content="between 2015 and 2017,White British first-time buyers paid a smaller deposit for a home on average compared with first-time buyers from all other ethnic groups combined – however, the number of households surveyed was too small to draw firm conclusions">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="1 KB">
+                  <meta itemprop="name" content="Deposits paid by first-time buyers">
+                  <a itemprop="contentUrl" href="/housing/owning-and-renting/deposits-paid-by-first-time-buyers/latest/downloads/deposits-paid-by-first-time-buyers.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Deposits paid by first-time buyers">
+                        Deposits paid by first-time buyers
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        1 KB
+                  </a>
+                    <p>This files contains: ethnicity, time, NS-SEC, value, sample size</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

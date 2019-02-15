@@ -75,9 +75,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -3027,6 +3027,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.1">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="United Kingdom">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -3034,9 +3039,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.gov.uk/government/statistics/family-resources-survey-financial-year-201516" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="State support">
+            <p itemprop="name"><a href="https://www.gov.uk/government/statistics/family-resources-survey-financial-year-201516" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="State support" itemprop="url">
                 Family Resources Survey</a>
             </p>
 
@@ -3047,7 +3052,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Department for Work and Pensions</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Department for Work and Pensions</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -3057,6 +3062,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <p>The primary purpose of the Family Resources Survey (FRS) is to provide the Department for Work and Pensions (DWP) with data to inform the development, monitoring and evaluation of social welfare policy. </p>
 <p>The survey is used by many other government departments, and for tax and benefit policy modelling by HM Treasury and HM Revenue and Customs. The FRS is also used extensively by academics and research institutes for social and economic research.</p>
 
+            </div>
 
           </div>
 
@@ -3068,30 +3074,52 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/work-pay-and-benefits/benefits/state-support/1.1/downloads/state-support-received-v2.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="State support received v2">
-                      State support received v2
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      45 KB
-                </a>
-                  <p>This file contains data for the 3-year period 2014/15 to 2016/17. 
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="State support">
+            <meta itemprop="description" content="over half of family units in the UK received some type of state support, including the State Pension and Child Benefit, over the period studied (for the purposes of this data, a family unit is defined as a single adult or a married or cohabiting couple plus any dependent children)">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="45 KB">
+                  <meta itemprop="name" content="State support received v2">
+                  <a itemprop="contentUrl" href="/work-pay-and-benefits/benefits/state-support/1.1/downloads/state-support-received-v2.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="State support received v2">
+                        State support received v2
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        45 KB
+                  </a>
+                    <p>This file contains data for the 3-year period 2014/15 to 2016/17. 
 This is the latest data available, but does not reflect the figures shown in the charts, tables and commentary on this page.
 This file contains: measure, ethnicity, year, value 
 </p>
-                <a href="/work-pay-and-benefits/benefits/state-support/1.1/downloads/state-support-received.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="State_support_received">
-                      State_support_received
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      284 KB
-                </a>
-                  <p>This file contains data for the years 2009/10 to 2015/16.
+                </div>
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="284 KB">
+                  <meta itemprop="name" content="State_support_received">
+                  <a itemprop="contentUrl" href="/work-pay-and-benefits/benefits/state-support/1.1/downloads/state-support-received.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="State_support_received">
+                        State_support_received
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        284 KB
+                  </a>
+                    <p>This file contains data for the years 2009/10 to 2015/16.
 This is the data used in the charts, tables and commentary shown on this page.
 The file contains: measure, ethnicity, year, value, denominator</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

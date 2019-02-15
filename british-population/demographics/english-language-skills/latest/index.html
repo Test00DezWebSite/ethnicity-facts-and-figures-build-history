@@ -74,9 +74,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -4737,6 +4737,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.0">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England and Wales">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -4744,9 +4749,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/language/articles/languageinenglandandwales/2013-03-04" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="English language skills">
+            <p itemprop="name"><a href="https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/language/articles/languageinenglandandwales/2013-03-04" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="English language skills" itemprop="url">
                 2011 Census</a>
             </p>
 
@@ -4757,7 +4762,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Office for National Statistics</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Office for National Statistics</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -4767,6 +4772,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <p>Undertaken every 10 years, the census builds a complete picture of the nation. Because the same questions are asked and answers are recorded in the same way throughout England, Wales, Scotland and Northern Ireland, it’s possible to make comparisons between different groups of people across the United Kingdom.  </p>
 <p>Census data is used by a wide range of businesses and organisations, including government departments, local government and academics. The uses of census data are wide ranging and include allocation of finances, monitoring initiatives, and benchmarking other estimates. The census provides information that government needs to develop policies, plan and run public services, and allocate funding.</p>
 
+            </div>
 
           </div>
 
@@ -4778,16 +4784,32 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/british-population/demographics/english-language-skills/latest/downloads/english-language-skills.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="English language skills">
-                      English language skills
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      4 MB
-                </a>
-                  <p>This file contains: Region code, Region name, Time, Gender, Age group, Ethnicity, Language proficiency, Count, Percentage</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="English language skills">
+            <meta itemprop="description" content="more than 9 out of 10 people in England and Wales (49.8 million people) reported English as their main language">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="4 MB">
+                  <meta itemprop="name" content="English language skills">
+                  <a itemprop="contentUrl" href="/british-population/demographics/english-language-skills/latest/downloads/english-language-skills.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="English language skills">
+                        English language skills
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        4 MB
+                  </a>
+                    <p>This file contains: Region code, Region name, Time, Gender, Age group, Ethnicity, Language proficiency, Count, Percentage</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

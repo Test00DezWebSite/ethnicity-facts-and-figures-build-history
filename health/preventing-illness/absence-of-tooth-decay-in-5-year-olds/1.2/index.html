@@ -75,9 +75,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -528,6 +528,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.2">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -535,9 +540,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://fingertips.phe.org.uk/profile/public-health-outcomes-framework" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Absence of tooth decay in 5 year olds">
+            <p itemprop="name"><a href="https://fingertips.phe.org.uk/profile/public-health-outcomes-framework" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Absence of tooth decay in 5 year olds" itemprop="url">
                 Public Health Outcomes Framework</a>
             </p>
 
@@ -548,7 +553,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>Official statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Public Health England</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Public Health England</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -557,16 +562,17 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>The aim of the survey is to measure how common and severe tooth decay is among 5 year olds. This can help local authorities prioritise oral health initiatives to help reduce tooth decay.</p>
 
-              <div class="secondary-source">
+            </div>
+              <div class="secondary-source" itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
                 <h3 class="heading-small">Secondary source</h3>
-                <p><a href="http://www.nwph.net/dentalhealth/14_15_5yearold/14_15_16/DPHEP%20for%20England%20OH%20Survey%205yr%202015%20Report%20FINAL%20Gateway%20approved.pdf" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="National Dental Public Health Epidemiology Programme for England: oral health survey of five-year-old children 2015">
+                <p itemprop="name"><a href="http://www.nwph.net/dentalhealth/14_15_5yearold/14_15_16/DPHEP%20for%20England%20OH%20Survey%205yr%202015%20Report%20FINAL%20Gateway%20approved.pdf" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="National Dental Public Health Epidemiology Programme for England: oral health survey of five-year-old children 2015" itemprop="url">
                     National Dental Public Health Epidemiology Programme for England: oral health survey of five-year-old children 2015
                 </a></p>
 
 
 
                   <h3 class="heading-small">Publisher</h3>
-                  <p>Public Health England</p>
+                  <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Public Health England</span></p>
 
 
 
@@ -586,16 +592,32 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/health/preventing-illness/absence-of-tooth-decay-in-5-year-olds/1.2/downloads/absence-of-tooth-decay-in-5-year-olds.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Absence of tooth decay in 5 year olds">
-                      Absence of tooth decay in 5 year olds
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      1 KB
-                </a>
-                  <p>This file contains the following: ethnicity, value, denominator, numerator, confidence intervals</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Absence of tooth decay in 5 year olds">
+            <meta itemprop="description" content="around three-quarters of 5 year olds had no obvious tooth decay in 2014/15">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="1 KB">
+                  <meta itemprop="name" content="Absence of tooth decay in 5 year olds">
+                  <a itemprop="contentUrl" href="/health/preventing-illness/absence-of-tooth-decay-in-5-year-olds/1.2/downloads/absence-of-tooth-decay-in-5-year-olds.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Absence of tooth decay in 5 year olds">
+                        Absence of tooth decay in 5 year olds
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        1 KB
+                  </a>
+                    <p>This file contains the following: ethnicity, value, denominator, numerator, confidence intervals</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

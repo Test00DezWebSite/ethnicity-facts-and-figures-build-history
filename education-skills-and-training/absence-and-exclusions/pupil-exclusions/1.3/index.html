@@ -75,9 +75,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -16002,6 +16002,11 @@ Other ethnic group</p>
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.3">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -16009,9 +16014,9 @@ Other ethnic group</p>
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.gov.uk/government/statistics/permanent-and-fixed-period-exclusions-in-england-2015-to-2016" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Pupil exclusions">
+            <p itemprop="name"><a href="https://www.gov.uk/government/statistics/permanent-and-fixed-period-exclusions-in-england-2015-to-2016" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Pupil exclusions" itemprop="url">
                 Permanent and fixed-period exclusions in England: 2015 to 2016</a>
             </p>
 
@@ -16022,7 +16027,7 @@ Other ethnic group</p>
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Department for Education</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Department for Education</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -16031,6 +16036,7 @@ Other ethnic group</p>
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>The data helps schools, local authorities and the government have a greater understanding of the level of absence and the reasons for it.</p>
 
+            </div>
 
           </div>
 
@@ -16042,25 +16048,47 @@ Other ethnic group</p>
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/education-skills-and-training/absence-and-exclusions/pupil-exclusions/1.3/downloads/pupil-exclusions-england.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Pupil exclusions - England">
-                      Pupil exclusions - England
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      30 KB
-                </a>
-                  <p>This file contains the following: measure, ethnicity, school type, headcount, number of exclusions and value.</p>
-                <a href="/education-skills-and-training/absence-and-exclusions/pupil-exclusions/1.3/downloads/pupil-exclusions-local-authority.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Pupil exclusions - local authority">
-                      Pupil exclusions - local authority
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      4 MB
-                </a>
-                  <p>This file contains the following: measure, region, local authority, school type, ethnicity, headcount, number of exclusions and value.</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Pupil exclusions">
+            <meta itemprop="description" content="in 2015/16, pupils from the Traveller of Irish Heritage and Gypsy/Roma ethnic groups had the highest rates of both fixed period and permanent exclusions">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="30 KB">
+                  <meta itemprop="name" content="Pupil exclusions - England">
+                  <a itemprop="contentUrl" href="/education-skills-and-training/absence-and-exclusions/pupil-exclusions/1.3/downloads/pupil-exclusions-england.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Pupil exclusions - England">
+                        Pupil exclusions - England
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        30 KB
+                  </a>
+                    <p>This file contains the following: measure, ethnicity, school type, headcount, number of exclusions and value.</p>
+                </div>
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="4 MB">
+                  <meta itemprop="name" content="Pupil exclusions - local authority">
+                  <a itemprop="contentUrl" href="/education-skills-and-training/absence-and-exclusions/pupil-exclusions/1.3/downloads/pupil-exclusions-local-authority.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Pupil exclusions - local authority">
+                        Pupil exclusions - local authority
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        4 MB
+                  </a>
+                    <p>This file contains the following: measure, region, local authority, school type, ethnicity, headcount, number of exclusions and value.</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

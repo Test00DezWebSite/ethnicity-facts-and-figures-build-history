@@ -74,9 +74,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -1534,6 +1534,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.2">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -1541,9 +1546,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://indicators.hscic.gov.uk/webview/index.jsp?v=2&amp;submode=ddi&amp;study=http%3A%2F%2F192.168.229.23%3A80%2Fobj%2FfStudy%2FP01781&amp;mode=documentation&amp;top=yes" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Satisfaction with access to GP services">
+            <p itemprop="name"><a href="https://indicators.hscic.gov.uk/webview/index.jsp?v=2&amp;submode=ddi&amp;study=http%3A%2F%2F192.168.229.23%3A80%2Fobj%2FfStudy%2FP01781&amp;mode=documentation&amp;top=yes" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Satisfaction with access to GP services" itemprop="url">
                 NHS Outcomes Framework</a>
             </p>
 
@@ -1554,7 +1559,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>NHS Digital</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">NHS Digital</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -1564,6 +1569,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <p>Feedback from patients on their experience, treatment and care is an important source of information for helping local clinicians and managers to improve the quality of service design and healthcare.</p>
 <p>The GP patient survey (GPPS) responses used for this measure offer healthcare providers insights that can help improve GP surgeries and the services they provide.</p>
 
+            </div>
 
           </div>
 
@@ -1575,16 +1581,32 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/health/access-to-treatment/satisfaction-with-access-to-gp-services/latest/downloads/satisfaction-with-access-to-gp-services.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Satisfaction with access to GP services">
-                      Satisfaction with access to GP services
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      21 KB
-                </a>
-                  <p>This file contains the following: ethnicity, year, value, denominator, numerator, confidence intervals, unweighted sample size</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Satisfaction with access to GP services">
+            <meta itemprop="description" content="just under three-quarters of patients (72.7%) had a positive experience when making a GP appointment in 2016/2017">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="21 KB">
+                  <meta itemprop="name" content="Satisfaction with access to GP services">
+                  <a itemprop="contentUrl" href="/health/access-to-treatment/satisfaction-with-access-to-gp-services/latest/downloads/satisfaction-with-access-to-gp-services.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Satisfaction with access to GP services">
+                        Satisfaction with access to GP services
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        21 KB
+                  </a>
+                    <p>This file contains the following: ethnicity, year, value, denominator, numerator, confidence intervals, unweighted sample size</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

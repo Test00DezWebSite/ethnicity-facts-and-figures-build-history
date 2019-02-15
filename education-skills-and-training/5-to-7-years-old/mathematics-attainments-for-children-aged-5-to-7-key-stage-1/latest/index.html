@@ -74,9 +74,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -20886,6 +20886,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 2.1">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -20893,9 +20898,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.gov.uk/government/statistics/phonics-screening-check-and-key-stage-1-assessments-england-2017" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Mathematics attainments for children aged 6 to 7 (key stage 1)">
+            <p itemprop="name"><a href="https://www.gov.uk/government/statistics/phonics-screening-check-and-key-stage-1-assessments-england-2017" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Mathematics attainments for children aged 6 to 7 (key stage 1)" itemprop="url">
                 Key stage 1 statistics</a>
             </p>
 
@@ -20906,7 +20911,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Department for Education</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Department for Education</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -20915,6 +20920,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>This data provides results for the 2017 phonics screening checks and key stage 1 national curriculum assessments for pupils in schools in England. The results are used to monitor pupils’ attainment and progress in reading, writing, science and mathematics.</p>
 
+            </div>
 
           </div>
 
@@ -20926,25 +20932,47 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/education-skills-and-training/5-to-7-years-old/mathematics-attainments-for-children-aged-5-to-7-key-stage-1/latest/downloads/expected-and-higher-standard-in-mathematics-for-children-aged-6-to-7-key-stage-1-national.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Expected and higher standard in Mathematics for children aged 6 to 7 (key stage 1) - national">
-                      Expected and higher standard in Mathematics for children aged 6 to 7 (key stage 1) - national
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      59 KB
-                </a>
-                  <p>This file contains the following variables: Measure, Ethnicity, Ethnicity_Type, Time, Time_Type, Geography (England), Geography_Code, Gender, FSM, Value, Value_Type, Denominator</p>
-                <a href="/education-skills-and-training/5-to-7-years-old/mathematics-attainments-for-children-aged-5-to-7-key-stage-1/latest/downloads/expected-standard-in-mathematics-for-children-aged-6-to-7-key-stage-1-local-authority.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Expected standard in Mathematics for children aged 6 to 7 (key stage 1) - local authority">
-                      Expected standard in Mathematics for children aged 6 to 7 (key stage 1) - local authority
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      575 KB
-                </a>
-                  <p>This file contains the following variables: Measure, Ethnicity, Ethnicity_Type, Time, Time_Type, Region, Local_Authority, Local_Authority_Code, Gender, Value, Value_Type, Denominator</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Mathematics attainments for children aged 6 to 7 (key stage 1)">
+            <meta itemprop="description" content="overall, 75% of pupils finishing year 2 in 2016/17 met the expected standard in mathematics and 21% of pupils met the higher standard (making these figures the national averages)">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="59 KB">
+                  <meta itemprop="name" content="Expected and higher standard in Mathematics for children aged 6 to 7 (key stage 1) - national">
+                  <a itemprop="contentUrl" href="/education-skills-and-training/5-to-7-years-old/mathematics-attainments-for-children-aged-5-to-7-key-stage-1/latest/downloads/expected-and-higher-standard-in-mathematics-for-children-aged-6-to-7-key-stage-1-national.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Expected and higher standard in Mathematics for children aged 6 to 7 (key stage 1) - national">
+                        Expected and higher standard in Mathematics for children aged 6 to 7 (key stage 1) - national
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        59 KB
+                  </a>
+                    <p>This file contains the following variables: Measure, Ethnicity, Ethnicity_Type, Time, Time_Type, Geography (England), Geography_Code, Gender, FSM, Value, Value_Type, Denominator</p>
+                </div>
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="575 KB">
+                  <meta itemprop="name" content="Expected standard in Mathematics for children aged 6 to 7 (key stage 1) - local authority">
+                  <a itemprop="contentUrl" href="/education-skills-and-training/5-to-7-years-old/mathematics-attainments-for-children-aged-5-to-7-key-stage-1/latest/downloads/expected-standard-in-mathematics-for-children-aged-6-to-7-key-stage-1-local-authority.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Expected standard in Mathematics for children aged 6 to 7 (key stage 1) - local authority">
+                        Expected standard in Mathematics for children aged 6 to 7 (key stage 1) - local authority
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        575 KB
+                  </a>
+                    <p>This file contains the following variables: Measure, Ethnicity, Ethnicity_Type, Time, Time_Type, Region, Local_Authority, Local_Authority_Code, Gender, Value, Value_Type, Denominator</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

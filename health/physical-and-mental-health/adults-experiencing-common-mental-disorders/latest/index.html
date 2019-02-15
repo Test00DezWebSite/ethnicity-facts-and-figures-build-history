@@ -74,9 +74,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -593,6 +593,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.2">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -600,9 +605,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="http://content.digital.nhs.uk/pubs/apmsurvey14" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Adults experiencing common mental disorders">
+            <p itemprop="name"><a href="http://content.digital.nhs.uk/pubs/apmsurvey14" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Adults experiencing common mental disorders" itemprop="url">
                 Adult Psychiatric Morbidity Survey: Survey of Mental Health and Wellbeing, England, 2014</a>
             </p>
 
@@ -613,7 +618,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>NHS Digital</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">NHS Digital</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -622,6 +627,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>The Adult Psychiatric Morbidity Survey (APMS) series shows the proportion of adults in England who have or exhibit symptoms of mental illness and/or are receiving treatment for mental illness. It doesn’t include the homeless or people in hostels, hospitals, prisons or other institutional settings.</p>
 
+            </div>
 
           </div>
 
@@ -633,16 +639,32 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/health/physical-and-mental-health/adults-experiencing-common-mental-disorders/latest/downloads/apms-common-mental-disorders.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="APMS_common_mental_disorders">
-                      APMS_common_mental_disorders
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      14 KB
-                </a>
-                  <p>This file contains the following: ethnicity, year, gender, disorder type, value, denominator, numerator, confidence intervals</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Adults experiencing common mental disorders">
+            <meta itemprop="description" content="the percentage of people who experienced a common mental disorder (CMD) in the past week didn’t vary significantly by ethnic group for men - but it did for women">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="14 KB">
+                  <meta itemprop="name" content="APMS_common_mental_disorders">
+                  <a itemprop="contentUrl" href="/health/physical-and-mental-health/adults-experiencing-common-mental-disorders/latest/downloads/apms-common-mental-disorders.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="APMS_common_mental_disorders">
+                        APMS_common_mental_disorders
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        14 KB
+                  </a>
+                    <p>This file contains the following: ethnicity, year, gender, disorder type, value, denominator, numerator, confidence intervals</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

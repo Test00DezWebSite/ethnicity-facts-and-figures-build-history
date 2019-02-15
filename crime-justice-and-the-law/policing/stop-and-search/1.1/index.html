@@ -75,9 +75,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -3961,6 +3961,11 @@ March 2016</a></p>
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.1">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England and Wales">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -3968,9 +3973,9 @@ March 2016</a></p>
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.gov.uk/government/statistics/police-powers-and-procedures-england-and-wales-year-ending-31-march-2015-data-tables" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Stop and search">
+            <p itemprop="name"><a href="https://www.gov.uk/government/statistics/police-powers-and-procedures-england-and-wales-year-ending-31-march-2015-data-tables" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Stop and search" itemprop="url">
                 Policing statistics</a>
             </p>
 
@@ -3981,7 +3986,7 @@ March 2016</a></p>
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Home Office</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Home Office</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -3990,6 +3995,7 @@ March 2016</a></p>
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>This data is an Annual Data Requirement (ADR) which means it’s mandatory for police forces in England and Wales to provide the Home Office with the number of stop and searches carried out in the financial year by ethnicity.</p>
 
+            </div>
 
           </div>
 
@@ -4001,16 +4007,32 @@ March 2016</a></p>
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/crime-justice-and-the-law/policing/stop-and-search/1.1/downloads/stops-and-searches.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="stops_and_searches">
-                      stops_and_searches
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      2 MB
-                </a>
-                  <p>This file contains the following: ethnicity, year, police force area, stops and searches, population and rate</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Stop and search">
+            <meta itemprop="description" content="the numbers of stop and searches have fallen for all ethnic groups over the period presented; however, they have fallen at different rates for different groups">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="2 MB">
+                  <meta itemprop="name" content="stops_and_searches">
+                  <a itemprop="contentUrl" href="/crime-justice-and-the-law/policing/stop-and-search/1.1/downloads/stops-and-searches.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="stops_and_searches">
+                        stops_and_searches
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        2 MB
+                  </a>
+                    <p>This file contains the following: ethnicity, year, police force area, stops and searches, population and rate</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

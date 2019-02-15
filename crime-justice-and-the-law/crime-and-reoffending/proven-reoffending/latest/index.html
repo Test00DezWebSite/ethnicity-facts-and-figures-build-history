@@ -74,9 +74,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -2961,6 +2961,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.0">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England and Wales">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -2968,9 +2973,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.gov.uk/government/statistics/race-and-the-criminal-justice-system-2016" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Proven reoffending">
+            <p itemprop="name"><a href="https://www.gov.uk/government/statistics/race-and-the-criminal-justice-system-2016" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Proven reoffending" itemprop="url">
                 Race and the criminal justice system 2016</a>
             </p>
 
@@ -2981,7 +2986,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Ministry of Justice</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Ministry of Justice</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -2990,6 +2995,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>Reoffending data is used by the government to aid in the development of policy and the delivery of services to reduce re-offending.</p>
 
+            </div>
 
           </div>
 
@@ -3001,25 +3007,47 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/crime-justice-and-the-law/crime-and-reoffending/proven-reoffending/latest/downloads/proven-reoffending-q1-2001-to-q3-2015.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Proven reoffending Q1 2001 to Q3 2015">
-                      Proven reoffending Q1 2001 to Q3 2015
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      13 KB
-                </a>
-                  <p>This file contains: Cohort period, Age category, ethnicity, offenders, reoffenders, reoffences, Reoffending rate, Average number of reoffences per reoffender</p>
-                <a href="/crime-justice-and-the-law/crime-and-reoffending/proven-reoffending/latest/downloads/proven-reoffending-q4-2015.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Proven reoffending Q4 2015">
-                      Proven reoffending Q4 2015
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      827 bytes
-                </a>
-                  <p>This file contains: Cohort period, Age category, ethnicity, offenders, reoffenders, reoffences, Reoffending rate, Average number of reoffences per reoffender</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Proven reoffending">
+            <meta itemprop="description" content="for the period October to December 2015, Black offenders had the highest rates of reoffending, at 33.9%">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="13 KB">
+                  <meta itemprop="name" content="Proven reoffending Q1 2001 to Q3 2015">
+                  <a itemprop="contentUrl" href="/crime-justice-and-the-law/crime-and-reoffending/proven-reoffending/latest/downloads/proven-reoffending-q1-2001-to-q3-2015.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Proven reoffending Q1 2001 to Q3 2015">
+                        Proven reoffending Q1 2001 to Q3 2015
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        13 KB
+                  </a>
+                    <p>This file contains: Cohort period, Age category, ethnicity, offenders, reoffenders, reoffences, Reoffending rate, Average number of reoffences per reoffender</p>
+                </div>
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="827 bytes">
+                  <meta itemprop="name" content="Proven reoffending Q4 2015">
+                  <a itemprop="contentUrl" href="/crime-justice-and-the-law/crime-and-reoffending/proven-reoffending/latest/downloads/proven-reoffending-q4-2015.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Proven reoffending Q4 2015">
+                        Proven reoffending Q4 2015
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        827 bytes
+                  </a>
+                    <p>This file contains: Cohort period, Age category, ethnicity, offenders, reoffenders, reoffences, Reoffending rate, Average number of reoffences per reoffender</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

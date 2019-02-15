@@ -74,9 +74,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -914,6 +914,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.0">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -921,9 +926,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.ucas.com/corporate/data-and-analysis/ucas-undergraduate-releases/ucas-undergraduate-analysis-reports/2017-end-cycle-report" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Entry rates into higher education">
+            <p itemprop="name"><a href="https://www.ucas.com/corporate/data-and-analysis/ucas-undergraduate-releases/ucas-undergraduate-analysis-reports/2017-end-cycle-report" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Entry rates into higher education" itemprop="url">
                 UCAS End Of Cycle Report 2017</a>
             </p>
 
@@ -934,7 +939,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>Official statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Department for Education</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Department for Education</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -943,6 +948,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>The Universities and Colleges Admissions Service (UCAS) End of Cycle Report provides data that allows UCAS and others to find out more about progression, participation and inequalities in higher education admissions.</p>
 
+            </div>
 
           </div>
 
@@ -954,16 +960,32 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/education-skills-and-training/apprenticeships-further-and-higher-education/entry-rates-into-higher-education/latest/downloads/entry-rates-into-higher-education.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Entry rates into higher education">
-                      Entry rates into higher education
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      9 KB
-                </a>
-                  <p>This file includes the following variables: measure, time, time_type, ethnicity, ethnicity_type, geography, value and value_type.</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Entry rates into higher education">
+            <meta itemprop="description" content="in 2017, White pupils had the lowest entry rate into higher education (where ‘entry rate’ is the percentage of state school pupils aged 18 years getting a higher education place), and Chinese pupils had the highest">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="9 KB">
+                  <meta itemprop="name" content="Entry rates into higher education">
+                  <a itemprop="contentUrl" href="/education-skills-and-training/apprenticeships-further-and-higher-education/entry-rates-into-higher-education/latest/downloads/entry-rates-into-higher-education.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Entry rates into higher education">
+                        Entry rates into higher education
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        9 KB
+                  </a>
+                    <p>This file includes the following variables: measure, time, time_type, ethnicity, ethnicity_type, geography, value and value_type.</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

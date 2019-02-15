@@ -75,9 +75,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -983,6 +983,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.2">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="United Kingdom">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -990,9 +995,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.gov.uk/government/statistics/income-dynamics-experimental" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Low income">
+            <p itemprop="name"><a href="https://www.gov.uk/government/statistics/income-dynamics-experimental" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Low income" itemprop="url">
                 Income Dynamics (experimental)</a>
             </p>
 
@@ -1003,7 +1008,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>Experimental statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Department for Work and Pensions</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Department for Work and Pensions</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -1013,6 +1018,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <p>The Income Dynamics statistics are designed to report on income movements and the persistence of low income for various population groups. </p>
 <p>Reporting on these issues is required under UK law and the Income Dynamics statistics are intended to supplement the <a href="https://www.gov.uk/government/collections/households-below-average-income-hbai--2">Households Below Average Income</a> (HBAI) publication. The analysis of the Income Dynamics data allows the tracking of changes in income over time for different population groups.</p>
 
+            </div>
 
           </div>
 
@@ -1024,16 +1030,32 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/work-pay-and-benefits/pay-and-income/low-income/1.2/downloads/low-income.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Low income">
-                      Low income
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      56 KB
-                </a>
-                  <p>This file contains the following: ethnicity, year, age group, value and denominator</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Low income">
+            <meta itemprop="description" content="in 2014/15, the average (&#39;median&#39;) UK income for a couple with no children, before housing costs were paid, was £26,000 – after housing costs were paid, the median UK income was £22,000">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="56 KB">
+                  <meta itemprop="name" content="Low income">
+                  <a itemprop="contentUrl" href="/work-pay-and-benefits/pay-and-income/low-income/1.2/downloads/low-income.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Low income">
+                        Low income
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        56 KB
+                  </a>
+                    <p>This file contains the following: ethnicity, year, age group, value and denominator</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

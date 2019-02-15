@@ -75,9 +75,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -1419,6 +1419,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.1">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -1426,9 +1431,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.gov.uk/government/collections/sat--2" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Adults taking part in the arts">
+            <p itemprop="name"><a href="https://www.gov.uk/government/collections/sat--2" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Adults taking part in the arts" itemprop="url">
                 Taking Part Survey</a>
             </p>
 
@@ -1439,7 +1444,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Department for Digital, Culture, Media and Sport</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Department for Digital, Culture, Media and Sport</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -1449,16 +1454,17 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <p>The Taking Part Survey measures people's involvement in cultural activities in England. </p>
 <p>The data is widely used by policy officials, practitioners, academics and charities.</p>
 
-              <div class="secondary-source">
+            </div>
+              <div class="secondary-source" itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
                 <h3 class="heading-small">Secondary source</h3>
-                <p><a href="https://www.gov.uk/government/statistics/taking-part-april-2017-focus-on-reports" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Taking Part, focus on: diversity trends">
+                <p itemprop="name"><a href="https://www.gov.uk/government/statistics/taking-part-april-2017-focus-on-reports" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Taking Part, focus on: diversity trends" itemprop="url">
                     Taking Part, focus on: diversity trends
                 </a></p>
 
 
 
                   <h3 class="heading-small">Publisher</h3>
-                  <p>Department for Digital, Culture, Media and Sport</p>
+                  <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Department for Digital, Culture, Media and Sport</span></p>
 
 
 
@@ -1478,16 +1484,32 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/culture-and-community/culture-and-heritage/adults-taking-part-in-the-arts/1.1/downloads/adults-taking-part-in-the-arts.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="adults taking part in the arts">
-                      adults taking part in the arts
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      7 KB
-                </a>
-                  <br />
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Adults taking part in the arts">
+            <meta itemprop="description" content="in 2015/16, 76% of people aged 16 and over took part in the arts – this figure has generally been stable between 2005/06 and 2015/16">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="7 KB">
+                  <meta itemprop="name" content="adults taking part in the arts">
+                  <a itemprop="contentUrl" href="/culture-and-community/culture-and-heritage/adults-taking-part-in-the-arts/1.1/downloads/adults-taking-part-in-the-arts.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="adults taking part in the arts">
+                        adults taking part in the arts
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        7 KB
+                  </a>
+                    <br />
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

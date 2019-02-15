@@ -74,9 +74,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -688,6 +688,11 @@ The confidence intervals for each ethnic group are available if you <a href="#do
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 2.0">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -695,9 +700,9 @@ The confidence intervals for each ethnic group are available if you <a href="#do
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="http://www.phoutcomes.info/" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Overweight adults">
+            <p itemprop="name"><a href="http://www.phoutcomes.info/" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Overweight adults" itemprop="url">
                 Public Health Outcomes Framework</a>
             </p>
 
@@ -708,7 +713,7 @@ The confidence intervals for each ethnic group are available if you <a href="#do
                 <p>Official statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Public Health England</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Public Health England</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -717,9 +722,10 @@ The confidence intervals for each ethnic group are available if you <a href="#do
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>The Active Lives (AL) Survey replaces the Active People Survey. It measures the number of people who take part in sport and physical activity by demographic group, where people live and activity type. It was carried out on behalf of Sport England by research company IPSOS-MORI.</p>
 
-              <div class="secondary-source">
+            </div>
+              <div class="secondary-source" itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
                 <h3 class="heading-small">Secondary source</h3>
-                <p><a href="https://www.sportengland.org/research/active-lives-survey" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Active Lives Survey">
+                <p itemprop="name"><a href="https://www.sportengland.org/research/active-lives-survey" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Active Lives Survey" itemprop="url">
                     Active Lives Survey
                 </a></p>
 
@@ -728,7 +734,7 @@ The confidence intervals for each ethnic group are available if you <a href="#do
                  <p>Official statistics</p>
 
                   <h3 class="heading-small">Publisher</h3>
-                  <p>Sport England</p>
+                  <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Sport England</span></p>
 
 
 
@@ -750,16 +756,32 @@ The confidence intervals for each ethnic group are available if you <a href="#do
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/health/preventing-illness/overweight-adults/latest/downloads/overweight-adults.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Overweight adults">
-                      Overweight adults
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      2 KB
-                </a>
-                  <p>This file contains: ethnicity, financial year, value, upper and lower confidence intervals, sample size</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Overweight adults">
+            <meta itemprop="description" content="overall, 61% of adults in England were classified as overweight or obese in 2016/17">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="2 KB">
+                  <meta itemprop="name" content="Overweight adults">
+                  <a itemprop="contentUrl" href="/health/preventing-illness/overweight-adults/latest/downloads/overweight-adults.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Overweight adults">
+                        Overweight adults
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        2 KB
+                  </a>
+                    <p>This file contains: ethnicity, financial year, value, upper and lower confidence intervals, sample size</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

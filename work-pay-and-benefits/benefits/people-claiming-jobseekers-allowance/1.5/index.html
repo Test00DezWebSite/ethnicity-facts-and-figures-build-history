@@ -75,9 +75,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -1016,6 +1016,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.5">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England and Wales">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -1023,9 +1028,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.nomisweb.co.uk/home/news.asp?cat=24" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="People claiming Jobseeker’s Allowance">
+            <p itemprop="name"><a href="https://www.nomisweb.co.uk/home/news.asp?cat=24" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="People claiming Jobseeker’s Allowance" itemprop="url">
                 Official Labour Market Statistics (NOMIS)</a>
             </p>
 
@@ -1036,7 +1041,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>Official statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Department for Work and Pensions</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Department for Work and Pensions</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -1046,16 +1051,17 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <p>Jobseeker’s Allowance (JSA) claimant count is administrative data used for internal management information and producing published statistics.</p>
 <p>Population counts are collected for the England and Wales Census held every 10 years.</p>
 
-              <div class="secondary-source">
+            </div>
+              <div class="secondary-source" itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
                 <h3 class="heading-small">Secondary source</h3>
-                <p><a href="https://www.ons.gov.uk/census/2011census" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="England and Wales 2011 Census">
+                <p itemprop="name"><a href="https://www.ons.gov.uk/census/2011census" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="England and Wales 2011 Census" itemprop="url">
                     England and Wales 2011 Census
                 </a></p>
 
 
 
                   <h3 class="heading-small">Publisher</h3>
-                  <p>Office for National Statistics</p>
+                  <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Office for National Statistics</span></p>
 
 
 
@@ -1073,31 +1079,53 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/work-pay-and-benefits/benefits/people-claiming-jobseekers-allowance/1.5/downloads/jsa-claimaints-v2.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="JSA claimaints V2">
-                      JSA claimaints V2
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      78 KB
-                </a>
-                  <p>This file contains data for the years 2011 to 2017. 
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="People claiming Jobseeker’s Allowance">
+            <meta itemprop="description" content="in 2015, in England and Wales as a whole, a smaller percentage of White people (1.5%) claimed Jobseeker’s Allowance (JSA) than the percentage of people from all other ethnic groups (2.3%)">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="78 KB">
+                  <meta itemprop="name" content="JSA claimaints V2">
+                  <a itemprop="contentUrl" href="/work-pay-and-benefits/benefits/people-claiming-jobseekers-allowance/1.5/downloads/jsa-claimaints-v2.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="JSA claimaints V2">
+                        JSA claimaints V2
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        78 KB
+                  </a>
+                    <p>This file contains data for the years 2011 to 2017. 
 This is the latest data available, but does not reflect the figures shown in the charts, tables and commentary on this page.
 
 This file contains the following: year, region, ethnicity, numerator, denominator and rate.</p>
-                <a href="/work-pay-and-benefits/benefits/people-claiming-jobseekers-allowance/1.5/downloads/jsa-claimaints.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="JSA claimaints">
-                      JSA claimaints
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      43 KB
-                </a>
-                  <p>This file contains data for the years 2011 to 2015. 
+                </div>
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="43 KB">
+                  <meta itemprop="name" content="JSA claimaints">
+                  <a itemprop="contentUrl" href="/work-pay-and-benefits/benefits/people-claiming-jobseekers-allowance/1.5/downloads/jsa-claimaints.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="JSA claimaints">
+                        JSA claimaints
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        43 KB
+                  </a>
+                    <p>This file contains data for the years 2011 to 2015. 
 This is the data used in the charts, tables and commentary shown on this page.
 
 This file contains the following: year, region, ethnicity, numerator, denominator and rate.</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

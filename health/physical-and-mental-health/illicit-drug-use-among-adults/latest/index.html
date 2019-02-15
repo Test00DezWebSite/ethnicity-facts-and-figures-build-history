@@ -74,9 +74,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -567,6 +567,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.3">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -574,9 +579,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="http://content.digital.nhs.uk/catalogue/PUB21748" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Illicit drug use among adults">
+            <p itemprop="name"><a href="http://content.digital.nhs.uk/catalogue/PUB21748" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Illicit drug use among adults" itemprop="url">
                 Adult Psychiatric Morbidity Survey: Survey of Mental Health and Wellbeing, England, 2014</a>
             </p>
 
@@ -587,7 +592,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>NHS Digital</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">NHS Digital</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -596,6 +601,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>The Adult Psychiatric Morbidity Survey (APMS) series shows the proportion of adults in England who have or exhibit symptoms of mental illness and/or are receiving treatment for mental illness. It doesn’t include the homeless or people in hostels, hospitals, prisons or other institutional settings.</p>
 
+            </div>
 
           </div>
 
@@ -607,16 +613,32 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/health/physical-and-mental-health/illicit-drug-use-among-adults/latest/downloads/apms-illicit-drug-use.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="APMS_illicit_drug_use">
-                      APMS_illicit_drug_use
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      26 KB
-                </a>
-                  <p>The estimated percentage of adults who used illicit drugs in England in the 12 months prior to the APMS survey by ethnicity and sex. The data is further disaggregated by the type of drug used however due to small sample sizes some for some of the categories there is no data available. 95% confidence intervals have been provided for the ‘any drug in the past year’ category. </p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Illicit drug use among adults">
+            <meta itemprop="description" content="Black adults were nearly 3 and a half times as likely as Asian adults to have used illicit drugs in the 12 months prior to the survey">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="26 KB">
+                  <meta itemprop="name" content="APMS_illicit_drug_use">
+                  <a itemprop="contentUrl" href="/health/physical-and-mental-health/illicit-drug-use-among-adults/latest/downloads/apms-illicit-drug-use.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="APMS_illicit_drug_use">
+                        APMS_illicit_drug_use
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        26 KB
+                  </a>
+                    <p>The estimated percentage of adults who used illicit drugs in England in the 12 months prior to the APMS survey by ethnicity and sex. The data is further disaggregated by the type of drug used however due to small sample sizes some for some of the categories there is no data available. 95% confidence intervals have been provided for the ‘any drug in the past year’ category. </p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

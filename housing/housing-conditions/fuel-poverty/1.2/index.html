@@ -75,9 +75,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -672,6 +672,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.2">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -679,9 +684,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.gov.uk/government/collections/fuel-poverty-statistics" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Fuel poverty">
+            <p itemprop="name"><a href="https://www.gov.uk/government/collections/fuel-poverty-statistics" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Fuel poverty" itemprop="url">
                 Fuel poverty statistics</a>
             </p>
 
@@ -692,7 +697,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Department for Business, Energy &amp; Industrial Strategy</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Department for Business, Energy &amp; Industrial Strategy</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -706,6 +711,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 </ul>
 <p>The fuel poverty target is to improve the energy efficiency rating of fuel-poor households to a minimum rating of band C by 2030.</p>
 
+            </div>
 
           </div>
 
@@ -717,16 +723,32 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/housing/housing-conditions/fuel-poverty/1.2/downloads/fuel-poverty.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Fuel poverty">
-                      Fuel poverty
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      5 KB
-                </a>
-                  <p>This file contains the following: ethnicity, year, value</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Fuel poverty">
+            <meta itemprop="description" content="in 2015, the estimated number of households in England in fuel poverty was 2.5 million – approximately 11% of all households">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="5 KB">
+                  <meta itemprop="name" content="Fuel poverty">
+                  <a itemprop="contentUrl" href="/housing/housing-conditions/fuel-poverty/1.2/downloads/fuel-poverty.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Fuel poverty">
+                        Fuel poverty
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        5 KB
+                  </a>
+                    <p>This file contains the following: ethnicity, year, value</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

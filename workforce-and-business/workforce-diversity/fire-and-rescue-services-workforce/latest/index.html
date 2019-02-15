@@ -74,9 +74,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -6324,6 +6324,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.0">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -6331,9 +6336,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.gov.uk/government/statistics/fire-and-rescue-workforce-and-pensions-statistics-england-april-2016-to-march-2017" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Fire and rescue services workforce">
+            <p itemprop="name"><a href="https://www.gov.uk/government/statistics/fire-and-rescue-workforce-and-pensions-statistics-england-april-2016-to-march-2017" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Fire and rescue services workforce" itemprop="url">
                 Fire and rescue workforce and pensions statistics: England April 2016 to March 2017 second edition</a>
             </p>
 
@@ -6344,7 +6349,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>Official statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Home Office</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Home Office</span></p>
 
                 <h3 class="heading-small">Note on corrections or updates</h3>
                 <p><p>A small update was made on 3 April 2018. The updated statistics are available in data tables 1104 in the <a href="https://www.gov.uk/government/statistical-data-sets/fire-statistics-data-tables#workforce-and-workforce-diversity">statistical data sets</a>.</p></p>
@@ -6355,6 +6360,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>Ethnicity and gender data is used by fire and rescue services as part of diversity monitoring schemes.</p>
 
+            </div>
 
           </div>
 
@@ -6366,25 +6372,47 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/workforce-and-business/workforce-diversity/fire-and-rescue-services-workforce/latest/downloads/fire-and-rescue-service-workforce-in-england.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Fire and rescue service workforce in England">
-                      Fire and rescue service workforce in England
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      11 KB
-                </a>
-                  <p>This file contains the following: ethnicity, year, value,value_type, role, headcount</p>
-                <a href="/workforce-and-business/workforce-diversity/fire-and-rescue-services-workforce/latest/downloads/fire-and-rescue-service-workforce-by-fire-and-rescue-services.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Fire and rescue service workforce by fire and rescue services">
-                      Fire and rescue service workforce by fire and rescue services
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      96 KB
-                </a>
-                  <p>This file contains the following: ethnicity, type, fire and rescue services, value, value_type and headcount</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Fire and rescue services workforce">
+            <meta itemprop="description" content="as at 31 March 2017, 96.1% of firefighters in England for whom ethnicity was known were White, and 3.9% were from the Asian, Black, Mixed and Other (including Chinese) ethnic groups combined">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="11 KB">
+                  <meta itemprop="name" content="Fire and rescue service workforce in England">
+                  <a itemprop="contentUrl" href="/workforce-and-business/workforce-diversity/fire-and-rescue-services-workforce/latest/downloads/fire-and-rescue-service-workforce-in-england.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Fire and rescue service workforce in England">
+                        Fire and rescue service workforce in England
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        11 KB
+                  </a>
+                    <p>This file contains the following: ethnicity, year, value,value_type, role, headcount</p>
+                </div>
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="96 KB">
+                  <meta itemprop="name" content="Fire and rescue service workforce by fire and rescue services">
+                  <a itemprop="contentUrl" href="/workforce-and-business/workforce-diversity/fire-and-rescue-services-workforce/latest/downloads/fire-and-rescue-service-workforce-by-fire-and-rescue-services.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Fire and rescue service workforce by fire and rescue services">
+                        Fire and rescue service workforce by fire and rescue services
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        96 KB
+                  </a>
+                    <p>This file contains the following: ethnicity, type, fire and rescue services, value, value_type and headcount</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

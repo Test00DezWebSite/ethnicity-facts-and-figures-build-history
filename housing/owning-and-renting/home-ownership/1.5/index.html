@@ -75,9 +75,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -2675,6 +2675,11 @@ Weights are applied to the sample to produce estimates for the 22 million househ
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.5">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -2682,9 +2687,9 @@ Weights are applied to the sample to produce estimates for the 22 million househ
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.gov.uk/government/collections/english-housing-survey" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Home ownership">
+            <p itemprop="name"><a href="https://www.gov.uk/government/collections/english-housing-survey" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Home ownership" itemprop="url">
                 English Housing Survey</a>
             </p>
 
@@ -2695,7 +2700,7 @@ Weights are applied to the sample to produce estimates for the 22 million househ
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Ministry of Housing, Communities and Local Government</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Ministry of Housing, Communities and Local Government</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -2709,6 +2714,7 @@ It has 2 components:</p>
 <li>a physical inspection of the dwelling of a sample of the interviewed households</li>
 </ul>
 
+            </div>
 
           </div>
 
@@ -2720,16 +2726,32 @@ It has 2 components:</p>
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/housing/owning-and-renting/home-ownership/1.5/downloads/home-ownership.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Home ownership">
-                      Home ownership
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      15 KB
-                </a>
-                  <p>This file contains the following: ethnicity, year, geography, age group, NS-SEC (socio-economic group), income, region, value, denominator, numerator and sample size</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Home ownership">
+            <meta itemprop="description" content="14.3 million (63%) of the estimated 22 million households in England in 2015 to 2016 were in home ownership">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="15 KB">
+                  <meta itemprop="name" content="Home ownership">
+                  <a itemprop="contentUrl" href="/housing/owning-and-renting/home-ownership/1.5/downloads/home-ownership.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Home ownership">
+                        Home ownership
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        15 KB
+                  </a>
+                    <p>This file contains the following: ethnicity, year, geography, age group, NS-SEC (socio-economic group), income, region, value, denominator, numerator and sample size</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

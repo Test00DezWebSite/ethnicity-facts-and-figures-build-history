@@ -74,9 +74,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -1172,6 +1172,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 2.1">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -1179,9 +1184,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://fingertips.phe.org.uk/profile/public-health-outcomes-framework" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="HIV infection with late diagnosis">
+            <p itemprop="name"><a href="https://fingertips.phe.org.uk/profile/public-health-outcomes-framework" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="HIV infection with late diagnosis" itemprop="url">
                 Public Health Outcomes Framework</a>
             </p>
 
@@ -1192,7 +1197,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>Official statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Public Health England</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Public Health England</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -1203,6 +1208,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 <p>People who have a late-stage HIV infection have usually had HIV for at least 3 years, and are therefore at a higher risk of premature death and of transmitting the virus to their sexual partners. For this reason, reducing late HIV diagnosis is a clinical and public health priority.</p>
 <p>The HARS dataset was developed by Public Health England (PHE) in conjunction with Department of Health and the Clinical Reference Group for HIV.</p>
 
+            </div>
 
           </div>
 
@@ -1214,16 +1220,32 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/health/patient-outcomes/hiv-infection-with-late-diagnosis/latest/downloads/hiv-infection-with-late-stage-diagnosis.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="HIV infection with late-stage diagnosis">
-                      HIV infection with late-stage diagnosis
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      7 KB
-                </a>
-                  <p>This file contains the following: ethnicity, 3 year aggregated time period, value, numerator, denominator, confidence intervals</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="HIV infection with late diagnosis">
+            <meta itemprop="description" content="overall, in the period from 2015 to 2017, an average of 41.1% of people aged 15 years and older who were newly diagnosed with HIV in England were diagnosed at a late stage of infection">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="7 KB">
+                  <meta itemprop="name" content="HIV infection with late-stage diagnosis">
+                  <a itemprop="contentUrl" href="/health/patient-outcomes/hiv-infection-with-late-diagnosis/latest/downloads/hiv-infection-with-late-stage-diagnosis.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="HIV infection with late-stage diagnosis">
+                        HIV infection with late-stage diagnosis
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        7 KB
+                  </a>
+                    <p>This file contains the following: ethnicity, 3 year aggregated time period, value, numerator, denominator, confidence intervals</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

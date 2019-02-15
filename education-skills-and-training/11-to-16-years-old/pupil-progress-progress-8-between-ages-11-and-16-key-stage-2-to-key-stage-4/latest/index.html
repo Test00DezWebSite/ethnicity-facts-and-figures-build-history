@@ -74,9 +74,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -36321,6 +36321,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.2">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -36328,9 +36333,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.gov.uk/government/statistics/revised-gcse-and-equivalent-results-in-england-2015-to-2016" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Pupil progress (‘Progress 8’) between ages 11 and 16 (key stage 2 to key stage 4)">
+            <p itemprop="name"><a href="https://www.gov.uk/government/statistics/revised-gcse-and-equivalent-results-in-england-2015-to-2016" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Pupil progress (‘Progress 8’) between ages 11 and 16 (key stage 2 to key stage 4)" itemprop="url">
                 Revised GCSE and equivalent results in England: 2015 to 2016</a>
             </p>
 
@@ -36341,7 +36346,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Department for Education</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Department for Education</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -36350,6 +36355,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>The main purpose is to measure schools’ and pupils’ performance at key stage 4 (GCSE), both to monitor and improve standards and inform parental choice.</p>
 
+            </div>
 
           </div>
 
@@ -36361,41 +36367,69 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/education-skills-and-training/11-to-16-years-old/pupil-progress-progress-8-between-ages-11-and-16-key-stage-2-to-key-stage-4/latest/downloads/average-progress-8.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Average Progress 8 ">
-                      Average Progress 8 
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      173 KB
-                </a>
-                  <p>This file contains data for the academic year 2015/16.
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Pupil progress (‘Progress 8’) between ages 11 and 16 (key stage 2 to key stage 4)">
+            <meta itemprop="description" content="in 2015/16, 512,084 pupils were included in Progress 8, measuring pupil progress between the ages of 11 and 16 years: 80% were White, 9% were Asian, 5% were Black, 4% were Mixed, 1% were Other, and 0.3% were Chinese">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="173 KB">
+                  <meta itemprop="name" content="Average Progress 8">
+                  <a itemprop="contentUrl" href="/education-skills-and-training/11-to-16-years-old/pupil-progress-progress-8-between-ages-11-and-16-key-stage-2-to-key-stage-4/latest/downloads/average-progress-8.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Average Progress 8 ">
+                        Average Progress 8 
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        173 KB
+                  </a>
+                    <p>This file contains data for the academic year 2015/16.
 This is the data used in the charts, tables and commentary shown on this page.
 The file contains the following:  Measure, Time, Time Type, Ethnicity, Ethnicity Type, Gender, FSM, Admission Basis, Type of School, SEN, Religious character, Value, Denominator, Lower confidence interval, Upper confidence interval.
 </p>
-                <a href="/education-skills-and-training/11-to-16-years-old/pupil-progress-progress-8-between-ages-11-and-16-key-stage-2-to-key-stage-4/latest/downloads/average-progress-8-local-authorities.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Average Progress 8 - Local Authorities">
-                      Average Progress 8 - Local Authorities
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      444 KB
-                </a>
-                  <p>This file contains data for the academic year 2015/16. 
+                </div>
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="444 KB">
+                  <meta itemprop="name" content="Average Progress 8 - Local Authorities">
+                  <a itemprop="contentUrl" href="/education-skills-and-training/11-to-16-years-old/pupil-progress-progress-8-between-ages-11-and-16-key-stage-2-to-key-stage-4/latest/downloads/average-progress-8-local-authorities.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Average Progress 8 - Local Authorities">
+                        Average Progress 8 - Local Authorities
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        444 KB
+                  </a>
+                    <p>This file contains data for the academic year 2015/16. 
 This is the data used in the charts, tables and commentary shown on this page.
 The file contains: Measure, Time, Time Type, Ethnicity, Ethnicity Type,	Geography, Geography type, ONS geography code,Gender,	FSM,	Value,Denominator, Lower confidence interval, Upper confidence interval.</p>
-                <a href="/education-skills-and-training/11-to-16-years-old/pupil-progress-progress-8-between-ages-11-and-16-key-stage-2-to-key-stage-4/latest/downloads/average-progress-8-v2.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Average Progress 8 v2">
-                      Average Progress 8 v2
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      145 KB
-                </a>
-                  <p>This file contains data for the academic year 2016/17. 
+                </div>
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="145 KB">
+                  <meta itemprop="name" content="Average Progress 8 v2">
+                  <a itemprop="contentUrl" href="/education-skills-and-training/11-to-16-years-old/pupil-progress-progress-8-between-ages-11-and-16-key-stage-2-to-key-stage-4/latest/downloads/average-progress-8-v2.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Average Progress 8 v2">
+                        Average Progress 8 v2
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        145 KB
+                  </a>
+                    <p>This file contains data for the academic year 2016/17. 
 This is the latest data available, but does not reflect the figures shown in the charts, tables and commentary on this page.
 The file contains: Measure, Time, Time Type, Ethnicity, Ethnicity Type,	 Gender, FSM,	Admission Basis, Type of School, SEN, Religious character, Value, Denominator, Lower confidence interval, Upper confidence interval.</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

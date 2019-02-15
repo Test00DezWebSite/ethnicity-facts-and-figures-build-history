@@ -75,9 +75,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -5159,6 +5159,11 @@ Data is sourced from the personnel records for the 43 police forces in England a
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.2">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England and Wales">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -5166,9 +5171,9 @@ Data is sourced from the personnel records for the 43 police forces in England a
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.gov.uk/government/statistics/police-workforce-england-and-wales-31-march-2016" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Police workforce">
+            <p itemprop="name"><a href="https://www.gov.uk/government/statistics/police-workforce-england-and-wales-31-march-2016" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Police workforce" itemprop="url">
                 Police workforce, England and Wales, 31 March 2016</a>
             </p>
 
@@ -5179,7 +5184,7 @@ Data is sourced from the personnel records for the 43 police forces in England a
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Home Office</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Home Office</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -5188,6 +5193,7 @@ Data is sourced from the personnel records for the 43 police forces in England a
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>Forces keep records of all staff employed by the force on their HR and payroll systems. Ethnicity and gender data are often used by forces as part of their own diversity monitoring schemes.</p>
 
+            </div>
 
           </div>
 
@@ -5199,37 +5205,65 @@ Data is sourced from the personnel records for the 43 police forces in England a
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/workforce-and-business/workforce-diversity/police-workforce/1.2/downloads/police-workforce-2010-12.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="police workforce 2010-12">
-                      police workforce 2010-12
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      1 MB
-                </a>
-                  <p>Due to the size of the data, this download has been split into three files
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Police workforce">
+            <meta itemprop="description" content="as of 31 March 2016, 94.1% (114,437) of police officers were White (including White ethnic minority groups), and 5.9% (7,218) came from other ethnic groups">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="1 MB">
+                  <meta itemprop="name" content="police workforce 2010-12">
+                  <a itemprop="contentUrl" href="/workforce-and-business/workforce-diversity/police-workforce/1.2/downloads/police-workforce-2010-12.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="police workforce 2010-12">
+                        police workforce 2010-12
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        1 MB
+                  </a>
+                    <p>Due to the size of the data, this download has been split into three files
 This file contains the following: ethnicity, year, rank, police force, FTE, headcount, rate</p>
-                <a href="/workforce-and-business/workforce-diversity/police-workforce/1.2/downloads/police-workforce-2007-09.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="police workforce 2007-09">
-                      police workforce 2007-09
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      1 MB
-                </a>
-                  <p>Due to the size of the data, this download has been split into three files
+                </div>
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="1 MB">
+                  <meta itemprop="name" content="police workforce 2007-09">
+                  <a itemprop="contentUrl" href="/workforce-and-business/workforce-diversity/police-workforce/1.2/downloads/police-workforce-2007-09.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="police workforce 2007-09">
+                        police workforce 2007-09
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        1 MB
+                  </a>
+                    <p>Due to the size of the data, this download has been split into three files
 This file contains the following: ethnicity, year, rank, police force, FTE, headcount, rate</p>
-                <a href="/workforce-and-business/workforce-diversity/police-workforce/1.2/downloads/police-workforce-2013-16.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="police workforce 2013-16">
-                      police workforce 2013-16
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      2 MB
-                </a>
-                  <p>Due to the size of the data, this download has been split into three files
+                </div>
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="2 MB">
+                  <meta itemprop="name" content="police workforce 2013-16">
+                  <a itemprop="contentUrl" href="/workforce-and-business/workforce-diversity/police-workforce/1.2/downloads/police-workforce-2013-16.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="police workforce 2013-16">
+                        police workforce 2013-16
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        2 MB
+                  </a>
+                    <p>Due to the size of the data, this download has been split into three files
 This file contains the following: ethnicity, year, rank, police force, FTE, headcount, rate</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

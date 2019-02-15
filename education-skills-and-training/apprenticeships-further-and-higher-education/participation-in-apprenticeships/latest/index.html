@@ -74,9 +74,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -1589,6 +1589,11 @@ The ILR uses administrative data collected about apprentices by FE providers.</p
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 2.0">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -1596,9 +1601,9 @@ The ILR uses administrative data collected about apprentices by FE providers.</p
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.gov.uk/government/statistical-data-sets/fe-data-library-apprenticeships" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Participation in apprenticeships">
+            <p itemprop="name"><a href="https://www.gov.uk/government/statistical-data-sets/fe-data-library-apprenticeships" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Participation in apprenticeships" itemprop="url">
                 FE data library: apprenticeships</a>
             </p>
 
@@ -1609,7 +1614,7 @@ The ILR uses administrative data collected about apprentices by FE providers.</p
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Education and Skills Funding Agency</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Education and Skills Funding Agency</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -1618,6 +1623,7 @@ The ILR uses administrative data collected about apprentices by FE providers.</p
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>Data about learners' demographics and their type of learning (including apprenticeships and apprenticeship aims) is used by Education and Skills Funding Agency to allocate funding for further education.</p>
 
+            </div>
 
           </div>
 
@@ -1629,16 +1635,32 @@ The ILR uses administrative data collected about apprentices by FE providers.</p
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/education-skills-and-training/apprenticeships-further-and-higher-education/participation-in-apprenticeships/latest/downloads/participation-in-apprenticeships.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Participation in apprenticeships">
-                      Participation in apprenticeships
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      10 KB
-                </a>
-                  <br />
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Participation in apprenticeships">
+            <meta itemprop="description" content="between 2008/09 and 2016/17, the percentage of apprentices from the Asian, Black, Mixed and Other ethnic groups combined increased from 6.7% to 10.9%">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="10 KB">
+                  <meta itemprop="name" content="Participation in apprenticeships">
+                  <a itemprop="contentUrl" href="/education-skills-and-training/apprenticeships-further-and-higher-education/participation-in-apprenticeships/latest/downloads/participation-in-apprenticeships.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Participation in apprenticeships">
+                        Participation in apprenticeships
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        10 KB
+                  </a>
+                    <br />
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

@@ -74,9 +74,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -887,6 +887,11 @@ Other ethnic group</p>
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 2.0">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -894,9 +899,9 @@ Other ethnic group</p>
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.gov.uk/government/statistics/a-level-and-other-16-to-18-results-2016-to-2017-revised" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Students aged 16 to 18 achieving 3 A grades or better at A level">
+            <p itemprop="name"><a href="https://www.gov.uk/government/statistics/a-level-and-other-16-to-18-results-2016-to-2017-revised" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Students aged 16 to 18 achieving 3 A grades or better at A level" itemprop="url">
                 A level and other 16 to 18 results: 2016 to 2017 (revised)</a>
             </p>
 
@@ -907,7 +912,7 @@ Other ethnic group</p>
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Department for Education</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Department for Education</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -916,6 +921,7 @@ Other ethnic group</p>
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>The main purpose of this data is to measure schools/colleges' and students' performance, to monitor and improve standards and inform parental and student choice.</p>
 
+            </div>
 
           </div>
 
@@ -927,16 +933,32 @@ Other ethnic group</p>
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/education-skills-and-training/a-levels/students-aged-16-to-18-achieving-3-a-grades-or-better-at-a-level/latest/downloads/students-aged-16-to-18-achieving-3-a-grades-or-better-at-a-level.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Students aged 16 to 18 achieving 3 A grades or better at A level">
-                      Students aged 16 to 18 achieving 3 A grades or better at A level
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      24 KB
-                </a>
-                  <p>This file contains: ethnicity, value, denominator</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Students aged 16 to 18 achieving 3 A grades or better at A level">
+            <meta itemprop="description" content="in 2016/17, 222,084 students at the end of 16 to 18 study were entered for at least one A level or applied A level, and ethnicity was known for 181,348 students (82% of them)">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="24 KB">
+                  <meta itemprop="name" content="Students aged 16 to 18 achieving 3 A grades or better at A level">
+                  <a itemprop="contentUrl" href="/education-skills-and-training/a-levels/students-aged-16-to-18-achieving-3-a-grades-or-better-at-a-level/latest/downloads/students-aged-16-to-18-achieving-3-a-grades-or-better-at-a-level.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Students aged 16 to 18 achieving 3 A grades or better at A level">
+                        Students aged 16 to 18 achieving 3 A grades or better at A level
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        24 KB
+                  </a>
+                    <p>This file contains: ethnicity, value, denominator</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

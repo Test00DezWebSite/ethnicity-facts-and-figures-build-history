@@ -75,9 +75,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -3965,6 +3965,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.1">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England, Wales and Scotland">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -3972,9 +3977,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/qmis/annualpopulationsurveyapsqmi" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Economic inactivity">
+            <p itemprop="name"><a href="https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/qmis/annualpopulationsurveyapsqmi" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Economic inactivity" itemprop="url">
                 Annual Population Survey</a>
             </p>
 
@@ -3985,7 +3990,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Department for Work and Pensions</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Department for Work and Pensions</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -3994,6 +3999,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>Survey data, collected to allow analysis of labour market and related topics at a lower level than is possible in the Labour Force Survey.</p>
 
+            </div>
 
           </div>
 
@@ -4005,25 +4011,47 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/work-pay-and-benefits/unemployment-and-economic-inactivity/economic-inactivity/1.1/downloads/economic-inactivity-by-region.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Economic inactivity by region">
-                      Economic inactivity by region
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      1 MB
-                </a>
-                  <p>This file contains economic inactivity rates by ethnicity, time, gender, region, age, numerator, denominator, sample size and confidence intervals</p>
-                <a href="/work-pay-and-benefits/unemployment-and-economic-inactivity/economic-inactivity/1.1/downloads/economic-inactivity-by-local-authority.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Economic inactivity by local authority">
-                      Economic inactivity by local authority
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      659 KB
-                </a>
-                  <p>This file contains economic inactivity rates by ethnicity, time, gender, local authority area, age, with numerator, denominator, sample size and confidence intervals</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Economic inactivity">
+            <meta itemprop="description" content="in 2016, the total working age population in England, Wales and Scotland was just under 40 million, of which a little over 34 million people were White and nearly 6 million people were from other ethnic groups">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="1 MB">
+                  <meta itemprop="name" content="Economic inactivity by region">
+                  <a itemprop="contentUrl" href="/work-pay-and-benefits/unemployment-and-economic-inactivity/economic-inactivity/1.1/downloads/economic-inactivity-by-region.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Economic inactivity by region">
+                        Economic inactivity by region
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        1 MB
+                  </a>
+                    <p>This file contains economic inactivity rates by ethnicity, time, gender, region, age, numerator, denominator, sample size and confidence intervals</p>
+                </div>
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="659 KB">
+                  <meta itemprop="name" content="Economic inactivity by local authority">
+                  <a itemprop="contentUrl" href="/work-pay-and-benefits/unemployment-and-economic-inactivity/economic-inactivity/1.1/downloads/economic-inactivity-by-local-authority.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Economic inactivity by local authority">
+                        Economic inactivity by local authority
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        659 KB
+                  </a>
+                    <p>This file contains economic inactivity rates by ethnicity, time, gender, local authority area, age, with numerator, denominator, sample size and confidence intervals</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

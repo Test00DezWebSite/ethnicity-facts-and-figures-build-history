@@ -74,9 +74,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -1062,6 +1062,11 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.1">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="United Kingdom">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -1069,9 +1074,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.hesa.ac.uk/news/12-01-2017/sfr242-student-enrolments-and-qualifications" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="First year entrants onto postgraduate degrees">
+            <p itemprop="name"><a href="https://www.hesa.ac.uk/news/12-01-2017/sfr242-student-enrolments-and-qualifications" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="First year entrants onto postgraduate degrees" itemprop="url">
                 Higher education student enrolments and qualifications obtained at higher education providers in the United Kingdom 2015/16</a>
             </p>
 
@@ -1082,7 +1087,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Higher Education Statistics Agency</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Higher Education Statistics Agency</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -1105,6 +1110,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 <li>qualifications awarded</li>
 </ul>
 
+            </div>
 
           </div>
 
@@ -1116,16 +1122,32 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/education-skills-and-training/apprenticeships-further-and-higher-education/first-year-entrants-onto-postgraduate-degrees/latest/downloads/enrolments-onto-postgraduate-degrees.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Enrolments onto postgraduate degrees">
-                      Enrolments onto postgraduate degrees
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      4 KB
-                </a>
-                  <p>This file contains the following: measure, year, ethnicity, numerator, denominator and value.</p>
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="First year entrants onto postgraduate degrees">
+            <meta itemprop="description" content="in 2015/16, there were 181,255 postgraduate entrants for whom ethnicity was known at UK higher education institutions – of those, 79.8% were White, 9.4% were Asian, 6.1% were Black, 3.1% were from a Mixed ethnic background and 1.6% were from the Other ethnic group">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="4 KB">
+                  <meta itemprop="name" content="Enrolments onto postgraduate degrees">
+                  <a itemprop="contentUrl" href="/education-skills-and-training/apprenticeships-further-and-higher-education/first-year-entrants-onto-postgraduate-degrees/latest/downloads/enrolments-onto-postgraduate-degrees.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Enrolments onto postgraduate degrees">
+                        Enrolments onto postgraduate degrees
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        4 KB
+                  </a>
+                    <p>This file contains the following: measure, year, ethnicity, numerator, denominator and value.</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 

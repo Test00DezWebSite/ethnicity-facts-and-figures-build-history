@@ -74,9 +74,9 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="header-proposition">
       <div class="content">
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">
+          <span itemprop="name"><a itemprop="url" href="http://localhost/" id="proposition-name">
             Ethnicity facts and figures
-          </a>
+          </a></span>
           <ul class="header-nav">
             <li><a href="/ethnicity-in-the-uk">Ethnicity in the UK</a></li>
             <li><a href="/background">Background</a></li>
@@ -4911,6 +4911,11 @@ The Census is the only survey to give a detailed picture of the whole population
           </div>
         </div>
 
+        <div itemscope itemtype="http://schema.org/Dataset">
+          <meta itemprop="version" content=" 1.2">
+          <div itemprop="spatialCoverage" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="England and Wales">
+          </div>
         <div class="accordion-section">
 
           <div data-on="click" data-event-category="Accordion" data-event-action="Section opened" data-event-label="Data sources" class="accordion-section-header">
@@ -4918,9 +4923,9 @@ The Census is the only survey to give a detailed picture of the whole population
           </div>
 
           <div class="accordion-section-body">
-
+            <div itemprop="isBasedOn" itemscope itemtype="http://schema.org/Dataset">
             <h3 class="heading-small">Source</h3>
-            <p><a href="https://www.ons.gov.uk/census/2011census" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Regional ethnic diversity">
+            <p itemprop="name"><a href="https://www.ons.gov.uk/census/2011census" data-on="click" data-event-category="External link clicked" data-event-action="Data Source (Source Details section)" data-event-label="Regional ethnic diversity" itemprop="url">
                 Census 2011</a>
             </p>
 
@@ -4931,7 +4936,7 @@ The Census is the only survey to give a detailed picture of the whole population
                 <p>National Statistics</p>
 
                 <h3 class="heading-small">Publisher</h3>
-                <p>Office for National Statistics</p>
+                <p itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Office for National Statistics</span></p>
 
 
                 <h3 class="heading-small">Publication frequency</h3>
@@ -4940,6 +4945,7 @@ The Census is the only survey to give a detailed picture of the whole population
                   <h3 class="heading-small">Purpose of data source</h3>
                   <p>The government uses Census data to develop policies, plan and run public services, and allocate funding. The Census also helps illustrate differences between various groups of the population.</p>
 
+            </div>
 
           </div>
 
@@ -4951,35 +4957,63 @@ The Census is the only survey to give a detailed picture of the whole population
           </div>
 
           <div class="accordion-section-body downloads">
-                <a href="/british-population/national-and-regional-populations/regional-ethnic-diversity/latest/downloads/ethnic-population-of-local-authorities-in-england-and-wales.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Ethnic population of local authorities in England and Wales">
-                      Ethnic population of local authorities in England and Wales
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      544 KB
-                </a>
-                  <p>This file contains: Measure, local authority: county / unitary (prior to April 2015), Ethnicity, Value, Value type, Ethnicity type, Source, Time, Geography</p>
-                <a href="/british-population/national-and-regional-populations/regional-ethnic-diversity/latest/downloads/population-by-ethnicity-and-region.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Population by ethnicity and region">
-                      Population by ethnicity and region
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      39 KB
-                </a>
-                  <p>This file contains: Measure, Ethnicity type, Ethnicity, Region, All usual residents, Population, Value, Value2, Value label1, Value label2, Source, Geography, Time
+            <meta itemprop="license" content="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            <meta itemprop="name" content="Regional ethnic diversity">
+            <meta itemprop="description" content="as at the 2011 Census, the most ethnically diverse region in England and Wales was London, where 40.2% of residents identified with either the Asian, Black, Mixed or Other ethnic group">
+
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="544 KB">
+                  <meta itemprop="name" content="Ethnic population of local authorities in England and Wales">
+                  <a itemprop="contentUrl" href="/british-population/national-and-regional-populations/regional-ethnic-diversity/latest/downloads/ethnic-population-of-local-authorities-in-england-and-wales.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Ethnic population of local authorities in England and Wales">
+                        Ethnic population of local authorities in England and Wales
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        544 KB
+                  </a>
+                    <p>This file contains: Measure, local authority: county / unitary (prior to April 2015), Ethnicity, Value, Value type, Ethnicity type, Source, Time, Geography</p>
+                </div>
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="39 KB">
+                  <meta itemprop="name" content="Population by ethnicity and region">
+                  <a itemprop="contentUrl" href="/british-population/national-and-regional-populations/regional-ethnic-diversity/latest/downloads/population-by-ethnicity-and-region.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Population by ethnicity and region">
+                        Population by ethnicity and region
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        39 KB
+                  </a>
+                    <p>This file contains: Measure, Ethnicity type, Ethnicity, Region, All usual residents, Population, Value, Value2, Value label1, Value label2, Source, Geography, Time
 </p>
-                <a href="/british-population/national-and-regional-populations/regional-ethnic-diversity/latest/downloads/population-by-ethnicity-region-and-urban-rural-location.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Population by ethnicity, region and urban/rural location">
-                      Population by ethnicity, region and urban/rural location
-                       - Spreadsheet 
-                      
-                      
-                      (csv)
-                      42 KB
-                </a>
-                  <p>This file contains: Measure, Ethnicity, Region, Urban/Rural, Value, Source, Time</p>
+                </div>
+
+                <div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+                  <meta itemprop="encodingFormat" content="text/csv">
+                  <meta itemprop="contentSize" content="42 KB">
+                  <meta itemprop="name" content="Population by ethnicity, region and urban/rural location">
+                  <a itemprop="contentUrl" href="/british-population/national-and-regional-populations/regional-ethnic-diversity/latest/downloads/population-by-ethnicity-region-and-urban-rural-location.csv" data-on="click" data-event-category="CSV downloaded" data-event-action="Source data" data-event-label="Population by ethnicity, region and urban/rural location">
+                        Population by ethnicity, region and urban/rural location
+                         - Spreadsheet 
+                        
+                        
+                        (csv)
+                        42 KB
+                  </a>
+                    <p>This file contains: Measure, Ethnicity, Region, Urban/Rural, Value, Source, Time</p>
+                </div>
             <button class="js--print print-btn" data-on="click" data-event-category="Page printed" data-event-action="Link clicked">Print this page</button>
+          </div>
+        </div>
+
+          <div itemprop="includedInDataCatalog" itemscope itemtype="http://schema.org/DataCatalog">
+            <meta itemprop="name" content="Ethnicity facts and figures">
+            <meta itemprop="url" content="/">
           </div>
         </div>
 
