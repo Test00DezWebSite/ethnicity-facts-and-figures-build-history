@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:14.546902 -->
+  <!-- Page built at 2019-03-28T18:01:30.258943 -->
 
   <meta charset="utf-8" />
   <title>Overweight children - GOV.UK Ethnicity facts and figures</title>
@@ -343,7 +343,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_9695a38e1f203cfc03a133dafb4189528aaf09ed" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1680,6 +1680,10 @@ Statistically significant findings have been determined where the 95% confidence
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

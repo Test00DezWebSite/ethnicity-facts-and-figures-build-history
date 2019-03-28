@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:34.478190 -->
+  <!-- Page built at 2019-03-28T18:00:50.808684 -->
 
   <meta charset="utf-8" />
   <title>Visits to the natural environment - GOV.UK Ethnicity facts and figures</title>
@@ -306,7 +306,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_f9893ab1777cfcd691d6090ec908bf60abadeb47" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -501,7 +501,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_b5e24f0bcac3f4ed82c019235798f835b9b209b2" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -697,7 +697,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_a3e7ba5e0ab26d05950671f3bec7278908b1a074" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -859,7 +859,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_d26913a6ee3d2c3f5885baff401e9f0ea0198104" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1366,6 +1366,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:13.442374 -->
+  <!-- Page built at 2019-03-28T18:00:26.198479 -->
 
   <meta charset="utf-8" />
   <title>People living in deprived neighbourhoods - GOV.UK Ethnicity facts and figures</title>
@@ -346,7 +346,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_df2aa40f63f04c1d2af14b222c6ea250dbaf5f57" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -864,7 +864,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_025906b84a4e413d2a751ce732b74fca1397a0bc" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1379,7 +1379,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_27d1a74e405eb9ad443a3685b4cf896cccd9c2bd" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1894,7 +1894,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_21660a24f1812e9222218d179831fb8f0aeb3d21" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -3117,6 +3117,10 @@ level.</p>
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

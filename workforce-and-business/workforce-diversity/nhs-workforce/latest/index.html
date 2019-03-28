@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:39.842414 -->
+  <!-- Page built at 2019-03-28T18:01:55.494347 -->
 
   <meta charset="utf-8" />
   <title>NHS workforce - GOV.UK Ethnicity facts and figures</title>
@@ -317,7 +317,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_05fdffb117a4576ca86ab4ebbd2ecd6f3db31c4a" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -648,7 +648,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_3b456b2ee75cc302484f7661ddc20aac0c920086" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1149,7 +1149,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_5fc6663fa03d05b2015fbec56c3e8ebb284f3e48" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1732,7 +1732,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_484a03abd5348336e688a4df76daa7de600c2a35" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -3364,7 +3364,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_e6e457e6a1b71951346b952edd30501788404d68" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -4771,6 +4771,10 @@ This file contains the following: ethnicity, time, type of role, entry level, br
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

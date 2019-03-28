@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:39.023302 -->
+  <!-- Page built at 2019-03-28T18:01:54.754812 -->
 
   <meta charset="utf-8" />
   <title>Customer satisfaction with Department for Work and Pensions services - GOV.UK Ethnicity facts and figures</title>
@@ -307,7 +307,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_30b78836c8c3a9f3d2b15674970832dbc3ea2701" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -937,6 +937,10 @@ The file contains the following:measure, ethnicity, year, value, denominator, nu
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

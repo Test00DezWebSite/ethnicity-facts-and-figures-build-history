@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:47.596272 -->
+  <!-- Page built at 2019-03-28T18:01:03.680472 -->
 
   <meta charset="utf-8" />
   <title>Reading, writing and maths attainments for children aged 10 to 11 (key stage 2) - GOV.UK Ethnicity facts and figures</title>
@@ -345,7 +345,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_6d1f56b8010fcf821dd6d9f610f57aea85fa0503" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -842,7 +842,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_5f914be8dc70c41c9ddfd3fd5290f637731afc0b" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1352,7 +1352,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_6fbc82c6a61fc192fd90fdc4e1b4768c17aef9fc" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -7581,7 +7581,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_44bb6c889e265d7485b7461788b37b0dac9644a3" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -8672,6 +8672,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

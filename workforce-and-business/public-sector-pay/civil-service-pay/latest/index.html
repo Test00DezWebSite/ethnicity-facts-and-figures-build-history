@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:02:01.055014 -->
+  <!-- Page built at 2019-03-28T18:02:15.876170 -->
 
   <meta charset="utf-8" />
   <title>Civil Service pay - GOV.UK Ethnicity facts and figures</title>
@@ -303,7 +303,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_e978dc4c4baf3fd75dd507be5ee601b2e2f702c7" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -860,7 +860,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_89f05447d56a274ab4aa96cb8ddd47e5da8ec363" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1336,7 +1336,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_265645d8fdc400404399bbab39ea3bd0de33bb2b" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -2494,6 +2494,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

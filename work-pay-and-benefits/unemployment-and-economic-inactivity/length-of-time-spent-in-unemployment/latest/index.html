@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:29.120751 -->
+  <!-- Page built at 2019-03-28T18:01:44.855520 -->
 
   <meta charset="utf-8" />
   <title>Length of time spent in unemployment - GOV.UK Ethnicity facts and figures</title>
@@ -299,7 +299,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_c19edaf71a47d58f2d66bd45c0e3ccc99d457227" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -786,6 +786,10 @@ This is the latest data available.This file contains the following: length of ti
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

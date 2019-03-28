@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:28.882323 -->
+  <!-- Page built at 2019-03-28T18:00:45.179204 -->
 
   <meta charset="utf-8" />
   <title>Average length of custodial sentences - GOV.UK Ethnicity facts and figures</title>
@@ -314,7 +314,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_7aa8d1a82531002ce607b1107a51d66d62280380" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -737,7 +737,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_9803c58d1fb1b929a3f47929ebb0ab8d3a8ee1aa" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1627,7 +1627,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_861d6bce6f9612e1b4b420772f1116caf51028f0" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -2269,7 +2269,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_c31aa52c93f206ec9557911f26ed513252216b5c" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -3345,6 +3345,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

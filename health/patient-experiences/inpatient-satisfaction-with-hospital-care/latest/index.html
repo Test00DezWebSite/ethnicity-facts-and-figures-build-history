@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:04.487184 -->
+  <!-- Page built at 2019-03-28T18:01:20.383902 -->
 
   <meta charset="utf-8" />
   <title>Inpatient satisfaction with hospital care - GOV.UK Ethnicity facts and figures</title>
@@ -324,7 +324,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_3b33a221ebdd67eccd0b87a3074a19fad165107c" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -853,7 +853,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_49ae57a3dd1c3f1878ac0e363d2a52520372f784" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1956,6 +1956,10 @@ The data for 2017-18 is based on 19 rather than the usual 20 questions due to a 
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

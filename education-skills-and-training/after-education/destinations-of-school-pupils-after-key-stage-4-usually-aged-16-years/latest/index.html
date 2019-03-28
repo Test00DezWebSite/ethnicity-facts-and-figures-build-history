@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:56.392301 -->
+  <!-- Page built at 2019-03-28T18:01:12.061275 -->
 
   <meta charset="utf-8" />
   <title>Destinations of school pupils after key stage 4 (usually aged 16 years) - GOV.UK Ethnicity facts and figures</title>
@@ -345,7 +345,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_389fa92c879127187ddf80891f73f0d3b76ad773" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1314,7 +1314,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_d698b18a17d66e1eb58257d4a7d4683f63442b36" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -2716,6 +2716,10 @@ Along with local authority data, LEO data is used to calculate employment destin
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

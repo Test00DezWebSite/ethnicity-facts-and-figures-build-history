@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:13.600767 -->
+  <!-- Page built at 2019-03-28T18:01:29.378704 -->
 
   <meta charset="utf-8" />
   <title>Well-being: how worthwhile people feel the things they do in their life are - GOV.UK Ethnicity facts and figures</title>
@@ -338,7 +338,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_872691c6cba83f39ea4bb0d7d2503206c70354c1" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -581,7 +581,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_2db1003e99a7ac762c04db6682dc723bd281d5fd" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1114,7 +1114,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_190b26a1c40950d324dddab23775073af1e31ef8" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1587,7 +1587,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_8835627d7242e1ec05fe65d5e025197a032966bb" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -2121,7 +2121,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_eb9552815b6c1c61009bbd329d8574cebb87fb02" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -2880,7 +2880,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_5d49aeead81520a2297370787fb2537a53975b20" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -3521,6 +3521,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

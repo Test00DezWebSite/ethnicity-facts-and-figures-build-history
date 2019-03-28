@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:55.160886 -->
+  <!-- Page built at 2019-03-28T18:01:10.756066 -->
 
   <meta charset="utf-8" />
   <title>Participation in apprenticeships - GOV.UK Ethnicity facts and figures</title>
@@ -302,7 +302,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_7afcb35f55c254faea2bce65985aa3644bdfcf59" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -875,7 +875,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_571d6e9ada44279cd28a3f25c4d251fd65c4f55a" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1392,7 +1392,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_a9b72b84255e532310db7166e2b08f6bed8e6905" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1877,6 +1877,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

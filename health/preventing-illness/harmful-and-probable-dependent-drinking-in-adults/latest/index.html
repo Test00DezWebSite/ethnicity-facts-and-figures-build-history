@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:15.626559 -->
+  <!-- Page built at 2019-03-28T18:01:31.295194 -->
 
   <meta charset="utf-8" />
   <title>Harmful and probable dependent drinking in adults - GOV.UK Ethnicity facts and figures</title>
@@ -297,7 +297,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_f24cd4557244612db537e860c16233ede758dcc5" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -547,7 +547,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_8ebe469662b08e6137ec729a52fe84d997dee710" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1077,6 +1077,10 @@ Confidence intervals for each ethnic group for the detailed risk levels with AUD
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

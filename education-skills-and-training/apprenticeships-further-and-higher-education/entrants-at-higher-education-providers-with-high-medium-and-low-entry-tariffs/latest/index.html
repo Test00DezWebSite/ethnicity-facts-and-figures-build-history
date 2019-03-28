@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:56.219811 -->
+  <!-- Page built at 2019-03-28T18:01:11.890283 -->
 
   <meta charset="utf-8" />
   <title>Entrants at higher education providers with high, medium and low entry tariffs - GOV.UK Ethnicity facts and figures</title>
@@ -302,7 +302,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_3e3bfb8e7a5b19628a09a707dd091e5223a8c0d1" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -822,7 +822,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_db0d87908b57779904ffc59e9f26b758c3c7fafc" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1541,6 +1541,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

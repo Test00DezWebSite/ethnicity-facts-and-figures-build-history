@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:33.711050 -->
+  <!-- Page built at 2019-03-28T18:00:49.871595 -->
 
   <meta charset="utf-8" />
   <title>Adults visiting museums and galleries - GOV.UK Ethnicity facts and figures</title>
@@ -305,7 +305,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_3f365a523b388d555deb53986f6e5300f0aa446f" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -506,7 +506,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_372f231d3c1b4e2c0eefa9bdecebc2e99f6ff7ce" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -831,7 +831,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_cb6c01304dec4c8746632369bd7852298f696a1a" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1698,6 +1698,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

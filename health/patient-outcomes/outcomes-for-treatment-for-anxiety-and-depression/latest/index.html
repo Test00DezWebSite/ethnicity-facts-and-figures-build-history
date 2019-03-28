@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:05.173145 -->
+  <!-- Page built at 2019-03-28T18:01:20.914617 -->
 
   <meta charset="utf-8" />
   <title>Outcomes for treatment for anxiety and depression - GOV.UK Ethnicity facts and figures</title>
@@ -323,7 +323,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_7c10ab42eabe417995350b5bc0b32b81b5d1224d" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -929,7 +929,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_2d2862056b3b1032e84d901ec6b4f27b529f23f1" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -2284,7 +2284,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_7d0ccf4d710042d68e950ae9b4abff1963db1ca7" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -3545,6 +3545,10 @@ A reliable change is defined as either a PHQ-9 change of 6 points or more, or on
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

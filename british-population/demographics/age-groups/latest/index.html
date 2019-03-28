@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:12.973058 -->
+  <!-- Page built at 2019-03-28T18:00:25.690528 -->
 
   <meta charset="utf-8" />
   <title>Age groups - GOV.UK Ethnicity facts and figures</title>
@@ -320,7 +320,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_dae5e7a809d0cff1fcae776d6f57056ed8bdcd13" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -493,7 +493,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_528cecc95b709b27b035a16f1e16484631a2629a" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1996,7 +1996,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_1e93aa4eab98b2389906c8e7a25783ee7bd9104f" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -2904,7 +2904,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_9ac4034ea4b19482231dba8b3e1907f73cae5433" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -3575,7 +3575,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_bb6ed412b20a126f98026c24211edc244cb7f702" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -4365,7 +4365,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_b3545eb3fb50ca91c19216c6056e3174dd79b4ab" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -5154,7 +5154,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_983d873664b61948d43ad56d2624131c683dd28d" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -5967,6 +5967,10 @@ There were 56 questions on the 2011 Census questionnaire: 14 about the household
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

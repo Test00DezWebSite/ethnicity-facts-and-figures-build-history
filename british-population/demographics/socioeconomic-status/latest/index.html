@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:13.259984 -->
+  <!-- Page built at 2019-03-28T18:00:25.979112 -->
 
   <meta charset="utf-8" />
   <title>Socioeconomic status - GOV.UK Ethnicity facts and figures</title>
@@ -360,7 +360,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_6d50f628d19ae85f32c367ca69359c50c59eee71" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -812,7 +812,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_7ad690445b4620147d27e76388b509b48750eed5" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -2382,7 +2382,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_4e647369b45e9d9bc29bf770155d09a26395ded7" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -3692,7 +3692,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_458fd842171584592613db4b125476d539249dc1" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -5336,6 +5336,10 @@ To: &#39;the biggest difference was in the Indian group, where 27% of men and 13
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

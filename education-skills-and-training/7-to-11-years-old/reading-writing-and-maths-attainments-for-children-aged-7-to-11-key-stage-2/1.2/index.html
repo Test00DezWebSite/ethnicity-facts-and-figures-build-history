@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:47.984026 -->
+  <!-- Page built at 2019-03-28T18:01:04.021756 -->
 
   <meta charset="utf-8" />
   <title>Reading, writing and maths attainments for children aged 7 to 11 (key stage 2) - GOV.UK Ethnicity facts and figures</title>
@@ -365,7 +365,7 @@ The 6 broad categories used are as follows:</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_932ba2c2d4542a48e0367c44c599ddd583983c5d" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -873,7 +873,7 @@ The 6 broad categories used are as follows:</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_d4df3ff1ac6bb8f10be92be5fe37cf00ce19c2ef" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1396,7 +1396,7 @@ The 6 broad categories used are as follows:</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_5edb0a5398c19215378b82063f0d2ed2910f427f" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -7639,7 +7639,7 @@ The 6 broad categories used are as follows:</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_253ec440cdbe54fec1a6ed02d2f42e8d38b0a3ea" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -8755,6 +8755,10 @@ Records are matched, using fields such as surname, forename, date of birth, UPN 
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

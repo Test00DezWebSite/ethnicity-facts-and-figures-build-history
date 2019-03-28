@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:59.184286 -->
+  <!-- Page built at 2019-03-28T18:02:13.379152 -->
 
   <meta charset="utf-8" />
   <title>Prison officer workforce - GOV.UK Ethnicity facts and figures</title>
@@ -299,7 +299,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_a6b5da59c5a6cbd385aee76b664e23869ef6069a" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -522,7 +522,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_7a120380aebe18d455f53a4981d51581da6fe1f8" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1236,6 +1236,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

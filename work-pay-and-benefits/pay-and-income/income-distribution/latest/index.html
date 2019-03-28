@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:33.856734 -->
+  <!-- Page built at 2019-03-28T18:01:49.789028 -->
 
   <meta charset="utf-8" />
   <title>Income distribution - GOV.UK Ethnicity facts and figures</title>
@@ -307,7 +307,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_d913c956643db1e138f6141a6a4169b298a7289a" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -696,7 +696,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_1e1895cb20257c8b01f30215d383270f6c8ce134" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1382,6 +1382,10 @@ Measure, Time, Time_type, Ethnicity, Ethnicity_type, Income_Quintile_Distributio
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

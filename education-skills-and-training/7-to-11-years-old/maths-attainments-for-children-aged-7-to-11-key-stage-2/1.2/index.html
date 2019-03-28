@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:47.075017 -->
+  <!-- Page built at 2019-03-28T18:01:03.255452 -->
 
   <meta charset="utf-8" />
   <title>Maths attainments for children aged 7 to 11 (key stage 2) - GOV.UK Ethnicity facts and figures</title>
@@ -374,7 +374,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_89c9320c4161b32c1ffc5c17bae75e5230f64c1e" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1199,7 +1199,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_a9b488e991ca1962945d15985a62f0d72d88faaf" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -7439,7 +7439,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_6f3710f2807a89b4d48a067274c8af69fd22537f" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -9194,6 +9194,10 @@ Records are matched, using fields such as surname, forename, date of birth, UPN 
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

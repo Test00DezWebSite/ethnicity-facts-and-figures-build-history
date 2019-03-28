@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:56.584650 -->
+  <!-- Page built at 2019-03-28T18:01:12.261157 -->
 
   <meta charset="utf-8" />
   <title>Destinations of school pupils after key stage 4 (usually aged 16 years) - GOV.UK Ethnicity facts and figures</title>
@@ -359,7 +359,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_35e422a2b3be75e4414e09a8f484f1a2a575650b" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1340,7 +1340,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_1a2d3fc2ccd73998547de084121af9d075c9c791" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -2604,6 +2604,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

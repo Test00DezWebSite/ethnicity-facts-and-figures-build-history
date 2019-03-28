@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:35.965831 -->
+  <!-- Page built at 2019-03-28T18:00:52.397152 -->
 
   <meta charset="utf-8" />
   <title>Car or van ownership - GOV.UK Ethnicity facts and figures</title>
@@ -301,7 +301,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_3bd0e116bc6b08b4d1d8b675a37f6ae7f9c89008" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1166,6 +1166,10 @@ Weighting is used to adjust the results of a survey to make them representative 
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

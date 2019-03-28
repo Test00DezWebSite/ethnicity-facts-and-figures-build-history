@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:30.118248 -->
+  <!-- Page built at 2019-03-28T18:01:45.964610 -->
 
   <meta charset="utf-8" />
   <title>Economic inactivity - GOV.UK Ethnicity facts and figures</title>
@@ -315,7 +315,7 @@ A person of working age is counted as economically inactive if:</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_a51d01021b1073295a2d7041fcf5288beb91bcfc" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -616,7 +616,7 @@ A person of working age is counted as economically inactive if:</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_470e13cf90a168a674e107d2a603b40606551ad4" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -782,7 +782,7 @@ A person of working age is counted as economically inactive if:</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_cbe7b3b84182527e9ab8b809ffec2daece3f2c58" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1941,7 +1941,7 @@ A person of working age is counted as economically inactive if:</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_8b240da307dd510634fdde52d7595ef7c5c85ee5" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -2509,7 +2509,7 @@ A person of working age is counted as economically inactive if:</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_a5e60ae1b5e560fb38030785fdbad40374735ff3" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -3222,7 +3222,7 @@ A person of working age is counted as economically inactive if:</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_258ba6e8ced22f7223f6e68fdb639fd8da1a76b3" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -4381,7 +4381,7 @@ A person of working age is counted as economically inactive if:</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_a8c978685d19bcc0b127ac3e8afae4c98bf8ce1d" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -5275,6 +5275,10 @@ measure, age_band, year, local_authority, ethnicity, ethnicity_type, value, conf
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:14.389832 -->
+  <!-- Page built at 2019-03-28T18:01:30.129433 -->
 
   <meta charset="utf-8" />
   <title>Overweight children - GOV.UK Ethnicity facts and figures</title>
@@ -329,7 +329,7 @@ The main thresholds indicating an unhealthy weight are:</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_532cec27efeb281d2e0ef154979eb1f76b8f3bf7" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1915,6 +1915,10 @@ The main thresholds indicating an unhealthy weight are:</p>
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

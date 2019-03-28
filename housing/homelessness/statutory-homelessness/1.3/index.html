@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:22.069580 -->
+  <!-- Page built at 2019-03-28T18:01:37.607906 -->
 
   <meta charset="utf-8" />
   <title>Statutory homelessness - GOV.UK Ethnicity facts and figures</title>
@@ -307,7 +307,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_009b01cbbe1df923f4c6bc79d18156358b86e818" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1042,7 +1042,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_69668ebd297dd62976101baaa8f473fc13fcd46f" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1697,7 +1697,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_55b8f9fa93a80bd6f2dbbe490aad54475c1d5eca" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -27117,6 +27117,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

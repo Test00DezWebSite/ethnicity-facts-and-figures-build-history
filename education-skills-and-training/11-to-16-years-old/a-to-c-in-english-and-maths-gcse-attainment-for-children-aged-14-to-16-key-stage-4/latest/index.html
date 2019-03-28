@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:50.373618 -->
+  <!-- Page built at 2019-03-28T18:01:06.106922 -->
 
   <meta charset="utf-8" />
   <title>Attainment in English and Maths GCSE at grade 5 or above for children aged 14 to 16 (key stage 4) - GOV.UK Ethnicity facts and figures</title>
@@ -364,7 +364,7 @@ Other</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_da86cf7fe3a4c3b633189fba30998a0686d34b71" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -877,7 +877,7 @@ Other</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_2cd78cc3c8c95fdb7210a6820a08a211449a0367" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1689,7 +1689,7 @@ Other</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_6b54e267de161c2e71e412050a782a0c1ee58363" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -13450,7 +13450,7 @@ Other</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_cc095ff3025244304b6707dae5b49a347945d89c" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -14549,7 +14549,7 @@ Other</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_2e619d9c3d9648f6aa8ce2bd2ff9987e145f6d50" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -15936,7 +15936,7 @@ Other</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_18890f3bf66f53b1a4f476d5c122e5d71a9016c0" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -33211,7 +33211,7 @@ Other</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_9dd4268ac57c77e3bb057637f752f27bbc076c6a" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -33809,7 +33809,7 @@ Other</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_3028d9708611274a8d394aace8d39649299db2a8" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -34774,7 +34774,7 @@ Other</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_5701eb8b96772e14ccdfe683250a05d827d8cb2f" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -35382,7 +35382,7 @@ Other</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_6d5e7f94c67e6e459a44b1aabfeb1e00f460ce72" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -36849,6 +36849,10 @@ Other</p>
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

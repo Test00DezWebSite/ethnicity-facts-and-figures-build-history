@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:01.867080 -->
+  <!-- Page built at 2019-03-28T18:01:17.880581 -->
 
   <meta charset="utf-8" />
   <title>Adults receiving treatment for mental or emotional problems - GOV.UK Ethnicity facts and figures</title>
@@ -291,7 +291,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_a3f150676def061e3fda3bf679f011304db0e2ab" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -889,6 +889,10 @@ It doesn’t include the homeless or people in hostels, hospitals, prisons or ot
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

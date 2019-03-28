@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:48.823787 -->
+  <!-- Page built at 2019-03-28T18:01:04.785824 -->
 
   <meta charset="utf-8" />
   <title>Grammar, punctuation and spelling attainment for children aged 7 to 11 (key stage 2) - GOV.UK Ethnicity facts and figures</title>
@@ -369,7 +369,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_dbb4bfcef5b70b1ab51deecf6eea4d76ebd2e149" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1044,7 +1044,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_cb779b11a7626972ef59658c1c8cd47538b569b7" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -7290,7 +7290,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_374213823f1a007a76f082fa28220058a2e8d4aa" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -8729,6 +8729,10 @@ Records are matched, using fields such as surname, forename, date of birth, UPN 
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

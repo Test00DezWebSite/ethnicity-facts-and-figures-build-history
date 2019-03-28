@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:25.019020 -->
+  <!-- Page built at 2019-03-28T18:00:41.317368 -->
 
   <meta charset="utf-8" />
   <title>Stop and search - GOV.UK Ethnicity facts and figures</title>
@@ -336,7 +336,7 @@ The 2001 categories are therefore as follows:</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_405588e50e9208f15f120e446cd89bd791294c15" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1927,7 +1927,7 @@ The 2001 categories are therefore as follows:</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_06b0a22eda2d50388878256a1fa32af443d342bb" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -4186,6 +4186,10 @@ March 2016</a></p>
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

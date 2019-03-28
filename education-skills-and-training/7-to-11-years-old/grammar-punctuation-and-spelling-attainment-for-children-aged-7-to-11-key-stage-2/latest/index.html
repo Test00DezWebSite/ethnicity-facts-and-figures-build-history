@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:48.411742 -->
+  <!-- Page built at 2019-03-28T18:01:04.392500 -->
 
   <meta charset="utf-8" />
   <title>Grammar, punctuation and spelling attainment for children aged 10 to 11 (key stage 2) - GOV.UK Ethnicity facts and figures</title>
@@ -345,7 +345,7 @@ Other ethnic group</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_2196651f2dc02c1f577380ca9d9e463b0c0a10c7" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -982,7 +982,7 @@ Other ethnic group</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_d25456d0973d252295bf89fff4e7bbb9966accb9" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -7211,7 +7211,7 @@ Other ethnic group</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_8274b7b02e58cab82f040ed032c632e5f948abb5" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -8577,6 +8577,10 @@ Other ethnic group</p>
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

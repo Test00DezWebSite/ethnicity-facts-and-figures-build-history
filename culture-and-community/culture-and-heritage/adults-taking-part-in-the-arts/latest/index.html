@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:33.203812 -->
+  <!-- Page built at 2019-03-28T18:00:49.361226 -->
 
   <meta charset="utf-8" />
   <title>Participation in the arts - GOV.UK Ethnicity facts and figures</title>
@@ -300,7 +300,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_02e39d3be288ee1fd23bf0910d9faddb7c11fe09" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -903,7 +903,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_aaccbafb60b5115be11b26034886fe6e0edafca5" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1560,6 +1560,10 @@ This file contains: Measure, Time, Ethnicity, Geography, Value, Upper bound, Low
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

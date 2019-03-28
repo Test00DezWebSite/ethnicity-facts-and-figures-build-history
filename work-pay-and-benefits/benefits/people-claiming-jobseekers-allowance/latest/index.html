@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:35.620265 -->
+  <!-- Page built at 2019-03-28T18:01:51.483974 -->
 
   <meta charset="utf-8" />
   <title>People claiming Jobseeker’s Allowance - GOV.UK Ethnicity facts and figures</title>
@@ -296,7 +296,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_5c0d95904829ea423492fd32f089bada965aec3c" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -462,7 +462,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_b357ad0b1af07b1230ca6d8e3872e4e138ff61d7" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -709,7 +709,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_c768d0de302a46b4d2d3f9404a0fbc8774f43f8d" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1311,6 +1311,10 @@ This file contains the following: year, region, ethnicity, numerator, denominato
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

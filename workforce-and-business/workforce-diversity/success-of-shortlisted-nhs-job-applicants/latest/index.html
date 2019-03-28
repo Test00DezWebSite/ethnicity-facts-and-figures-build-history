@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:59.598113 -->
+  <!-- Page built at 2019-03-28T18:02:13.836642 -->
 
   <meta charset="utf-8" />
   <title>NHS workforce appointments from shortlisting - GOV.UK Ethnicity facts and figures</title>
@@ -311,7 +311,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_31b734b68f69efc1fb468af5261d729c0ce46978" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -519,7 +519,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_c7836be0dfdf6f5b3be17b9675ca3b5778477cef" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -987,6 +987,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

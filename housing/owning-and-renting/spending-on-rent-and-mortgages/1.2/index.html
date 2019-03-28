@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:16.321550 -->
+  <!-- Page built at 2019-03-28T18:01:32.014779 -->
 
   <meta charset="utf-8" />
   <title>Spending on rent and mortgages - GOV.UK Ethnicity facts and figures</title>
@@ -344,7 +344,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_d613e6e2b7b26e55d03ed7425a37a776a073144c" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -708,7 +708,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_cb67799bcd2e89de7db4628a2d962fd21bbfa962" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1348,6 +1348,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:55.024412 -->
+  <!-- Page built at 2019-03-28T18:01:10.611041 -->
 
   <meta charset="utf-8" />
   <title>Participation in apprenticeships - GOV.UK Ethnicity facts and figures</title>
@@ -297,7 +297,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_30fc7a8e5cc946cfb4ab861f8aacd5213ecdd8a3" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -863,7 +863,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_7676f948dfd24c975efddc662253a5618be8ef24" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1367,7 +1367,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_21a7fec7b334500e033591d1e1090104434b57bc" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1856,6 +1856,10 @@ The ILR uses administrative data collected about apprentices by FE providers.</p
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

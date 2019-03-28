@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:15.571254 -->
+  <!-- Page built at 2019-03-28T18:00:28.250930 -->
 
   <meta charset="utf-8" />
   <title>Confidence in the local police - GOV.UK Ethnicity facts and figures</title>
@@ -353,7 +353,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_ac100ddb529d0030d531843a7b3acc0bef815081" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1454,7 +1454,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_ccfa4005db4e5797000818b8df239a19f1bc0d5e" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1781,7 +1781,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_e814fc51c621001a65efa76ac5ea902e6e4a1b30" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -2370,7 +2370,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_e738c9fa1f4fcca72733eabd5175bf883d6d1317" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -3202,6 +3202,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

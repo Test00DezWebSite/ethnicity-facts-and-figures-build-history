@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:57.039106 -->
+  <!-- Page built at 2019-03-28T18:01:12.813878 -->
 
   <meta charset="utf-8" />
   <title>Destinations and earnings of graduates after higher education - GOV.UK Ethnicity facts and figures</title>
@@ -309,7 +309,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_c07770f159f27d85f2d0b9ba8bab37d9c83c61c7" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1278,7 +1278,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_b58881669bd1c58c2d212449d1439aa59e199a12" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1980,7 +1980,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_f2061b54f28dd6b3bddf2e4d3327c2a72ee84f11" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -2708,6 +2708,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:46.742582 -->
+  <!-- Page built at 2019-03-28T18:01:02.902748 -->
 
   <meta charset="utf-8" />
   <title>Maths attainments for children aged 10 to 11 (key stage 2) - GOV.UK Ethnicity facts and figures</title>
@@ -352,7 +352,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_861a1c9d3b38e60c94cb2e25c72af85543d50703" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1131,7 +1131,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_3ac98855041a70a20ad591f1cec845efa084e825" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -7360,7 +7360,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_837ae237a302f128eaa7e79173b854b9ed2e03c3" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -9005,6 +9005,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

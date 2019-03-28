@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:03.791327 -->
+  <!-- Page built at 2019-03-28T18:01:19.817046 -->
 
   <meta charset="utf-8" />
   <title>Patient experience of primary care - GP services - GOV.UK Ethnicity facts and figures</title>
@@ -324,7 +324,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_7652eeb432e25946d23c0d3679649450db8c95fd" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1757,6 +1757,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

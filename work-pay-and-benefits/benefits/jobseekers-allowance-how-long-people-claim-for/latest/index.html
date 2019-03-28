@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:35.994577 -->
+  <!-- Page built at 2019-03-28T18:01:51.869740 -->
 
   <meta charset="utf-8" />
   <title>Jobseeker’s Allowance: how long people claim for - GOV.UK Ethnicity facts and figures</title>
@@ -307,7 +307,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_03c9a72a2abc62b7e37a5fb9c83f52d063501df4" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -782,7 +782,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_62cb902f3d141af6eb9ae01f96d19bc6947d0988" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1833,6 +1833,10 @@ This file contains: ethnicity, time, geography, duration, number of cases, value
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:38.047273 -->
+  <!-- Page built at 2019-03-28T18:00:54.614267 -->
 
   <meta charset="utf-8" />
   <title>Attainment of development goals by children aged 4 to 5 years - GOV.UK Ethnicity facts and figures</title>
@@ -350,7 +350,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_b9a53a0a598f25507acd2c5b91110677c107babb" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -846,7 +846,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_32f5b1c1c905b882b30634ad069312153c710964" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1629,7 +1629,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_82574fbd801e203e22baf3318195ce7bb40e7bdd" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -7893,7 +7893,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_71bf5bcc4a6a4e32a8751b8feb0b741650fc6afb" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -8673,7 +8673,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_5c447cb0d4cdfd061d0c15b4328764a743f78cab" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -9449,7 +9449,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_65622dfb08afbc1d6972709fb783083ca53592a4" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -22184,6 +22184,10 @@ FSM is used as an indicator of disadvantage, but when drawing conclusions, it sh
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

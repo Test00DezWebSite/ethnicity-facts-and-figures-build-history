@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:58.784712 -->
+  <!-- Page built at 2019-03-28T18:02:12.971037 -->
 
   <meta charset="utf-8" />
   <title>Judges and non-legal members of the judiciary - GOV.UK Ethnicity facts and figures</title>
@@ -294,7 +294,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_161a4e921b5ea754bd0488fb30fa2b5b308b6933" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -965,7 +965,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_35d310ffb6490448fb08501cd255892a48933cc9" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1983,6 +1983,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

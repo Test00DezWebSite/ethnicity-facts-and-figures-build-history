@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:11.819229 -->
+  <!-- Page built at 2019-03-28T18:01:27.746519 -->
 
   <meta charset="utf-8" />
   <title>Drug dependency in adults - GOV.UK Ethnicity facts and figures</title>
@@ -300,7 +300,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_42f386399a2043c1e3ff80c96bb28e19248ad287" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -814,6 +814,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

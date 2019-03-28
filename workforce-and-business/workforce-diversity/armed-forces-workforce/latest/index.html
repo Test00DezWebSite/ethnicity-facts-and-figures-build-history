@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:57.994713 -->
+  <!-- Page built at 2019-03-28T18:02:12.228929 -->
 
   <meta charset="utf-8" />
   <title>Armed forces workforce - GOV.UK Ethnicity facts and figures</title>
@@ -289,7 +289,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_4eaff371665f041fef81bb06a7318c25f8b899a9" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -522,7 +522,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_124a8559c6d4de0f8b6904ca1ed4b9cf3dd68134" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1062,7 +1062,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_0ad1dbcd4376d0b6f4c0e8050e76e44d6d83313c" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1602,7 +1602,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_b46fecdb895e91908af50fc3a2cb9ecedb1e853e" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -2246,6 +2246,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

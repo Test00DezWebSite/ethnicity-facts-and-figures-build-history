@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:36.218333 -->
+  <!-- Page built at 2019-03-28T18:00:52.656193 -->
 
   <meta charset="utf-8" />
   <title>Travel to school - GOV.UK Ethnicity facts and figures</title>
@@ -305,7 +305,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_c24acd69253e3c62bc6e34f190035304abf1feca" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -925,7 +925,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_771452b06382e2c74cedeb05d62131086aaeaebd" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1546,7 +1546,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_0042a0c862f8458710036e7e9a3e7503929c0807" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -2533,6 +2533,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:03.369588 -->
+  <!-- Page built at 2019-03-28T18:01:19.450048 -->
 
   <meta charset="utf-8" />
   <title>Physical inactivity - GOV.UK Ethnicity facts and figures</title>
@@ -319,7 +319,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_c5decdfea222882bdafe751bfad8a9729332cd11" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -565,7 +565,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_1dd23e684713ae43a1722d1c8ef82e7cc156953a" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1029,7 +1029,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_e54c6e614258962d49639dc2cf4c80efccc60f8a" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1891,7 +1891,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_e7e67bf951a5f6d9fd4ac42069bcb8256d553658" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -2862,6 +2862,10 @@ This file contains the following: ethnicity, geography, gender, age, socio-econo
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:12.370804 -->
+  <!-- Page built at 2019-03-28T18:00:25.218476 -->
 
   <meta charset="utf-8" />
   <title>Regional ethnic diversity - GOV.UK Ethnicity facts and figures</title>
@@ -315,7 +315,7 @@ The Census is the only survey to give a detailed picture of the whole population
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_66a94eb7eae0678c34f3c095908e88236cbd9dd9" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -864,7 +864,7 @@ The Census is the only survey to give a detailed picture of the whole population
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_5fe6aa8d19c6a6ec3a4ca747e901bce1884de10c" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -2722,7 +2722,7 @@ The Census is the only survey to give a detailed picture of the whole population
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_55d04911e19f1f951b714e72d4a4996890be5941" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -4439,7 +4439,7 @@ The Census is the only survey to give a detailed picture of the whole population
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_1028d34ea8080882c24b87cc6e69abdc86d36a0e" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -5199,6 +5199,10 @@ The Census is the only survey to give a detailed picture of the whole population
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

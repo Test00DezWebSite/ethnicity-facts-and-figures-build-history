@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:45.441812 -->
+  <!-- Page built at 2019-03-28T18:01:01.665622 -->
 
   <meta charset="utf-8" />
   <title>Reading attainments for children aged 7 to 11 (key stage 2) - GOV.UK Ethnicity facts and figures</title>
@@ -377,7 +377,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_fdb723dd284279731f7a7b929b158291d8918d3c" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1193,7 +1193,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_a76e7e12e015c4c5e75279139cd6d5024dd18278" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -7436,7 +7436,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_dbda1e1bfff497f58fa12c8183ca9c5f5eb08682" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -9185,6 +9185,10 @@ Progress scores are given to 1 decimal place.</p>
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:33.387849 -->
+  <!-- Page built at 2019-03-28T18:00:49.544628 -->
 
   <meta charset="utf-8" />
   <title>Adults taking part in the arts - GOV.UK Ethnicity facts and figures</title>
@@ -304,7 +304,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_a29145bf21710f22cf5ff89552ff2a19e7feaff0" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -502,7 +502,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_b6d1926283d3ab78f8a0294e329fdc6dd448a612" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -827,7 +827,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_5193061d9d949d8ac01ad29a2f8524dd5b0e68b0" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1694,6 +1694,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

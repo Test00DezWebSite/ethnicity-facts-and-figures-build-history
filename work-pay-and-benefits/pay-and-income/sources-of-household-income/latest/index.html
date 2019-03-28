@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:33.329901 -->
+  <!-- Page built at 2019-03-28T18:01:49.314591 -->
 
   <meta charset="utf-8" />
   <title>Sources of household income - GOV.UK Ethnicity facts and figures</title>
@@ -308,7 +308,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_b05b64d0d9cfb56a7f652599f945cea07ee87124" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -702,7 +702,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_6d3631c554c7001208b9f9156e63db6d1503f7f3" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1303,7 +1303,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_94173875d9a383b3631e7bfa6db5e838653369b8" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1904,7 +1904,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_49bf2ca2e624544d839847046c1378193c9ad570" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -2798,6 +2798,10 @@ This file contains: measure, ethnicity, year, value
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

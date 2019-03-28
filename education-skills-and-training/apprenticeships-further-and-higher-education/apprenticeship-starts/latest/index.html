@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:55.343761 -->
+  <!-- Page built at 2019-03-28T18:01:10.966012 -->
 
   <meta charset="utf-8" />
   <title>Apprenticeship starts - GOV.UK Ethnicity facts and figures</title>
@@ -298,7 +298,7 @@ Each reporting period covers an academic year, which runs from 1 August to 31 Ju
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_2e26eaa55afb0defa944da97f0ea11e7fe1213a8" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1139,7 +1139,7 @@ Each reporting period covers an academic year, which runs from 1 August to 31 Ju
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_60788776470be9ba9e39062e8654152b6d321610" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1882,7 +1882,7 @@ Each reporting period covers an academic year, which runs from 1 August to 31 Ju
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_525dbd986cff24e9ea46d696d0c6175ffb7e5aa1" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -2372,6 +2372,10 @@ Data on apprentices that forms part of the Employer Ownership Pilot (EOP) is gat
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

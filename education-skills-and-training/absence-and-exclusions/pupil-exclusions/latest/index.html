@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:59.224089 -->
+  <!-- Page built at 2019-03-28T18:01:15.238264 -->
 
   <meta charset="utf-8" />
   <title>Pupil exclusions - GOV.UK Ethnicity facts and figures</title>
@@ -334,7 +334,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_74d763fd172b0255bc42fb1aef68a09dbd604eb7" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -830,7 +830,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_e7d39904067a1a4e73a0b855c1dbfcd11005ed56" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1333,7 +1333,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_c21b74b8b6e620b82a1a7c665ada7b8b5dc5977b" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -2398,7 +2398,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_64770e86a929c595b52167455ac0a02fc33645b9" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -3463,7 +3463,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_8c716f1781f842f41bd31a73a2f268433281340d" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -9689,7 +9689,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_34e319800a288aeb158403d4b17cd96ab778f8af" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -16211,6 +16211,10 @@ Rates are calculated using the number of registered pupils as of the spring cens
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

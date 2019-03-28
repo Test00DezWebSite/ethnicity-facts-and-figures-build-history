@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:31.844332 -->
+  <!-- Page built at 2019-03-28T18:01:47.832364 -->
 
   <meta charset="utf-8" />
   <title>Young people not in employment, education or training (NEET) - GOV.UK Ethnicity facts and figures</title>
@@ -310,7 +310,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_1cf5fe102c6a52f83de32833abe3f05cf4f8395f" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -522,7 +522,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_3d34940f82fea07d0a9478f889abfa91bd0c783e" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -810,7 +810,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_3dafd1b44395fd6bc426a5bf87e0fe4d4c856f4b" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1105,7 +1105,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_7ee3f689e75c598439d2ce3b72439993fb248223" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1779,6 +1779,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

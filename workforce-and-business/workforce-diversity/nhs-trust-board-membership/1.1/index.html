@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:02:00.158695 -->
+  <!-- Page built at 2019-03-28T18:02:14.558578 -->
 
   <meta charset="utf-8" />
   <title>NHS trust board membership - GOV.UK Ethnicity facts and figures</title>
@@ -301,7 +301,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_1acc84800015922f6f85a544466c3e77aa99c3d2" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -546,7 +546,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_0582694c7aa1c0f31ee3d60e2eb5b81d6db8303e" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -10331,6 +10331,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

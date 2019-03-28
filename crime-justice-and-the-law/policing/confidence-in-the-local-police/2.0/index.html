@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:14.941585 -->
+  <!-- Page built at 2019-03-28T18:00:28.029278 -->
 
   <meta charset="utf-8" />
   <title>Confidence in the local police - GOV.UK Ethnicity facts and figures</title>
@@ -346,7 +346,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_3e6defb77f24a7cb281a62dac9b38ccb86e7c848" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1727,7 +1727,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_6636a68489c7c534a6a4d9d162cd6977380884c8" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -2050,7 +2050,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_6c450d557d35e574b54fa3fa7cc0b56024a1454e" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -2698,7 +2698,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_7cf481ad485d5a4d5ceedda27ccf0cd0504c7f7a" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -3564,6 +3564,10 @@ Statisticians rebalance or ‘weight’ the survey results to more accurately re
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

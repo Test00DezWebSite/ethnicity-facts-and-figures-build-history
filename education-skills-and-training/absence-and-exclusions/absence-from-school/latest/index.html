@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:57.442003 -->
+  <!-- Page built at 2019-03-28T18:01:13.268514 -->
 
   <meta charset="utf-8" />
   <title>Absence from school - GOV.UK Ethnicity facts and figures</title>
@@ -334,7 +334,7 @@ Other ethnic group</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_265743a440d3f1ed3e3eccd2d93ac195beab6789" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -848,7 +848,7 @@ Other ethnic group</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_245a2f3a03d20c50b6417a676219e99f518bd333" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1362,7 +1362,7 @@ Other ethnic group</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_d2d08c0ce0e5a51484f11cf803a8f7e9f89c041e" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -2462,7 +2462,7 @@ Other ethnic group</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_14c1ca0ecc594e37d0b433f9df9720c08ba66887" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -3561,7 +3561,7 @@ Other ethnic group</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_cd11ea36d314d4e1a0232e312c902b78fc38fc3e" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -9785,7 +9785,7 @@ Other ethnic group</p>
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_7537504e2d1c5fa5bb853b690d916d9d72c33a72" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -16299,6 +16299,10 @@ Other ethnic group</p>
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

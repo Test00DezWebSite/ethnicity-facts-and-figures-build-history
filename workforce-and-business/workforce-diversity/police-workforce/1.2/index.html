@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:56.701993 -->
+  <!-- Page built at 2019-03-28T18:02:10.665786 -->
 
   <meta charset="utf-8" />
   <title>Police workforce - GOV.UK Ethnicity facts and figures</title>
@@ -298,7 +298,7 @@ Data is sourced from the personnel records for the 43 police forces in England a
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_fb74e8f34df85d468fbc4d152fc8cc217e6aae15" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1074,7 +1074,7 @@ Data is sourced from the personnel records for the 43 police forces in England a
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_1c5278b578a51c296f5324e5f9c6ff7d21781f68" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -4091,7 +4091,7 @@ Data is sourced from the personnel records for the 43 police forces in England a
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_e0e403ca16871d4a460fb68f497ecc0ca9843b70" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -4661,7 +4661,7 @@ Data is sourced from the personnel records for the 43 police forces in England a
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_cf4cefe69f36afaa4c0cdd9b7fcc36a0673014f6" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -5470,6 +5470,10 @@ This file contains the following: ethnicity, year, rank, police force, FTE, head
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

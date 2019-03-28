@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:07.753932 -->
+  <!-- Page built at 2019-03-28T18:01:23.825662 -->
 
   <meta charset="utf-8" />
   <title>Outcomes for treatment for anxiety and depression - GOV.UK Ethnicity facts and figures</title>
@@ -340,7 +340,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_0560a979b0816653af8a6c82df363e9378151fd0" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -945,7 +945,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_ca2ac27a25ef06627abf5166318fa7b56c45fdaf" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -2223,6 +2223,10 @@ This file contains the following: ethnicity, geography, gender, outcome, value, 
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

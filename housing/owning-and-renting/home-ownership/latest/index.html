@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:16.502000 -->
+  <!-- Page built at 2019-03-28T18:01:32.224419 -->
 
   <meta charset="utf-8" />
   <title>Home ownership - GOV.UK Ethnicity facts and figures</title>
@@ -347,7 +347,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_0633fb3d1f2981186063977ca350b0b8c7ebd59b" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -988,7 +988,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_e3d34455b02630aabe43f7c99d5d96a84a630b4a" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1229,7 +1229,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_3bf25b73d9e3c29cb29624f7d280196738e412dc" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1590,7 +1590,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_3a9aece05150b41d53ed1cb9b563e157ae71c2f9" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -2071,7 +2071,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_b27f278dcc7853aae1c3489d354ee0952b98c3e8" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -2902,6 +2902,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

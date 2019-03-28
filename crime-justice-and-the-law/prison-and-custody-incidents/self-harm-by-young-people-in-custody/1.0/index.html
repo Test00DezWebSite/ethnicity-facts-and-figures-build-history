@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:00:30.655585 -->
+  <!-- Page built at 2019-03-28T18:00:46.879712 -->
 
   <meta charset="utf-8" />
   <title>Self-harm by young people in custody - GOV.UK Ethnicity facts and figures</title>
@@ -289,7 +289,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_7e89ec470fcec647af24519cc55705c9fa9e9033" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -454,7 +454,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_95d33700d6234ce68e14aad073ad53969d7853cb" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1068,6 +1068,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

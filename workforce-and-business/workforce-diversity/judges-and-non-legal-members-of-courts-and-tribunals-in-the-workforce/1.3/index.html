@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:59.053988 -->
+  <!-- Page built at 2019-03-28T18:02:13.228658 -->
 
   <meta charset="utf-8" />
   <title>Judges and non-legal members of courts and tribunals in the workforce - GOV.UK Ethnicity facts and figures</title>
@@ -297,7 +297,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_34012f546da271b76bf6db4f2c9d3e7c071ba5d7" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -774,6 +774,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

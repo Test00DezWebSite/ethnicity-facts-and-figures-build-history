@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-03-28T12:01:28.615403 -->
+  <!-- Page built at 2019-03-28T18:01:44.233970 -->
 
   <meta charset="utf-8" />
   <title>Unemployment - GOV.UK Ethnicity facts and figures</title>
@@ -318,7 +318,7 @@ Results taken from a sample which has a low number of responses are more likely 
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_55f8864512fafee210da3203ac81d3c406b60e93" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -622,7 +622,7 @@ Results taken from a sample which has a low number of responses are more likely 
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_0324f71283e1d72779aecd35846594b0123dcb3c" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -788,7 +788,7 @@ Results taken from a sample which has a low number of responses are more likely 
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_47bdc6c3747d6461669dfa058aac2f2a8725f7e5" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1710,7 +1710,7 @@ Results taken from a sample which has a low number of responses are more likely 
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_790447f28ae3aa2435dcb18093aa8905bad92573" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -1893,7 +1893,7 @@ Results taken from a sample which has a low number of responses are more likely 
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_5d610bd0f1792f40d23aced534cf800eecf57956" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -2171,7 +2171,7 @@ Results taken from a sample which has a low number of responses are more likely 
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_55a36eec0bc28130b32d8778112a014e2ffa889e" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -2517,7 +2517,7 @@ Results taken from a sample which has a low number of responses are more likely 
               </div>
             </div>
 
-              <div class="chart-and-footer">
+              <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
                   <div class="rd_chart" id="chart_04178198900c0db8f800813a8f3f8fc3dca6c82c" style="clear: both; overflow: hidden"></div>
                 </div>
@@ -3274,6 +3274,10 @@ Results taken from a sample which has a low number of responses are more likely 
       }
     };
 
+    var chart_divs = document.getElementsByClassName('chart-and-footer');
+    for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
+        chart_div.classList.remove('hidden');
+    };
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),
