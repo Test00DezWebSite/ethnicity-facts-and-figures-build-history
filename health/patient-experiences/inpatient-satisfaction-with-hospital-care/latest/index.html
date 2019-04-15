@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-04-15T09:46:59.104805 -->
+  <!-- Page built at 2019-04-15T13:11:32.684406 -->
 
   <meta charset="utf-8" />
   <title>Inpatient satisfaction with hospital care - GOV.UK Ethnicity facts and figures</title>
@@ -347,11 +347,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
                     </p>
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Average patient satisfaction score for hospital care by ethnicity in 2017/18 (based on 19 questions)" class="download-png"
-                               id="download-3b33a221ebdd67eccd0b87a3074a19fad165107c" data-title="Average patient satisfaction score for hospital care by ethnicity in 2017/18 (based on 19 questions)">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="3b33a221ebdd67eccd0b87a3074a19fad165107c" data-chart-title="Average patient satisfaction score for hospital care by ethnicity in 2017/18 (based on 19 questions)">
                         </p>
                 </div>
               </div>
@@ -1790,7 +1786,7 @@ The data for 2017-18 is based on 19 rather than the usual 20 questions due to a 
   </div>
 
 </footer>
-          <script type="text/javascript" src="/static/javascripts/all-5b1e4a18b8.js"></script>
+          <script type="text/javascript" src="/static/javascripts/all-ddc4e5f827.js"></script>
         <script>window.GOVUKFrontend.initAll()</script>
 
 
@@ -1825,6 +1821,24 @@ The data for 2017-18 is based on 19 rather than the usual 20 questions due to a 
     for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
         chart_div.classList.remove('hidden');
     };
+
+    if ($() && typeof($().highcharts) === 'function') {
+        var chartDownloadLinkContainers = document.getElementsByClassName('chart-download-link-container');
+        for (var i = 0, chartDownloadLinkContainer; chartDownloadLinkContainer = chartDownloadLinkContainers[i]; i++) {
+            var link = document.createElement('a');
+            link.id = 'download-' + chartDownloadLinkContainer.getAttribute('data-chart-guid');
+            link.href = '#';
+            link.className = 'govuk-link download-png';
+            link.setAttribute('data-on', 'click');
+            link.setAttribute('data-event-category', 'Image downloaded');
+            link.setAttribute('data-event-action', "Image of the chart");
+            link.setAttribute('data-event-label', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.setAttribute('data-title', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.text = 'Download chart (PNG)';
+            chartDownloadLinkContainer.appendChild(link);
+        }
+        ;
+    }
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

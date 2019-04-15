@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-04-15T09:47:53.487710 -->
+  <!-- Page built at 2019-04-15T13:11:59.614173 -->
 
   <meta charset="utf-8" />
   <title>Unemployment - GOV.UK Ethnicity facts and figures</title>
@@ -335,11 +335,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
                     </p>
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of the economically active population within each ethnic group that was unemployed" class="download-png"
-                               id="download-a7b15e466f332a26eb65e2a29e1b401e767e3110" data-title="Percentage of the economically active population within each ethnic group that was unemployed">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="a7b15e466f332a26eb65e2a29e1b401e767e3110" data-chart-title="Percentage of the economically active population within each ethnic group that was unemployed">
                         </p>
                 </div>
               </div>
@@ -615,11 +611,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of economically active people who were unemployed within the White ethnic group and all other ethnic groups combined (‘Other’)" class="download-png"
-                               id="download-ea60daf6774c3b14198780ae9d1e90a7f24c31a0" data-title="Percentage of economically active people who were unemployed within the White ethnic group and all other ethnic groups combined (‘Other’)">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="ea60daf6774c3b14198780ae9d1e90a7f24c31a0" data-chart-title="Percentage of economically active people who were unemployed within the White ethnic group and all other ethnic groups combined (‘Other’)">
                         </p>
                 </div>
               </div>
@@ -1781,11 +1773,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of the economically active population within each ethnic group that was unemployed, by gender" class="download-png"
-                               id="download-d039503d962630456fc4caceac1a731d2b93ad00" data-title="Percentage of the economically active population within each ethnic group that was unemployed, by gender">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="d039503d962630456fc4caceac1a731d2b93ad00" data-chart-title="Percentage of the economically active population within each ethnic group that was unemployed, by gender">
                         </p>
                 </div>
               </div>
@@ -2018,11 +2006,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
                     </p>
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of the economically active population within each ethnic group that was unemployed, by age group" class="download-png"
-                               id="download-3f46f5568939ff571735f3b8b50b291a73e9a14c" data-title="Percentage of the economically active population within each ethnic group that was unemployed, by age group">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="3f46f5568939ff571735f3b8b50b291a73e9a14c" data-chart-title="Percentage of the economically active population within each ethnic group that was unemployed, by age group">
                         </p>
                 </div>
               </div>
@@ -2314,11 +2298,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of the economically active population aged 16 to 24 years within each ethnic group that was unemployed, over time" class="download-png"
-                               id="download-274b3ac125ef65601dd86b5b71bad12a76f68554" data-title="Percentage of the economically active population aged 16 to 24 years within each ethnic group that was unemployed, over time">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="274b3ac125ef65601dd86b5b71bad12a76f68554" data-chart-title="Percentage of the economically active population aged 16 to 24 years within each ethnic group that was unemployed, over time">
                         </p>
                 </div>
               </div>
@@ -3717,7 +3697,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
   </div>
 
 </footer>
-          <script type="text/javascript" src="/static/javascripts/all-5b1e4a18b8.js"></script>
+          <script type="text/javascript" src="/static/javascripts/all-ddc4e5f827.js"></script>
         <script>window.GOVUKFrontend.initAll()</script>
 
 
@@ -3752,6 +3732,24 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
         chart_div.classList.remove('hidden');
     };
+
+    if ($() && typeof($().highcharts) === 'function') {
+        var chartDownloadLinkContainers = document.getElementsByClassName('chart-download-link-container');
+        for (var i = 0, chartDownloadLinkContainer; chartDownloadLinkContainer = chartDownloadLinkContainers[i]; i++) {
+            var link = document.createElement('a');
+            link.id = 'download-' + chartDownloadLinkContainer.getAttribute('data-chart-guid');
+            link.href = '#';
+            link.className = 'govuk-link download-png';
+            link.setAttribute('data-on', 'click');
+            link.setAttribute('data-event-category', 'Image downloaded');
+            link.setAttribute('data-event-action', "Image of the chart");
+            link.setAttribute('data-event-label', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.setAttribute('data-title', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.text = 'Download chart (PNG)';
+            chartDownloadLinkContainer.appendChild(link);
+        }
+        ;
+    }
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

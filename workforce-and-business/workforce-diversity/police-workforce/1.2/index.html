@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-04-15T09:48:42.973463 -->
+  <!-- Page built at 2019-04-15T13:12:34.421400 -->
 
   <meta charset="utf-8" />
   <title>Police workforce - GOV.UK Ethnicity facts and figures</title>
@@ -314,11 +314,7 @@ Data is sourced from the personnel records for the 43 police forces in England a
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of police officers, compared with percentage of overall population, by ethnicity (2016 only)" class="download-png"
-                               id="download-fb74e8f34df85d468fbc4d152fc8cc217e6aae15" data-title="Percentage of police officers, compared with percentage of overall population, by ethnicity (2016 only)">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="fb74e8f34df85d468fbc4d152fc8cc217e6aae15" data-chart-title="Percentage of police officers, compared with percentage of overall population, by ethnicity (2016 only)">
                         </p>
                 </div>
               </div>
@@ -4768,7 +4764,7 @@ This file contains the following: ethnicity, year, rank, police force, FTE, head
   </div>
 
 </footer>
-          <script type="text/javascript" src="/static/javascripts/all-5b1e4a18b8.js"></script>
+          <script type="text/javascript" src="/static/javascripts/all-ddc4e5f827.js"></script>
         <script>window.GOVUKFrontend.initAll()</script>
 
 
@@ -4803,6 +4799,24 @@ This file contains the following: ethnicity, year, rank, police force, FTE, head
     for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
         chart_div.classList.remove('hidden');
     };
+
+    if ($() && typeof($().highcharts) === 'function') {
+        var chartDownloadLinkContainers = document.getElementsByClassName('chart-download-link-container');
+        for (var i = 0, chartDownloadLinkContainer; chartDownloadLinkContainer = chartDownloadLinkContainers[i]; i++) {
+            var link = document.createElement('a');
+            link.id = 'download-' + chartDownloadLinkContainer.getAttribute('data-chart-guid');
+            link.href = '#';
+            link.className = 'govuk-link download-png';
+            link.setAttribute('data-on', 'click');
+            link.setAttribute('data-event-category', 'Image downloaded');
+            link.setAttribute('data-event-action', "Image of the chart");
+            link.setAttribute('data-event-label', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.setAttribute('data-title', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.text = 'Download chart (PNG)';
+            chartDownloadLinkContainer.appendChild(link);
+        }
+        ;
+    }
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

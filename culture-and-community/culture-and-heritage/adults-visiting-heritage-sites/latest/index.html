@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-04-15T09:46:15.507977 -->
+  <!-- Page built at 2019-04-15T13:10:57.682146 -->
 
   <meta charset="utf-8" />
   <title>Visits to heritage sites - GOV.UK Ethnicity facts and figures</title>
@@ -315,11 +315,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of people aged 16 years and over who visited a heritage site in the past year, by ethnicity over time" class="download-png"
-                               id="download-535f07380097c1861a7f4a920fc6fd4047342b0c" data-title="Percentage of people aged 16 years and over who visited a heritage site in the past year, by ethnicity over time">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="535f07380097c1861a7f4a920fc6fd4047342b0c" data-chart-title="Percentage of people aged 16 years and over who visited a heritage site in the past year, by ethnicity over time">
                         </p>
                 </div>
               </div>
@@ -847,11 +843,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of people aged 16 years and over who visited a heritage site in the past year, by ethnicity over time (3 specific years)" class="download-png"
-                               id="download-84d81da0c61c23088b3edbc04e258a6b88bc991f" data-title="Percentage of people aged 16 years and over who visited a heritage site in the past year, by ethnicity over time (3 specific years)">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="84d81da0c61c23088b3edbc04e258a6b88bc991f" data-chart-title="Percentage of people aged 16 years and over who visited a heritage site in the past year, by ethnicity over time (3 specific years)">
                         </p>
                 </div>
               </div>
@@ -1430,7 +1422,7 @@ Statisticians rebalance or ‘weight’ the survey results to more accurately re
   </div>
 
 </footer>
-          <script type="text/javascript" src="/static/javascripts/all-5b1e4a18b8.js"></script>
+          <script type="text/javascript" src="/static/javascripts/all-ddc4e5f827.js"></script>
         <script>window.GOVUKFrontend.initAll()</script>
 
 
@@ -1465,6 +1457,24 @@ Statisticians rebalance or ‘weight’ the survey results to more accurately re
     for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
         chart_div.classList.remove('hidden');
     };
+
+    if ($() && typeof($().highcharts) === 'function') {
+        var chartDownloadLinkContainers = document.getElementsByClassName('chart-download-link-container');
+        for (var i = 0, chartDownloadLinkContainer; chartDownloadLinkContainer = chartDownloadLinkContainers[i]; i++) {
+            var link = document.createElement('a');
+            link.id = 'download-' + chartDownloadLinkContainer.getAttribute('data-chart-guid');
+            link.href = '#';
+            link.className = 'govuk-link download-png';
+            link.setAttribute('data-on', 'click');
+            link.setAttribute('data-event-category', 'Image downloaded');
+            link.setAttribute('data-event-action', "Image of the chart");
+            link.setAttribute('data-event-label', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.setAttribute('data-title', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.text = 'Download chart (PNG)';
+            chartDownloadLinkContainer.appendChild(link);
+        }
+        ;
+    }
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

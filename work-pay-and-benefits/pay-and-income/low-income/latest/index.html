@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-04-15T09:48:05.805090 -->
+  <!-- Page built at 2019-04-15T13:12:05.657924 -->
 
   <meta charset="utf-8" />
   <title>Persistent low income - GOV.UK Ethnicity facts and figures</title>
@@ -325,11 +325,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of individuals living in households in persistent low income before housing costs are paid, by the ethnicity of the head of the household" class="download-png"
-                               id="download-72ea042e8ecd497d68996ce3cd0b0b1e696f59ca" data-title="Percentage of individuals living in households in persistent low income before housing costs are paid, by the ethnicity of the head of the household">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="72ea042e8ecd497d68996ce3cd0b0b1e696f59ca" data-chart-title="Percentage of individuals living in households in persistent low income before housing costs are paid, by the ethnicity of the head of the household">
                         </p>
                 </div>
               </div>
@@ -569,11 +565,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
                     </p>
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of individuals living in households in persistent low income before housing costs are paid, by ethnicity and age group" class="download-png"
-                               id="download-7171eaf8d3e10350caffc0b3272443cdeec36ccc" data-title="Percentage of individuals living in households in persistent low income before housing costs are paid, by ethnicity and age group">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="7171eaf8d3e10350caffc0b3272443cdeec36ccc" data-chart-title="Percentage of individuals living in households in persistent low income before housing costs are paid, by ethnicity and age group">
                         </p>
                 </div>
               </div>
@@ -1067,11 +1059,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
                     </p>
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of individuals living in households in persistent low income after housing costs are paid, by ethnicity and age group" class="download-png"
-                               id="download-bd4b205415aa0d8ef8ab34c3f97615a3c201d544" data-title="Percentage of individuals living in households in persistent low income after housing costs are paid, by ethnicity and age group">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="bd4b205415aa0d8ef8ab34c3f97615a3c201d544" data-chart-title="Percentage of individuals living in households in persistent low income after housing costs are paid, by ethnicity and age group">
                         </p>
                 </div>
               </div>
@@ -1559,11 +1547,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of individuals entering persistent low income before housing costs were paid, by ethnicity" class="download-png"
-                               id="download-7a9c3d43c287c8285b54e1a498c69dd233d54101" data-title="Percentage of individuals entering persistent low income before housing costs were paid, by ethnicity">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="7a9c3d43c287c8285b54e1a498c69dd233d54101" data-chart-title="Percentage of individuals entering persistent low income before housing costs were paid, by ethnicity">
                         </p>
                 </div>
               </div>
@@ -1794,11 +1778,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of individuals previously in persistent low income who went above the low income threshold (before housing costs were paid), by ethnicity" class="download-png"
-                               id="download-a8661d468db93f51e99dc7adb657f20824098b6b" data-title="Percentage of individuals previously in persistent low income who went above the low income threshold (before housing costs were paid), by ethnicity">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="a8661d468db93f51e99dc7adb657f20824098b6b" data-chart-title="Percentage of individuals previously in persistent low income who went above the low income threshold (before housing costs were paid), by ethnicity">
                         </p>
                 </div>
               </div>
@@ -2282,7 +2262,7 @@ Measure name changed.
   </div>
 
 </footer>
-          <script type="text/javascript" src="/static/javascripts/all-5b1e4a18b8.js"></script>
+          <script type="text/javascript" src="/static/javascripts/all-ddc4e5f827.js"></script>
         <script>window.GOVUKFrontend.initAll()</script>
 
 
@@ -2317,6 +2297,24 @@ Measure name changed.
     for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
         chart_div.classList.remove('hidden');
     };
+
+    if ($() && typeof($().highcharts) === 'function') {
+        var chartDownloadLinkContainers = document.getElementsByClassName('chart-download-link-container');
+        for (var i = 0, chartDownloadLinkContainer; chartDownloadLinkContainer = chartDownloadLinkContainers[i]; i++) {
+            var link = document.createElement('a');
+            link.id = 'download-' + chartDownloadLinkContainer.getAttribute('data-chart-guid');
+            link.href = '#';
+            link.className = 'govuk-link download-png';
+            link.setAttribute('data-on', 'click');
+            link.setAttribute('data-event-category', 'Image downloaded');
+            link.setAttribute('data-event-action', "Image of the chart");
+            link.setAttribute('data-event-label', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.setAttribute('data-title', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.text = 'Download chart (PNG)';
+            chartDownloadLinkContainer.appendChild(link);
+        }
+        ;
+    }
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

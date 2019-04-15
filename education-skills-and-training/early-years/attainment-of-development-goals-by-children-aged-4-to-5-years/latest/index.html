@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-04-15T09:46:21.273365 -->
+  <!-- Page built at 2019-04-15T13:11:02.757650 -->
 
   <meta charset="utf-8" />
   <title>Attainment of development goals by children aged 4 to 5 years - GOV.UK Ethnicity facts and figures</title>
@@ -366,11 +366,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of early years pupils who met the expected standard in development by ethnicity" class="download-png"
-                               id="download-59a68fefffe311de696134d996e41fe5f48e1ccb" data-title="Percentage of early years pupils who met the expected standard in development by ethnicity">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="59a68fefffe311de696134d996e41fe5f48e1ccb" data-chart-title="Percentage of early years pupils who met the expected standard in development by ethnicity">
                         </p>
                 </div>
               </div>
@@ -816,11 +812,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of early years pupils who met the expected standard in development by ethnicity and eligibility for free school meals (FSM)" class="download-png"
-                               id="download-ff2d587d31169f4fbaf31559b2e929bd1e15201d" data-title="Percentage of early years pupils who met the expected standard in development by ethnicity and eligibility for free school meals (FSM)">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="ff2d587d31169f4fbaf31559b2e929bd1e15201d" data-chart-title="Percentage of early years pupils who met the expected standard in development by ethnicity and eligibility for free school meals (FSM)">
                         </p>
                 </div>
               </div>
@@ -6853,11 +6845,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of early years pupils who met the expected standard in development by ethnicity and gender" class="download-png"
-                               id="download-a47a98dc1b69abe337dab4fdd1ff3a9eb23a06ed" data-title="Percentage of early years pupils who met the expected standard in development by ethnicity and gender">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="a47a98dc1b69abe337dab4fdd1ff3a9eb23a06ed" data-chart-title="Percentage of early years pupils who met the expected standard in development by ethnicity and gender">
                         </p>
                 </div>
               </div>
@@ -18986,7 +18974,7 @@ FSM is used as an indicator of disadvantage, but when drawing conclusions, it sh
   </div>
 
 </footer>
-          <script type="text/javascript" src="/static/javascripts/all-5b1e4a18b8.js"></script>
+          <script type="text/javascript" src="/static/javascripts/all-ddc4e5f827.js"></script>
         <script>window.GOVUKFrontend.initAll()</script>
 
 
@@ -19021,6 +19009,24 @@ FSM is used as an indicator of disadvantage, but when drawing conclusions, it sh
     for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
         chart_div.classList.remove('hidden');
     };
+
+    if ($() && typeof($().highcharts) === 'function') {
+        var chartDownloadLinkContainers = document.getElementsByClassName('chart-download-link-container');
+        for (var i = 0, chartDownloadLinkContainer; chartDownloadLinkContainer = chartDownloadLinkContainers[i]; i++) {
+            var link = document.createElement('a');
+            link.id = 'download-' + chartDownloadLinkContainer.getAttribute('data-chart-guid');
+            link.href = '#';
+            link.className = 'govuk-link download-png';
+            link.setAttribute('data-on', 'click');
+            link.setAttribute('data-event-category', 'Image downloaded');
+            link.setAttribute('data-event-action', "Image of the chart");
+            link.setAttribute('data-event-label', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.setAttribute('data-title', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.text = 'Download chart (PNG)';
+            chartDownloadLinkContainer.appendChild(link);
+        }
+        ;
+    }
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

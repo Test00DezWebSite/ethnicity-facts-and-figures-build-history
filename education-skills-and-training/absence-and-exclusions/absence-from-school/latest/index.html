@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-04-15T09:46:49.461027 -->
+  <!-- Page built at 2019-04-15T13:11:25.320563 -->
 
   <meta charset="utf-8" />
   <title>Absence from school - GOV.UK Ethnicity facts and figures</title>
@@ -350,11 +350,7 @@ Other ethnic group</p>
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Overall absence rate by ethnicity" class="download-png"
-                               id="download-5d66f12334474fd076aa17715ba97b9a3534b5a1" data-title="Overall absence rate by ethnicity">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="5d66f12334474fd076aa17715ba97b9a3534b5a1" data-chart-title="Overall absence rate by ethnicity">
                         </p>
                 </div>
               </div>
@@ -816,11 +812,7 @@ Other ethnic group</p>
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Persistent absence rates by ethnicity" class="download-png"
-                               id="download-cf3254185c591a72cd5441febf7298dbf85cf69d" data-title="Persistent absence rates by ethnicity">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="cf3254185c591a72cd5441febf7298dbf85cf69d" data-chart-title="Persistent absence rates by ethnicity">
                         </p>
                 </div>
               </div>
@@ -1282,11 +1274,7 @@ Other ethnic group</p>
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Overall absence rate by ethnicity and type of school" class="download-png"
-                               id="download-a4cd609f79db88ce0f68929a4af5091488e7b0b2" data-title="Overall absence rate by ethnicity and type of school">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="a4cd609f79db88ce0f68929a4af5091488e7b0b2" data-chart-title="Overall absence rate by ethnicity and type of school">
                         </p>
                 </div>
               </div>
@@ -2238,11 +2226,7 @@ Other ethnic group</p>
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Persistent absence rates by ethnicity and type of school" class="download-png"
-                               id="download-2e31ebe9bc947c62206f1522e307327bf1df4cc6" data-title="Persistent absence rates by ethnicity and type of school">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="2e31ebe9bc947c62206f1522e307327bf1df4cc6" data-chart-title="Persistent absence rates by ethnicity and type of school">
                         </p>
                 </div>
               </div>
@@ -14082,7 +14066,7 @@ Other ethnic group</p>
   </div>
 
 </footer>
-          <script type="text/javascript" src="/static/javascripts/all-5b1e4a18b8.js"></script>
+          <script type="text/javascript" src="/static/javascripts/all-ddc4e5f827.js"></script>
         <script>window.GOVUKFrontend.initAll()</script>
 
 
@@ -14117,6 +14101,24 @@ Other ethnic group</p>
     for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
         chart_div.classList.remove('hidden');
     };
+
+    if ($() && typeof($().highcharts) === 'function') {
+        var chartDownloadLinkContainers = document.getElementsByClassName('chart-download-link-container');
+        for (var i = 0, chartDownloadLinkContainer; chartDownloadLinkContainer = chartDownloadLinkContainers[i]; i++) {
+            var link = document.createElement('a');
+            link.id = 'download-' + chartDownloadLinkContainer.getAttribute('data-chart-guid');
+            link.href = '#';
+            link.className = 'govuk-link download-png';
+            link.setAttribute('data-on', 'click');
+            link.setAttribute('data-event-category', 'Image downloaded');
+            link.setAttribute('data-event-action', "Image of the chart");
+            link.setAttribute('data-event-label', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.setAttribute('data-title', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.text = 'Download chart (PNG)';
+            chartDownloadLinkContainer.appendChild(link);
+        }
+        ;
+    }
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

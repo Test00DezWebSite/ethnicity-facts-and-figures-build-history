@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-04-15T09:47:29.075241 -->
+  <!-- Page built at 2019-04-15T13:11:49.463096 -->
 
   <meta charset="utf-8" />
   <title>Renting from a local authority or housing association (‘social housing’) - GOV.UK Ethnicity facts and figures</title>
@@ -375,11 +375,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
                     </p>
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of households renting social housing by ethnicity" class="download-png"
-                               id="download-609f7c903b8f7b41649ed6c9e21e54579b0af2ae" data-title="Percentage of households renting social housing by ethnicity">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="609f7c903b8f7b41649ed6c9e21e54579b0af2ae" data-chart-title="Percentage of households renting social housing by ethnicity">
                         </p>
                 </div>
               </div>
@@ -951,11 +947,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of households renting social housing by ethnicity and socio-economic group" class="download-png"
-                               id="download-dad9fb4c027375f44904d587f760356b785d36f6" data-title="Percentage of households renting social housing by ethnicity and socio-economic group">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="dad9fb4c027375f44904d587f760356b785d36f6" data-chart-title="Percentage of households renting social housing by ethnicity and socio-economic group">
                         </p>
                 </div>
               </div>
@@ -1179,11 +1171,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of households renting social housing by ethnicity and weekly income" class="download-png"
-                               id="download-c6e66fce0be24335af293d75fbad7a4298ae6a3a" data-title="Percentage of households renting social housing by ethnicity and weekly income">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="c6e66fce0be24335af293d75fbad7a4298ae6a3a" data-chart-title="Percentage of households renting social housing by ethnicity and weekly income">
                         </p>
                 </div>
               </div>
@@ -1679,11 +1667,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of households renting social housing by ethnicity and age group" class="download-png"
-                               id="download-18a269fbeb81d1debde18c0f1af834bd7d80ed53" data-title="Percentage of households renting social housing by ethnicity and age group">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="18a269fbeb81d1debde18c0f1af834bd7d80ed53" data-chart-title="Percentage of households renting social housing by ethnicity and age group">
                         </p>
                 </div>
               </div>
@@ -2008,11 +1992,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of households renting social housing by ethnicity and area" class="download-png"
-                               id="download-29453ac6d1d9c695070d9fb83554a5c5b1df2bf4" data-title="Percentage of households renting social housing by ethnicity and area">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="29453ac6d1d9c695070d9fb83554a5c5b1df2bf4" data-chart-title="Percentage of households renting social housing by ethnicity and area">
                         </p>
                 </div>
               </div>
@@ -2684,7 +2664,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
   </div>
 
 </footer>
-          <script type="text/javascript" src="/static/javascripts/all-5b1e4a18b8.js"></script>
+          <script type="text/javascript" src="/static/javascripts/all-ddc4e5f827.js"></script>
         <script>window.GOVUKFrontend.initAll()</script>
 
 
@@ -2719,6 +2699,24 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
         chart_div.classList.remove('hidden');
     };
+
+    if ($() && typeof($().highcharts) === 'function') {
+        var chartDownloadLinkContainers = document.getElementsByClassName('chart-download-link-container');
+        for (var i = 0, chartDownloadLinkContainer; chartDownloadLinkContainer = chartDownloadLinkContainers[i]; i++) {
+            var link = document.createElement('a');
+            link.id = 'download-' + chartDownloadLinkContainer.getAttribute('data-chart-guid');
+            link.href = '#';
+            link.className = 'govuk-link download-png';
+            link.setAttribute('data-on', 'click');
+            link.setAttribute('data-event-category', 'Image downloaded');
+            link.setAttribute('data-event-action', "Image of the chart");
+            link.setAttribute('data-event-label', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.setAttribute('data-title', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.text = 'Download chart (PNG)';
+            chartDownloadLinkContainer.appendChild(link);
+        }
+        ;
+    }
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

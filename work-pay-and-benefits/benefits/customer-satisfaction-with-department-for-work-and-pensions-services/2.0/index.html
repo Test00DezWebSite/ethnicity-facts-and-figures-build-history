@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-04-15T09:48:17.016194 -->
+  <!-- Page built at 2019-04-15T13:12:12.931161 -->
 
   <meta charset="utf-8" />
   <title>Customer satisfaction with Department for Work and Pensions services - GOV.UK Ethnicity facts and figures</title>
@@ -321,11 +321,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
                     </p>
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of claimants who were fairly or very satisfied with DWP services, by ethnicity" class="download-png"
-                               id="download-faaa24a31927f240bb7e1f3ebcd5a39566cbb040" data-title="Percentage of claimants who were fairly or very satisfied with DWP services, by ethnicity">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="faaa24a31927f240bb7e1f3ebcd5a39566cbb040" data-chart-title="Percentage of claimants who were fairly or very satisfied with DWP services, by ethnicity">
                         </p>
                 </div>
               </div>
@@ -888,7 +884,7 @@ The file contains the following:measure, ethnicity, year, value, denominator, nu
   </div>
 
 </footer>
-          <script type="text/javascript" src="/static/javascripts/all-5b1e4a18b8.js"></script>
+          <script type="text/javascript" src="/static/javascripts/all-ddc4e5f827.js"></script>
         <script>window.GOVUKFrontend.initAll()</script>
 
 
@@ -923,6 +919,24 @@ The file contains the following:measure, ethnicity, year, value, denominator, nu
     for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
         chart_div.classList.remove('hidden');
     };
+
+    if ($() && typeof($().highcharts) === 'function') {
+        var chartDownloadLinkContainers = document.getElementsByClassName('chart-download-link-container');
+        for (var i = 0, chartDownloadLinkContainer; chartDownloadLinkContainer = chartDownloadLinkContainers[i]; i++) {
+            var link = document.createElement('a');
+            link.id = 'download-' + chartDownloadLinkContainer.getAttribute('data-chart-guid');
+            link.href = '#';
+            link.className = 'govuk-link download-png';
+            link.setAttribute('data-on', 'click');
+            link.setAttribute('data-event-category', 'Image downloaded');
+            link.setAttribute('data-event-action', "Image of the chart");
+            link.setAttribute('data-event-label', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.setAttribute('data-title', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.text = 'Download chart (PNG)';
+            chartDownloadLinkContainer.appendChild(link);
+        }
+        ;
+    }
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

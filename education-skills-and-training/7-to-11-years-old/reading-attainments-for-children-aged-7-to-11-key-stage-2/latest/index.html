@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-04-15T09:46:31.087535 -->
+  <!-- Page built at 2019-04-15T13:11:11.244540 -->
 
   <meta charset="utf-8" />
   <title>Reading attainments for children aged 10 to 11 (key stage 2) - GOV.UK Ethnicity facts and figures</title>
@@ -368,11 +368,7 @@ Other ethnic group</p>
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of pupils meeting the expected standard in reading by ethnicity" class="download-png"
-                               id="download-aa1a4c2654ec7f3d83a2157369966ee07d9e0750" data-title="Percentage of pupils meeting the expected standard in reading by ethnicity">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="aa1a4c2654ec7f3d83a2157369966ee07d9e0750" data-chart-title="Percentage of pupils meeting the expected standard in reading by ethnicity">
                         </p>
                 </div>
               </div>
@@ -6371,11 +6367,7 @@ Other ethnic group</p>
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of pupils meeting the expected standard in reading by ethnicity and gender" class="download-png"
-                               id="download-0b6dc7cf3372c5def7708366444879dd3e3ef700" data-title="Percentage of pupils meeting the expected standard in reading by ethnicity and gender">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="0b6dc7cf3372c5def7708366444879dd3e3ef700" data-chart-title="Percentage of pupils meeting the expected standard in reading by ethnicity and gender">
                         </p>
                 </div>
               </div>
@@ -7800,7 +7792,7 @@ Other ethnic group</p>
   </div>
 
 </footer>
-          <script type="text/javascript" src="/static/javascripts/all-5b1e4a18b8.js"></script>
+          <script type="text/javascript" src="/static/javascripts/all-ddc4e5f827.js"></script>
         <script>window.GOVUKFrontend.initAll()</script>
 
 
@@ -7835,6 +7827,24 @@ Other ethnic group</p>
     for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
         chart_div.classList.remove('hidden');
     };
+
+    if ($() && typeof($().highcharts) === 'function') {
+        var chartDownloadLinkContainers = document.getElementsByClassName('chart-download-link-container');
+        for (var i = 0, chartDownloadLinkContainer; chartDownloadLinkContainer = chartDownloadLinkContainers[i]; i++) {
+            var link = document.createElement('a');
+            link.id = 'download-' + chartDownloadLinkContainer.getAttribute('data-chart-guid');
+            link.href = '#';
+            link.className = 'govuk-link download-png';
+            link.setAttribute('data-on', 'click');
+            link.setAttribute('data-event-category', 'Image downloaded');
+            link.setAttribute('data-event-action', "Image of the chart");
+            link.setAttribute('data-event-label', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.setAttribute('data-title', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.text = 'Download chart (PNG)';
+            chartDownloadLinkContainer.appendChild(link);
+        }
+        ;
+    }
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

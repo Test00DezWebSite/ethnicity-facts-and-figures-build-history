@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-04-15T09:47:21.554863 -->
+  <!-- Page built at 2019-04-15T13:11:44.916441 -->
 
   <meta charset="utf-8" />
   <title>Time spent living in current home - GOV.UK Ethnicity facts and figures</title>
@@ -375,11 +375,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
                     </p>
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Average time (in years) spent living in current home by ethnicity" class="download-png"
-                               id="download-e407e312175312bff2e9131e20a7a41846a397e2" data-title="Average time (in years) spent living in current home by ethnicity">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="e407e312175312bff2e9131e20a7a41846a397e2" data-chart-title="Average time (in years) spent living in current home by ethnicity">
                         </p>
                 </div>
               </div>
@@ -709,11 +705,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Average time (in years) spent living in current home by ethnicity and socio-economic group" class="download-png"
-                               id="download-c13ca3cb17e39c7ef6a305a48d3929874ce6971d" data-title="Average time (in years) spent living in current home by ethnicity and socio-economic group">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="c13ca3cb17e39c7ef6a305a48d3929874ce6971d" data-chart-title="Average time (in years) spent living in current home by ethnicity and socio-economic group">
                         </p>
                 </div>
               </div>
@@ -867,11 +859,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Average time (in years) spent living in current home by ethnicity and weekly income" class="download-png"
-                               id="download-0a422d747777b212d7c7c9dcdba5f36919738a8d" data-title="Average time (in years) spent living in current home by ethnicity and weekly income">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="0a422d747777b212d7c7c9dcdba5f36919738a8d" data-chart-title="Average time (in years) spent living in current home by ethnicity and weekly income">
                         </p>
                 </div>
               </div>
@@ -1146,11 +1134,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Average time (in years) spent living in current home by ethnicity and area" class="download-png"
-                               id="download-fc5888a6ca0743f2a06d7682aea563fae76f415b" data-title="Average time (in years) spent living in current home by ethnicity and area">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="fc5888a6ca0743f2a06d7682aea563fae76f415b" data-chart-title="Average time (in years) spent living in current home by ethnicity and area">
                         </p>
                 </div>
               </div>
@@ -1788,7 +1772,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
   </div>
 
 </footer>
-          <script type="text/javascript" src="/static/javascripts/all-5b1e4a18b8.js"></script>
+          <script type="text/javascript" src="/static/javascripts/all-ddc4e5f827.js"></script>
         <script>window.GOVUKFrontend.initAll()</script>
 
 
@@ -1823,6 +1807,24 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
         chart_div.classList.remove('hidden');
     };
+
+    if ($() && typeof($().highcharts) === 'function') {
+        var chartDownloadLinkContainers = document.getElementsByClassName('chart-download-link-container');
+        for (var i = 0, chartDownloadLinkContainer; chartDownloadLinkContainer = chartDownloadLinkContainers[i]; i++) {
+            var link = document.createElement('a');
+            link.id = 'download-' + chartDownloadLinkContainer.getAttribute('data-chart-guid');
+            link.href = '#';
+            link.className = 'govuk-link download-png';
+            link.setAttribute('data-on', 'click');
+            link.setAttribute('data-event-category', 'Image downloaded');
+            link.setAttribute('data-event-action', "Image of the chart");
+            link.setAttribute('data-event-label', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.setAttribute('data-title', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.text = 'Download chart (PNG)';
+            chartDownloadLinkContainer.appendChild(link);
+        }
+        ;
+    }
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-04-15T09:47:19.597156 -->
+  <!-- Page built at 2019-04-15T13:11:44.364175 -->
 
   <meta charset="utf-8" />
   <title>Harmful and probable dependent drinking in adults - GOV.UK Ethnicity facts and figures</title>
@@ -313,11 +313,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of people aged 16 years and over drinking at hazardous, harmful or dependent levels by ethnicity and sex" class="download-png"
-                               id="download-f24cd4557244612db537e860c16233ede758dcc5" data-title="Percentage of people aged 16 years and over drinking at hazardous, harmful or dependent levels by ethnicity and sex">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="f24cd4557244612db537e860c16233ede758dcc5" data-chart-title="Percentage of people aged 16 years and over drinking at hazardous, harmful or dependent levels by ethnicity and sex">
                         </p>
                 </div>
               </div>
@@ -548,11 +544,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of adults drinking at harmful or dependent levels by ethnicity and sex" class="download-png"
-                               id="download-8ebe469662b08e6137ec729a52fe84d997dee710" data-title="Percentage of adults drinking at harmful or dependent levels by ethnicity and sex">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="8ebe469662b08e6137ec729a52fe84d997dee710" data-chart-title="Percentage of adults drinking at harmful or dependent levels by ethnicity and sex">
                         </p>
                 </div>
               </div>
@@ -1025,7 +1017,7 @@ Confidence intervals for each ethnic group for the detailed risk levels with AUD
   </div>
 
 </footer>
-          <script type="text/javascript" src="/static/javascripts/all-5b1e4a18b8.js"></script>
+          <script type="text/javascript" src="/static/javascripts/all-ddc4e5f827.js"></script>
         <script>window.GOVUKFrontend.initAll()</script>
 
 
@@ -1060,6 +1052,24 @@ Confidence intervals for each ethnic group for the detailed risk levels with AUD
     for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
         chart_div.classList.remove('hidden');
     };
+
+    if ($() && typeof($().highcharts) === 'function') {
+        var chartDownloadLinkContainers = document.getElementsByClassName('chart-download-link-container');
+        for (var i = 0, chartDownloadLinkContainer; chartDownloadLinkContainer = chartDownloadLinkContainers[i]; i++) {
+            var link = document.createElement('a');
+            link.id = 'download-' + chartDownloadLinkContainer.getAttribute('data-chart-guid');
+            link.href = '#';
+            link.className = 'govuk-link download-png';
+            link.setAttribute('data-on', 'click');
+            link.setAttribute('data-event-category', 'Image downloaded');
+            link.setAttribute('data-event-action', "Image of the chart");
+            link.setAttribute('data-event-label', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.setAttribute('data-title', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.text = 'Download chart (PNG)';
+            chartDownloadLinkContainer.appendChild(link);
+        }
+        ;
+    }
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

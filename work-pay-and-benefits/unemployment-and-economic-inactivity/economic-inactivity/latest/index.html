@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-04-15T09:47:59.132210 -->
+  <!-- Page built at 2019-04-15T13:12:02.160013 -->
 
   <meta charset="utf-8" />
   <title>Economic inactivity - GOV.UK Ethnicity facts and figures</title>
@@ -331,11 +331,7 @@ A person of working age is counted as economically inactive if:</p>
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of people aged 16 to 64 years who were economically inactive within each ethnic group" class="download-png"
-                               id="download-a51d01021b1073295a2d7041fcf5288beb91bcfc" data-title="Percentage of people aged 16 to 64 years who were economically inactive within each ethnic group">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="a51d01021b1073295a2d7041fcf5288beb91bcfc" data-chart-title="Percentage of people aged 16 to 64 years who were economically inactive within each ethnic group">
                         </p>
                 </div>
               </div>
@@ -610,11 +606,7 @@ A person of working age is counted as economically inactive if:</p>
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of people aged 16 to 64 years who were economically inactive within the White ethnic group and all other ethnic groups combined (‘Other’)" class="download-png"
-                               id="download-470e13cf90a168a674e107d2a603b40606551ad4" data-title="Percentage of people aged 16 to 64 years who were economically inactive within the White ethnic group and all other ethnic groups combined (‘Other’)">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="470e13cf90a168a674e107d2a603b40606551ad4" data-chart-title="Percentage of people aged 16 to 64 years who were economically inactive within the White ethnic group and all other ethnic groups combined (‘Other’)">
                         </p>
                 </div>
               </div>
@@ -4691,7 +4683,7 @@ measure, age_band, year, local_authority, ethnicity, ethnicity_type, value, conf
   </div>
 
 </footer>
-          <script type="text/javascript" src="/static/javascripts/all-5b1e4a18b8.js"></script>
+          <script type="text/javascript" src="/static/javascripts/all-ddc4e5f827.js"></script>
         <script>window.GOVUKFrontend.initAll()</script>
 
 
@@ -4726,6 +4718,24 @@ measure, age_band, year, local_authority, ethnicity, ethnicity_type, value, conf
     for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
         chart_div.classList.remove('hidden');
     };
+
+    if ($() && typeof($().highcharts) === 'function') {
+        var chartDownloadLinkContainers = document.getElementsByClassName('chart-download-link-container');
+        for (var i = 0, chartDownloadLinkContainer; chartDownloadLinkContainer = chartDownloadLinkContainers[i]; i++) {
+            var link = document.createElement('a');
+            link.id = 'download-' + chartDownloadLinkContainer.getAttribute('data-chart-guid');
+            link.href = '#';
+            link.className = 'govuk-link download-png';
+            link.setAttribute('data-on', 'click');
+            link.setAttribute('data-event-category', 'Image downloaded');
+            link.setAttribute('data-event-action', "Image of the chart");
+            link.setAttribute('data-event-label', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.setAttribute('data-title', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.text = 'Download chart (PNG)';
+            chartDownloadLinkContainer.appendChild(link);
+        }
+        ;
+    }
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-04-15T09:46:15.316829 -->
+  <!-- Page built at 2019-04-15T13:10:57.482701 -->
 
   <meta charset="utf-8" />
   <title>Adults using public libraries - GOV.UK Ethnicity facts and figures</title>
@@ -318,11 +318,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of people who used a public library in the past year, by ethnicity" class="download-png"
-                               id="download-93672cb638300351d4ffe6e3380de5661ca82ae6" data-title="Percentage of people who used a public library in the past year, by ethnicity">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="93672cb638300351d4ffe6e3380de5661ca82ae6" data-chart-title="Percentage of people who used a public library in the past year, by ethnicity">
                         </p>
                 </div>
               </div>
@@ -506,11 +502,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of people who used a public library in the past year, by ethnicity over time (3 years)" class="download-png"
-                               id="download-64f420eb3359983cdd5932ac4982204dece3079c" data-title="Percentage of people who used a public library in the past year, by ethnicity over time (3 years)">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="64f420eb3359983cdd5932ac4982204dece3079c" data-chart-title="Percentage of people who used a public library in the past year, by ethnicity over time (3 years)">
                         </p>
                 </div>
               </div>
@@ -804,11 +796,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of people who used a public library in the past year, by ethnicity over time" class="download-png"
-                               id="download-82dc7cdd46cd6a5598c1ad06f33ed48a660a285e" data-title="Percentage of people who used a public library in the past year, by ethnicity over time">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="82dc7cdd46cd6a5598c1ad06f33ed48a660a285e" data-chart-title="Percentage of people who used a public library in the past year, by ethnicity over time">
                         </p>
                 </div>
               </div>
@@ -1567,7 +1555,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
   </div>
 
 </footer>
-          <script type="text/javascript" src="/static/javascripts/all-5b1e4a18b8.js"></script>
+          <script type="text/javascript" src="/static/javascripts/all-ddc4e5f827.js"></script>
         <script>window.GOVUKFrontend.initAll()</script>
 
 
@@ -1602,6 +1590,24 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
         chart_div.classList.remove('hidden');
     };
+
+    if ($() && typeof($().highcharts) === 'function') {
+        var chartDownloadLinkContainers = document.getElementsByClassName('chart-download-link-container');
+        for (var i = 0, chartDownloadLinkContainer; chartDownloadLinkContainer = chartDownloadLinkContainers[i]; i++) {
+            var link = document.createElement('a');
+            link.id = 'download-' + chartDownloadLinkContainer.getAttribute('data-chart-guid');
+            link.href = '#';
+            link.className = 'govuk-link download-png';
+            link.setAttribute('data-on', 'click');
+            link.setAttribute('data-event-category', 'Image downloaded');
+            link.setAttribute('data-event-action', "Image of the chart");
+            link.setAttribute('data-event-label', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.setAttribute('data-title', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.text = 'Download chart (PNG)';
+            chartDownloadLinkContainer.appendChild(link);
+        }
+        ;
+    }
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

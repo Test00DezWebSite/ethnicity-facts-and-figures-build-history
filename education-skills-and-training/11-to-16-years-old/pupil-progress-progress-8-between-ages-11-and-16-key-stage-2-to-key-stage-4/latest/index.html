@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-04-15T09:46:37.439648 -->
+  <!-- Page built at 2019-04-15T13:11:16.376237 -->
 
   <meta charset="utf-8" />
   <title>Pupil progress (‘Progress 8’) between ages 11 and 16 (key stage 2 to key stage 4) - GOV.UK Ethnicity facts and figures</title>
@@ -438,11 +438,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Average Progress 8 score by ethnicity" class="download-png"
-                               id="download-7f5fb391e2848f34c5a7a5f0b3bdb6ac90abcafc" data-title="Average Progress 8 score by ethnicity">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="7f5fb391e2848f34c5a7a5f0b3bdb6ac90abcafc" data-chart-title="Average Progress 8 score by ethnicity">
                         </p>
                 </div>
               </div>
@@ -909,11 +905,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Average Progress 8 score by ethnicity and eligibility for free school meals (FSM)" class="download-png"
-                               id="download-45d03f839043d0b4de4730087c56f9a4cd4d45a1" data-title="Average Progress 8 score by ethnicity and eligibility for free school meals (FSM)">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="45d03f839043d0b4de4730087c56f9a4cd4d45a1" data-chart-title="Average Progress 8 score by ethnicity and eligibility for free school meals (FSM)">
                         </p>
                 </div>
               </div>
@@ -11560,11 +11552,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Average Progress 8 score by ethnicity and gender" class="download-png"
-                               id="download-fa92dd4eb9a6bbfda9e39d315ab44526f3da5d51" data-title="Average Progress 8 score by ethnicity and gender">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="fa92dd4eb9a6bbfda9e39d315ab44526f3da5d51" data-chart-title="Average Progress 8 score by ethnicity and gender">
                         </p>
                 </div>
               </div>
@@ -29382,11 +29370,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Average Progress 8 score by ethnicity, special educational needs (SEN) and gender" class="download-png"
-                               id="download-d573ea274aefc897eb7d7c5f281631a57ba0da75" data-title="Average Progress 8 score by ethnicity, special educational needs (SEN) and gender">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="d573ea274aefc897eb7d7c5f281631a57ba0da75" data-chart-title="Average Progress 8 score by ethnicity, special educational needs (SEN) and gender">
                         </p>
                 </div>
               </div>
@@ -31103,7 +31087,7 @@ The file contains: Measure, Time, Time Type, Ethnicity, Ethnicity Type,	 Gender,
   </div>
 
 </footer>
-          <script type="text/javascript" src="/static/javascripts/all-5b1e4a18b8.js"></script>
+          <script type="text/javascript" src="/static/javascripts/all-ddc4e5f827.js"></script>
         <script>window.GOVUKFrontend.initAll()</script>
 
 
@@ -31138,6 +31122,24 @@ The file contains: Measure, Time, Time Type, Ethnicity, Ethnicity Type,	 Gender,
     for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
         chart_div.classList.remove('hidden');
     };
+
+    if ($() && typeof($().highcharts) === 'function') {
+        var chartDownloadLinkContainers = document.getElementsByClassName('chart-download-link-container');
+        for (var i = 0, chartDownloadLinkContainer; chartDownloadLinkContainer = chartDownloadLinkContainers[i]; i++) {
+            var link = document.createElement('a');
+            link.id = 'download-' + chartDownloadLinkContainer.getAttribute('data-chart-guid');
+            link.href = '#';
+            link.className = 'govuk-link download-png';
+            link.setAttribute('data-on', 'click');
+            link.setAttribute('data-event-category', 'Image downloaded');
+            link.setAttribute('data-event-action', "Image of the chart");
+            link.setAttribute('data-event-label', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.setAttribute('data-title', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.text = 'Download chart (PNG)';
+            chartDownloadLinkContainer.appendChild(link);
+        }
+        ;
+    }
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

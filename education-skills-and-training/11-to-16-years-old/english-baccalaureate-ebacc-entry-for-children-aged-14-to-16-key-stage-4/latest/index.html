@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-04-15T09:46:43.155566 -->
+  <!-- Page built at 2019-04-15T13:11:19.968200 -->
 
   <meta charset="utf-8" />
   <title>English Baccalaureate (EBacc) entry for children aged 14 to 16 (key stage 4) - GOV.UK Ethnicity facts and figures</title>
@@ -384,11 +384,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of pupils entering EBacc by ethnicity" class="download-png"
-                               id="download-0592f9176ec4f6c532a60d9e991b751973de19b2" data-title="Percentage of pupils entering EBacc by ethnicity">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="0592f9176ec4f6c532a60d9e991b751973de19b2" data-chart-title="Percentage of pupils entering EBacc by ethnicity">
                         </p>
                 </div>
               </div>
@@ -858,11 +854,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of pupils entering EBacc by ethnicity and eligibility for free school meals (FSM)" class="download-png"
-                               id="download-7dab8178c34d2c412a8a366b41cf0cbcf236a327" data-title="Percentage of pupils entering EBacc by ethnicity and eligibility for free school meals (FSM)">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="7dab8178c34d2c412a8a366b41cf0cbcf236a327" data-chart-title="Percentage of pupils entering EBacc by ethnicity and eligibility for free school meals (FSM)">
                         </p>
                 </div>
               </div>
@@ -6945,11 +6937,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of pupils entering EBacc by ethnicity and gender" class="download-png"
-                               id="download-ac97f4ca4d7bae6b093800da1fb84a7a72d1e34d" data-title="Percentage of pupils entering EBacc by ethnicity and gender">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="ac97f4ca4d7bae6b093800da1fb84a7a72d1e34d" data-chart-title="Percentage of pupils entering EBacc by ethnicity and gender">
                         </p>
                 </div>
               </div>
@@ -25011,11 +24999,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of pupils entering the EBacc by ethnicity and special educational needs (SEN)" class="download-png"
-                               id="download-50a4aaf415d7ef4b41ab3c6f3db8d7d6c9d78342" data-title="Percentage of pupils entering the EBacc by ethnicity and special educational needs (SEN)">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="50a4aaf415d7ef4b41ab3c6f3db8d7d6c9d78342" data-chart-title="Percentage of pupils entering the EBacc by ethnicity and special educational needs (SEN)">
                         </p>
                 </div>
               </div>
@@ -26718,7 +26702,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
   </div>
 
 </footer>
-          <script type="text/javascript" src="/static/javascripts/all-5b1e4a18b8.js"></script>
+          <script type="text/javascript" src="/static/javascripts/all-ddc4e5f827.js"></script>
         <script>window.GOVUKFrontend.initAll()</script>
 
 
@@ -26753,6 +26737,24 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
         chart_div.classList.remove('hidden');
     };
+
+    if ($() && typeof($().highcharts) === 'function') {
+        var chartDownloadLinkContainers = document.getElementsByClassName('chart-download-link-container');
+        for (var i = 0, chartDownloadLinkContainer; chartDownloadLinkContainer = chartDownloadLinkContainers[i]; i++) {
+            var link = document.createElement('a');
+            link.id = 'download-' + chartDownloadLinkContainer.getAttribute('data-chart-guid');
+            link.href = '#';
+            link.className = 'govuk-link download-png';
+            link.setAttribute('data-on', 'click');
+            link.setAttribute('data-event-category', 'Image downloaded');
+            link.setAttribute('data-event-action', "Image of the chart");
+            link.setAttribute('data-event-label', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.setAttribute('data-title', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.text = 'Download chart (PNG)';
+            chartDownloadLinkContainer.appendChild(link);
+        }
+        ;
+    }
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

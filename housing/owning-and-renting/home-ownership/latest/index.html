@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-04-15T09:47:22.776287 -->
+  <!-- Page built at 2019-04-15T13:11:45.544644 -->
 
   <meta charset="utf-8" />
   <title>Home ownership - GOV.UK Ethnicity facts and figures</title>
@@ -370,11 +370,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
                     </p>
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of households owning their own home, by ethnicity" class="download-png"
-                               id="download-0633fb3d1f2981186063977ca350b0b8c7ebd59b" data-title="Percentage of households owning their own home, by ethnicity">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="0633fb3d1f2981186063977ca350b0b8c7ebd59b" data-chart-title="Percentage of households owning their own home, by ethnicity">
                         </p>
                 </div>
               </div>
@@ -935,11 +931,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of households owning their own home by ethnicity and socio-economic group" class="download-png"
-                               id="download-e3d34455b02630aabe43f7c99d5d96a84a630b4a" data-title="Percentage of households owning their own home by ethnicity and socio-economic group">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="e3d34455b02630aabe43f7c99d5d96a84a630b4a" data-chart-title="Percentage of households owning their own home by ethnicity and socio-economic group">
                         </p>
                 </div>
               </div>
@@ -1158,11 +1150,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of households owning their own home by ethnicity and age group" class="download-png"
-                               id="download-3bf25b73d9e3c29cb29624f7d280196738e412dc" data-title="Percentage of households owning their own home by ethnicity and age group">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="3bf25b73d9e3c29cb29624f7d280196738e412dc" data-chart-title="Percentage of households owning their own home by ethnicity and age group">
                         </p>
                 </div>
               </div>
@@ -1483,11 +1471,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of households owning their own home by ethnicity and area" class="download-png"
-                               id="download-3a9aece05150b41d53ed1cb9b563e157ae71c2f9" data-title="Percentage of households owning their own home by ethnicity and area">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="3a9aece05150b41d53ed1cb9b563e157ae71c2f9" data-chart-title="Percentage of households owning their own home by ethnicity and area">
                         </p>
                 </div>
               </div>
@@ -1910,11 +1894,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of households owning their own home by ethnicity and weekly income" class="download-png"
-                               id="download-b27f278dcc7853aae1c3489d354ee0952b98c3e8" data-title="Percentage of households owning their own home by ethnicity and weekly income">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="b27f278dcc7853aae1c3489d354ee0952b98c3e8" data-chart-title="Percentage of households owning their own home by ethnicity and weekly income">
                         </p>
                 </div>
               </div>
@@ -2637,7 +2617,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
   </div>
 
 </footer>
-          <script type="text/javascript" src="/static/javascripts/all-5b1e4a18b8.js"></script>
+          <script type="text/javascript" src="/static/javascripts/all-ddc4e5f827.js"></script>
         <script>window.GOVUKFrontend.initAll()</script>
 
 
@@ -2672,6 +2652,24 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
         chart_div.classList.remove('hidden');
     };
+
+    if ($() && typeof($().highcharts) === 'function') {
+        var chartDownloadLinkContainers = document.getElementsByClassName('chart-download-link-container');
+        for (var i = 0, chartDownloadLinkContainer; chartDownloadLinkContainer = chartDownloadLinkContainers[i]; i++) {
+            var link = document.createElement('a');
+            link.id = 'download-' + chartDownloadLinkContainer.getAttribute('data-chart-guid');
+            link.href = '#';
+            link.className = 'govuk-link download-png';
+            link.setAttribute('data-on', 'click');
+            link.setAttribute('data-event-category', 'Image downloaded');
+            link.setAttribute('data-event-action', "Image of the chart");
+            link.setAttribute('data-event-label', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.setAttribute('data-title', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.text = 'Download chart (PNG)';
+            chartDownloadLinkContainer.appendChild(link);
+        }
+        ;
+    }
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

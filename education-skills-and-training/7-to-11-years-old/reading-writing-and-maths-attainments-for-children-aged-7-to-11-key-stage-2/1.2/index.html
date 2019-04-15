@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-04-15T09:46:35.425610 -->
+  <!-- Page built at 2019-04-15T13:11:14.909331 -->
 
   <meta charset="utf-8" />
   <title>Reading, writing and maths attainments for children aged 7 to 11 (key stage 2) - GOV.UK Ethnicity facts and figures</title>
@@ -381,11 +381,7 @@ The 6 broad categories used are as follows:</p>
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of pupils reaching the expected standard in reading, writing and maths by ethnicity" class="download-png"
-                               id="download-932ba2c2d4542a48e0367c44c599ddd583983c5d" data-title="Percentage of pupils reaching the expected standard in reading, writing and maths by ethnicity">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="932ba2c2d4542a48e0367c44c599ddd583983c5d" data-chart-title="Percentage of pupils reaching the expected standard in reading, writing and maths by ethnicity">
                         </p>
                 </div>
               </div>
@@ -843,11 +839,7 @@ The 6 broad categories used are as follows:</p>
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of pupils reaching the expected standard in reading, writing and maths by ethnicity and eligibility for free school meals" class="download-png"
-                               id="download-d4df3ff1ac6bb8f10be92be5fe37cf00ce19c2ef" data-title="Percentage of pupils reaching the expected standard in reading, writing and maths by ethnicity and eligibility for free school meals">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="d4df3ff1ac6bb8f10be92be5fe37cf00ce19c2ef" data-chart-title="Percentage of pupils reaching the expected standard in reading, writing and maths by ethnicity and eligibility for free school meals">
                         </p>
                 </div>
               </div>
@@ -6651,11 +6643,7 @@ The 6 broad categories used are as follows:</p>
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of pupils reaching the expected standard in reading, writing and maths by ethnicity and gender" class="download-png"
-                               id="download-253ec440cdbe54fec1a6ed02d2f42e8d38b0a3ea" data-title="Percentage of pupils reaching the expected standard in reading, writing and maths by ethnicity and gender">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="253ec440cdbe54fec1a6ed02d2f42e8d38b0a3ea" data-chart-title="Percentage of pupils reaching the expected standard in reading, writing and maths by ethnicity and gender">
                         </p>
                 </div>
               </div>
@@ -7637,7 +7625,7 @@ Records are matched, using fields such as surname, forename, date of birth, UPN 
   </div>
 
 </footer>
-          <script type="text/javascript" src="/static/javascripts/all-5b1e4a18b8.js"></script>
+          <script type="text/javascript" src="/static/javascripts/all-ddc4e5f827.js"></script>
         <script>window.GOVUKFrontend.initAll()</script>
 
 
@@ -7672,6 +7660,24 @@ Records are matched, using fields such as surname, forename, date of birth, UPN 
     for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
         chart_div.classList.remove('hidden');
     };
+
+    if ($() && typeof($().highcharts) === 'function') {
+        var chartDownloadLinkContainers = document.getElementsByClassName('chart-download-link-container');
+        for (var i = 0, chartDownloadLinkContainer; chartDownloadLinkContainer = chartDownloadLinkContainers[i]; i++) {
+            var link = document.createElement('a');
+            link.id = 'download-' + chartDownloadLinkContainer.getAttribute('data-chart-guid');
+            link.href = '#';
+            link.className = 'govuk-link download-png';
+            link.setAttribute('data-on', 'click');
+            link.setAttribute('data-event-category', 'Image downloaded');
+            link.setAttribute('data-event-action', "Image of the chart");
+            link.setAttribute('data-event-label', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.setAttribute('data-title', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.text = 'Download chart (PNG)';
+            chartDownloadLinkContainer.appendChild(link);
+        }
+        ;
+    }
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

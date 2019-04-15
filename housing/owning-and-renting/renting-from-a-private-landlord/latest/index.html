@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-04-15T09:47:26.038266 -->
+  <!-- Page built at 2019-04-15T13:11:47.234585 -->
 
   <meta charset="utf-8" />
   <title>Renting from a private landlord - GOV.UK Ethnicity facts and figures</title>
@@ -373,11 +373,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
                     </p>
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of households privately renting their home by ethnicity" class="download-png"
-                               id="download-ff4aef8008fe9afbc5cae2a979a8b82cc2714b06" data-title="Percentage of households privately renting their home by ethnicity">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="ff4aef8008fe9afbc5cae2a979a8b82cc2714b06" data-chart-title="Percentage of households privately renting their home by ethnicity">
                         </p>
                 </div>
               </div>
@@ -936,11 +932,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of households privately renting their home, by ethnicity and socio-economic group" class="download-png"
-                               id="download-3d59bf77762c975842010080fc4517991b8a25ee" data-title="Percentage of households privately renting their home, by ethnicity and socio-economic group">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="3d59bf77762c975842010080fc4517991b8a25ee" data-chart-title="Percentage of households privately renting their home, by ethnicity and socio-economic group">
                         </p>
                 </div>
               </div>
@@ -1159,11 +1151,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of households privately renting their home, by ethnicity and weekly income" class="download-png"
-                               id="download-5cad2e87881b510d833e820a208757eca002c83a" data-title="Percentage of households privately renting their home, by ethnicity and weekly income">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="5cad2e87881b510d833e820a208757eca002c83a" data-chart-title="Percentage of households privately renting their home, by ethnicity and weekly income">
                         </p>
                 </div>
               </div>
@@ -1654,11 +1642,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of households privately renting their home, by ethnicity and area" class="download-png"
-                               id="download-1095be589b8fee5d9e5e65f577e60212cd65b5d1" data-title="Percentage of households privately renting their home, by ethnicity and area">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="1095be589b8fee5d9e5e65f577e60212cd65b5d1" data-chart-title="Percentage of households privately renting their home, by ethnicity and area">
                         </p>
                 </div>
               </div>
@@ -2081,11 +2065,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of households privately renting their home, by ethnicity and age group" class="download-png"
-                               id="download-15410c851dec3ae4c30f583813991bc3e26397d6" data-title="Percentage of households privately renting their home, by ethnicity and age group">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="15410c851dec3ae4c30f583813991bc3e26397d6" data-chart-title="Percentage of households privately renting their home, by ethnicity and age group">
                         </p>
                 </div>
               </div>
@@ -2638,7 +2618,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
   </div>
 
 </footer>
-          <script type="text/javascript" src="/static/javascripts/all-5b1e4a18b8.js"></script>
+          <script type="text/javascript" src="/static/javascripts/all-ddc4e5f827.js"></script>
         <script>window.GOVUKFrontend.initAll()</script>
 
 
@@ -2673,6 +2653,24 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
         chart_div.classList.remove('hidden');
     };
+
+    if ($() && typeof($().highcharts) === 'function') {
+        var chartDownloadLinkContainers = document.getElementsByClassName('chart-download-link-container');
+        for (var i = 0, chartDownloadLinkContainer; chartDownloadLinkContainer = chartDownloadLinkContainers[i]; i++) {
+            var link = document.createElement('a');
+            link.id = 'download-' + chartDownloadLinkContainer.getAttribute('data-chart-guid');
+            link.href = '#';
+            link.className = 'govuk-link download-png';
+            link.setAttribute('data-on', 'click');
+            link.setAttribute('data-event-category', 'Image downloaded');
+            link.setAttribute('data-event-action', "Image of the chart");
+            link.setAttribute('data-event-label', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.setAttribute('data-title', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.text = 'Download chart (PNG)';
+            chartDownloadLinkContainer.appendChild(link);
+        }
+        ;
+    }
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

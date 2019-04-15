@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-04-15T09:46:51.609354 -->
+  <!-- Page built at 2019-04-15T13:11:27.100159 -->
 
   <meta charset="utf-8" />
   <title>Pupil exclusions - GOV.UK Ethnicity facts and figures</title>
@@ -350,11 +350,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of temporary exclusions within each ethnic group" class="download-png"
-                               id="download-5af2504426cfeac296f2fa075d7873aca33b3ab4" data-title="Percentage of temporary exclusions within each ethnic group">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="5af2504426cfeac296f2fa075d7873aca33b3ab4" data-chart-title="Percentage of temporary exclusions within each ethnic group">
                         </p>
                 </div>
               </div>
@@ -807,11 +803,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
                     </p>
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of permanent exclusions within each ethnic group" class="download-png"
-                               id="download-a3db421af58376bcc8749c3b405b817d6563ef45" data-title="Percentage of permanent exclusions within each ethnic group">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="a3db421af58376bcc8749c3b405b817d6563ef45" data-chart-title="Percentage of permanent exclusions within each ethnic group">
                         </p>
                 </div>
               </div>
@@ -1264,11 +1256,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
                     </p>
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of temporary exclusions by ethnicity and type of school" class="download-png"
-                               id="download-5803a584530593d9406286cf95bd4304b820a35a" data-title="Percentage of temporary exclusions by ethnicity and type of school">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="5803a584530593d9406286cf95bd4304b820a35a" data-chart-title="Percentage of temporary exclusions by ethnicity and type of school">
                         </p>
                 </div>
               </div>
@@ -2191,11 +2179,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
                     </p>
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of permanent exclusions by ethnicity and type of school" class="download-png"
-                               id="download-e0144a924d8fd2cb86a568a9050f51ec3af7e53b" data-title="Percentage of permanent exclusions by ethnicity and type of school">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="e0144a924d8fd2cb86a568a9050f51ec3af7e53b" data-chart-title="Percentage of permanent exclusions by ethnicity and type of school">
                         </p>
                 </div>
               </div>
@@ -14002,7 +13986,7 @@ Rates are calculated using the number of registered pupils as of the spring cens
   </div>
 
 </footer>
-          <script type="text/javascript" src="/static/javascripts/all-5b1e4a18b8.js"></script>
+          <script type="text/javascript" src="/static/javascripts/all-ddc4e5f827.js"></script>
         <script>window.GOVUKFrontend.initAll()</script>
 
 
@@ -14037,6 +14021,24 @@ Rates are calculated using the number of registered pupils as of the spring cens
     for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
         chart_div.classList.remove('hidden');
     };
+
+    if ($() && typeof($().highcharts) === 'function') {
+        var chartDownloadLinkContainers = document.getElementsByClassName('chart-download-link-container');
+        for (var i = 0, chartDownloadLinkContainer; chartDownloadLinkContainer = chartDownloadLinkContainers[i]; i++) {
+            var link = document.createElement('a');
+            link.id = 'download-' + chartDownloadLinkContainer.getAttribute('data-chart-guid');
+            link.href = '#';
+            link.className = 'govuk-link download-png';
+            link.setAttribute('data-on', 'click');
+            link.setAttribute('data-event-category', 'Image downloaded');
+            link.setAttribute('data-event-action', "Image of the chart");
+            link.setAttribute('data-event-label', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.setAttribute('data-title', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.text = 'Download chart (PNG)';
+            chartDownloadLinkContainer.appendChild(link);
+        }
+        ;
+    }
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 <head>
-  <!-- Page built at 2019-04-15T09:48:49.573661 -->
+  <!-- Page built at 2019-04-15T13:12:39.179651 -->
 
   <meta charset="utf-8" />
   <title>Fire and rescue services workforce - GOV.UK Ethnicity facts and figures</title>
@@ -327,11 +327,7 @@ Numbers of staff with unknown ethnicity are included in the tables for reference
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of firefighters by ethnicity" class="download-png"
-                               id="download-b6be60a59904f967ba99912a71b9c1ee44e020ec" data-title="Percentage of firefighters by ethnicity">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="b6be60a59904f967ba99912a71b9c1ee44e020ec" data-chart-title="Percentage of firefighters by ethnicity">
                         </p>
                 </div>
               </div>
@@ -2260,11 +2256,7 @@ Numbers of staff with unknown ethnicity are included in the tables for reference
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of people in each ethnic group by role in the fire and rescue service workforce" class="download-png"
-                               id="download-3c49c755e2852eb1661d56bf9dbfb26394c04c52" data-title="Percentage of people in each ethnic group by role in the fire and rescue service workforce">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="3c49c755e2852eb1661d56bf9dbfb26394c04c52" data-chart-title="Percentage of people in each ethnic group by role in the fire and rescue service workforce">
                         </p>
                 </div>
               </div>
@@ -5643,11 +5635,7 @@ Numbers of staff with unknown ethnicity are included in the tables for reference
                 <div class="govuk-grid-column-full chart-footer">
 
 
-                        <p class="chart-download">
-                            <a class="govuk-link download-png" href="#" data-on="click" data-event-category="Image downloaded" data-event-action="Image of the chart" data-event-label="Percentage of firefighters from different ethnic groups, by type of duty" class="download-png"
-                               id="download-86e1d3e123d35b59f0c4314dab4dae2d62c0be7f" data-title="Percentage of firefighters from different ethnic groups, by type of duty">
-                                Download chart (PNG)
-                            </a>
+                        <p class="chart-download chart-download-link-container" data-chart-guid="86e1d3e123d35b59f0c4314dab4dae2d62c0be7f" data-chart-title="Percentage of firefighters from different ethnic groups, by type of duty">
                         </p>
                 </div>
               </div>
@@ -6143,7 +6131,7 @@ Numbers of staff with unknown ethnicity are included in the tables for reference
   </div>
 
 </footer>
-          <script type="text/javascript" src="/static/javascripts/all-5b1e4a18b8.js"></script>
+          <script type="text/javascript" src="/static/javascripts/all-ddc4e5f827.js"></script>
         <script>window.GOVUKFrontend.initAll()</script>
 
 
@@ -6178,6 +6166,24 @@ Numbers of staff with unknown ethnicity are included in the tables for reference
     for (var i=0, chart_div; chart_div = chart_divs[i]; i++) {
         chart_div.classList.remove('hidden');
     };
+
+    if ($() && typeof($().highcharts) === 'function') {
+        var chartDownloadLinkContainers = document.getElementsByClassName('chart-download-link-container');
+        for (var i = 0, chartDownloadLinkContainer; chartDownloadLinkContainer = chartDownloadLinkContainers[i]; i++) {
+            var link = document.createElement('a');
+            link.id = 'download-' + chartDownloadLinkContainer.getAttribute('data-chart-guid');
+            link.href = '#';
+            link.className = 'govuk-link download-png';
+            link.setAttribute('data-on', 'click');
+            link.setAttribute('data-event-category', 'Image downloaded');
+            link.setAttribute('data-event-action', "Image of the chart");
+            link.setAttribute('data-event-label', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.setAttribute('data-title', chartDownloadLinkContainer.getAttribute('data-chart-title'));
+            link.text = 'Download chart (PNG)';
+            chartDownloadLinkContainer.appendChild(link);
+        }
+        ;
+    }
 
     $('.download-png').click(function(evt){
         var dimensionGuid = $(evt.currentTarget).attr('id').replace('download-', ''),
