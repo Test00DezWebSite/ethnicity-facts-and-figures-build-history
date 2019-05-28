@@ -1,0 +1,7 @@
+"Measure","Time","Time_type","Ethnicity","Ethnicity_type","Geography","Geography_type","Value","Value_type","Upper bound","Lower bound","unweighted sample size"
+"Smoking prevalence at age 15 - current smokers","2014/15","Financial year","White","ONS 5+1 2011","E92000001","ONS geography code","9.203215297","%","9.403215297","9.003215297","86530"
+"Smoking prevalence at age 15 - current smokers","2014/15","Financial year","Mixed","ONS 5+1 2011","E92000001","ONS geography code","9.036091265","%","9.836091265","8.236091265","3721"
+"Smoking prevalence at age 15 - current smokers","2014/15","Financial year","Asian","ONS 5+1 2011","E92000001","ONS geography code","2.576418113","%","2.876418113","2.276418113","9495"
+"Smoking prevalence at age 15 - current smokers","2014/15","Financial year","Black","ONS 5+1 2011","E92000001","ONS geography code","2.385278424","%","2.785278424","1.985278424","4876"
+"Smoking prevalence at age 15 - current smokers","2014/15","Financial year","Other","ONS 5+1 2011","E92000001","ONS geography code","2.905055029","%","4.105055029","1.705055029","554"
+"Smoking prevalence at age 15 - current smokers","2014/15","Financial year","All","All ethnicity","E92000001","ONS geography code","8.196694894","%","8.296694894","8.096694894","116646"

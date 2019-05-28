@@ -1,0 +1,1537 @@
+"Measure","Year","Ethnicity","Sex","NS-SEC","Threshold","Mean","Percentage","Upper Confidence Interval","Lower Confidence Interval","Sample Size"
+"Worthwhile","2012","Arab","All","All","All","7.19","N/A","7.47","6.91","340"
+"Worthwhile","2013","Arab","All","All","All","7.33","N/A","7.58","7.09","330"
+"Worthwhile","2014","Arab","All","All","All","7.48","N/A","7.7","7.26","370"
+"Worthwhile","2015","Arab","All","All","All","7.77","N/A","8","7.54","370"
+"Worthwhile","2016","Arab","All","All","All","7.75","N/A","7.98","7.52","340"
+"Worthwhile","2017","Arab","All","All","All","7.68","N/A","7.9","7.45","340"
+"Worthwhile","2012","Bangladeshi","All","All","All","7.44","N/A","7.62","7.26","580"
+"Worthwhile","2013","Bangladeshi","All","All","All","7.62","N/A","7.8","7.44","550"
+"Worthwhile","2014","Bangladeshi","All","All","All","7.76","N/A","7.93","7.58","560"
+"Worthwhile","2015","Bangladeshi","All","All","All","7.79","N/A","7.98","7.61","550"
+"Worthwhile","2016","Bangladeshi","All","All","All","7.65","N/A","7.83","7.47","550"
+"Worthwhile","2017","Bangladeshi","All","All","All","7.74","N/A","8","7.48","580"
+"Worthwhile","2012","Black / African / Caribbean / Black British","All","All","All","7.47","N/A","7.55","7.39","3100"
+"Worthwhile","2013","Black / African / Caribbean / Black British","All","All","All","7.59","N/A","7.67","7.51","3070"
+"Worthwhile","2014","Black / African / Caribbean / Black British","All","All","All","7.64","N/A","7.72","7.55","3150"
+"Worthwhile","2015","Black / African / Caribbean / Black British","All","All","All","7.69","N/A","7.77","7.62","3200"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","All","All","7.65","N/A","7.74","7.57","2990"
+"Worthwhile","2017","Black / African / Caribbean / Black British","All","All","All","7.72","N/A","7.81","7.63","2920"
+"Worthwhile","2012","Chinese","All","All","All","7.43","N/A","7.64","7.23","590"
+"Worthwhile","2013","Chinese","All","All","All","7.47","N/A","7.62","7.33","580"
+"Worthwhile","2014","Chinese","All","All","All","7.75","N/A","7.88","7.62","580"
+"Worthwhile","2015","Chinese","All","All","All","7.66","N/A","7.86","7.46","580"
+"Worthwhile","2016","Chinese","All","All","All","7.74","N/A","7.88","7.61","570"
+"Worthwhile","2017","Chinese","All","All","All","7.61","N/A","7.76","7.47","600"
+"Worthwhile","2012","Gypsy / Traveller / Irish Traveller","All","All","All","?","N/A","?","?","40"
+"Worthwhile","2013","Gypsy / Traveller / Irish Traveller","All","All","All","?","N/A","?","?","40"
+"Worthwhile","2014","Gypsy / Traveller / Irish Traveller","All","All","All","?","N/A","?","?","30"
+"Worthwhile","2015","Gypsy / Traveller / Irish Traveller","All","All","All","?","N/A","?","?","40"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","All","All","?","N/A","?","?","40"
+"Worthwhile","2017","Gypsy / Traveller / Irish Traveller","All","All","All","?","N/A","?","?","40"
+"Worthwhile","2012","Indian","All","All","All","7.71","N/A","7.79","7.63","2730"
+"Worthwhile","2013","Indian","All","All","All","7.73","N/A","7.81","7.65","2720"
+"Worthwhile","2014","Indian","All","All","All","7.76","N/A","7.84","7.68","2860"
+"Worthwhile","2015","Indian","All","All","All","7.88","N/A","7.96","7.8","2720"
+"Worthwhile","2016","Indian","All","All","All","7.9","N/A","7.98","7.82","2700"
+"Worthwhile","2017","Indian","All","All","All","7.9","N/A","7.97","7.82","2510"
+"Worthwhile","2012","Mixed / Multiple ethnic groups","All","All","All","7.46","N/A","7.62","7.29","960"
+"Worthwhile","2013","Mixed / Multiple ethnic groups","All","All","All","7.67","N/A","7.83","7.51","940"
+"Worthwhile","2014","Mixed / Multiple ethnic groups","All","All","All","7.52","N/A","7.67","7.38","1050"
+"Worthwhile","2015","Mixed / Multiple ethnic groups","All","All","All","7.69","N/A","7.83","7.54","1020"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","All","All","7.72","N/A","7.86","7.58","990"
+"Worthwhile","2017","Mixed / Multiple ethnic groups","All","All","All","7.69","N/A","7.82","7.56","1040"
+"Worthwhile","2012","Other Asian background","All","All","All","7.56","N/A","7.7","7.41","1070"
+"Worthwhile","2013","Other Asian background","All","All","All","7.62","N/A","7.77","7.47","1050"
+"Worthwhile","2014","Other Asian background","All","All","All","7.78","N/A","7.92","7.64","1050"
+"Worthwhile","2015","Other Asian background","All","All","All","7.7","N/A","7.83","7.58","1070"
+"Worthwhile","2016","Other Asian background","All","All","All","7.82","N/A","7.94","7.7","1060"
+"Worthwhile","2017","Other Asian background","All","All","All","7.82","N/A","7.95","7.69","1020"
+"Worthwhile","2012","Other ethnic group","All","All","All","7.41","N/A","7.54","7.28","1240"
+"Worthwhile","2013","Other ethnic group","All","All","All","7.46","N/A","7.6","7.33","1340"
+"Worthwhile","2014","Other ethnic group","All","All","All","7.66","N/A","7.78","7.55","1340"
+"Worthwhile","2015","Other ethnic group","All","All","All","7.72","N/A","7.84","7.6","1290"
+"Worthwhile","2016","Other ethnic group","All","All","All","7.81","N/A","7.94","7.69","1210"
+"Worthwhile","2017","Other ethnic group","All","All","All","7.89","N/A","8","7.78","1260"
+"Worthwhile","2012","Pakistani","All","All","All","7.53","N/A","7.66","7.41","1540"
+"Worthwhile","2013","Pakistani","All","All","All","7.61","N/A","7.73","7.49","1520"
+"Worthwhile","2014","Pakistani","All","All","All","7.75","N/A","7.86","7.64","1650"
+"Worthwhile","2015","Pakistani","All","All","All","7.81","N/A","7.93","7.7","1520"
+"Worthwhile","2016","Pakistani","All","All","All","7.86","N/A","7.97","7.75","1550"
+"Worthwhile","2017","Pakistani","All","All","All","7.91","N/A","8.03","7.8","1600"
+"Worthwhile","2012","All","All","All","All","7.7","N/A","7.71","7.68","165160"
+"Worthwhile","2013","All","All","All","All","7.73","N/A","7.74","7.71","164940"
+"Worthwhile","2014","All","All","All","All","7.8","N/A","7.81","7.79","164580"
+"Worthwhile","2015","All","All","All","All","7.84","N/A","7.85","7.83","160200"
+"Worthwhile","2016","All","All","All","All","7.85","N/A","7.87","7.84","149520"
+"Worthwhile","2017","All","All","All","All","7.88","N/A","7.89","7.87","150450"
+"Worthwhile","2012","White","All","All","All","7.72","N/A","7.73","7.7","152880"
+"Worthwhile","2013","White","All","All","All","7.74","N/A","7.75","7.73","152720"
+"Worthwhile","2014","White","All","All","All","7.81","N/A","7.82","7.8","151820"
+"Worthwhile","2015","White","All","All","All","7.85","N/A","7.87","7.84","147740"
+"Worthwhile","2016","White","All","All","All","7.86","N/A","7.88","7.85","137440"
+"Worthwhile","2017","White","All","All","All","7.89","N/A","7.9","7.88","13850"
+"Worthwhile","2012","Arab","All","All","High (7 - 8)","N/A","38.66","46.22","31.1","-"
+"Worthwhile","2012","Arab","All","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2012","Arab","All","All","Medium (5 - 6)","N/A","26.37","32.62","20.11","-"
+"Worthwhile","2012","Arab","All","All","Very High (9 - 10)","N/A","27.39","34.25","20.53","-"
+"Worthwhile","2013","Arab","All","All","High (7 - 8)","N/A","43.96","50.55","37.36","-"
+"Worthwhile","2013","Arab","All","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2013","Arab","All","All","Medium (5 - 6)","N/A","23.16","28.54","17.78","-"
+"Worthwhile","2013","Arab","All","All","Very High (9 - 10)","N/A","27.21","32.97","21.44","-"
+"Worthwhile","2014","Arab","All","All","High (7 - 8)","N/A","51.66","58.42","44.9","-"
+"Worthwhile","2014","Arab","All","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2014","Arab","All","All","Medium (5 - 6)","N/A","17.69","22.45","12.93","-"
+"Worthwhile","2014","Arab","All","All","Very High (9 - 10)","N/A","25","30.36","19.64","-"
+"Worthwhile","2015","Arab","All","All","High (7 - 8)","N/A","42.51","49.32","35.7","-"
+"Worthwhile","2015","Arab","All","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2015","Arab","All","All","Medium (5 - 6)","N/A","16.76","21.59","11.94","-"
+"Worthwhile","2015","Arab","All","All","Very High (9 - 10)","N/A","36.89","43.63","30.16","-"
+"Worthwhile","2016","Arab","All","All","High (7 - 8)","N/A","48.74","55.17","42.32","-"
+"Worthwhile","2016","Arab","All","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","All","All","Medium (5 - 6)","N/A","13.15","17.08","9.22","-"
+"Worthwhile","2016","Arab","All","All","Very High (9 - 10)","N/A","33.44","39.93","26.94","-"
+"Worthwhile","2017","Arab","All","All","High (7 - 8)","N/A","46","52.48","39.51","-"
+"Worthwhile","2017","Arab","All","All","Low (0 - 4)","N/A","?","6.76","2.11","-"
+"Worthwhile","2017","Arab","All","All","Medium (5 - 6)","N/A","16.9","21.69","12.1","-"
+"Worthwhile","2017","Arab","All","All","Very High (9 - 10)","N/A","32.67","38.87","26.47","-"
+"Worthwhile","2012","Bangladeshi","All","All","High (7 - 8)","N/A","44.28","49.49","39.06","-"
+"Worthwhile","2012","Bangladeshi","All","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2012","Bangladeshi","All","All","Medium (5 - 6)","N/A","23.11","27.5","18.73","-"
+"Worthwhile","2012","Bangladeshi","All","All","Very High (9 - 10)","N/A","28.51","33.5","23.52","-"
+"Worthwhile","2013","Bangladeshi","All","All","High (7 - 8)","N/A","45.99","50.91","41.07","-"
+"Worthwhile","2013","Bangladeshi","All","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2013","Bangladeshi","All","All","Medium (5 - 6)","N/A","17.47","21.18","13.75","-"
+"Worthwhile","2013","Bangladeshi","All","All","Very High (9 - 10)","N/A","32.04","36.69","27.39","-"
+"Worthwhile","2014","Bangladeshi","All","All","High (7 - 8)","N/A","44.9","50.06","39.75","-"
+"Worthwhile","2014","Bangladeshi","All","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2014","Bangladeshi","All","All","Medium (5 - 6)","N/A","17.23","21.4","13.07","-"
+"Worthwhile","2014","Bangladeshi","All","All","Very High (9 - 10)","N/A","34.78","39.81","29.75","-"
+"Worthwhile","2015","Bangladeshi","All","All","High (7 - 8)","N/A","43.88","49.48","38.29","-"
+"Worthwhile","2015","Bangladeshi","All","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2015","Bangladeshi","All","All","Medium (5 - 6)","N/A","16.72","21.24","12.21","-"
+"Worthwhile","2015","Bangladeshi","All","All","Very High (9 - 10)","N/A","35.69","41.37","30.01","-"
+"Worthwhile","2016","Bangladeshi","All","All","High (7 - 8)","N/A","45.61","50.71","40.51","-"
+"Worthwhile","2016","Bangladeshi","All","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Bangladeshi","All","All","Medium (5 - 6)","N/A","20.07","24.23","15.91","-"
+"Worthwhile","2016","Bangladeshi","All","All","Very High (9 - 10)","N/A","30.89","35.9","25.87","-"
+"Worthwhile","2017","Bangladeshi","All","All","High (7 - 8)","N/A","44.87","50.46","39.28","-"
+"Worthwhile","2017","Bangladeshi","All","All","Low (0 - 4)","N/A","?","11.46","1.46","-"
+"Worthwhile","2017","Bangladeshi","All","All","Medium (5 - 6)","N/A","13.96","17.37","10.55","-"
+"Worthwhile","2017","Bangladeshi","All","All","Very High (9 - 10)","N/A","34.71","40.15","29.27","-"
+"Worthwhile","2012","Black / African / Caribbean / Black British","All","All","High (7 - 8)","N/A","42.9","45.03","40.78","-"
+"Worthwhile","2012","Black / African / Caribbean / Black British","All","All","Low (0 - 4)","N/A","5.26","6.13","4.38","-"
+"Worthwhile","2012","Black / African / Caribbean / Black British","All","All","Medium (5 - 6)","N/A","21.77","23.59","19.95","-"
+"Worthwhile","2012","Black / African / Caribbean / Black British","All","All","Very High (9 - 10)","N/A","30.07","32.05","28.1","-"
+"Worthwhile","2013","Black / African / Caribbean / Black British","All","All","High (7 - 8)","N/A","44.05","46.24","41.86","-"
+"Worthwhile","2013","Black / African / Caribbean / Black British","All","All","Low (0 - 4)","N/A","4.76","5.6","3.91","-"
+"Worthwhile","2013","Black / African / Caribbean / Black British","All","All","Medium (5 - 6)","N/A","19.35","21.09","17.62","-"
+"Worthwhile","2013","Black / African / Caribbean / Black British","All","All","Very High (9 - 10)","N/A","31.84","33.86","29.81","-"
+"Worthwhile","2014","Black / African / Caribbean / Black British","All","All","High (7 - 8)","N/A","43.82","45.96","41.68","-"
+"Worthwhile","2014","Black / African / Caribbean / Black British","All","All","Low (0 - 4)","N/A","4.84","5.77","3.91","-"
+"Worthwhile","2014","Black / African / Caribbean / Black British","All","All","Medium (5 - 6)","N/A","18.08","19.78","16.38","-"
+"Worthwhile","2014","Black / African / Caribbean / Black British","All","All","Very High (9 - 10)","N/A","33.27","35.44","31.09","-"
+"Worthwhile","2015","Black / African / Caribbean / Black British","All","All","High (7 - 8)","N/A","44.5","46.62","42.38","-"
+"Worthwhile","2015","Black / African / Caribbean / Black British","All","All","Low (0 - 4)","N/A","3.36","4.06","2.67","-"
+"Worthwhile","2015","Black / African / Caribbean / Black British","All","All","Medium (5 - 6)","N/A","18.69","20.42","16.95","-"
+"Worthwhile","2015","Black / African / Caribbean / Black British","All","All","Very High (9 - 10)","N/A","33.46","35.5","31.42","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","All","High (7 - 8)","N/A","43.95","46.2","41.71","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","All","Low (0 - 4)","N/A","4.38","5.31","3.44","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","All","Medium (5 - 6)","N/A","18.34","20.08","16.6","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","All","Very High (9 - 10)","N/A","33.33","35.49","31.17","-"
+"Worthwhile","2017","Black / African / Caribbean / Black British","All","All","High (7 - 8)","N/A","43.69","45.93","41.46","-"
+"Worthwhile","2017","Black / African / Caribbean / Black British","All","All","Low (0 - 4)","N/A","4.93","6.04","3.82","-"
+"Worthwhile","2017","Black / African / Caribbean / Black British","All","All","Medium (5 - 6)","N/A","15.94","17.57","14.3","-"
+"Worthwhile","2017","Black / African / Caribbean / Black British","All","All","Very High (9 - 10)","N/A","35.44","37.66","33.22","-"
+"Worthwhile","2012","Chinese","All","All","High (7 - 8)","N/A","54.97","60.53","49.41","-"
+"Worthwhile","2012","Chinese","All","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2012","Chinese","All","All","Medium (5 - 6)","N/A","19.49","23.72","15.25","-"
+"Worthwhile","2012","Chinese","All","All","Very High (9 - 10)","N/A","22.63","27.18","18.07","-"
+"Worthwhile","2013","Chinese","All","All","High (7 - 8)","N/A","60.03","65.37","54.68","-"
+"Worthwhile","2013","Chinese","All","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2013","Chinese","All","All","Medium (5 - 6)","N/A","18.2","22.41","13.99","-"
+"Worthwhile","2013","Chinese","All","All","Very High (9 - 10)","N/A","20.4","24.51","16.29","-"
+"Worthwhile","2014","Chinese","All","All","High (7 - 8)","N/A","60.08","65.43","54.74","-"
+"Worthwhile","2014","Chinese","All","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2014","Chinese","All","All","Medium (5 - 6)","N/A","12.68","15.78","9.59","-"
+"Worthwhile","2014","Chinese","All","All","Very High (9 - 10)","N/A","26.21","31.03","21.39","-"
+"Worthwhile","2015","Chinese","All","All","High (7 - 8)","N/A","54.57","60.08","49.07","-"
+"Worthwhile","2015","Chinese","All","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2015","Chinese","All","All","Medium (5 - 6)","N/A","14.84","18.66","11.02","-"
+"Worthwhile","2015","Chinese","All","All","Very High (9 - 10)","N/A","27.67","33.17","22.18","-"
+"Worthwhile","2016","Chinese","All","All","High (7 - 8)","N/A","58.15","63.1","53.2","-"
+"Worthwhile","2016","Chinese","All","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Chinese","All","All","Medium (5 - 6)","N/A","14.44","17.83","11.05","-"
+"Worthwhile","2016","Chinese","All","All","Very High (9 - 10)","N/A","25.98","30.41","21.56","-"
+"Worthwhile","2017","Chinese","All","All","High (7 - 8)","N/A","58.91","63.73","54.1","-"
+"Worthwhile","2017","Chinese","All","All","Low (0 - 4)","N/A","?","4.27","0.97","-"
+"Worthwhile","2017","Chinese","All","All","Medium (5 - 6)","N/A","14.24","17.56","10.91","-"
+"Worthwhile","2017","Chinese","All","All","Very High (9 - 10)","N/A","24.23","28.57","19.89","-"
+"Worthwhile","2012","Gypsy / Traveller / Irish Traveller","All","All","High (7 - 8)","N/A","?","?","?","-"
+"Worthwhile","2012","Gypsy / Traveller / Irish Traveller","All","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2012","Gypsy / Traveller / Irish Traveller","All","All","Medium (5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2012","Gypsy / Traveller / Irish Traveller","All","All","Very High (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2013","Gypsy / Traveller / Irish Traveller","All","All","High (7 - 8)","N/A","?","?","?","-"
+"Worthwhile","2013","Gypsy / Traveller / Irish Traveller","All","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2013","Gypsy / Traveller / Irish Traveller","All","All","Medium (5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2013","Gypsy / Traveller / Irish Traveller","All","All","Very High (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2014","Gypsy / Traveller / Irish Traveller","All","All","High (7 - 8)","N/A","?","?","?","-"
+"Worthwhile","2014","Gypsy / Traveller / Irish Traveller","All","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2014","Gypsy / Traveller / Irish Traveller","All","All","Medium (5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2014","Gypsy / Traveller / Irish Traveller","All","All","Very High (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2015","Gypsy / Traveller / Irish Traveller","All","All","High (7 - 8)","N/A","?","?","?","-"
+"Worthwhile","2015","Gypsy / Traveller / Irish Traveller","All","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2015","Gypsy / Traveller / Irish Traveller","All","All","Medium (5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2015","Gypsy / Traveller / Irish Traveller","All","All","Very High (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","All","High (7 - 8)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","All","Medium (5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","All","Very High (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2017","Gypsy / Traveller / Irish Traveller","All","All","High (7 - 8)","N/A","?","?","?","-"
+"Worthwhile","2017","Gypsy / Traveller / Irish Traveller","All","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2017","Gypsy / Traveller / Irish Traveller","All","All","Medium (5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2017","Gypsy / Traveller / Irish Traveller","All","All","Very High (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2012","Indian","All","All","High (7 - 8)","N/A","48.48","50.82","46.14","-"
+"Worthwhile","2012","Indian","All","All","Low (0 - 4)","N/A","3.4","4.19","2.62","-"
+"Worthwhile","2012","Indian","All","All","Medium (5 - 6)","N/A","16.48","18.23","14.74","-"
+"Worthwhile","2012","Indian","All","All","Very High (9 - 10)","N/A","31.63","33.91","29.36","-"
+"Worthwhile","2013","Indian","All","All","High (7 - 8)","N/A","50.42","52.84","48.01","-"
+"Worthwhile","2013","Indian","All","All","Low (0 - 4)","N/A","3.08","3.85","2.3","-"
+"Worthwhile","2013","Indian","All","All","Medium (5 - 6)","N/A","15.81","17.62","13.99","-"
+"Worthwhile","2013","Indian","All","All","Very High (9 - 10)","N/A","30.69","32.92","28.47","-"
+"Worthwhile","2014","Indian","All","All","High (7 - 8)","N/A","51.79","54.2","49.38","-"
+"Worthwhile","2014","Indian","All","All","Low (0 - 4)","N/A","2.91","3.63","2.18","-"
+"Worthwhile","2014","Indian","All","All","Medium (5 - 6)","N/A","13.92","15.68","12.16","-"
+"Worthwhile","2014","Indian","All","All","Very High (9 - 10)","N/A","31.39","33.71","29.06","-"
+"Worthwhile","2015","Indian","All","All","High (7 - 8)","N/A","51.08","53.52","48.63","-"
+"Worthwhile","2015","Indian","All","All","Low (0 - 4)","N/A","2.42","3.07","1.77","-"
+"Worthwhile","2015","Indian","All","All","Medium (5 - 6)","N/A","12.59","14.21","10.98","-"
+"Worthwhile","2015","Indian","All","All","Very High (9 - 10)","N/A","33.91","36.31","31.51","-"
+"Worthwhile","2016","Indian","All","All","High (7 - 8)","N/A","51.65","54.1","49.21","-"
+"Worthwhile","2016","Indian","All","All","Low (0 - 4)","N/A","2.05","2.8","1.3","-"
+"Worthwhile","2016","Indian","All","All","Medium (5 - 6)","N/A","12.48","14.01","10.94","-"
+"Worthwhile","2016","Indian","All","All","Very High (9 - 10)","N/A","33.82","36.2","31.44","-"
+"Worthwhile","2017","Indian","All","All","High (7 - 8)","N/A","50.83","53.34","48.31","-"
+"Worthwhile","2017","Indian","All","All","Low (0 - 4)","N/A","2.62","3.36","1.88","-"
+"Worthwhile","2017","Indian","All","All","Medium (5 - 6)","N/A","12.15","13.7","10.61","-"
+"Worthwhile","2017","Indian","All","All","Very High (9 - 10)","N/A","34.4","36.83","31.98","-"
+"Worthwhile","2012","Mixed / Multiple ethnic groups","All","All","High (7 - 8)","N/A","48.07","52.02","44.11","-"
+"Worthwhile","2012","Mixed / Multiple ethnic groups","All","All","Low (0 - 4)","N/A","6.15","8.32","3.97","-"
+"Worthwhile","2012","Mixed / Multiple ethnic groups","All","All","Medium (5 - 6)","N/A","18.45","21.69","15.21","-"
+"Worthwhile","2012","Mixed / Multiple ethnic groups","All","All","Very High (9 - 10)","N/A","27.34","30.77","23.9","-"
+"Worthwhile","2013","Mixed / Multiple ethnic groups","All","All","High (7 - 8)","N/A","43.37","47.64","39.09","-"
+"Worthwhile","2013","Mixed / Multiple ethnic groups","All","All","Low (0 - 4)","N/A","5.86","8.12","3.59","-"
+"Worthwhile","2013","Mixed / Multiple ethnic groups","All","All","Medium (5 - 6)","N/A","15.15","18.2","12.1","-"
+"Worthwhile","2013","Mixed / Multiple ethnic groups","All","All","Very High (9 - 10)","N/A","35.63","39.7","31.55","-"
+"Worthwhile","2014","Mixed / Multiple ethnic groups","All","All","High (7 - 8)","N/A","46.79","50.65","42.92","-"
+"Worthwhile","2014","Mixed / Multiple ethnic groups","All","All","Low (0 - 4)","N/A","5.11","7.03","3.19","-"
+"Worthwhile","2014","Mixed / Multiple ethnic groups","All","All","Medium (5 - 6)","N/A","19","22.32","15.69","-"
+"Worthwhile","2014","Mixed / Multiple ethnic groups","All","All","Very High (9 - 10)","N/A","29.1","32.58","25.63","-"
+"Worthwhile","2015","Mixed / Multiple ethnic groups","All","All","High (7 - 8)","N/A","48.4","52.45","44.36","-"
+"Worthwhile","2015","Mixed / Multiple ethnic groups","All","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2015","Mixed / Multiple ethnic groups","All","All","Medium (5 - 6)","N/A","16.06","18.96","13.15","-"
+"Worthwhile","2015","Mixed / Multiple ethnic groups","All","All","Very High (9 - 10)","N/A","31.83","35.6","28.06","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","All","High (7 - 8)","N/A","48.66","52.67","44.64","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","All","Low (0 - 4)","N/A","3.6","4.93","2.26","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","All","Medium (5 - 6)","N/A","15.72","19.23","12.21","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","All","Very High (9 - 10)","N/A","32.02","35.81","28.24","-"
+"Worthwhile","2017","Mixed / Multiple ethnic groups","All","All","High (7 - 8)","N/A","50.49","54.46","46.53","-"
+"Worthwhile","2017","Mixed / Multiple ethnic groups","All","All","Low (0 - 4)","N/A","?","5.81","2.5","-"
+"Worthwhile","2017","Mixed / Multiple ethnic groups","All","All","Medium (5 - 6)","N/A","15.03","17.89","12.17","-"
+"Worthwhile","2017","Mixed / Multiple ethnic groups","All","All","Very High (9 - 10)","N/A","30.32","33.92","26.72","-"
+"Worthwhile","2012","Other Asian background","All","All","High (7 - 8)","N/A","47.15","50.9","43.39","-"
+"Worthwhile","2012","Other Asian background","All","All","Low (0 - 4)","N/A","4.6","6.33","2.88","-"
+"Worthwhile","2012","Other Asian background","All","All","Medium (5 - 6)","N/A","18.67","21.63","15.72","-"
+"Worthwhile","2012","Other Asian background","All","All","Very High (9 - 10)","N/A","29.58","33.03","26.12","-"
+"Worthwhile","2013","Other Asian background","All","All","High (7 - 8)","N/A","45.66","49.73","41.59","-"
+"Worthwhile","2013","Other Asian background","All","All","Low (0 - 4)","N/A","5.28","7.11","3.45","-"
+"Worthwhile","2013","Other Asian background","All","All","Medium (5 - 6)","N/A","16.79","20.01","13.56","-"
+"Worthwhile","2013","Other Asian background","All","All","Very High (9 - 10)","N/A","32.28","36.09","28.47","-"
+"Worthwhile","2014","Other Asian background","All","All","High (7 - 8)","N/A","47.74","51.53","43.94","-"
+"Worthwhile","2014","Other Asian background","All","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2014","Other Asian background","All","All","Medium (5 - 6)","N/A","15.16","17.85","12.48","-"
+"Worthwhile","2014","Other Asian background","All","All","Very High (9 - 10)","N/A","33.75","37.43","30.07","-"
+"Worthwhile","2015","Other Asian background","All","All","High (7 - 8)","N/A","48.5","52.37","44.62","-"
+"Worthwhile","2015","Other Asian background","All","All","Low (0 - 4)","N/A","2.48","3.46","1.51","-"
+"Worthwhile","2015","Other Asian background","All","All","Medium (5 - 6)","N/A","18.34","21.51","15.16","-"
+"Worthwhile","2015","Other Asian background","All","All","Very High (9 - 10)","N/A","30.68","34.24","27.13","-"
+"Worthwhile","2016","Other Asian background","All","All","High (7 - 8)","N/A","49.03","52.97","45.09","-"
+"Worthwhile","2016","Other Asian background","All","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Other Asian background","All","All","Medium (5 - 6)","N/A","14.33","17.02","11.64","-"
+"Worthwhile","2016","Other Asian background","All","All","Very High (9 - 10)","N/A","33.89","37.74","30.05","-"
+"Worthwhile","2017","Other Asian background","All","All","High (7 - 8)","N/A","48.07","52.21","43.92","-"
+"Worthwhile","2017","Other Asian background","All","All","Low (0 - 4)","N/A","?","3.29","1.39","-"
+"Worthwhile","2017","Other Asian background","All","All","Medium (5 - 6)","N/A","15.5","18.49","12.51","-"
+"Worthwhile","2017","Other Asian background","All","All","Very High (9 - 10)","N/A","34.09","37.93","30.24","-"
+"Worthwhile","2012","Other ethnic group","All","All","High (7 - 8)","N/A","45.74","49.14","42.33","-"
+"Worthwhile","2012","Other ethnic group","All","All","Low (0 - 4)","N/A","6.13","7.76","4.5","-"
+"Worthwhile","2012","Other ethnic group","All","All","Medium (5 - 6)","N/A","20.97","23.86","18.08","-"
+"Worthwhile","2012","Other ethnic group","All","All","Very High (9 - 10)","N/A","27.17","30.27","24.06","-"
+"Worthwhile","2013","Other ethnic group","All","All","High (7 - 8)","N/A","47.3","50.68","43.92","-"
+"Worthwhile","2013","Other ethnic group","All","All","Low (0 - 4)","N/A","6.92","8.68","5.15","-"
+"Worthwhile","2013","Other ethnic group","All","All","Medium (5 - 6)","N/A","16.97","19.46","14.49","-"
+"Worthwhile","2013","Other ethnic group","All","All","Very High (9 - 10)","N/A","28.8","31.9","25.71","-"
+"Worthwhile","2014","Other ethnic group","All","All","High (7 - 8)","N/A","47.7","51.21","44.19","-"
+"Worthwhile","2014","Other ethnic group","All","All","Low (0 - 4)","N/A","3.78","5.01","2.54","-"
+"Worthwhile","2014","Other ethnic group","All","All","Medium (5 - 6)","N/A","17.32","19.74","14.89","-"
+"Worthwhile","2014","Other ethnic group","All","All","Very High (9 - 10)","N/A","31.2","34.47","27.94","-"
+"Worthwhile","2015","Other ethnic group","All","All","High (7 - 8)","N/A","50.5","53.96","47.03","-"
+"Worthwhile","2015","Other ethnic group","All","All","Low (0 - 4)","N/A","4.47","5.69","3.25","-"
+"Worthwhile","2015","Other ethnic group","All","All","Medium (5 - 6)","N/A","13.57","15.84","11.29","-"
+"Worthwhile","2015","Other ethnic group","All","All","Very High (9 - 10)","N/A","31.47","34.61","28.32","-"
+"Worthwhile","2016","Other ethnic group","All","All","High (7 - 8)","N/A","48.8","52.41","45.19","-"
+"Worthwhile","2016","Other ethnic group","All","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Other ethnic group","All","All","Medium (5 - 6)","N/A","15.45","17.91","13","-"
+"Worthwhile","2016","Other ethnic group","All","All","Very High (9 - 10)","N/A","32.97","36.38","29.56","-"
+"Worthwhile","2017","Other ethnic group","All","All","High (7 - 8)","N/A","48.61","52.13","45.08","-"
+"Worthwhile","2017","Other ethnic group","All","All","Low (0 - 4)","N/A","2.65","3.61","1.69","-"
+"Worthwhile","2017","Other ethnic group","All","All","Medium (5 - 6)","N/A","13.21","15.42","10.99","-"
+"Worthwhile","2017","Other ethnic group","All","All","Very High (9 - 10)","N/A","35.54","38.89","32.19","-"
+"Worthwhile","2012","Pakistani","All","All","High (7 - 8)","N/A","43.03","46.21","39.84","-"
+"Worthwhile","2012","Pakistani","All","All","Low (0 - 4)","N/A","4.44","5.69","3.19","-"
+"Worthwhile","2012","Pakistani","All","All","Medium (5 - 6)","N/A","21.59","24.26","18.92","-"
+"Worthwhile","2012","Pakistani","All","All","Very High (9 - 10)","N/A","30.95","33.98","27.91","-"
+"Worthwhile","2013","Pakistani","All","All","High (7 - 8)","N/A","46.26","49.46","43.05","-"
+"Worthwhile","2013","Pakistani","All","All","Low (0 - 4)","N/A","5.06","6.4","3.73","-"
+"Worthwhile","2013","Pakistani","All","All","Medium (5 - 6)","N/A","17.91","20.4","15.42","-"
+"Worthwhile","2013","Pakistani","All","All","Very High (9 - 10)","N/A","30.77","33.8","27.75","-"
+"Worthwhile","2014","Pakistani","All","All","High (7 - 8)","N/A","44.72","47.78","41.66","-"
+"Worthwhile","2014","Pakistani","All","All","Low (0 - 4)","N/A","3.72","4.77","2.67","-"
+"Worthwhile","2014","Pakistani","All","All","Medium (5 - 6)","N/A","17.2","19.73","14.67","-"
+"Worthwhile","2014","Pakistani","All","All","Very High (9 - 10)","N/A","34.36","37.36","31.36","-"
+"Worthwhile","2015","Pakistani","All","All","High (7 - 8)","N/A","47.37","50.58","44.15","-"
+"Worthwhile","2015","Pakistani","All","All","Low (0 - 4)","N/A","2.8","3.85","1.74","-"
+"Worthwhile","2015","Pakistani","All","All","Medium (5 - 6)","N/A","15.34","17.62","13.07","-"
+"Worthwhile","2015","Pakistani","All","All","Very High (9 - 10)","N/A","34.49","37.74","31.24","-"
+"Worthwhile","2016","Pakistani","All","All","High (7 - 8)","N/A","46.83","50.09","43.56","-"
+"Worthwhile","2016","Pakistani","All","All","Low (0 - 4)","N/A","4.21","5.53","2.88","-"
+"Worthwhile","2016","Pakistani","All","All","Medium (5 - 6)","N/A","13.08","15.08","11.08","-"
+"Worthwhile","2016","Pakistani","All","All","Very High (9 - 10)","N/A","35.89","39.02","32.75","-"
+"Worthwhile","2017","Pakistani","All","All","High (7 - 8)","N/A","43.85","47.15","40.55","-"
+"Worthwhile","2017","Pakistani","All","All","Low (0 - 4)","N/A","2.82","3.86","1.79","-"
+"Worthwhile","2017","Pakistani","All","All","Medium (5 - 6)","N/A","15.41","18.16","12.67","-"
+"Worthwhile","2017","Pakistani","All","All","Very High (9 - 10)","N/A","37.91","41.17","34.66","-"
+"Worthwhile","2012","All","All","All","High (7 - 8)","N/A","49.26","49.58","48.93","-"
+"Worthwhile","2012","All","All","All","Low (0 - 4)","N/A","4.38","4.51","4.25","-"
+"Worthwhile","2012","All","All","All","Medium (5 - 6)","N/A","14.87","15.11","14.64","-"
+"Worthwhile","2012","All","All","All","Very High (9 - 10)","N/A","31.5","31.8","31.19","-"
+"Worthwhile","2013","All","All","All","High (7 - 8)","N/A","49.21","49.53","48.88","-"
+"Worthwhile","2013","All","All","All","Low (0 - 4)","N/A","4.31","4.45","4.18","-"
+"Worthwhile","2013","All","All","All","Medium (5 - 6)","N/A","14.15","14.39","13.92","-"
+"Worthwhile","2013","All","All","All","Very High (9 - 10)","N/A","32.33","32.64","32.02","-"
+"Worthwhile","2014","All","All","All","High (7 - 8)","N/A","49.1","49.43","48.77","-"
+"Worthwhile","2014","All","All","All","Low (0 - 4)","N/A","3.96","4.09","3.83","-"
+"Worthwhile","2014","All","All","All","Medium (5 - 6)","N/A","13.08","13.3","12.85","-"
+"Worthwhile","2014","All","All","All","Very High (9 - 10)","N/A","33.86","34.18","33.54","-"
+"Worthwhile","2015","All","All","All","High (7 - 8)","N/A","49.22","49.56","48.88","-"
+"Worthwhile","2015","All","All","All","Low (0 - 4)","N/A","3.56","3.68","3.44","-"
+"Worthwhile","2015","All","All","All","Medium (5 - 6)","N/A","12.76","12.99","12.54","-"
+"Worthwhile","2015","All","All","All","Very High (9 - 10)","N/A","34.46","34.78","34.13","-"
+"Worthwhile","2016","All","All","All","High (7 - 8)","N/A","48.99","49.34","48.64","-"
+"Worthwhile","2016","All","All","All","Low (0 - 4)","N/A","3.62","3.74","3.49","-"
+"Worthwhile","2016","All","All","All","Medium (5 - 6)","N/A","12.47","12.7","12.23","-"
+"Worthwhile","2016","All","All","All","Very High (9 - 10)","N/A","34.92","35.26","34.59","-"
+"Worthwhile","2017","All","All","All","High (7 - 8)","N/A","48.61","48.96","48.26","-"
+"Worthwhile","2017","All","All","All","Low (0 - 4)","N/A","3.63","3.77","3.5","-"
+"Worthwhile","2017","All","All","All","Medium (5 - 6)","N/A","12.06","12.3","11.83","-"
+"Worthwhile","2017","All","All","All","Very High (9 - 10)","N/A","35.7","36.04","35.36","-"
+"Worthwhile","2012","White","All","All","High (7 - 8)","N/A","49.65","49.99","49.31","-"
+"Worthwhile","2012","White","All","All","Low (0 - 4)","N/A","4.34","4.47","4.2","-"
+"Worthwhile","2012","White","All","All","Medium (5 - 6)","N/A","14.28","14.53","14.04","-"
+"Worthwhile","2012","White","All","All","Very High (9 - 10)","N/A","31.73","32.04","31.41","-"
+"Worthwhile","2013","White","All","All","High (7 - 8)","N/A","49.45","49.79","49.11","-"
+"Worthwhile","2013","White","All","All","Low (0 - 4)","N/A","4.27","4.41","4.14","-"
+"Worthwhile","2013","White","All","All","Medium (5 - 6)","N/A","13.77","14.01","13.53","-"
+"Worthwhile","2013","White","All","All","Very High (9 - 10)","N/A","32.51","32.83","32.19","-"
+"Worthwhile","2014","White","All","All","High (7 - 8)","N/A","49.27","49.61","48.92","-"
+"Worthwhile","2014","White","All","All","Low (0 - 4)","N/A","3.97","4.11","3.84","-"
+"Worthwhile","2014","White","All","All","Medium (5 - 6)","N/A","12.68","12.91","12.44","-"
+"Worthwhile","2014","White","All","All","Very High (9 - 10)","N/A","34.08","34.41","33.75","-"
+"Worthwhile","2015","White","All","All","High (7 - 8)","N/A","49.38","49.73","49.03","-"
+"Worthwhile","2015","White","All","All","Low (0 - 4)","N/A","3.6","3.73","3.47","-"
+"Worthwhile","2015","White","All","All","Medium (5 - 6)","N/A","12.39","12.63","12.16","-"
+"Worthwhile","2015","White","All","All","Very High (9 - 10)","N/A","34.63","34.97","34.29","-"
+"Worthwhile","2016","White","All","All","High (7 - 8)","N/A","49.08","49.45","48.71","-"
+"Worthwhile","2016","White","All","All","Low (0 - 4)","N/A","3.65","3.79","3.52","-"
+"Worthwhile","2016","White","All","All","Medium (5 - 6)","N/A","12.12","12.36","11.87","-"
+"Worthwhile","2016","White","All","All","Very High (9 - 10)","N/A","35.15","35.51","34.8","-"
+"Worthwhile","2017","White","All","All","High (7 - 8)","N/A","48.73","49.1","48.36","-"
+"Worthwhile","2017","White","All","All","Low (0 - 4)","N/A","3.63","3.77","3.49","-"
+"Worthwhile","2017","White","All","All","Medium (5 - 6)","N/A","11.75","11.99","11.5","-"
+"Worthwhile","2017","White","All","All","Very High (9 - 10)","N/A","35.89","36.25","35.53","-"
+"Worthwhile","2016","Arab","Female","All","All","7.93","N/A","8.19","7.68","250"
+"Worthwhile","2016","Arab","Male","All","All","7.75","N/A","7.94","7.56","420"
+"Worthwhile","2016","Bangladeshi","Female","All","All","7.9","N/A","8.08","7.71","470"
+"Worthwhile","2016","Bangladeshi","Male","All","All","7.69","N/A","7.86","7.51","540"
+"Worthwhile","2016","Black / African / Caribbean / Black British","Female","All","All","7.74","N/A","7.81","7.68","3530"
+"Worthwhile","2016","Black / African / Caribbean / Black British","Male","All","All","7.57","N/A","7.67","7.48","2170"
+"Worthwhile","2016","Chinese","Female","All","All","7.81","N/A","7.95","7.67","610"
+"Worthwhile","2016","Chinese","Male","All","All","7.69","N/A","7.86","7.51","450"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","Female","All","All","?","N/A","?","?","40"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","Male","All","All","?","N/A","?","?","20"
+"Worthwhile","2016","Indian","Female","All","All","7.9","N/A","7.98","7.82","2370"
+"Worthwhile","2016","Indian","Male","All","All","7.84","N/A","7.92","7.77","2630"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","Female","All","All","7.81","N/A","7.94","7.69","1190"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","Male","All","All","7.53","N/A","7.68","7.38","700"
+"Worthwhile","2016","Other Asian background","Female","All","All","7.84","N/A","7.95","7.72","1030"
+"Worthwhile","2016","Other Asian background","Male","All","All","7.69","N/A","7.83","7.55","920"
+"Worthwhile","2016","Other ethnic group","Female","All","All","7.87","N/A","7.99","7.76","1220"
+"Worthwhile","2016","Other ethnic group","Male","All","All","7.6","N/A","7.73","7.47","1100"
+"Worthwhile","2016","Pakistani","Female","All","All","8","N/A","8.1","7.89","1390"
+"Worthwhile","2016","Pakistani","Male","All","All","7.74","N/A","7.85","7.63","1440"
+"Worthwhile","2016","All","Female","All","All","7.96","N/A","7.97","7.95","156940"
+"Worthwhile","2016","All","Male","All","All","7.73","N/A","7.74","7.71","123920"
+"Worthwhile","2016","White","Female","All","All","7.97","N/A","7.99","7.96","144750"
+"Worthwhile","2016","White","Male","All","All","7.73","N/A","7.74","7.72","113460"
+"Worthwhile","2016","Arab","Female","All","High (7 - 8)","N/A","?","51.22","36","-"
+"Worthwhile","2016","Arab","Male","All","High (7 - 8)","N/A","?","54.39","42.6","-"
+"Worthwhile","2016","Arab","Female","All","High
+ (7 - 8)","N/A","43.61","?","?","-"
+"Worthwhile","2016","Arab","Male","All","High
+ (7 - 8)","N/A","48.49","?","?","-"
+"Worthwhile","2016","Arab","Female","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","Male","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","Female","All","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","Male","All","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","Female","All","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","Male","All","Medium 
+(5 - 6)","N/A","14.78","?","?","-"
+"Worthwhile","2016","Arab","Female","All","Medium (5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","Male","All","Medium (5 - 6)","N/A","?","18.68","10.89","-"
+"Worthwhile","2016","Arab","Female","All","Very High (9 - 10)","N/A","?","47.55","32.07","-"
+"Worthwhile","2016","Arab","Male","All","Very High (9 - 10)","N/A","?","38.09","27.33","-"
+"Worthwhile","2016","Arab","Female","All","Very High
+ (9 - 10)","N/A","39.81","?","?","-"
+"Worthwhile","2016","Arab","Male","All","Very High
+ (9 - 10)","N/A","32.71","?","?","-"
+"Worthwhile","2016","Bangladeshi","Female","All","High (7 - 8)","N/A","?","49.99","38.93","-"
+"Worthwhile","2016","Bangladeshi","Male","All","High (7 - 8)","N/A","?","51.04","40.65","-"
+"Worthwhile","2016","Bangladeshi","Female","All","High
+ (7 - 8)","N/A","44.46","?","?","-"
+"Worthwhile","2016","Bangladeshi","Male","All","High
+ (7 - 8)","N/A","45.85","?","?","-"
+"Worthwhile","2016","Bangladeshi","Female","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Bangladeshi","Male","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Bangladeshi","Female","All","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Bangladeshi","Male","All","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Bangladeshi","Female","All","Medium 
+(5 - 6)","N/A","14.41","?","?","-"
+"Worthwhile","2016","Bangladeshi","Male","All","Medium 
+(5 - 6)","N/A","19.07","?","?","-"
+"Worthwhile","2016","Bangladeshi","Female","All","Medium (5 - 6)","N/A","?","18.34","10.48","-"
+"Worthwhile","2016","Bangladeshi","Male","All","Medium (5 - 6)","N/A","?","23.08","15.06","-"
+"Worthwhile","2016","Bangladeshi","Female","All","Very High (9 - 10)","N/A","?","43.55","32.41","-"
+"Worthwhile","2016","Bangladeshi","Male","All","Very High (9 - 10)","N/A","?","36.95","26.65","-"
+"Worthwhile","2016","Bangladeshi","Female","All","Very High
+ (9 - 10)","N/A","37.98","?","?","-"
+"Worthwhile","2016","Bangladeshi","Male","All","Very High
+ (9 - 10)","N/A","31.8","?","?","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","Female","All","High (7 - 8)","N/A","?","45.09","41.26","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","Male","All","High (7 - 8)","N/A","?","48.47","43.23","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","Female","All","High
+ (7 - 8)","N/A","43.17","?","?","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","Male","All","High
+ (7 - 8)","N/A","45.85","?","?","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","Female","All","Low (0 - 4)","N/A","?","4.23","2.92","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","Male","All","Low (0 - 4)","N/A","?","5.46","3.46","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","Female","All","Low
+ (0 - 4)","N/A","3.58","?","?","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","Male","All","Low
+ (0 - 4)","N/A","4.46","?","?","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","Female","All","Medium 
+(5 - 6)","N/A","17.86","?","?","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","Male","All","Medium 
+(5 - 6)","N/A","19.45","?","?","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","Female","All","Medium (5 - 6)","N/A","?","19.41","16.31","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","Male","All","Medium (5 - 6)","N/A","?","21.52","17.37","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","Female","All","Very High (9 - 10)","N/A","?","37.21","33.57","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","Male","All","Very High (9 - 10)","N/A","?","32.77","27.71","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","Female","All","Very High
+ (9 - 10)","N/A","35.39","?","?","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","Male","All","Very High
+ (9 - 10)","N/A","30.24","?","?","-"
+"Worthwhile","2016","Chinese","Female","All","High (7 - 8)","N/A","?","64","54.63","-"
+"Worthwhile","2016","Chinese","Male","All","High (7 - 8)","N/A","?","60.16","48.83","-"
+"Worthwhile","2016","Chinese","Female","All","High
+ (7 - 8)","N/A","59.31","?","?","-"
+"Worthwhile","2016","Chinese","Male","All","High
+ (7 - 8)","N/A","54.5","?","?","-"
+"Worthwhile","2016","Chinese","Female","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Chinese","Male","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Chinese","Female","All","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Chinese","Male","All","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Chinese","Female","All","Medium 
+(5 - 6)","N/A","10.81","?","?","-"
+"Worthwhile","2016","Chinese","Male","All","Medium 
+(5 - 6)","N/A","17.56","?","?","-"
+"Worthwhile","2016","Chinese","Female","All","Medium (5 - 6)","N/A","?","13.61","8.01","-"
+"Worthwhile","2016","Chinese","Male","All","Medium (5 - 6)","N/A","?","21.87","13.25","-"
+"Worthwhile","2016","Chinese","Female","All","Very High (9 - 10)","N/A","?","32.63","23.9","-"
+"Worthwhile","2016","Chinese","Male","All","Very High (9 - 10)","N/A","?","31.78","20.87","-"
+"Worthwhile","2016","Chinese","Female","All","Very High
+ (9 - 10)","N/A","28.27","?","?","-"
+"Worthwhile","2016","Chinese","Male","All","Very High
+ (9 - 10)","N/A","26.32","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","Female","All","High (7 - 8)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","Male","All","High (7 - 8)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","Female","All","High
+ (7 - 8)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","Male","All","High
+ (7 - 8)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","Female","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","Male","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","Female","All","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","Male","All","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","Female","All","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","Male","All","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","Female","All","Medium (5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","Male","All","Medium (5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","Female","All","Very High (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","Male","All","Very High (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","Female","All","Very High
+ (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","Male","All","Very High
+ (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2016","Indian","Female","All","High (7 - 8)","N/A","?","51.66","46.77","-"
+"Worthwhile","2016","Indian","Male","All","High (7 - 8)","N/A","?","54.73","50.14","-"
+"Worthwhile","2016","Indian","Female","All","High
+ (7 - 8)","N/A","49.21","?","?","-"
+"Worthwhile","2016","Indian","Male","All","High
+ (7 - 8)","N/A","52.43","?","?","-"
+"Worthwhile","2016","Indian","Female","All","Low (0 - 4)","N/A","?","2.7","1.5","-"
+"Worthwhile","2016","Indian","Male","All","Low (0 - 4)","N/A","?","3.26","1.94","-"
+"Worthwhile","2016","Indian","Female","All","Low
+ (0 - 4)","N/A","2.1","?","?","-"
+"Worthwhile","2016","Indian","Male","All","Low
+ (0 - 4)","N/A","2.6","?","?","-"
+"Worthwhile","2016","Indian","Female","All","Medium 
+(5 - 6)","N/A","13.48","?","?","-"
+"Worthwhile","2016","Indian","Male","All","Medium 
+(5 - 6)","N/A","12.37","?","?","-"
+"Worthwhile","2016","Indian","Female","All","Medium (5 - 6)","N/A","?","15.07","11.89","-"
+"Worthwhile","2016","Indian","Male","All","Medium (5 - 6)","N/A","?","13.93","10.82","-"
+"Worthwhile","2016","Indian","Female","All","Very High (9 - 10)","N/A","?","37.67","32.74","-"
+"Worthwhile","2016","Indian","Male","All","Very High (9 - 10)","N/A","?","34.77","30.41","-"
+"Worthwhile","2016","Indian","Female","All","Very High
+ (9 - 10)","N/A","35.2","?","?","-"
+"Worthwhile","2016","Indian","Male","All","Very High
+ (9 - 10)","N/A","32.59","?","?","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","Female","All","High (7 - 8)","N/A","?","50.76","43.75","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","Male","All","High (7 - 8)","N/A","?","52.76","43.66","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","Female","All","High
+ (7 - 8)","N/A","47.26","?","?","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","Male","All","High
+ (7 - 8)","N/A","48.21","?","?","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","Female","All","Low (0 - 4)","N/A","?","4.75","2.09","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","Male","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","Female","All","Low
+ (0 - 4)","N/A","3.42","?","?","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","Male","All","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","Female","All","Medium 
+(5 - 6)","N/A","14.41","?","?","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","Male","All","Medium 
+(5 - 6)","N/A","19.87","?","?","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","Female","All","Medium (5 - 6)","N/A","?","17.04","11.79","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","Male","All","Medium (5 - 6)","N/A","?","23.56","16.18","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","Female","All","Very High (9 - 10)","N/A","?","38.24","31.58","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","Male","All","Very High (9 - 10)","N/A","?","32.17","23.79","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","Female","All","Very High
+ (9 - 10)","N/A","34.91","?","?","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","Male","All","Very High
+ (9 - 10)","N/A","27.98","?","?","-"
+"Worthwhile","2016","Other Asian background","Female","All","High (7 - 8)","N/A","?","52.74","45.25","-"
+"Worthwhile","2016","Other Asian background","Male","All","High (7 - 8)","N/A","?","52.15","44.37","-"
+"Worthwhile","2016","Other Asian background","Female","All","High
+ (7 - 8)","N/A","48.99","?","?","-"
+"Worthwhile","2016","Other Asian background","Male","All","High
+ (7 - 8)","N/A","48.26","?","?","-"
+"Worthwhile","2016","Other Asian background","Female","All","Low (0 - 4)","N/A","?","3.9","1.78","-"
+"Worthwhile","2016","Other Asian background","Male","All","Low (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Other Asian background","Female","All","Low
+ (0 - 4)","N/A","2.84","?","?","-"
+"Worthwhile","2016","Other Asian background","Male","All","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Other Asian background","Female","All","Medium 
+(5 - 6)","N/A","14.15","?","?","-"
+"Worthwhile","2016","Other Asian background","Male","All","Medium 
+(5 - 6)","N/A","17.21","?","?","-"
+"Worthwhile","2016","Other Asian background","Female","All","Medium (5 - 6)","N/A","?","16.91","11.39","-"
+"Worthwhile","2016","Other Asian background","Male","All","Medium (5 - 6)","N/A","?","20.16","14.26","-"
+"Worthwhile","2016","Other Asian background","Female","All","Very High (9 - 10)","N/A","?","37.57","30.46","-"
+"Worthwhile","2016","Other Asian background","Male","All","Very High (9 - 10)","N/A","?","34.93","27.58","-"
+"Worthwhile","2016","Other Asian background","Female","All","Very High
+ (9 - 10)","N/A","34.02","?","?","-"
+"Worthwhile","2016","Other Asian background","Male","All","Very High
+ (9 - 10)","N/A","31.26","?","?","-"
+"Worthwhile","2016","Other ethnic group","Female","All","High (7 - 8)","N/A","?","49.08","42.43","-"
+"Worthwhile","2016","Other ethnic group","Male","All","High (7 - 8)","N/A","?","54.24","46.73","-"
+"Worthwhile","2016","Other ethnic group","Female","All","High
+ (7 - 8)","N/A","45.75","?","?","-"
+"Worthwhile","2016","Other ethnic group","Male","All","High
+ (7 - 8)","N/A","50.48","?","?","-"
+"Worthwhile","2016","Other ethnic group","Female","All","Low (0 - 4)","N/A","?","4.16","2.2","-"
+"Worthwhile","2016","Other ethnic group","Male","All","Low (0 - 4)","N/A","?","5.27","2.56","-"
+"Worthwhile","2016","Other ethnic group","Female","All","Low
+ (0 - 4)","N/A","3.18","?","?","-"
+"Worthwhile","2016","Other ethnic group","Male","All","Low
+ (0 - 4)","N/A","3.92","?","?","-"
+"Worthwhile","2016","Other ethnic group","Female","All","Medium 
+(5 - 6)","N/A","14.5","?","?","-"
+"Worthwhile","2016","Other ethnic group","Male","All","Medium 
+(5 - 6)","N/A","17.52","?","?","-"
+"Worthwhile","2016","Other ethnic group","Female","All","Medium (5 - 6)","N/A","?","16.85","12.15","-"
+"Worthwhile","2016","Other ethnic group","Male","All","Medium (5 - 6)","N/A","?","20.24","14.79","-"
+"Worthwhile","2016","Other ethnic group","Female","All","Very High (9 - 10)","N/A","?","39.85","33.29","-"
+"Worthwhile","2016","Other ethnic group","Male","All","Very High (9 - 10)","N/A","?","31.4","24.77","-"
+"Worthwhile","2016","Other ethnic group","Female","All","Very High
+ (9 - 10)","N/A","36.57","?","?","-"
+"Worthwhile","2016","Other ethnic group","Male","All","Very High
+ (9 - 10)","N/A","28.08","?","?","-"
+"Worthwhile","2016","Pakistani","Female","All","High (7 - 8)","N/A","?","45.66","39.45","-"
+"Worthwhile","2016","Pakistani","Male","All","High (7 - 8)","N/A","?","51.38","44.77","-"
+"Worthwhile","2016","Pakistani","Female","All","High
+ (7 - 8)","N/A","42.55","?","?","-"
+"Worthwhile","2016","Pakistani","Male","All","High
+ (7 - 8)","N/A","48.08","?","?","-"
+"Worthwhile","2016","Pakistani","Female","All","Low (0 - 4)","N/A","?","4.52","2.28","-"
+"Worthwhile","2016","Pakistani","Male","All","Low (0 - 4)","N/A","?","4.52","2.13","-"
+"Worthwhile","2016","Pakistani","Female","All","Low
+ (0 - 4)","N/A","3.4","?","?","-"
+"Worthwhile","2016","Pakistani","Male","All","Low
+ (0 - 4)","N/A","3.32","?","?","-"
+"Worthwhile","2016","Pakistani","Female","All","Medium 
+(5 - 6)","N/A","12.87","?","?","-"
+"Worthwhile","2016","Pakistani","Male","All","Medium 
+(5 - 6)","N/A","16.5","?","?","-"
+"Worthwhile","2016","Pakistani","Female","All","Medium (5 - 6)","N/A","?","14.84","10.89","-"
+"Worthwhile","2016","Pakistani","Male","All","Medium (5 - 6)","N/A","?","18.78","14.22","-"
+"Worthwhile","2016","Pakistani","Female","All","Very High (9 - 10)","N/A","?","44.32","38.04","-"
+"Worthwhile","2016","Pakistani","Male","All","Very High (9 - 10)","N/A","?","35.28","28.92","-"
+"Worthwhile","2016","Pakistani","Female","All","Very High
+ (9 - 10)","N/A","41.18","?","?","-"
+"Worthwhile","2016","Pakistani","Male","All","Very High
+ (9 - 10)","N/A","32.1","?","?","-"
+"Worthwhile","2016","All","Female","All","High (7 - 8)","N/A","?","46.79","46.17","-"
+"Worthwhile","2016","All","Male","All","High (7 - 8)","N/A","?","51.6","50.88","-"
+"Worthwhile","2016","All","Female","All","High
+ (7 - 8)","N/A","46.48","?","?","-"
+"Worthwhile","2016","All","Male","All","High
+ (7 - 8)","N/A","51.24","?","?","-"
+"Worthwhile","2016","All","Female","All","Low (0 - 4)","N/A","?","3.42","3.2","-"
+"Worthwhile","2016","All","Male","All","Low (0 - 4)","N/A","?","4.17","3.89","-"
+"Worthwhile","2016","All","Female","All","Low
+ (0 - 4)","N/A","3.31","?","?","-"
+"Worthwhile","2016","All","Male","All","Low
+ (0 - 4)","N/A","4.03","?","?","-"
+"Worthwhile","2016","All","Female","All","Medium 
+(5 - 6)","N/A","11.84","?","?","-"
+"Worthwhile","2016","All","Male","All","Medium 
+(5 - 6)","N/A","13.64","?","?","-"
+"Worthwhile","2016","All","Female","All","Medium (5 - 6)","N/A","?","12.04","11.64","-"
+"Worthwhile","2016","All","Male","All","Medium (5 - 6)","N/A","?","13.89","13.38","-"
+"Worthwhile","2016","All","Female","All","Very High (9 - 10)","N/A","?","38.67","38.07","-"
+"Worthwhile","2016","All","Male","All","Very High (9 - 10)","N/A","?","31.43","30.76","-"
+"Worthwhile","2016","All","Female","All","Very High
+ (9 - 10)","N/A","38.37","?","?","-"
+"Worthwhile","2016","All","Male","All","Very High
+ (9 - 10)","N/A","31.09","?","?","-"
+"Worthwhile","2016","White","Female","All","High (7 - 8)","N/A","?","46.82","46.18","-"
+"Worthwhile","2016","White","Male","All","High (7 - 8)","N/A","?","51.89","51.13","-"
+"Worthwhile","2016","White","Female","All","High
+ (7 - 8)","N/A","46.5","?","?","-"
+"Worthwhile","2016","White","Male","All","High
+ (7 - 8)","N/A","51.51","?","?","-"
+"Worthwhile","2016","White","Female","All","Low (0 - 4)","N/A","?","3.45","3.22","-"
+"Worthwhile","2016","White","Male","All","Low (0 - 4)","N/A","?","4.25","3.95","-"
+"Worthwhile","2016","White","Female","All","Low
+ (0 - 4)","N/A","3.34","?","?","-"
+"Worthwhile","2016","White","Male","All","Low
+ (0 - 4)","N/A","4.1","?","?","-"
+"Worthwhile","2016","White","Female","All","Medium 
+(5 - 6)","N/A","11.49","?","?","-"
+"Worthwhile","2016","White","Male","All","Medium 
+(5 - 6)","N/A","13.24","?","?","-"
+"Worthwhile","2016","White","Female","All","Medium (5 - 6)","N/A","?","11.7","11.29","-"
+"Worthwhile","2016","White","Male","All","Medium (5 - 6)","N/A","?","13.51","12.98","-"
+"Worthwhile","2016","White","Female","All","Very High (9 - 10)","N/A","?","38.98","38.35","-"
+"Worthwhile","2016","White","Male","All","Very High (9 - 10)","N/A","?","31.49","30.8","-"
+"Worthwhile","2016","White","Female","All","Very High
+ (9 - 10)","N/A","38.67","?","?","-"
+"Worthwhile","2016","White","Male","All","Very High
+ (9 - 10)","N/A","31.15","?","?","-"
+"Worthwhile","2016","Arab","All","Higher managerial and professional","All","8.3","N/A","9.65","6.94","-"
+"Worthwhile","2016","Arab","All","Intermediate occupations","All","?","N/A","?","?","-"
+"Worthwhile","2016","Arab","All","Lower managerial and professional","All","7.77","N/A","9.83","5.71","-"
+"Worthwhile","2016","Arab","All","Lower supervisory and technical","All","?","N/A","?","?","-"
+"Worthwhile","2016","Arab","All","Never worked, unemployed, and nec","All","7.86","N/A","8.69","7.03","-"
+"Worthwhile","2016","Arab","All","Routine occupations","All","?","N/A","?","?","-"
+"Worthwhile","2016","Arab","All","Semi-routine occupations","All","7.42","N/A","9.78","5.06","-"
+"Worthwhile","2016","Arab","All","Small employers and own account workers","All","?","N/A","?","?","-"
+"Worthwhile","2016","Bangladeshi","All","Higher managerial and professional","All","8.16","N/A","9.66","6.66","-"
+"Worthwhile","2016","Bangladeshi","All","Intermediate occupations","All","8.01","N/A","9.11","6.91","-"
+"Worthwhile","2016","Bangladeshi","All","Lower managerial and professional","All","7.53","N/A","8.34","6.71","-"
+"Worthwhile","2016","Bangladeshi","All","Lower supervisory and technical","All","7.98","N/A","9.61","6.34","-"
+"Worthwhile","2016","Bangladeshi","All","Never worked, unemployed, and nec","All","7.74","N/A","8.61","6.88","-"
+"Worthwhile","2016","Bangladeshi","All","Routine occupations","All","7.72","N/A","8.94","6.51","-"
+"Worthwhile","2016","Bangladeshi","All","Semi-routine occupations","All","7.47","N/A","8.36","6.59","-"
+"Worthwhile","2016","Bangladeshi","All","Small employers and own account workers","All","7.94","N/A","9.26","6.61","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Higher managerial and professional","All","7.87","N/A","8.37","7.37","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Intermediate occupations","All","7.8","N/A","8.27","7.32","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Lower managerial and professional","All","7.87","N/A","8.12","7.63","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Lower supervisory and technical","All","7.47","N/A","8.01","6.93","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Never worked, unemployed, and nec","All","7.57","N/A","7.92","7.23","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Routine occupations","All","7.57","N/A","8.06","7.09","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Semi-routine occupations","All","7.54","N/A","7.87","7.22","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Small employers and own account workers","All","7.66","N/A","8.19","7.13","-"
+"Worthwhile","2016","Chinese","All","Higher managerial and professional","All","7.98","N/A","8.87","7.09","-"
+"Worthwhile","2016","Chinese","All","Intermediate occupations","All","7.45","N/A","9.14","5.76","-"
+"Worthwhile","2016","Chinese","All","Lower managerial and professional","All","7.62","N/A","8.61","6.63","-"
+"Worthwhile","2016","Chinese","All","Lower supervisory and technical","All","?","N/A","?","?","-"
+"Worthwhile","2016","Chinese","All","Never worked, unemployed, and nec","All","7.84","N/A","8.8","6.89","-"
+"Worthwhile","2016","Chinese","All","Routine occupations","All","?","N/A","?","?","-"
+"Worthwhile","2016","Chinese","All","Semi-routine occupations","All","7.4","N/A","8.92","5.88","-"
+"Worthwhile","2016","Chinese","All","Small employers and own account workers","All","7.85","N/A","9.57","6.13","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Higher managerial and professional","All","?","N/A","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Intermediate occupations","All","?","N/A","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Lower managerial and professional","All","?","N/A","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Lower supervisory and technical","All","?","N/A","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Never worked, unemployed, and nec","All","?","N/A","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Routine occupations","All","?","N/A","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Semi-routine occupations","All","?","N/A","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Small employers and own account workers","All","?","N/A","?","?","-"
+"Worthwhile","2016","Indian","All","Higher managerial and professional","All","7.94","N/A","8.21","7.66","-"
+"Worthwhile","2016","Indian","All","Intermediate occupations","All","7.89","N/A","8.3","7.48","-"
+"Worthwhile","2016","Indian","All","Lower managerial and professional","All","7.96","N/A","8.31","7.6","-"
+"Worthwhile","2016","Indian","All","Lower supervisory and technical","All","7.83","N/A","8.74","6.92","-"
+"Worthwhile","2016","Indian","All","Never worked, unemployed, and nec","All","7.78","N/A","8.28","7.28","-"
+"Worthwhile","2016","Indian","All","Routine occupations","All","7.74","N/A","8.46","7.03","-"
+"Worthwhile","2016","Indian","All","Semi-routine occupations","All","7.7","N/A","8.26","7.14","-"
+"Worthwhile","2016","Indian","All","Small employers and own account workers","All","8.01","N/A","8.65","7.37","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Higher managerial and professional","All","7.85","N/A","8.58","7.12","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Intermediate occupations","All","7.95","N/A","8.91","6.99","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Lower managerial and professional","All","7.87","N/A","8.44","7.3","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Lower supervisory and technical","All","7.5","N/A","9.4","5.6","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Never worked, unemployed, and nec","All","7.59","N/A","8.27","6.91","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Routine occupations","All","7.26","N/A","8.58","5.95","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Semi-routine occupations","All","7.46","N/A","8.46","6.46","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Small employers and own account workers","All","7.65","N/A","8.98","6.33","-"
+"Worthwhile","2016","Other Asian Background","All","Higher managerial and professional","All","7.92","N/A","8.67","7.18","-"
+"Worthwhile","2016","Other Asian Background","All","Intermediate occupations","All","7.83","N/A","8.8","6.86","-"
+"Worthwhile","2016","Other Asian Background","All","Lower managerial and professional","All","7.94","N/A","8.54","7.34","-"
+"Worthwhile","2016","Other Asian Background","All","Lower supervisory and technical","All","7.57","N/A","9.21","5.93","-"
+"Worthwhile","2016","Other Asian Background","All","Never worked, unemployed, and nec","All","7.65","N/A","8.27","7.03","-"
+"Worthwhile","2016","Other Asian Background","All","Routine occupations","All","7.59","N/A","9.18","5.99","-"
+"Worthwhile","2016","Other Asian Background","All","Semi-routine occupations","All","7.87","N/A","8.84","6.9","-"
+"Worthwhile","2016","Other Asian Background","All","Small employers and own account workers","All","7.56","N/A","8.43","6.7","-"
+"Worthwhile","2016","Other ethnic group","All","Higher managerial and professional","All","8.11","N/A","8.83","7.39","-"
+"Worthwhile","2016","Other ethnic group","All","Intermediate occupations","All","7.77","N/A","8.6","6.94","-"
+"Worthwhile","2016","Other ethnic group","All","Lower managerial and professional","All","7.92","N/A","8.45","7.4","-"
+"Worthwhile","2016","Other ethnic group","All","Lower supervisory and technical","All","7.94","N/A","9.35","6.54","-"
+"Worthwhile","2016","Other ethnic group","All","Never worked, unemployed, and nec","All","7.51","N/A","8.09","6.93","-"
+"Worthwhile","2016","Other ethnic group","All","Routine occupations","All","7.64","N/A","8.55","6.72","-"
+"Worthwhile","2016","Other ethnic group","All","Semi-routine occupations","All","7.45","N/A","8.27","6.63","-"
+"Worthwhile","2016","Other ethnic group","All","Small employers and own account workers","All","7.83","N/A","8.7","6.96","-"
+"Worthwhile","2016","Pakistani","All","Higher managerial and professional","All","7.9","N/A","8.57","7.24","-"
+"Worthwhile","2016","Pakistani","All","Intermediate occupations","All","7.98","N/A","8.76","7.19","-"
+"Worthwhile","2016","Pakistani","All","Lower managerial and professional","All","7.95","N/A","8.44","7.46","-"
+"Worthwhile","2016","Pakistani","All","Lower supervisory and technical","All","7.78","N/A","9.47","6.09","-"
+"Worthwhile","2016","Pakistani","All","Never worked, unemployed, and nec","All","7.85","N/A","8.31","7.38","-"
+"Worthwhile","2016","Pakistani","All","Routine occupations","All","7.68","N/A","8.52","6.84","-"
+"Worthwhile","2016","Pakistani","All","Semi-routine occupations","All","7.79","N/A","8.52","7.06","-"
+"Worthwhile","2016","Pakistani","All","Small employers and own account workers","All","7.75","N/A","8.21","7.3","-"
+"Worthwhile","2016","All","All","Higher managerial and professional","All","7.98","N/A","8","7.96","-"
+"Worthwhile","2016","All","All","Intermediate occupations","All","7.9","N/A","7.92","7.88","-"
+"Worthwhile","2016","All","All","Lower managerial and professional","All","8.03","N/A","8.05","8.02","-"
+"Worthwhile","2016","All","All","Lower supervisory and technical","All","7.85","N/A","7.88","7.81","-"
+"Worthwhile","2016","All","All","Never worked, unemployed, and nec","All","7.68","N/A","7.7","7.66","-"
+"Worthwhile","2016","All","All","Routine occupations","All","7.66","N/A","7.69","7.63","-"
+"Worthwhile","2016","All","All","Semi-routine occupations","All","7.77","N/A","7.8","7.75","-"
+"Worthwhile","2016","All","All","Small employers and own account workers","All","7.99","N/A","8.02","7.96","-"
+"Worthwhile","2016","White","All","Higher managerial and professional","All","7.98","N/A","8.03","7.93","-"
+"Worthwhile","2016","White","All","Intermediate occupations","All","7.91","N/A","7.96","7.85","-"
+"Worthwhile","2016","White","All","Lower managerial and professional","All","8.05","N/A","8.08","8.01","-"
+"Worthwhile","2016","White","All","Lower supervisory and technical","All","7.86","N/A","7.94","7.78","-"
+"Worthwhile","2016","White","All","Never worked, unemployed, and nec","All","7.68","N/A","7.72","7.64","-"
+"Worthwhile","2016","White","All","Routine occupations","All","7.66","N/A","7.74","7.59","-"
+"Worthwhile","2016","White","All","Semi-routine occupations","All","7.8","N/A","7.86","7.74","-"
+"Worthwhile","2016","White","All","Small employers and own account workers","All","8.02","N/A","8.08","7.96","-"
+"Worthwhile","2016","Arab","All","Higher managerial and professional","High
+ (7 - 8)","N/A","42.31","54.07","30.55","-"
+"Worthwhile","2016","Arab","All","Intermediate occupations","High
+ (7 - 8)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","All","Lower managerial and professional","High
+ (7 - 8)","N/A","46.84","61.6","32.08","-"
+"Worthwhile","2016","Arab","All","Lower supervisory and technical","High
+ (7 - 8)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","All","Never worked, unemployed, and nec","High
+ (7 - 8)","N/A","46.35","53.43","39.28","-"
+"Worthwhile","2016","Arab","All","Routine occupations","High
+ (7 - 8)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","All","Semi-routine occupations","High
+ (7 - 8)","N/A","48.3","64.27","32.33","-"
+"Worthwhile","2016","Arab","All","Small employers and own account workers","High
+ (7 - 8)","N/A","56.35","75.39","37.3","-"
+"Worthwhile","2016","Arab","All","Higher managerial and professional","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","All","Intermediate occupations","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","All","Lower managerial and professional","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","All","Lower supervisory and technical","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","All","Never worked, unemployed, and nec","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","All","Routine occupations","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","All","Semi-routine occupations","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","All","Small employers and own account workers","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","All","Higher managerial and professional","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","All","Intermediate occupations","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","All","Lower managerial and professional","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","All","Lower supervisory and technical","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","All","Never worked, unemployed, and nec","Medium 
+(5 - 6)","N/A","14.42","19.09","9.74","-"
+"Worthwhile","2016","Arab","All","Routine occupations","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","All","Semi-routine occupations","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","All","Small employers and own account workers","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","All","Higher managerial and professional","Very High
+ (9 - 10)","N/A","49.1","60.82","37.39","-"
+"Worthwhile","2016","Arab","All","Intermediate occupations","Very High
+ (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","All","Lower managerial and professional","Very High
+ (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","All","Lower supervisory and technical","Very High
+ (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","All","Never worked, unemployed, and nec","Very High
+ (9 - 10)","N/A","35.3","42.16","28.44","-"
+"Worthwhile","2016","Arab","All","Routine occupations","Very High
+ (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","All","Semi-routine occupations","Very High
+ (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2016","Arab","All","Small employers and own account workers","Very High
+ (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2016","Bangladeshi","All","Higher managerial and professional","High
+ (7 - 8)","N/A","50.4","63.06","37.74","-"
+"Worthwhile","2016","Bangladeshi","All","Intermediate occupations","High
+ (7 - 8)","N/A","42.7","53.98","31.43","-"
+"Worthwhile","2016","Bangladeshi","All","Lower managerial and professional","High
+ (7 - 8)","N/A","49.46","59.05","39.88","-"
+"Worthwhile","2016","Bangladeshi","All","Lower supervisory and technical","High
+ (7 - 8)","N/A","47.26","61.3","33.21","-"
+"Worthwhile","2016","Bangladeshi","All","Never worked, unemployed, and nec","High
+ (7 - 8)","N/A","40.87","47.63","34.12","-"
+"Worthwhile","2016","Bangladeshi","All","Routine occupations","High
+ (7 - 8)","N/A","47.03","60.92","33.14","-"
+"Worthwhile","2016","Bangladeshi","All","Semi-routine occupations","High
+ (7 - 8)","N/A","55.28","66.02","44.55","-"
+"Worthwhile","2016","Bangladeshi","All","Small employers and own account workers","High
+ (7 - 8)","N/A","41.06","53.6","28.52","-"
+"Worthwhile","2016","Bangladeshi","All","Higher managerial and professional","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Bangladeshi","All","Intermediate occupations","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Bangladeshi","All","Lower managerial and professional","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Bangladeshi","All","Lower supervisory and technical","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Bangladeshi","All","Never worked, unemployed, and nec","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Bangladeshi","All","Routine occupations","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Bangladeshi","All","Semi-routine occupations","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Bangladeshi","All","Small employers and own account workers","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Bangladeshi","All","Higher managerial and professional","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Bangladeshi","All","Intermediate occupations","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Bangladeshi","All","Lower managerial and professional","Medium 
+(5 - 6)","N/A","20.97","29","12.93","-"
+"Worthwhile","2016","Bangladeshi","All","Lower supervisory and technical","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Bangladeshi","All","Never worked, unemployed, and nec","Medium 
+(5 - 6)","N/A","17.24","22.42","12.07","-"
+"Worthwhile","2016","Bangladeshi","All","Routine occupations","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Bangladeshi","All","Semi-routine occupations","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Bangladeshi","All","Small employers and own account workers","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Bangladeshi","All","Higher managerial and professional","Very High
+ (9 - 10)","N/A","38.37","50.93","25.81","-"
+"Worthwhile","2016","Bangladeshi","All","Intermediate occupations","Very High
+ (9 - 10)","N/A","40.41","51.87","28.95","-"
+"Worthwhile","2016","Bangladeshi","All","Lower managerial and professional","Very High
+ (9 - 10)","N/A","26.63","34.4","18.87","-"
+"Worthwhile","2016","Bangladeshi","All","Lower supervisory and technical","Very High
+ (9 - 10)","N/A","36.7","49.6","23.8","-"
+"Worthwhile","2016","Bangladeshi","All","Never worked, unemployed, and nec","Very High
+ (9 - 10)","N/A","37.4","44.7","30.1","-"
+"Worthwhile","2016","Bangladeshi","All","Routine occupations","Very High
+ (9 - 10)","N/A","30.89","43.2","18.59","-"
+"Worthwhile","2016","Bangladeshi","All","Semi-routine occupations","Very High
+ (9 - 10)","N/A","22.58","31.1","14.05","-"
+"Worthwhile","2016","Bangladeshi","All","Small employers and own account workers","Very High
+ (9 - 10)","N/A","37.7","50.9","24.5","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Higher managerial and professional","High
+ (7 - 8)","N/A","50.87","56.23","45.52","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Intermediate occupations","High
+ (7 - 8)","N/A","45.94","50.71","41.18","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Lower managerial and professional","High
+ (7 - 8)","N/A","49.69","53.02","46.37","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Lower supervisory and technical","High
+ (7 - 8)","N/A","44.8","51.8","37.8","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Never worked, unemployed, and nec","High
+ (7 - 8)","N/A","40.45","43.5","37.39","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Routine occupations","High
+ (7 - 8)","N/A","42.49","47.62","37.37","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Semi-routine occupations","High
+ (7 - 8)","N/A","41.9","45.72","38.07","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Small employers and own account workers","High
+ (7 - 8)","N/A","45.26","51.72","38.8","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Higher managerial and professional","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Intermediate occupations","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Lower managerial and professional","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Lower supervisory and technical","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Never worked, unemployed, and nec","Low
+ (0 - 4)","N/A","5.44","6.69","4.19","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Routine occupations","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Semi-routine occupations","Low
+ (0 - 4)","N/A","4.01","5.47","2.54","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Small employers and own account workers","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Higher managerial and professional","Medium 
+(5 - 6)","N/A","14.28","18.41","10.16","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Intermediate occupations","Medium 
+(5 - 6)","N/A","14.88","18.08","11.68","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Lower managerial and professional","Medium 
+(5 - 6)","N/A","14.09","16.65","11.53","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Lower supervisory and technical","Medium 
+(5 - 6)","N/A","24.39","30.62","18.16","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Never worked, unemployed, and nec","Medium 
+(5 - 6)","N/A","20.61","23.15","18.06","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Routine occupations","Medium 
+(5 - 6)","N/A","20.23","24.31","16.15","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Semi-routine occupations","Medium 
+(5 - 6)","N/A","22.44","25.77","19.1","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Small employers and own account workers","Medium 
+(5 - 6)","N/A","16.38","21.59","11.17","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Higher managerial and professional","Very High
+ (9 - 10)","N/A","33.38","38.38","28.39","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Intermediate occupations","Very High
+ (9 - 10)","N/A","35.99","40.76","31.23","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Lower managerial and professional","Very High
+ (9 - 10)","N/A","34.38","37.45","31.31","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Lower supervisory and technical","Very High
+ (9 - 10)","N/A","27.07","33.19","20.94","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Never worked, unemployed, and nec","Very High
+ (9 - 10)","N/A","33.51","36.45","30.56","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Routine occupations","Very High
+ (9 - 10)","N/A","32.18","37.07","27.29","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Semi-routine occupations","Very High
+ (9 - 10)","N/A","31.66","35.38","27.94","-"
+"Worthwhile","2016","Black / African / Caribbean / Black British","All","Small employers and own account workers","Very High
+ (9 - 10)","N/A","32.49","38.29","26.7","-"
+"Worthwhile","2016","Chinese","All","Higher managerial and professional","High
+ (7 - 8)","N/A","65.38","73.18","57.58","-"
+"Worthwhile","2016","Chinese","All","Intermediate occupations","High
+ (7 - 8)","N/A","58.85","71.63","46.06","-"
+"Worthwhile","2016","Chinese","All","Lower managerial and professional","High
+ (7 - 8)","N/A","58.17","67.1","49.23","-"
+"Worthwhile","2016","Chinese","All","Lower supervisory and technical","High
+ (7 - 8)","N/A","57.03","74.55","39.51","-"
+"Worthwhile","2016","Chinese","All","Never worked, unemployed, and nec","High
+ (7 - 8)","N/A","53.7","59.92","47.47","-"
+"Worthwhile","2016","Chinese","All","Routine occupations","High
+ (7 - 8)","N/A","50.13","67.92","32.34","-"
+"Worthwhile","2016","Chinese","All","Semi-routine occupations","High
+ (7 - 8)","N/A","55.88","67.99","43.78","-"
+"Worthwhile","2016","Chinese","All","Small employers and own account workers","High
+ (7 - 8)","N/A","62.29","74.35","50.24","-"
+"Worthwhile","2016","Chinese","All","Higher managerial and professional","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Chinese","All","Intermediate occupations","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Chinese","All","Lower managerial and professional","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Chinese","All","Lower supervisory and technical","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Chinese","All","Never worked, unemployed, and nec","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Chinese","All","Routine occupations","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Chinese","All","Semi-routine occupations","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Chinese","All","Small employers and own account workers","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Chinese","All","Higher managerial and professional","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Chinese","All","Intermediate occupations","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Chinese","All","Lower managerial and professional","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Chinese","All","Lower supervisory and technical","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Chinese","All","Never worked, unemployed, and nec","Medium 
+(5 - 6)","N/A","13.05","17.01","9.09","-"
+"Worthwhile","2016","Chinese","All","Routine occupations","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Chinese","All","Semi-routine occupations","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Chinese","All","Small employers and own account workers","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Chinese","All","Higher managerial and professional","Very High
+ (9 - 10)","N/A","28.91","36.61","21.21","-"
+"Worthwhile","2016","Chinese","All","Intermediate occupations","Very High
+ (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2016","Chinese","All","Lower managerial and professional","Very High
+ (9 - 10)","N/A","24.58","32.32","16.84","-"
+"Worthwhile","2016","Chinese","All","Lower supervisory and technical","Very High
+ (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2016","Chinese","All","Never worked, unemployed, and nec","Very High
+ (9 - 10)","N/A","31.45","37.91","24.99","-"
+"Worthwhile","2016","Chinese","All","Routine occupations","Very High
+ (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2016","Chinese","All","Semi-routine occupations","Very High
+ (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2016","Chinese","All","Small employers and own account workers","Very High
+ (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Higher managerial and professional","High
+ (7 - 8)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Intermediate occupations","High
+ (7 - 8)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Lower managerial and professional","High
+ (7 - 8)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Lower supervisory and technical","High
+ (7 - 8)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Never worked, unemployed, and nec","High
+ (7 - 8)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Routine occupations","High
+ (7 - 8)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Semi-routine occupations","High
+ (7 - 8)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Small employers and own account workers","High
+ (7 - 8)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Higher managerial and professional","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Intermediate occupations","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Lower managerial and professional","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Lower supervisory and technical","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Never worked, unemployed, and nec","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Routine occupations","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Semi-routine occupations","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Small employers and own account workers","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Higher managerial and professional","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Intermediate occupations","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Lower managerial and professional","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Lower supervisory and technical","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Never worked, unemployed, and nec","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Routine occupations","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Semi-routine occupations","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Small employers and own account workers","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Higher managerial and professional","Very High
+ (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Intermediate occupations","Very High
+ (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Lower managerial and professional","Very High
+ (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Lower supervisory and technical","Very High
+ (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Never worked, unemployed, and nec","Very High
+ (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Routine occupations","Very High
+ (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Semi-routine occupations","Very High
+ (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2016","Gypsy / Traveller / Irish Traveller","All","Small employers and own account workers","Very High
+ (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2016","Indian","All","Higher managerial and professional","High
+ (7 - 8)","N/A","58.24","61.73","54.75","-"
+"Worthwhile","2016","Indian","All","Intermediate occupations","High
+ (7 - 8)","N/A","52.11","56.93","47.29","-"
+"Worthwhile","2016","Indian","All","Lower managerial and professional","High
+ (7 - 8)","N/A","53.59","57.38","49.8","-"
+"Worthwhile","2016","Indian","All","Lower supervisory and technical","High
+ (7 - 8)","N/A","47.48","55.94","39.02","-"
+"Worthwhile","2016","Indian","All","Never worked, unemployed, and nec","High
+ (7 - 8)","N/A","44.94","48.61","41.26","-"
+"Worthwhile","2016","Indian","All","Routine occupations","High
+ (7 - 8)","N/A","44.85","52.02","37.67","-"
+"Worthwhile","2016","Indian","All","Semi-routine occupations","High
+ (7 - 8)","N/A","49.89","55.34","44.44","-"
+"Worthwhile","2016","Indian","All","Small employers and own account workers","High
+ (7 - 8)","N/A","48.13","54.55","41.71","-"
+"Worthwhile","2016","Indian","All","Higher managerial and professional","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Indian","All","Intermediate occupations","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Indian","All","Lower managerial and professional","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Indian","All","Lower supervisory and technical","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Indian","All","Never worked, unemployed, and nec","Low
+ (0 - 4)","N/A","4.26","5.45","3.07","-"
+"Worthwhile","2016","Indian","All","Routine occupations","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Indian","All","Semi-routine occupations","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Indian","All","Small employers and own account workers","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Indian","All","Higher managerial and professional","Medium 
+(5 - 6)","N/A","10.17","12.29","8.04","-"
+"Worthwhile","2016","Indian","All","Intermediate occupations","Medium 
+(5 - 6)","N/A","13.94","17.3","10.58","-"
+"Worthwhile","2016","Indian","All","Lower managerial and professional","Medium 
+(5 - 6)","N/A","10.31","12.58","8.04","-"
+"Worthwhile","2016","Indian","All","Lower supervisory and technical","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Indian","All","Never worked, unemployed, and nec","Medium 
+(5 - 6)","N/A","14.8","17.41","12.19","-"
+"Worthwhile","2016","Indian","All","Routine occupations","Medium 
+(5 - 6)","N/A","17.74","23.31","12.17","-"
+"Worthwhile","2016","Indian","All","Semi-routine occupations","Medium 
+(5 - 6)","N/A","14.5","17.97","11.03","-"
+"Worthwhile","2016","Indian","All","Small employers and own account workers","Medium 
+(5 - 6)","N/A","12.13","15.93","8.32","-"
+"Worthwhile","2016","Indian","All","Higher managerial and professional","Very High
+ (9 - 10)","N/A","30.82","34.13","27.51","-"
+"Worthwhile","2016","Indian","All","Intermediate occupations","Very High
+ (9 - 10)","N/A","33.16","37.75","28.58","-"
+"Worthwhile","2016","Indian","All","Lower managerial and professional","Very High
+ (9 - 10)","N/A","34.62","38.4","30.85","-"
+"Worthwhile","2016","Indian","All","Lower supervisory and technical","Very High
+ (9 - 10)","N/A","32.88","40.44","25.33","-"
+"Worthwhile","2016","Indian","All","Never worked, unemployed, and nec","Very High
+ (9 - 10)","N/A","36","39.89","32.1","-"
+"Worthwhile","2016","Indian","All","Routine occupations","Very High
+ (9 - 10)","N/A","33.92","40.62","27.22","-"
+"Worthwhile","2016","Indian","All","Semi-routine occupations","Very High
+ (9 - 10)","N/A","30.69","35.84","25.55","-"
+"Worthwhile","2016","Indian","All","Small employers and own account workers","Very High
+ (9 - 10)","N/A","37.92","44.39","31.45","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Higher managerial and professional","High
+ (7 - 8)","N/A","54.21","61.12","47.29","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Intermediate occupations","High
+ (7 - 8)","N/A","50.34","58.37","42.3","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Lower managerial and professional","High
+ (7 - 8)","N/A","51.1","56.73","45.48","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Lower supervisory and technical","High
+ (7 - 8)","N/A","41.95","56.06","27.83","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Never worked, unemployed, and nec","High
+ (7 - 8)","N/A","44.84","50.7","38.97","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Routine occupations","High
+ (7 - 8)","N/A","40.18","50.94","29.42","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Semi-routine occupations","High
+ (7 - 8)","N/A","44.61","52.96","36.25","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Small employers and own account workers","High
+ (7 - 8)","N/A","44.35","55.17","33.52","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Higher managerial and professional","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Intermediate occupations","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Lower managerial and professional","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Lower supervisory and technical","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Never worked, unemployed, and nec","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Routine occupations","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Semi-routine occupations","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Small employers and own account workers","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Higher managerial and professional","Medium 
+(5 - 6)","N/A","12.36","17.03","7.7","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Intermediate occupations","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Lower managerial and professional","Medium 
+(5 - 6)","N/A","12.7","16.4","9","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Lower supervisory and technical","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Never worked, unemployed, and nec","Medium 
+(5 - 6)","N/A","19.43","24.19","14.68","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Routine occupations","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Semi-routine occupations","Medium 
+(5 - 6)","N/A","19.85","27.33","12.38","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Small employers and own account workers","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Higher managerial and professional","Very High
+ (9 - 10)","N/A","31.79","38.36","25.22","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Intermediate occupations","Very High
+ (9 - 10)","N/A","35.41","42.92","27.9","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Lower managerial and professional","Very High
+ (9 - 10)","N/A","33","38.44","27.55","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Lower supervisory and technical","Very High
+ (9 - 10)","N/A","?","?","?","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Never worked, unemployed, and nec","Very High
+ (9 - 10)","N/A","31.27","36.88","25.65","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Routine occupations","Very High
+ (9 - 10)","N/A","29.72","39.34","20.1","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Semi-routine occupations","Very High
+ (9 - 10)","N/A","30.21","37.79","22.63","-"
+"Worthwhile","2016","Mixed / Multiple ethnic groups","All","Small employers and own account workers","Very High
+ (9 - 10)","N/A","30.98","40.73","21.24","-"
+"Worthwhile","2016","Other Asian background","All","Higher managerial and professional","High
+ (7 - 8)","N/A","54.75","62.23","47.27","-"
+"Worthwhile","2016","Other Asian background","All","Intermediate occupations","High
+ (7 - 8)","N/A","52.28","61.34","43.21","-"
+"Worthwhile","2016","Other Asian background","All","Lower managerial and professional","High
+ (7 - 8)","N/A","50.84","56.85","44.84","-"
+"Worthwhile","2016","Other Asian background","All","Lower supervisory and technical","High
+ (7 - 8)","N/A","40.03","53.2","26.86","-"
+"Worthwhile","2016","Other Asian background","All","Never worked, unemployed, and nec","High
+ (7 - 8)","N/A","50.37","56.01","44.72","-"
+"Worthwhile","2016","Other Asian background","All","Routine occupations","High
+ (7 - 8)","N/A","40.01","50.26","29.76","-"
+"Worthwhile","2016","Other Asian background","All","Semi-routine occupations","High
+ (7 - 8)","N/A","45","52.5","37.5","-"
+"Worthwhile","2016","Other Asian background","All","Small employers and own account workers","High
+ (7 - 8)","N/A","44.11","52.44","35.78","-"
+"Worthwhile","2016","Other Asian background","All","Higher managerial and professional","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Other Asian background","All","Intermediate occupations","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Other Asian background","All","Lower managerial and professional","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Other Asian background","All","Lower supervisory and technical","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Other Asian background","All","Never worked, unemployed, and nec","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Other Asian background","All","Routine occupations","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Other Asian background","All","Semi-routine occupations","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Other Asian background","All","Small employers and own account workers","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Other Asian background","All","Higher managerial and professional","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Other Asian background","All","Intermediate occupations","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Other Asian background","All","Lower managerial and professional","Medium 
+(5 - 6)","N/A","11.16","15.1","7.22","-"
+"Worthwhile","2016","Other Asian background","All","Lower supervisory and technical","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Other Asian background","All","Never worked, unemployed, and nec","Medium 
+(5 - 6)","N/A","17.4","21.69","13.1","-"
+"Worthwhile","2016","Other Asian background","All","Routine occupations","Medium 
+(5 - 6)","N/A","22.67","29.92","15.42","-"
+"Worthwhile","2016","Other Asian background","All","Semi-routine occupations","Medium 
+(5 - 6)","N/A","16.05","21.41","10.69","-"
+"Worthwhile","2016","Other Asian background","All","Small employers and own account workers","Medium 
+(5 - 6)","N/A","19.2","25.71","12.7","-"
+"Worthwhile","2016","Other Asian background","All","Higher managerial and professional","Very High
+ (9 - 10)","N/A","32.38","39.29","25.48","-"
+"Worthwhile","2016","Other Asian background","All","Intermediate occupations","Very High
+ (9 - 10)","N/A","32.09","40.63","23.56","-"
+"Worthwhile","2016","Other Asian background","All","Lower managerial and professional","Very High
+ (9 - 10)","N/A","35.85","41.52","30.17","-"
+"Worthwhile","2016","Other Asian background","All","Lower supervisory and technical","Very High
+ (9 - 10)","N/A","34.62","46.9","22.35","-"
+"Worthwhile","2016","Other Asian background","All","Never worked, unemployed, and nec","Very High
+ (9 - 10)","N/A","29.48","34.46","24.49","-"
+"Worthwhile","2016","Other Asian background","All","Routine occupations","Very High
+ (9 - 10)","N/A","32.24","41.97","22.5","-"
+"Worthwhile","2016","Other Asian background","All","Semi-routine occupations","Very High
+ (9 - 10)","N/A","35.98","43.27","28.69","-"
+"Worthwhile","2016","Other Asian background","All","Small employers and own account workers","Very High
+ (9 - 10)","N/A","31.43","39.31","23.55","-"
+"Worthwhile","2016","Other ethnic group","All","Higher managerial and professional","High
+ (7 - 8)","N/A","51.79","58.74","44.85","-"
+"Worthwhile","2016","Other ethnic group","All","Intermediate occupations","High
+ (7 - 8)","N/A","54.51","62.49","46.53","-"
+"Worthwhile","2016","Other ethnic group","All","Lower managerial and professional","High
+ (7 - 8)","N/A","49.4","54.79","44","-"
+"Worthwhile","2016","Other ethnic group","All","Lower supervisory and technical","High
+ (7 - 8)","N/A","41.05","51.95","30.15","-"
+"Worthwhile","2016","Other ethnic group","All","Never worked, unemployed, and nec","High
+ (7 - 8)","N/A","41.96","47.2","36.72","-"
+"Worthwhile","2016","Other ethnic group","All","Routine occupations","High
+ (7 - 8)","N/A","57.41","65.46","49.36","-"
+"Worthwhile","2016","Other ethnic group","All","Semi-routine occupations","High
+ (7 - 8)","N/A","48.19","55.64","40.74","-"
+"Worthwhile","2016","Other ethnic group","All","Small employers and own account workers","High
+ (7 - 8)","N/A","53.56","61.88","45.23","-"
+"Worthwhile","2016","Other ethnic group","All","Higher managerial and professional","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Other ethnic group","All","Intermediate occupations","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Other ethnic group","All","Lower managerial and professional","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Other ethnic group","All","Lower supervisory and technical","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Other ethnic group","All","Never worked, unemployed, and nec","Low
+ (0 - 4)","N/A","5.97","8.19","3.76","-"
+"Worthwhile","2016","Other ethnic group","All","Routine occupations","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Other ethnic group","All","Semi-routine occupations","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Other ethnic group","All","Small employers and own account workers","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Other ethnic group","All","Higher managerial and professional","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Other ethnic group","All","Intermediate occupations","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Other ethnic group","All","Lower managerial and professional","Medium 
+(5 - 6)","N/A","10.98","14.22","7.74","-"
+"Worthwhile","2016","Other ethnic group","All","Lower supervisory and technical","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Other ethnic group","All","Never worked, unemployed, and nec","Medium 
+(5 - 6)","N/A","20.02","23.75","16.29","-"
+"Worthwhile","2016","Other ethnic group","All","Routine occupations","Medium 
+(5 - 6)","N/A","17.66","23.58","11.75","-"
+"Worthwhile","2016","Other ethnic group","All","Semi-routine occupations","Medium 
+(5 - 6)","N/A","20.54","26.79","14.29","-"
+"Worthwhile","2016","Other ethnic group","All","Small employers and own account workers","Medium 
+(5 - 6)","N/A","14.68","20.1","9.26","-"
+"Worthwhile","2016","Other ethnic group","All","Higher managerial and professional","Very High
+ (9 - 10)","N/A","37.96","44.65","31.26","-"
+"Worthwhile","2016","Other ethnic group","All","Intermediate occupations","Very High
+ (9 - 10)","N/A","29.13","36.37","21.89","-"
+"Worthwhile","2016","Other ethnic group","All","Lower managerial and professional","Very High
+ (9 - 10)","N/A","36.55","41.96","31.14","-"
+"Worthwhile","2016","Other ethnic group","All","Lower supervisory and technical","Very High
+ (9 - 10)","N/A","38","49.45","26.54","-"
+"Worthwhile","2016","Other ethnic group","All","Never worked, unemployed, and nec","Very High
+ (9 - 10)","N/A","32.05","36.95","27.15","-"
+"Worthwhile","2016","Other ethnic group","All","Routine occupations","Very High
+ (9 - 10)","N/A","23.48","29.96","16.99","-"
+"Worthwhile","2016","Other ethnic group","All","Semi-routine occupations","Very High
+ (9 - 10)","N/A","26.69","32.86","20.52","-"
+"Worthwhile","2016","Other ethnic group","All","Small employers and own account workers","Very High
+ (9 - 10)","N/A","29.12","36.2","22.03","-"
+"Worthwhile","2016","Pakistani","All","Higher managerial and professional","High
+ (7 - 8)","N/A","58.23","64.9","51.55","-"
+"Worthwhile","2016","Pakistani","All","Intermediate occupations","High
+ (7 - 8)","N/A","55.36","62.9","47.83","-"
+"Worthwhile","2016","Pakistani","All","Lower managerial and professional","High
+ (7 - 8)","N/A","50.36","55.98","44.73","-"
+"Worthwhile","2016","Pakistani","All","Lower supervisory and technical","High
+ (7 - 8)","N/A","39.42","51.85","26.99","-"
+"Worthwhile","2016","Pakistani","All","Never worked, unemployed, and nec","High
+ (7 - 8)","N/A","40.54","44.57","36.5","-"
+"Worthwhile","2016","Pakistani","All","Routine occupations","High
+ (7 - 8)","N/A","35.59","43.76","27.42","-"
+"Worthwhile","2016","Pakistani","All","Semi-routine occupations","High
+ (7 - 8)","N/A","47.62","55.35","39.89","-"
+"Worthwhile","2016","Pakistani","All","Small employers and own account workers","High
+ (7 - 8)","N/A","42.94","49.02","36.85","-"
+"Worthwhile","2016","Pakistani","All","Higher managerial and professional","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Pakistani","All","Intermediate occupations","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Pakistani","All","Lower managerial and professional","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Pakistani","All","Lower supervisory and technical","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Pakistani","All","Never worked, unemployed, and nec","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Pakistani","All","Routine occupations","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Pakistani","All","Semi-routine occupations","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Pakistani","All","Small employers and own account workers","Low
+ (0 - 4)","N/A","?","?","?","-"
+"Worthwhile","2016","Pakistani","All","Higher managerial and professional","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Pakistani","All","Intermediate occupations","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Pakistani","All","Lower managerial and professional","Medium 
+(5 - 6)","N/A","11.98","15.47","8.49","-"
+"Worthwhile","2016","Pakistani","All","Lower supervisory and technical","Medium 
+(5 - 6)","N/A","?","?","?","-"
+"Worthwhile","2016","Pakistani","All","Never worked, unemployed, and nec","Medium 
+(5 - 6)","N/A","15.42","18.09","12.75","-"
+"Worthwhile","2016","Pakistani","All","Routine occupations","Medium 
+(5 - 6)","N/A","26.28","34.05","18.52","-"
+"Worthwhile","2016","Pakistani","All","Semi-routine occupations","Medium 
+(5 - 6)","N/A","14.71","19.88","9.55","-"
+"Worthwhile","2016","Pakistani","All","Small employers and own account workers","Medium 
+(5 - 6)","N/A","18.62","23.32","13.93","-"
+"Worthwhile","2016","Pakistani","All","Higher managerial and professional","Very High
+ (9 - 10)","N/A","30.34","36.55","24.14","-"
+"Worthwhile","2016","Pakistani","All","Intermediate occupations","Very High
+ (9 - 10)","N/A","32.95","40.01","25.89","-"
+"Worthwhile","2016","Pakistani","All","Lower managerial and professional","Very High
+ (9 - 10)","N/A","35.73","41.16","30.29","-"
+"Worthwhile","2016","Pakistani","All","Lower supervisory and technical","Very High
+ (9 - 10)","N/A","36","48.28","23.72","-"
+"Worthwhile","2016","Pakistani","All","Never worked, unemployed, and nec","Very High
+ (9 - 10)","N/A","39.71","43.83","35.58","-"
+"Worthwhile","2016","Pakistani","All","Routine occupations","Very High
+ (9 - 10)","N/A","36.15","44.76","27.55","-"
+"Worthwhile","2016","Pakistani","All","Semi-routine occupations","Very High
+ (9 - 10)","N/A","33.83","41.5","26.16","-"
+"Worthwhile","2016","Pakistani","All","Small employers and own account workers","Very High
+ (9 - 10)","N/A","34.21","40.17","28.25","-"
+"Worthwhile","2016","All","All","Higher managerial and professional","High
+ (7 - 8)","N/A","56.46","57.15","55.77","-"
+"Worthwhile","2016","All","All","Intermediate occupations","High
+ (7 - 8)","N/A","52.34","53.06","51.61","-"
+"Worthwhile","2016","All","All","Lower managerial and professional","High
+ (7 - 8)","N/A","52.49","53","51.97","-"
+"Worthwhile","2016","All","All","Lower supervisory and technical","High
+ (7 - 8)","N/A","51.3","52.33","50.28","-"
+"Worthwhile","2016","All","All","Never worked, unemployed, and nec","High
+ (7 - 8)","N/A","42.39","42.86","41.93","-"
+"Worthwhile","2016","All","All","Routine occupations","High
+ (7 - 8)","N/A","46.5","47.4","45.6","-"
+"Worthwhile","2016","All","All","Semi-routine occupations","High
+ (7 - 8)","N/A","47.7","48.44","46.96","-"
+"Worthwhile","2016","All","All","Small employers and own account workers","High
+ (7 - 8)","N/A","48.46","49.3","47.61","-"
+"Worthwhile","2016","All","All","Higher managerial and professional","Low
+ (0 - 4)","N/A","1.45","1.61","1.29","-"
+"Worthwhile","2016","All","All","Intermediate occupations","Low
+ (0 - 4)","N/A","2.67","2.92","2.41","-"
+"Worthwhile","2016","All","All","Lower managerial and professional","Low
+ (0 - 4)","N/A","1.96","2.11","1.82","-"
+"Worthwhile","2016","All","All","Lower supervisory and technical","Low
+ (0 - 4)","N/A","3.17","3.53","2.8","-"
+"Worthwhile","2016","All","All","Never worked, unemployed, and nec","Low
+ (0 - 4)","N/A","6.12","6.33","5.91","-"
+"Worthwhile","2016","All","All","Routine occupations","Low
+ (0 - 4)","N/A","4.51","4.87","4.14","-"
+"Worthwhile","2016","All","All","Semi-routine occupations","Low
+ (0 - 4)","N/A","3.95","4.24","3.65","-"
+"Worthwhile","2016","All","All","Small employers and own account workers","Low
+ (0 - 4)","N/A","2.78","3.05","2.52","-"
+"Worthwhile","2016","All","All","Higher managerial and professional","Medium 
+(5 - 6)","N/A","9.05","9.47","8.63","-"
+"Worthwhile","2016","All","All","Intermediate occupations","Medium 
+(5 - 6)","N/A","11.42","11.89","10.94","-"
+"Worthwhile","2016","All","All","Lower managerial and professional","Medium 
+(5 - 6)","N/A","9.11","9.42","8.8","-"
+"Worthwhile","2016","All","All","Lower supervisory and technical","Medium 
+(5 - 6)","N/A","12.92","13.64","12.2","-"
+"Worthwhile","2016","All","All","Never worked, unemployed, and nec","Medium 
+(5 - 6)","N/A","15.64","15.98","15.31","-"
+"Worthwhile","2016","All","All","Routine occupations","Medium 
+(5 - 6)","N/A","17.06","17.77","16.35","-"
+"Worthwhile","2016","All","All","Semi-routine occupations","Medium 
+(5 - 6)","N/A","14.89","15.44","14.34","-"
+"Worthwhile","2016","All","All","Small employers and own account workers","Medium 
+(5 - 6)","N/A","11.28","11.83","10.74","-"
+"Worthwhile","2016","All","All","Higher managerial and professional","Very High
+ (9 - 10)","N/A","33.05","33.69","32.4","-"
+"Worthwhile","2016","All","All","Intermediate occupations","Very High
+ (9 - 10)","N/A","33.58","34.26","32.9","-"
+"Worthwhile","2016","All","All","Lower managerial and professional","Very High
+ (9 - 10)","N/A","36.44","36.94","35.94","-"
+"Worthwhile","2016","All","All","Lower supervisory and technical","Very High
+ (9 - 10)","N/A","32.61","33.57","31.65","-"
+"Worthwhile","2016","All","All","Never worked, unemployed, and nec","Very High
+ (9 - 10)","N/A","35.84","36.3","35.39","-"
+"Worthwhile","2016","All","All","Routine occupations","Very High
+ (9 - 10)","N/A","31.93","32.76","31.1","-"
+"Worthwhile","2016","All","All","Semi-routine occupations","Very High
+ (9 - 10)","N/A","33.47","34.16","32.77","-"
+"Worthwhile","2016","All","All","Small employers and own account workers","Very High
+ (9 - 10)","N/A","37.48","38.29","36.66","-"
+"Worthwhile","2016","White","All","Higher managerial and professional","High
+ (7 - 8)","N/A","56.58","57.31","55.85","-"
+"Worthwhile","2016","White","All","Intermediate occupations","High
+ (7 - 8)","N/A","52.55","53.3","51.79","-"
+"Worthwhile","2016","White","All","Lower managerial and professional","High
+ (7 - 8)","N/A","52.64","53.17","52.1","-"
+"Worthwhile","2016","White","All","Lower supervisory and technical","High
+ (7 - 8)","N/A","51.95","53.01","50.88","-"
+"Worthwhile","2016","White","All","Never worked, unemployed, and nec","High
+ (7 - 8)","N/A","42.2","42.69","41.71","-"
+"Worthwhile","2016","White","All","Routine occupations","High
+ (7 - 8)","N/A","46.74","47.68","45.79","-"
+"Worthwhile","2016","White","All","Semi-routine occupations","High
+ (7 - 8)","N/A","47.89","48.67","47.11","-"
+"Worthwhile","2016","White","All","Small employers and own account workers","High
+ (7 - 8)","N/A","48.6","49.48","47.71","-"
+"Worthwhile","2016","White","All","Higher managerial and professional","Low
+ (0 - 4)","N/A","1.48","1.65","1.3","-"
+"Worthwhile","2016","White","All","Intermediate occupations","Low
+ (0 - 4)","N/A","2.73","3.01","2.46","-"
+"Worthwhile","2016","White","All","Lower managerial and professional","Low
+ (0 - 4)","N/A","1.95","2.11","1.8","-"
+"Worthwhile","2016","White","All","Lower supervisory and technical","Low
+ (0 - 4)","N/A","3.14","3.51","2.77","-"
+"Worthwhile","2016","White","All","Never worked, unemployed, and nec","Low
+ (0 - 4)","N/A","6.35","6.57","6.13","-"
+"Worthwhile","2016","White","All","Routine occupations","Low
+ (0 - 4)","N/A","4.57","4.96","4.19","-"
+"Worthwhile","2016","White","All","Semi-routine occupations","Low
+ (0 - 4)","N/A","3.89","4.2","3.57","-"
+"Worthwhile","2016","White","All","Small employers and own account workers","Low
+ (0 - 4)","N/A","2.68","2.95","2.41","-"
+"Worthwhile","2016","White","All","Higher managerial and professional","Medium 
+(5 - 6)","N/A","8.85","9.29","8.42","-"
+"Worthwhile","2016","White","All","Intermediate occupations","Medium 
+(5 - 6)","N/A","11.11","11.6","10.61","-"
+"Worthwhile","2016","White","All","Lower managerial and professional","Medium 
+(5 - 6)","N/A","8.73","9.05","8.42","-"
+"Worthwhile","2016","White","All","Lower supervisory and technical","Medium 
+(5 - 6)","N/A","12.31","13.04","11.58","-"
+"Worthwhile","2016","White","All","Never worked, unemployed, and nec","Medium 
+(5 - 6)","N/A","15.39","15.73","15.04","-"
+"Worthwhile","2016","White","All","Routine occupations","Medium 
+(5 - 6)","N/A","16.7","17.44","15.95","-"
+"Worthwhile","2016","White","All","Semi-routine occupations","Medium 
+(5 - 6)","N/A","14.36","14.94","13.79","-"
+"Worthwhile","2016","White","All","Small employers and own account workers","Medium 
+(5 - 6)","N/A","10.68","11.24","10.13","-"
+"Worthwhile","2016","White","All","Higher managerial and professional","Very High
+ (9 - 10)","N/A","33.09","33.77","32.41","-"
+"Worthwhile","2016","White","All","Intermediate occupations","Very High
+ (9 - 10)","N/A","33.62","34.32","32.91","-"
+"Worthwhile","2016","White","All","Lower managerial and professional","Very High
+ (9 - 10)","N/A","36.68","37.2","36.16","-"
+"Worthwhile","2016","White","All","Lower supervisory and technical","Very High
+ (9 - 10)","N/A","32.6","33.59","31.61","-"
+"Worthwhile","2016","White","All","Never worked, unemployed, and nec","Very High
+ (9 - 10)","N/A","36.06","36.53","35.59","-"
+"Worthwhile","2016","White","All","Routine occupations","Very High
+ (9 - 10)","N/A","32","32.87","31.12","-"
+"Worthwhile","2016","White","All","Semi-routine occupations","Very High
+ (9 - 10)","N/A","33.86","34.59","33.13","-"
+"Worthwhile","2016","White","All","Small employers and own account workers","Very High
+ (9 - 10)","N/A","38.04","38.89","37.19","-"
