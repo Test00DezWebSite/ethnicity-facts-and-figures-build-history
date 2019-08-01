@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template eff-template--white">
 <head>
-  <!-- Page built at 2019-08-01T13:46:07.865683 -->
+  <!-- Page built at 2019-08-01T16:07:15.037336 -->
 
   <meta charset="utf-8" />
   <title>NHS workforce - GOV.UK Ethnicity facts and figures</title>
@@ -145,7 +145,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl govuk-!-margin-bottom-4  govuk-!-margin-top-2" itemprop="headline">
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-4  govuk-!-margin-top-2" itemprop="headline" id="title">
         NHS workforce
       </h1>
 
@@ -329,7 +329,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
               <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
-                  <div class="rd_chart" id="chart_ed81d078e64f00a53e6d1e15b77291d5676b6095" style="clear: both; overflow: hidden"></div>
+                  <div class="rd_chart" aria-hidden="true" id="chart_ed81d078e64f00a53e6d1e15b77291d5676b6095" style="clear: both; overflow: hidden"></div>
                 </div>
 
                 <div class="govuk-grid-row">
@@ -548,7 +548,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
               <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
-                  <div class="rd_chart" id="chart_fec84a10030ef7a29bf11ea3d33160f0a82dc90c" style="clear: both; overflow: hidden"></div>
+                  <div class="rd_chart" aria-hidden="true" id="chart_fec84a10030ef7a29bf11ea3d33160f0a82dc90c" style="clear: both; overflow: hidden"></div>
                 </div>
 
                 <div class="govuk-grid-row">
@@ -843,7 +843,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
               <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
-                  <div class="rd_chart" id="chart_18213bae2629080dd6a3cd4e5776bf335303f9ba" style="clear: both; overflow: hidden"></div>
+                  <div class="rd_chart" aria-hidden="true" id="chart_18213bae2629080dd6a3cd4e5776bf335303f9ba" style="clear: both; overflow: hidden"></div>
                 </div>
 
                 <div class="govuk-grid-row">
@@ -1426,7 +1426,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
               <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
-                  <div class="rd_chart" id="chart_a8eb2cd99207a970f6b448fb5740c0ce143c13cb" style="clear: both; overflow: hidden"></div>
+                  <div class="rd_chart" aria-hidden="true" id="chart_a8eb2cd99207a970f6b448fb5740c0ce143c13cb" style="clear: both; overflow: hidden"></div>
                 </div>
 
                 <div class="govuk-grid-row">
@@ -2846,7 +2846,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
               <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
-                  <div class="rd_chart" id="chart_b6fd009cc76f263d64946550a3ebc071d3553101" style="clear: both; overflow: hidden"></div>
+                  <div class="rd_chart" aria-hidden="true" id="chart_b6fd009cc76f263d64946550a3ebc071d3553101" style="clear: both; overflow: hidden"></div>
                 </div>
 
                 <div class="govuk-grid-row">
@@ -3970,9 +3970,10 @@ This file contains the following: ethnicity, type of role, entry level, broad gr
 
       </div>
 
+
         <div class="app-back-to-top app-back-to-top--hidden" data-module="app-back-to-top">
     <div class="app-back-to-top__container">
-      <a class="govuk-link govuk-link--no-visited-state app-back-to-top__link" href="#toc" data-event-action="Clicked" data-event-category="Back to Top" data-event-label="Contents" data-on="click">        <svg role="presentation" focusable="false" class="app-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
+      <a class="govuk-link govuk-link--no-visited-state app-back-to-top__link" href="#title" data-event-action="Clicked" data-event-category="Back to Top" data-event-label="Contents" data-on="click">        <svg role="presentation" focusable="false" class="app-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
           <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
         </svg>Contents
       </a>
@@ -4115,6 +4116,7 @@ This file contains the following: ethnicity, type of role, entry level, broad gr
             link.id = 'download-' + chartDownloadLinkContainer.getAttribute('data-chart-guid');
             link.href = '#';
             link.className = 'govuk-link download-png';
+            link.setAttribute('aria-hidden', 'true');
             link.setAttribute('data-on', 'click');
             link.setAttribute('data-event-category', 'Image downloaded');
             link.setAttribute('data-event-action', "Image of the chart");

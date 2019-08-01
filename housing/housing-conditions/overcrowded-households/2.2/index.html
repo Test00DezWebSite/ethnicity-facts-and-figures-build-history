@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template eff-template--white">
 <head>
-  <!-- Page built at 2019-08-01T13:44:48.265504 -->
+  <!-- Page built at 2019-08-01T16:05:27.096709 -->
 
   <meta charset="utf-8" />
   <title>Overcrowded households - GOV.UK Ethnicity facts and figures</title>
@@ -145,7 +145,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl govuk-!-margin-bottom-4  govuk-!-margin-top-2" itemprop="headline">
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-4  govuk-!-margin-top-2" itemprop="headline" id="title">
         Overcrowded households
       </h1>
 
@@ -354,7 +354,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
               <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
-                  <div class="rd_chart" id="chart_ac8c7dbfa2f4d2936644d4c5cf1976bcb2c7c6d5" style="clear: both; overflow: hidden"></div>
+                  <div class="rd_chart" aria-hidden="true" id="chart_ac8c7dbfa2f4d2936644d4c5cf1976bcb2c7c6d5" style="clear: both; overflow: hidden"></div>
                 </div>
 
                 <div class="govuk-grid-row">
@@ -947,7 +947,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
               <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
-                  <div class="rd_chart" id="chart_1fc86565b90f503485670e0f2f50e3c334722355" style="clear: both; overflow: hidden"></div>
+                  <div class="rd_chart" aria-hidden="true" id="chart_1fc86565b90f503485670e0f2f50e3c334722355" style="clear: both; overflow: hidden"></div>
                 </div>
 
                 <div class="govuk-grid-row">
@@ -1172,7 +1172,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
               <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
-                  <div class="rd_chart" id="chart_b276994e1826b5e12d5bb22ac16ed578fac31964" style="clear: both; overflow: hidden"></div>
+                  <div class="rd_chart" aria-hidden="true" id="chart_b276994e1826b5e12d5bb22ac16ed578fac31964" style="clear: both; overflow: hidden"></div>
                 </div>
 
                 <div class="govuk-grid-row">
@@ -1677,7 +1677,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
               <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
-                  <div class="rd_chart" id="chart_80dd92b55e4197e66f6a2dc404415aedf9b8bf50" style="clear: both; overflow: hidden"></div>
+                  <div class="rd_chart" aria-hidden="true" id="chart_80dd92b55e4197e66f6a2dc404415aedf9b8bf50" style="clear: both; overflow: hidden"></div>
                 </div>
 
                 <div class="govuk-grid-row">
@@ -2112,7 +2112,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
               <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
-                  <div class="rd_chart" id="chart_b6b33bc62976f177f3577bfa2e9012696f750e6b" style="clear: both; overflow: hidden"></div>
+                  <div class="rd_chart" aria-hidden="true" id="chart_b6b33bc62976f177f3577bfa2e9012696f750e6b" style="clear: both; overflow: hidden"></div>
                 </div>
 
                 <div class="govuk-grid-row">
@@ -2442,7 +2442,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
               <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
-                  <div class="rd_chart" id="chart_a4b08e76751ac15cf2297bf0d11371c41a992e26" style="clear: both; overflow: hidden"></div>
+                  <div class="rd_chart" aria-hidden="true" id="chart_a4b08e76751ac15cf2297bf0d11371c41a992e26" style="clear: both; overflow: hidden"></div>
                 </div>
 
                 <div class="govuk-grid-row">
@@ -2814,9 +2814,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
       </div>
 
+
         <div class="app-back-to-top app-back-to-top--hidden" data-module="app-back-to-top">
     <div class="app-back-to-top__container">
-      <a class="govuk-link govuk-link--no-visited-state app-back-to-top__link" href="#toc" data-event-action="Clicked" data-event-category="Back to Top" data-event-label="Contents" data-on="click">        <svg role="presentation" focusable="false" class="app-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
+      <a class="govuk-link govuk-link--no-visited-state app-back-to-top__link" href="#title" data-event-action="Clicked" data-event-category="Back to Top" data-event-label="Contents" data-on="click">        <svg role="presentation" focusable="false" class="app-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
           <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
         </svg>Contents
       </a>
@@ -2959,6 +2960,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
             link.id = 'download-' + chartDownloadLinkContainer.getAttribute('data-chart-guid');
             link.href = '#';
             link.className = 'govuk-link download-png';
+            link.setAttribute('aria-hidden', 'true');
             link.setAttribute('data-on', 'click');
             link.setAttribute('data-event-category', 'Image downloaded');
             link.setAttribute('data-event-action', "Image of the chart");

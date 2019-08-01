@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template eff-template--white">
 <head>
-  <!-- Page built at 2019-08-01T13:42:44.409605 -->
+  <!-- Page built at 2019-08-01T16:02:58.719288 -->
 
   <meta charset="utf-8" />
   <title>A* to C in English and Maths GCSE attainment for children aged 14 to 16 (key stage 4) - GOV.UK Ethnicity facts and figures</title>
@@ -145,7 +145,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl govuk-!-margin-bottom-4  govuk-!-margin-top-2" itemprop="headline">
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-4  govuk-!-margin-top-2" itemprop="headline" id="title">
         A* to C in English and Maths GCSE attainment for children aged 14 to 16 (key stage 4)
       </h1>
 
@@ -379,7 +379,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
               <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
-                  <div class="rd_chart" id="chart_3499a719afc2b09e7d08a3f30d2bcd5446cba523" style="clear: both; overflow: hidden"></div>
+                  <div class="rd_chart" aria-hidden="true" id="chart_3499a719afc2b09e7d08a3f30d2bcd5446cba523" style="clear: both; overflow: hidden"></div>
                 </div>
 
                 <div class="govuk-grid-row">
@@ -876,7 +876,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
               <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
-                  <div class="rd_chart" id="chart_af2c8e1c317ab964bd62dd4092743969d997756a" style="clear: both; overflow: hidden"></div>
+                  <div class="rd_chart" aria-hidden="true" id="chart_af2c8e1c317ab964bd62dd4092743969d997756a" style="clear: both; overflow: hidden"></div>
                 </div>
 
                 <div class="govuk-grid-row">
@@ -11712,7 +11712,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
               <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
-                  <div class="rd_chart" id="chart_5d315c6abb7068f5717cdc0f98df47cdc9b33f15" style="clear: both; overflow: hidden"></div>
+                  <div class="rd_chart" aria-hidden="true" id="chart_5d315c6abb7068f5717cdc0f98df47cdc9b33f15" style="clear: both; overflow: hidden"></div>
                 </div>
 
                 <div class="govuk-grid-row">
@@ -29957,7 +29957,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
               <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
-                  <div class="rd_chart" id="chart_8c24eb72b22ad9b872766acd02aaaa957056baaf" style="clear: both; overflow: hidden"></div>
+                  <div class="rd_chart" aria-hidden="true" id="chart_8c24eb72b22ad9b872766acd02aaaa957056baaf" style="clear: both; overflow: hidden"></div>
                 </div>
 
                 <div class="govuk-grid-row">
@@ -31573,9 +31573,10 @@ Parents are able to claim FSM if they receive a <a class="govuk-link" href="http
 
       </div>
 
+
         <div class="app-back-to-top app-back-to-top--hidden" data-module="app-back-to-top">
     <div class="app-back-to-top__container">
-      <a class="govuk-link govuk-link--no-visited-state app-back-to-top__link" href="#toc" data-event-action="Clicked" data-event-category="Back to Top" data-event-label="Contents" data-on="click">        <svg role="presentation" focusable="false" class="app-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
+      <a class="govuk-link govuk-link--no-visited-state app-back-to-top__link" href="#title" data-event-action="Clicked" data-event-category="Back to Top" data-event-label="Contents" data-on="click">        <svg role="presentation" focusable="false" class="app-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
           <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
         </svg>Contents
       </a>
@@ -31718,6 +31719,7 @@ Parents are able to claim FSM if they receive a <a class="govuk-link" href="http
             link.id = 'download-' + chartDownloadLinkContainer.getAttribute('data-chart-guid');
             link.href = '#';
             link.className = 'govuk-link download-png';
+            link.setAttribute('aria-hidden', 'true');
             link.setAttribute('data-on', 'click');
             link.setAttribute('data-event-category', 'Image downloaded');
             link.setAttribute('data-event-action', "Image of the chart");

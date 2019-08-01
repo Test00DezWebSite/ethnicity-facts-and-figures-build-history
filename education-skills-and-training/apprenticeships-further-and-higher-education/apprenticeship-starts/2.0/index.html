@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template eff-template--white">
 <head>
-  <!-- Page built at 2019-08-01T13:43:09.326561 -->
+  <!-- Page built at 2019-08-01T16:03:28.343476 -->
 
   <meta charset="utf-8" />
   <title>Apprenticeship starts - GOV.UK Ethnicity facts and figures</title>
@@ -145,7 +145,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl govuk-!-margin-bottom-4  govuk-!-margin-top-2" itemprop="headline">
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-4  govuk-!-margin-top-2" itemprop="headline" id="title">
         Apprenticeship starts
       </h1>
 
@@ -296,7 +296,7 @@ Each reporting period covers an academic year, which runs from 1 August to 31 Ju
 
               <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
-                  <div class="rd_chart" id="chart_2e26eaa55afb0defa944da97f0ea11e7fe1213a8" style="clear: both; overflow: hidden"></div>
+                  <div class="rd_chart" aria-hidden="true" id="chart_2e26eaa55afb0defa944da97f0ea11e7fe1213a8" style="clear: both; overflow: hidden"></div>
                 </div>
 
                 <div class="govuk-grid-row">
@@ -1050,7 +1050,7 @@ Each reporting period covers an academic year, which runs from 1 August to 31 Ju
 
               <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
-                  <div class="rd_chart" id="chart_60788776470be9ba9e39062e8654152b6d321610" style="clear: both; overflow: hidden"></div>
+                  <div class="rd_chart" aria-hidden="true" id="chart_60788776470be9ba9e39062e8654152b6d321610" style="clear: both; overflow: hidden"></div>
                 </div>
 
                 <div class="govuk-grid-row">
@@ -1721,7 +1721,7 @@ Each reporting period covers an academic year, which runs from 1 August to 31 Ju
 
               <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
-                  <div class="rd_chart" id="chart_525dbd986cff24e9ea46d696d0c6175ffb7e5aa1" style="clear: both; overflow: hidden"></div>
+                  <div class="rd_chart" aria-hidden="true" id="chart_525dbd986cff24e9ea46d696d0c6175ffb7e5aa1" style="clear: both; overflow: hidden"></div>
                 </div>
 
                 <div class="govuk-grid-row">
@@ -2070,9 +2070,10 @@ Data on apprentices that forms part of the Employer Ownership Pilot (EOP) is gat
 
       </div>
 
+
         <div class="app-back-to-top app-back-to-top--hidden" data-module="app-back-to-top">
     <div class="app-back-to-top__container">
-      <a class="govuk-link govuk-link--no-visited-state app-back-to-top__link" href="#toc" data-event-action="Clicked" data-event-category="Back to Top" data-event-label="Contents" data-on="click">        <svg role="presentation" focusable="false" class="app-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
+      <a class="govuk-link govuk-link--no-visited-state app-back-to-top__link" href="#title" data-event-action="Clicked" data-event-category="Back to Top" data-event-label="Contents" data-on="click">        <svg role="presentation" focusable="false" class="app-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
           <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
         </svg>Contents
       </a>
@@ -2215,6 +2216,7 @@ Data on apprentices that forms part of the Employer Ownership Pilot (EOP) is gat
             link.id = 'download-' + chartDownloadLinkContainer.getAttribute('data-chart-guid');
             link.href = '#';
             link.className = 'govuk-link download-png';
+            link.setAttribute('aria-hidden', 'true');
             link.setAttribute('data-on', 'click');
             link.setAttribute('data-event-category', 'Image downloaded');
             link.setAttribute('data-event-action', "Image of the chart");

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template eff-template--white">
 <head>
-  <!-- Page built at 2019-08-01T13:43:27.141723 -->
+  <!-- Page built at 2019-08-01T16:03:48.612651 -->
 
   <meta charset="utf-8" />
   <title>Pupil exclusions - GOV.UK Ethnicity facts and figures</title>
@@ -144,7 +144,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl govuk-!-margin-bottom-4  govuk-!-margin-top-2" itemprop="headline">
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-4  govuk-!-margin-top-2" itemprop="headline" id="title">
         Pupil exclusions
       </h1>
 
@@ -337,7 +337,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
               <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
-                  <div class="rd_chart" id="chart_5af2504426cfeac296f2fa075d7873aca33b3ab4" style="clear: both; overflow: hidden"></div>
+                  <div class="rd_chart" aria-hidden="true" id="chart_5af2504426cfeac296f2fa075d7873aca33b3ab4" style="clear: both; overflow: hidden"></div>
                 </div>
 
                 <div class="govuk-grid-row">
@@ -809,7 +809,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
               <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
-                  <div class="rd_chart" id="chart_a3db421af58376bcc8749c3b405b817d6563ef45" style="clear: both; overflow: hidden"></div>
+                  <div class="rd_chart" aria-hidden="true" id="chart_a3db421af58376bcc8749c3b405b817d6563ef45" style="clear: both; overflow: hidden"></div>
                 </div>
 
                 <div class="govuk-grid-row">
@@ -1288,7 +1288,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
               <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
-                  <div class="rd_chart" id="chart_5803a584530593d9406286cf95bd4304b820a35a" style="clear: both; overflow: hidden"></div>
+                  <div class="rd_chart" aria-hidden="true" id="chart_5803a584530593d9406286cf95bd4304b820a35a" style="clear: both; overflow: hidden"></div>
                 </div>
 
                 <div class="govuk-grid-row">
@@ -2237,7 +2237,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
               <div class="chart-and-footer hidden">
                 <div class="govuk-grid-row">
-                  <div class="rd_chart" id="chart_e0144a924d8fd2cb86a568a9050f51ec3af7e53b" style="clear: both; overflow: hidden"></div>
+                  <div class="rd_chart" aria-hidden="true" id="chart_e0144a924d8fd2cb86a568a9050f51ec3af7e53b" style="clear: both; overflow: hidden"></div>
                 </div>
 
                 <div class="govuk-grid-row">
@@ -14265,9 +14265,10 @@ Rates are calculated using the number of registered pupils as of the spring cens
 
       </div>
 
+
         <div class="app-back-to-top app-back-to-top--hidden" data-module="app-back-to-top">
     <div class="app-back-to-top__container">
-      <a class="govuk-link govuk-link--no-visited-state app-back-to-top__link" href="#toc" data-event-action="Clicked" data-event-category="Back to Top" data-event-label="Contents" data-on="click">        <svg role="presentation" focusable="false" class="app-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
+      <a class="govuk-link govuk-link--no-visited-state app-back-to-top__link" href="#title" data-event-action="Clicked" data-event-category="Back to Top" data-event-label="Contents" data-on="click">        <svg role="presentation" focusable="false" class="app-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
           <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
         </svg>Contents
       </a>
@@ -14410,6 +14411,7 @@ Rates are calculated using the number of registered pupils as of the spring cens
             link.id = 'download-' + chartDownloadLinkContainer.getAttribute('data-chart-guid');
             link.href = '#';
             link.className = 'govuk-link download-png';
+            link.setAttribute('aria-hidden', 'true');
             link.setAttribute('data-on', 'click');
             link.setAttribute('data-event-category', 'Image downloaded');
             link.setAttribute('data-event-action', "Image of the chart");
