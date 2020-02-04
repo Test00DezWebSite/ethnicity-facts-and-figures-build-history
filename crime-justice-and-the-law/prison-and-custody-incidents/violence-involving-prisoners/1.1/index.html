@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template eff-template--white">
 <head>
-  <!-- Page built at 2020-02-04T12:31:35.547471 -->
+  <!-- Page built at 2020-02-04T18:30:59.502772 -->
 
   <meta charset="utf-8" />
   <title>Violence involving prisoners - GOV.UK Ethnicity facts and figures</title>
@@ -19,7 +19,7 @@
     <link rel="apple-touch-icon" href="/static/assets/images/govuk-apple-touch-icon.png">
 
   <!--[if !IE 8]><!-->
-    <link href="/static/stylesheets/application-67dc6b6fb7.css" rel="stylesheet" />
+    <link href="/static/stylesheets/application-4902951b76.css" rel="stylesheet" />
   <!--<![endif]-->
 
 
@@ -317,7 +317,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="">
 
       <div class="">
-    <table class="govuk-table govuk-!-margin-bottom-0 eff-table--sticky eff-table--padding-right-on-last-cell" data-module="eff-truncated-table eff-sortable-headers">
+    <table class="govuk-table govuk-!-margin-bottom-0 eff-table--sticky eff-table--padding-right-on-last-cell"
+           data-module="eff-truncated-table eff-sortable-headers"
+           role="grid"
+           aria-readonly="true">
       <caption class="govuk-table__caption govuk-!-padding-bottom-3">Prisoner assailants, victims and fighters by ethnicity</caption>
     <thead class="govuk-table__head">
 
@@ -331,21 +334,40 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
 
 
-
-      <tr>
-        <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense eff-table__header--align-top
-         " aria-sort="none">
+      <tr role="row">
+        <th role="columnheader"
+            scope="col"
+            class="govuk-table__header eff-table__header--border-right eff-table__header--dense eff-table__header--align-top
+                 "
+            aria-sort="none">
                 Ethnicity
         </th>
 
 
-
-                      <th class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left " aria-sort="none">Number</th>
-                      <th class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left eff-table__header--border-right" aria-sort="none">Incidents per 1000 prisoners</th>
-                      <th class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left " aria-sort="none">Number</th>
-                      <th class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left eff-table__header--border-right" aria-sort="none">Incidents per 1000 prisoners</th>
-                      <th class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left " aria-sort="none">Number</th>
-                      <th class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left " aria-sort="none">Incidents per 1000 prisoners</th>
+                      <th role="columnheader"
+                          scope="col"
+                          class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left "
+                          aria-sort="none"><span class="govuk-visually-hidden">Assailant </span>Number</th>
+                      <th role="columnheader"
+                          scope="col"
+                          class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left eff-table__header--border-right"
+                          aria-sort="none"><span class="govuk-visually-hidden">Assailant </span>Incidents per 1000 prisoners</th>
+                      <th role="columnheader"
+                          scope="col"
+                          class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left "
+                          aria-sort="none"><span class="govuk-visually-hidden">Fighter </span>Number</th>
+                      <th role="columnheader"
+                          scope="col"
+                          class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left eff-table__header--border-right"
+                          aria-sort="none"><span class="govuk-visually-hidden">Fighter </span>Incidents per 1000 prisoners</th>
+                      <th role="columnheader"
+                          scope="col"
+                          class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left "
+                          aria-sort="none"><span class="govuk-visually-hidden">Victim </span>Number</th>
+                      <th role="columnheader"
+                          scope="col"
+                          class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left "
+                          aria-sort="none"><span class="govuk-visually-hidden">Victim </span>Incidents per 1000 prisoners</th>
       </tr>
 
 
@@ -355,181 +377,197 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
 
 
-              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense " data-sort-value="100" scope="row">Asian</th>
+              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense "
+                  data-sort-value="100"
+                  scope="row"
+                  role="rowheader">Asian</th>
 
 
-            <td data-sort-value="810" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">810</td>
-
-
-
-
-            <td data-sort-value="117.9" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">117.9</td>
-
-
-
-
-            <td data-sort-value="858" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">858</td>
+            <td role="gridcell" data-sort-value="810" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">810</td>
 
 
 
 
-            <td data-sort-value="124.9" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">124.9</td>
+            <td role="gridcell" data-sort-value="117.9" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">117.9</td>
 
 
 
 
-            <td data-sort-value="769" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">769</td>
+            <td role="gridcell" data-sort-value="858" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">858</td>
 
 
 
 
-            <td data-sort-value="111.9" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">111.9</td>
+            <td role="gridcell" data-sort-value="124.9" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">124.9</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="769" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">769</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="111.9" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">111.9</td>
         </tr>
 
         <tr class="govuk-table__row">
 
 
 
-              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense " data-sort-value="200" scope="row">Black</th>
+              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense "
+                  data-sort-value="200"
+                  scope="row"
+                  role="rowheader">Black</th>
 
 
-            <td data-sort-value="3017" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">3,017</td>
-
-
-
-
-            <td data-sort-value="285.3" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">285.3</td>
-
-
-
-
-            <td data-sort-value="2817" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">2,817</td>
+            <td role="gridcell" data-sort-value="3017" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">3,017</td>
 
 
 
 
-            <td data-sort-value="266.4" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">266.4</td>
+            <td role="gridcell" data-sort-value="285.3" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">285.3</td>
 
 
 
 
-            <td data-sort-value="1335" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">1,335</td>
+            <td role="gridcell" data-sort-value="2817" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">2,817</td>
 
 
 
 
-            <td data-sort-value="126.3" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">126.3</td>
+            <td role="gridcell" data-sort-value="266.4" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">266.4</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="1335" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">1,335</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="126.3" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">126.3</td>
         </tr>
 
         <tr class="govuk-table__row">
 
 
 
-              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense " data-sort-value="300" scope="row">Mixed</th>
+              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense "
+                  data-sort-value="300"
+                  scope="row"
+                  role="rowheader">Mixed</th>
 
 
-            <td data-sort-value="1177" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">1,177</td>
-
-
-
-
-            <td data-sort-value="335.5" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">335.5</td>
-
-
-
-
-            <td data-sort-value="980" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">980</td>
+            <td role="gridcell" data-sort-value="1177" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">1,177</td>
 
 
 
 
-            <td data-sort-value="279.3" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">279.3</td>
+            <td role="gridcell" data-sort-value="335.5" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">335.5</td>
 
 
 
 
-            <td data-sort-value="475" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">475</td>
+            <td role="gridcell" data-sort-value="980" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">980</td>
 
 
 
 
-            <td data-sort-value="135.4" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">135.4</td>
+            <td role="gridcell" data-sort-value="279.3" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">279.3</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="475" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">475</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="135.4" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">135.4</td>
         </tr>
 
         <tr class="govuk-table__row">
 
 
 
-              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense " data-sort-value="400" scope="row">White</th>
+              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense "
+                  data-sort-value="400"
+                  scope="row"
+                  role="rowheader">White</th>
 
 
-            <td data-sort-value="8026" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">8,026</td>
-
-
-
-
-            <td data-sort-value="127" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">127.0</td>
-
-
-
-
-            <td data-sort-value="7905" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">7,905</td>
+            <td role="gridcell" data-sort-value="8026" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">8,026</td>
 
 
 
 
-            <td data-sort-value="125.1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">125.1</td>
+            <td role="gridcell" data-sort-value="127" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">127.0</td>
 
 
 
 
-            <td data-sort-value="6761" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">6,761</td>
+            <td role="gridcell" data-sort-value="7905" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">7,905</td>
 
 
 
 
-            <td data-sort-value="107" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">107.0</td>
+            <td role="gridcell" data-sort-value="125.1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">125.1</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="6761" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">6,761</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="107" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">107.0</td>
         </tr>
 
         <tr class="govuk-table__row">
 
 
 
-              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense " data-sort-value="960" scope="row">Other (including Chinese)</th>
+              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense "
+                  data-sort-value="960"
+                  scope="row"
+                  role="rowheader">Other (including Chinese)</th>
 
 
-            <td data-sort-value="160" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">160</td>
-
-
-
-
-            <td data-sort-value="163.1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">163.1</td>
-
-
-
-
-            <td data-sort-value="191" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">191</td>
+            <td role="gridcell" data-sort-value="160" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">160</td>
 
 
 
 
-            <td data-sort-value="194.7" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">194.7</td>
+            <td role="gridcell" data-sort-value="163.1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">163.1</td>
 
 
 
 
-            <td data-sort-value="128" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">128</td>
+            <td role="gridcell" data-sort-value="191" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">191</td>
 
 
 
 
-            <td data-sort-value="130.5" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">130.5</td>
+            <td role="gridcell" data-sort-value="194.7" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">194.7</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="128" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">128</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="130.5" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">130.5</td>
         </tr>
 
     </tbody>
   </table>
   </div></div></div>
 </div>
+
 <div class="table-footer">
 
     <p class="missing-data-explanation govuk-body govuk-!-margin-bottom-0">
@@ -624,7 +662,10 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="">
 
       <div class="">
-    <table class="govuk-table govuk-!-margin-bottom-0 eff-table--sticky eff-table--padding-right-on-last-cell" data-module="eff-truncated-table eff-sortable-headers">
+    <table class="govuk-table govuk-!-margin-bottom-0 eff-table--sticky eff-table--padding-right-on-last-cell"
+           data-module="eff-truncated-table eff-sortable-headers"
+           role="grid"
+           aria-readonly="true">
       <caption class="govuk-table__caption govuk-!-padding-bottom-3">Assaults per 1,000 prisoners by ethnicity over time</caption>
     <thead class="govuk-table__head">
 
@@ -640,25 +681,56 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
 
 
-
-      <tr>
-        <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense eff-table__header--align-top
-         " aria-sort="none">
+      <tr role="row">
+        <th role="columnheader"
+            scope="col"
+            class="govuk-table__header eff-table__header--border-right eff-table__header--dense eff-table__header--align-top
+                 "
+            aria-sort="none">
                 Year
         </th>
 
 
-
-                      <th class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left " aria-sort="none">Number per 1000</th>
-                      <th class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left eff-table__header--border-right" aria-sort="none">Number</th>
-                      <th class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left " aria-sort="none">Number per 1000</th>
-                      <th class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left eff-table__header--border-right" aria-sort="none">Number</th>
-                      <th class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left " aria-sort="none">Number per 1000</th>
-                      <th class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left eff-table__header--border-right" aria-sort="none">Number</th>
-                      <th class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left " aria-sort="none">Number per 1000</th>
-                      <th class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left eff-table__header--border-right" aria-sort="none">Number</th>
-                      <th class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left " aria-sort="none">Number per 1000</th>
-                      <th class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left " aria-sort="none">Number</th>
+                      <th role="columnheader"
+                          scope="col"
+                          class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left "
+                          aria-sort="none"><span class="govuk-visually-hidden">Asian </span>Number per 1000</th>
+                      <th role="columnheader"
+                          scope="col"
+                          class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left eff-table__header--border-right"
+                          aria-sort="none"><span class="govuk-visually-hidden">Asian </span>Number</th>
+                      <th role="columnheader"
+                          scope="col"
+                          class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left "
+                          aria-sort="none"><span class="govuk-visually-hidden">Black </span>Number per 1000</th>
+                      <th role="columnheader"
+                          scope="col"
+                          class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left eff-table__header--border-right"
+                          aria-sort="none"><span class="govuk-visually-hidden">Black </span>Number</th>
+                      <th role="columnheader"
+                          scope="col"
+                          class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left "
+                          aria-sort="none"><span class="govuk-visually-hidden">Mixed </span>Number per 1000</th>
+                      <th role="columnheader"
+                          scope="col"
+                          class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left eff-table__header--border-right"
+                          aria-sort="none"><span class="govuk-visually-hidden">Mixed </span>Number</th>
+                      <th role="columnheader"
+                          scope="col"
+                          class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left "
+                          aria-sort="none"><span class="govuk-visually-hidden">White </span>Number per 1000</th>
+                      <th role="columnheader"
+                          scope="col"
+                          class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left eff-table__header--border-right"
+                          aria-sort="none"><span class="govuk-visually-hidden">White </span>Number</th>
+                      <th role="columnheader"
+                          scope="col"
+                          class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left "
+                          aria-sort="none"><span class="govuk-visually-hidden">Other </span>Number per 1000</th>
+                      <th role="columnheader"
+                          scope="col"
+                          class="govuk-table__header govuk-table__header--numeric govuk-!-font-weight-regular eff-table__header--dense eff-table__header--align-top  eff-table__cell--padding-left "
+                          aria-sort="none"><span class="govuk-visually-hidden">Other </span>Number</th>
       </tr>
 
 
@@ -668,281 +740,297 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
 
 
-              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense " data-sort-value="0" scope="row">2011</th>
+              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense "
+                  data-sort-value="0"
+                  scope="row"
+                  role="rowheader">2011</th>
 
 
-            <td data-sort-value="72.5" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">72.5</td>
-
-
-
-
-            <td data-sort-value="457" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">457</td>
-
-
-
-
-            <td data-sort-value="182.4" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">182.4</td>
+            <td role="gridcell" data-sort-value="72.5" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">72.5</td>
 
 
 
 
-            <td data-sort-value="2075" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">2,075</td>
+            <td role="gridcell" data-sort-value="457" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">457</td>
 
 
 
 
-            <td data-sort-value="172.5" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">172.5</td>
+            <td role="gridcell" data-sort-value="182.4" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">182.4</td>
 
 
 
 
-            <td data-sort-value="544" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">544</td>
+            <td role="gridcell" data-sort-value="2075" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">2,075</td>
 
 
 
 
-            <td data-sort-value="71" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">71.0</td>
+            <td role="gridcell" data-sort-value="172.5" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">172.5</td>
 
 
 
 
-            <td data-sort-value="4413" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">4,413</td>
+            <td role="gridcell" data-sort-value="544" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">544</td>
 
 
 
 
-            <td data-sort-value="66.7" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">66.7</td>
+            <td role="gridcell" data-sort-value="71" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">71.0</td>
 
 
 
 
-            <td data-sort-value="65" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">65</td>
+            <td role="gridcell" data-sort-value="4413" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">4,413</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="66.7" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">66.7</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="65" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">65</td>
         </tr>
 
         <tr class="govuk-table__row">
 
 
 
-              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense " data-sort-value="1" scope="row">2012</th>
+              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense "
+                  data-sort-value="1"
+                  scope="row"
+                  role="rowheader">2012</th>
 
 
-            <td data-sort-value="69.6" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">69.6</td>
-
-
-
-
-            <td data-sort-value="446" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">446</td>
-
-
-
-
-            <td data-sort-value="180.1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">180.1</td>
+            <td role="gridcell" data-sort-value="69.6" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">69.6</td>
 
 
 
 
-            <td data-sort-value="2010" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">2,010</td>
+            <td role="gridcell" data-sort-value="446" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">446</td>
 
 
 
 
-            <td data-sort-value="182" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">182.0</td>
+            <td role="gridcell" data-sort-value="180.1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">180.1</td>
 
 
 
 
-            <td data-sort-value="579" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">579</td>
+            <td role="gridcell" data-sort-value="2010" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">2,010</td>
 
 
 
 
-            <td data-sort-value="71.6" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">71.6</td>
+            <td role="gridcell" data-sort-value="182" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">182.0</td>
 
 
 
 
-            <td data-sort-value="4437" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">4,437</td>
+            <td role="gridcell" data-sort-value="579" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">579</td>
 
 
 
 
-            <td data-sort-value="77.1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">77.1</td>
+            <td role="gridcell" data-sort-value="71.6" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">71.6</td>
 
 
 
 
-            <td data-sort-value="76" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">76</td>
+            <td role="gridcell" data-sort-value="4437" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">4,437</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="77.1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">77.1</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="76" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">76</td>
         </tr>
 
         <tr class="govuk-table__row">
 
 
 
-              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense " data-sort-value="2" scope="row">2013</th>
+              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense "
+                  data-sort-value="2"
+                  scope="row"
+                  role="rowheader">2013</th>
 
 
-            <td data-sort-value="95.2" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">95.2</td>
-
-
-
-
-            <td data-sort-value="617" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">617</td>
-
-
-
-
-            <td data-sort-value="188.1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">188.1</td>
+            <td role="gridcell" data-sort-value="95.2" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">95.2</td>
 
 
 
 
-            <td data-sort-value="2030" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">2,030</td>
+            <td role="gridcell" data-sort-value="617" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">617</td>
 
 
 
 
-            <td data-sort-value="216.4" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">216.4</td>
+            <td role="gridcell" data-sort-value="188.1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">188.1</td>
 
 
 
 
-            <td data-sort-value="700" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">700</td>
+            <td role="gridcell" data-sort-value="2030" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">2,030</td>
 
 
 
 
-            <td data-sort-value="77.3" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">77.3</td>
+            <td role="gridcell" data-sort-value="216.4" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">216.4</td>
 
 
 
 
-            <td data-sort-value="4718" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">4,718</td>
+            <td role="gridcell" data-sort-value="700" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">700</td>
 
 
 
 
-            <td data-sort-value="111.1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">111.1</td>
+            <td role="gridcell" data-sort-value="77.3" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">77.3</td>
 
 
 
 
-            <td data-sort-value="111" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">111</td>
+            <td role="gridcell" data-sort-value="4718" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">4,718</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="111.1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">111.1</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="111" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">111</td>
         </tr>
 
         <tr class="govuk-table__row">
 
 
 
-              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense " data-sort-value="3" scope="row">2014</th>
+              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense "
+                  data-sort-value="3"
+                  scope="row"
+                  role="rowheader">2014</th>
 
 
-            <td data-sort-value="89.1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">89.1</td>
-
-
-
-
-            <td data-sort-value="592" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">592</td>
-
-
-
-
-            <td data-sort-value="217.1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">217.1</td>
+            <td role="gridcell" data-sort-value="89.1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">89.1</td>
 
 
 
 
-            <td data-sort-value="2325" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">2,325</td>
+            <td role="gridcell" data-sort-value="592" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">592</td>
 
 
 
 
-            <td data-sort-value="261.9" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">261.9</td>
+            <td role="gridcell" data-sort-value="217.1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">217.1</td>
 
 
 
 
-            <td data-sort-value="905" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">905</td>
+            <td role="gridcell" data-sort-value="2325" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">2,325</td>
 
 
 
 
-            <td data-sort-value="94.7" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">94.7</td>
+            <td role="gridcell" data-sort-value="261.9" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">261.9</td>
 
 
 
 
-            <td data-sort-value="5914" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">5,914</td>
+            <td role="gridcell" data-sort-value="905" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">905</td>
 
 
 
 
-            <td data-sort-value="120.1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">120.1</td>
+            <td role="gridcell" data-sort-value="94.7" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">94.7</td>
 
 
 
 
-            <td data-sort-value="123" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">123</td>
+            <td role="gridcell" data-sort-value="5914" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">5,914</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="120.1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">120.1</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="123" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">123</td>
         </tr>
 
         <tr class="govuk-table__row">
 
 
 
-              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense " data-sort-value="4" scope="row">2015</th>
+              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense "
+                  data-sort-value="4"
+                  scope="row"
+                  role="rowheader">2015</th>
 
 
-            <td data-sort-value="117.9" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">117.9</td>
-
-
-
-
-            <td data-sort-value="810" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">810</td>
-
-
-
-
-            <td data-sort-value="285.3" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">285.3</td>
+            <td role="gridcell" data-sort-value="117.9" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">117.9</td>
 
 
 
 
-            <td data-sort-value="3017" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">3,017</td>
+            <td role="gridcell" data-sort-value="810" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">810</td>
 
 
 
 
-            <td data-sort-value="335.5" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">335.5</td>
+            <td role="gridcell" data-sort-value="285.3" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">285.3</td>
 
 
 
 
-            <td data-sort-value="1177" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">1,177</td>
+            <td role="gridcell" data-sort-value="3017" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">3,017</td>
 
 
 
 
-            <td data-sort-value="127" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">127.0</td>
+            <td role="gridcell" data-sort-value="335.5" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">335.5</td>
 
 
 
 
-            <td data-sort-value="8026" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">8,026</td>
+            <td role="gridcell" data-sort-value="1177" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">1,177</td>
 
 
 
 
-            <td data-sort-value="163.1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">163.1</td>
+            <td role="gridcell" data-sort-value="127" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">127.0</td>
 
 
 
 
-            <td data-sort-value="160" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">160</td>
+            <td role="gridcell" data-sort-value="8026" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">8,026</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="163.1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">163.1</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="160" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">160</td>
         </tr>
 
     </tbody>
   </table>
   </div></div></div>
 </div>
+
 <div class="table-footer">
 
     <p class="missing-data-explanation govuk-body govuk-!-margin-bottom-0">
@@ -1193,7 +1281,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <a class="govuk-footer__link" href="https://www.gov.uk/government/publications/statement-of-compliance-for-race-disparity-unit" data-on="click" data-event-category="Link clicked" data-event-action="Statement of compliance">Statement of compliance</a>
               </li>
               <li class="govuk-footer__list-item">
-                  <a class="govuk-footer__link" href="https://guide.ethnicity-facts-figures.service.gov.uk">Style guide and templates</a>
+                  <a class="govuk-footer__link" href="https://guide.ethnicity-facts-figures.service.gov.uk">Style guide</a>
               </li>
                   <li class="govuk-footer__list-item">
                       <a class="govuk-footer__link" href="/dashboards">Dashboards</a>
@@ -1242,7 +1330,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
   </div>
 
 </footer>
-          <script type="text/javascript" src="/static/javascripts/all-34e714a043.js"></script>
+          <script type="text/javascript" src="/static/javascripts/all-b59017dafd.js"></script>
         <script>window.GOVUKFrontend.initAll()</script>
 
 

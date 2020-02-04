@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template eff-template--white">
 <head>
-  <!-- Page built at 2020-02-04T12:38:09.640689 -->
+  <!-- Page built at 2020-02-04T18:36:41.259985 -->
 
   <meta charset="utf-8" />
   <title>Employment by sector - GOV.UK Ethnicity facts and figures</title>
@@ -19,7 +19,7 @@
     <link rel="apple-touch-icon" href="/static/assets/images/govuk-apple-touch-icon.png">
 
   <!--[if !IE 8]><!-->
-    <link href="/static/stylesheets/application-67dc6b6fb7.css" rel="stylesheet" />
+    <link href="/static/stylesheets/application-4902951b76.css" rel="stylesheet" />
   <!--<![endif]-->
 
 
@@ -328,16 +328,22 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
     <div class="">
 
       <div class="">
-    <table class="govuk-table govuk-!-margin-bottom-0 eff-table--sticky eff-table--padding-right-on-last-cell" data-module="eff-truncated-table eff-sortable-headers">
+    <table class="govuk-table govuk-!-margin-bottom-0 eff-table--sticky eff-table--padding-right-on-last-cell"
+           data-module="eff-truncated-table eff-sortable-headers"
+           role="grid"
+           aria-readonly="true">
       <caption class="govuk-table__caption govuk-!-padding-bottom-3">Percentage of people employed in sectors by ethnicity</caption>
     <thead class="govuk-table__head">
 
 
 
 
-      <tr>
-        <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense eff-table__header--align-top
-         eff-table__header--border-bottom-0 eff-table__header--align-top " aria-sort="none">
+      <tr role="row">
+        <th role="columnheader"
+            scope="col"
+            class="govuk-table__header eff-table__header--border-right eff-table__header--dense eff-table__header--align-top
+                 eff-table__header--border-bottom-0 eff-table__header--align-top "
+            aria-sort="none">
                 Sector
         </th>
 
@@ -347,25 +353,46 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
 
 
-                    <th class="govuk-table__header govuk-table__header--numeric eff-table__header--dense eff-table__header--align-top eff-table__header--border-bottom-0   eff-table__header--border-right" aria-sort="none"> All</th>
+                    <th role="columnheader"
+                        scope="col"
+                        class="govuk-table__header govuk-table__header--numeric eff-table__header--dense eff-table__header--align-top eff-table__header--border-bottom-0   eff-table__header--border-right"
+                        aria-sort="none"> All</th>
 
 
-                    <th class="govuk-table__header govuk-table__header--numeric eff-table__header--dense eff-table__header--align-top eff-table__header--border-bottom-0   eff-table__header--border-right" aria-sort="none"> Indian</th>
+                    <th role="columnheader"
+                        scope="col"
+                        class="govuk-table__header govuk-table__header--numeric eff-table__header--dense eff-table__header--align-top eff-table__header--border-bottom-0   eff-table__header--border-right"
+                        aria-sort="none"> Indian</th>
 
 
-                    <th class="govuk-table__header govuk-table__header--numeric eff-table__header--dense eff-table__header--align-top eff-table__header--border-bottom-0   eff-table__header--border-right" aria-sort="none"> Pakistani/ Bangladeshi</th>
+                    <th role="columnheader"
+                        scope="col"
+                        class="govuk-table__header govuk-table__header--numeric eff-table__header--dense eff-table__header--align-top eff-table__header--border-bottom-0   eff-table__header--border-right"
+                        aria-sort="none"> Pakistani/ Bangladeshi</th>
 
 
-                    <th class="govuk-table__header govuk-table__header--numeric eff-table__header--dense eff-table__header--align-top eff-table__header--border-bottom-0   eff-table__header--border-right" aria-sort="none"> Black</th>
+                    <th role="columnheader"
+                        scope="col"
+                        class="govuk-table__header govuk-table__header--numeric eff-table__header--dense eff-table__header--align-top eff-table__header--border-bottom-0   eff-table__header--border-right"
+                        aria-sort="none"> Black</th>
 
 
-                    <th class="govuk-table__header govuk-table__header--numeric eff-table__header--dense eff-table__header--align-top eff-table__header--border-bottom-0   eff-table__header--border-right" aria-sort="none"> Mixed</th>
+                    <th role="columnheader"
+                        scope="col"
+                        class="govuk-table__header govuk-table__header--numeric eff-table__header--dense eff-table__header--align-top eff-table__header--border-bottom-0   eff-table__header--border-right"
+                        aria-sort="none"> Mixed</th>
 
 
-                    <th class="govuk-table__header govuk-table__header--numeric eff-table__header--dense eff-table__header--align-top eff-table__header--border-bottom-0   eff-table__header--border-right" aria-sort="none"> White</th>
+                    <th role="columnheader"
+                        scope="col"
+                        class="govuk-table__header govuk-table__header--numeric eff-table__header--dense eff-table__header--align-top eff-table__header--border-bottom-0   eff-table__header--border-right"
+                        aria-sort="none"> White</th>
 
 
-                    <th class="govuk-table__header govuk-table__header--numeric eff-table__header--dense eff-table__header--align-top eff-table__header--border-bottom-0   " aria-sort="none"> Other</th>
+                    <th role="columnheader"
+                        scope="col"
+                        class="govuk-table__header govuk-table__header--numeric eff-table__header--dense eff-table__header--align-top eff-table__header--border-bottom-0   "
+                        aria-sort="none"> Other</th>
 
       </tr>
 
@@ -394,406 +421,437 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
 
 
-              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense " data-sort-value="0" scope="row">Agriculture &amp; fishing </th>
+              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense "
+                  data-sort-value="0"
+                  scope="row"
+                  role="rowheader">Agriculture &amp; fishing </th>
 
 
-            <td data-sort-value="1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">1</td>
-
-
-
-
-            <td data-sort-value="N/A" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right"><span class="not-applicable">N/A<sup>*</sup></span></td>
-
-
-
-
-            <td data-sort-value="N/A" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right"><span class="not-applicable">N/A<sup>*</sup></span></td>
+            <td role="gridcell" data-sort-value="1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">1</td>
 
 
 
 
-            <td data-sort-value="N/A" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right"><span class="not-applicable">N/A<sup>*</sup></span></td>
+            <td role="gridcell" data-sort-value="N/A" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right"><span class="not-applicable">N/A<sup>*</sup></span></td>
 
 
 
 
-            <td data-sort-value="N/A" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right"><span class="not-applicable">N/A<sup>*</sup></span></td>
+            <td role="gridcell" data-sort-value="N/A" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right"><span class="not-applicable">N/A<sup>*</sup></span></td>
 
 
 
 
-            <td data-sort-value="1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">1</td>
+            <td role="gridcell" data-sort-value="N/A" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right"><span class="not-applicable">N/A<sup>*</sup></span></td>
 
 
 
 
-            <td data-sort-value="0" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">0</td>
+            <td role="gridcell" data-sort-value="N/A" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right"><span class="not-applicable">N/A<sup>*</sup></span></td>
+
+
+
+
+            <td role="gridcell" data-sort-value="1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">1</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="0" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">0</td>
         </tr>
 
         <tr class="govuk-table__row">
 
 
 
-              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense " data-sort-value="1" scope="row">Banking, finance &amp; insurance</th>
+              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense "
+                  data-sort-value="1"
+                  scope="row"
+                  role="rowheader">Banking, finance &amp; insurance</th>
 
 
-            <td data-sort-value="17" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">17</td>
-
-
-
-
-            <td data-sort-value="19" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">19</td>
-
-
-
-
-            <td data-sort-value="18" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">18</td>
+            <td role="gridcell" data-sort-value="17" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">17</td>
 
 
 
 
-            <td data-sort-value="18" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">18</td>
+            <td role="gridcell" data-sort-value="19" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">19</td>
 
 
 
 
-            <td data-sort-value="21" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">21</td>
+            <td role="gridcell" data-sort-value="18" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">18</td>
 
 
 
 
-            <td data-sort-value="17" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">17</td>
+            <td role="gridcell" data-sort-value="18" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">18</td>
 
 
 
 
-            <td data-sort-value="19" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">19</td>
+            <td role="gridcell" data-sort-value="21" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">21</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="17" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">17</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="19" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">19</td>
         </tr>
 
         <tr class="govuk-table__row">
 
 
 
-              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense " data-sort-value="2" scope="row">Construction </th>
+              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense "
+                  data-sort-value="2"
+                  scope="row"
+                  role="rowheader">Construction </th>
 
 
-            <td data-sort-value="7" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">7</td>
-
-
-
-
-            <td data-sort-value="3" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">3</td>
-
-
-
-
-            <td data-sort-value="2" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">2</td>
+            <td role="gridcell" data-sort-value="7" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">7</td>
 
 
 
 
-            <td data-sort-value="4" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">4</td>
+            <td role="gridcell" data-sort-value="3" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">3</td>
 
 
 
 
-            <td data-sort-value="4" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">4</td>
+            <td role="gridcell" data-sort-value="2" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">2</td>
 
 
 
 
-            <td data-sort-value="8" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">8</td>
+            <td role="gridcell" data-sort-value="4" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">4</td>
 
 
 
 
-            <td data-sort-value="4" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">4</td>
+            <td role="gridcell" data-sort-value="4" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">4</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="8" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">8</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="4" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">4</td>
         </tr>
 
         <tr class="govuk-table__row">
 
 
 
-              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense " data-sort-value="3" scope="row">Distibution, hotels &amp; restaurants </th>
+              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense "
+                  data-sort-value="3"
+                  scope="row"
+                  role="rowheader">Distibution, hotels &amp; restaurants </th>
 
 
-            <td data-sort-value="19" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">19</td>
-
-
-
-
-            <td data-sort-value="21" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">21</td>
-
-
-
-
-            <td data-sort-value="28" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">28</td>
+            <td role="gridcell" data-sort-value="19" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">19</td>
 
 
 
 
-            <td data-sort-value="16" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">16</td>
+            <td role="gridcell" data-sort-value="21" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">21</td>
 
 
 
 
-            <td data-sort-value="20" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">20</td>
+            <td role="gridcell" data-sort-value="28" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">28</td>
 
 
 
 
-            <td data-sort-value="18" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">18</td>
+            <td role="gridcell" data-sort-value="16" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">16</td>
 
 
 
 
-            <td data-sort-value="27" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">27</td>
+            <td role="gridcell" data-sort-value="20" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">20</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="18" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">18</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="27" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">27</td>
         </tr>
 
         <tr class="govuk-table__row">
 
 
 
-              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense " data-sort-value="4" scope="row">Energy &amp; water </th>
+              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense "
+                  data-sort-value="4"
+                  scope="row"
+                  role="rowheader">Energy &amp; water </th>
 
 
-            <td data-sort-value="2" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">2</td>
-
-
-
-
-            <td data-sort-value="1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">1</td>
-
-
-
-
-            <td data-sort-value="1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">1</td>
+            <td role="gridcell" data-sort-value="2" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">2</td>
 
 
 
 
-            <td data-sort-value="1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">1</td>
+            <td role="gridcell" data-sort-value="1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">1</td>
 
 
 
 
-            <td data-sort-value="1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">1</td>
+            <td role="gridcell" data-sort-value="1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">1</td>
 
 
 
 
-            <td data-sort-value="2" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">2</td>
+            <td role="gridcell" data-sort-value="1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">1</td>
 
 
 
 
-            <td data-sort-value="1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">1</td>
+            <td role="gridcell" data-sort-value="1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">1</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="2" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">2</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="1" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">1</td>
         </tr>
 
         <tr class="govuk-table__row">
 
 
 
-              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense " data-sort-value="5" scope="row">Transport &amp; communications</th>
+              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense "
+                  data-sort-value="5"
+                  scope="row"
+                  role="rowheader">Transport &amp; communications</th>
 
 
-            <td data-sort-value="9" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">9</td>
-
-
-
-
-            <td data-sort-value="15" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">15</td>
-
-
-
-
-            <td data-sort-value="20" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">20</td>
+            <td role="gridcell" data-sort-value="9" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">9</td>
 
 
 
 
-            <td data-sort-value="11" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">11</td>
+            <td role="gridcell" data-sort-value="15" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">15</td>
 
 
 
 
-            <td data-sort-value="10" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">10</td>
+            <td role="gridcell" data-sort-value="20" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">20</td>
 
 
 
 
-            <td data-sort-value="9" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">9</td>
+            <td role="gridcell" data-sort-value="11" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">11</td>
 
 
 
 
-            <td data-sort-value="11" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">11</td>
+            <td role="gridcell" data-sort-value="10" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">10</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="9" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">9</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="11" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">11</td>
         </tr>
 
         <tr class="govuk-table__row">
 
 
 
-              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense " data-sort-value="6" scope="row">Manufacturing </th>
+              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense "
+                  data-sort-value="6"
+                  scope="row"
+                  role="rowheader">Manufacturing </th>
 
 
-            <td data-sort-value="9" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">9</td>
-
-
-
-
-            <td data-sort-value="10" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">10</td>
-
-
-
-
-            <td data-sort-value="6" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">6</td>
+            <td role="gridcell" data-sort-value="9" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">9</td>
 
 
 
 
-            <td data-sort-value="4" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">4</td>
+            <td role="gridcell" data-sort-value="10" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">10</td>
 
 
 
 
-            <td data-sort-value="7" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">7</td>
+            <td role="gridcell" data-sort-value="6" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">6</td>
 
 
 
 
-            <td data-sort-value="10" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">10</td>
+            <td role="gridcell" data-sort-value="4" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">4</td>
 
 
 
 
-            <td data-sort-value="6" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">6</td>
+            <td role="gridcell" data-sort-value="7" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">7</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="10" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">10</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="6" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">6</td>
         </tr>
 
         <tr class="govuk-table__row">
 
 
 
-              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense " data-sort-value="7" scope="row">Other services </th>
+              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense "
+                  data-sort-value="7"
+                  scope="row"
+                  role="rowheader">Other services </th>
 
 
-            <td data-sort-value="6" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">6</td>
-
-
-
-
-            <td data-sort-value="3" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">3</td>
-
-
-
-
-            <td data-sort-value="3" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">3</td>
+            <td role="gridcell" data-sort-value="6" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">6</td>
 
 
 
 
-            <td data-sort-value="5" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">5</td>
+            <td role="gridcell" data-sort-value="3" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">3</td>
 
 
 
 
-            <td data-sort-value="7" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">7</td>
+            <td role="gridcell" data-sort-value="3" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">3</td>
 
 
 
 
-            <td data-sort-value="6" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">6</td>
+            <td role="gridcell" data-sort-value="5" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">5</td>
 
 
 
 
-            <td data-sort-value="6" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">6</td>
+            <td role="gridcell" data-sort-value="7" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">7</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="6" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">6</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="6" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">6</td>
         </tr>
 
         <tr class="govuk-table__row">
 
 
 
-              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense " data-sort-value="8" scope="row">Public administration, education &amp; health </th>
+              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense "
+                  data-sort-value="8"
+                  scope="row"
+                  role="rowheader">Public administration, education &amp; health </th>
 
 
-            <td data-sort-value="30" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">30</td>
-
-
-
-
-            <td data-sort-value="28" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">28</td>
-
-
-
-
-            <td data-sort-value="24" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">24</td>
+            <td role="gridcell" data-sort-value="30" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">30</td>
 
 
 
 
-            <td data-sort-value="43" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">43</td>
+            <td role="gridcell" data-sort-value="28" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">28</td>
 
 
 
 
-            <td data-sort-value="30" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">30</td>
+            <td role="gridcell" data-sort-value="24" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">24</td>
 
 
 
 
-            <td data-sort-value="30" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">30</td>
+            <td role="gridcell" data-sort-value="43" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">43</td>
 
 
 
 
-            <td data-sort-value="28" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">28</td>
+            <td role="gridcell" data-sort-value="30" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">30</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="30" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">30</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="28" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">28</td>
         </tr>
 
         <tr class="govuk-table__row">
 
 
 
-              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense " data-sort-value="9" scope="row">Total services </th>
+              <th class="govuk-table__header eff-table__header--border-right eff-table__header--dense "
+                  data-sort-value="9"
+                  scope="row"
+                  role="rowheader">Total services </th>
 
 
-            <td data-sort-value="81" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">81</td>
-
-
-
-
-            <td data-sort-value="86" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">86</td>
-
-
-
-
-            <td data-sort-value="92" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">92</td>
+            <td role="gridcell" data-sort-value="81" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">81</td>
 
 
 
 
-            <td data-sort-value="91" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">91</td>
+            <td role="gridcell" data-sort-value="86" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">86</td>
 
 
 
 
-            <td data-sort-value="88" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">88</td>
+            <td role="gridcell" data-sort-value="92" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">92</td>
 
 
 
 
-            <td data-sort-value="80" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">80</td>
+            <td role="gridcell" data-sort-value="91" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">91</td>
 
 
 
 
-            <td data-sort-value="90" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">90</td>
+            <td role="gridcell" data-sort-value="88" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">88</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="80" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense eff-table__header--border-right">80</td>
+
+
+
+
+            <td role="gridcell" data-sort-value="90" class="govuk-table__cell govuk-table__cell--numeric eff-table__cell--padding-left eff-table__cell--dense ">90</td>
         </tr>
 
     </tbody>
   </table>
   </div></div></div>
 </div>
+
 <div class="table-footer">
 
     <p class="missing-data-explanation govuk-body govuk-!-margin-bottom-0">
@@ -1069,7 +1127,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
                   <a class="govuk-footer__link" href="https://www.gov.uk/government/publications/statement-of-compliance-for-race-disparity-unit" data-on="click" data-event-category="Link clicked" data-event-action="Statement of compliance">Statement of compliance</a>
               </li>
               <li class="govuk-footer__list-item">
-                  <a class="govuk-footer__link" href="https://guide.ethnicity-facts-figures.service.gov.uk">Style guide and templates</a>
+                  <a class="govuk-footer__link" href="https://guide.ethnicity-facts-figures.service.gov.uk">Style guide</a>
               </li>
                   <li class="govuk-footer__list-item">
                       <a class="govuk-footer__link" href="/dashboards">Dashboards</a>
@@ -1118,7 +1176,7 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
   </div>
 
 </footer>
-          <script type="text/javascript" src="/static/javascripts/all-34e714a043.js"></script>
+          <script type="text/javascript" src="/static/javascripts/all-b59017dafd.js"></script>
         <script>window.GOVUKFrontend.initAll()</script>
 
 
