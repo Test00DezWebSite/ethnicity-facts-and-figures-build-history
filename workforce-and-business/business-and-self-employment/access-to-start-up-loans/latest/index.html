@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template eff-template--white">
 <head>
-  <!-- Page built at 2020-03-30T09:14:54.436083 -->
+  <!-- Page built at 2020-03-30T14:12:46.854830 -->
 
   <meta charset="utf-8" />
   <title>Receipt of Start Up Loans - GOV.UK Ethnicity facts and figures</title>
@@ -1420,6 +1420,14 @@ As with all surveys, the estimates from the APS are subject to a degree of uncer
             drawChart(chartContainer + '_image', chartObject);
         }
       }
+
+      // fix focus issue on ie11
+      $('.highcharts-container').each(function() {
+        $(this).attr("tabindex", "-1");
+      });
+      $('.highcharts-root').each(function() {
+        $(this).attr("focusable", "false");
+      });
     };
 
     var chart_divs = document.getElementsByClassName('chart-and-footer');

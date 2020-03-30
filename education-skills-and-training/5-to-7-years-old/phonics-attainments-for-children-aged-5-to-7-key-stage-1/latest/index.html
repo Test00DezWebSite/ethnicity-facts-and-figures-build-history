@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template eff-template--white">
 <head>
-  <!-- Page built at 2020-03-30T09:06:36.189665 -->
+  <!-- Page built at 2020-03-30T14:05:28.087615 -->
 
   <meta charset="utf-8" />
   <title>Phonics results for 5 to 7 year olds - GOV.UK Ethnicity facts and figures</title>
@@ -32677,6 +32677,14 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
             drawChart(chartContainer + '_image', chartObject);
         }
       }
+
+      // fix focus issue on ie11
+      $('.highcharts-container').each(function() {
+        $(this).attr("tabindex", "-1");
+      });
+      $('.highcharts-root').each(function() {
+        $(this).attr("focusable", "false");
+      });
     };
 
     var chart_divs = document.getElementsByClassName('chart-and-footer');

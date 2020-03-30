@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template eff-template--white">
 <head>
-  <!-- Page built at 2020-03-30T09:07:00.561079 -->
+  <!-- Page built at 2020-03-30T14:05:52.174237 -->
 
   <meta charset="utf-8" />
   <title>Mathematics attainments for children aged 5 to 7 (key stage 1) - GOV.UK Ethnicity facts and figures</title>
@@ -28973,6 +28973,14 @@ For reading, writing and mathematics, the valid outcomes are: </p>
             drawChart(chartContainer + '_image', chartObject);
         }
       }
+
+      // fix focus issue on ie11
+      $('.highcharts-container').each(function() {
+        $(this).attr("tabindex", "-1");
+      });
+      $('.highcharts-root').each(function() {
+        $(this).attr("focusable", "false");
+      });
     };
 
     var chart_divs = document.getElementsByClassName('chart-and-footer');

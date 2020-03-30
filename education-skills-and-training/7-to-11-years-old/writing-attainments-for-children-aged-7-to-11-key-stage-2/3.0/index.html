@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template eff-template--white">
 <head>
-  <!-- Page built at 2020-03-30T09:07:15.834913 -->
+  <!-- Page built at 2020-03-30T14:06:05.339575 -->
 
   <meta charset="utf-8" />
   <title>Writing attainment for children aged 10 to 11 (key stage 2) - GOV.UK Ethnicity facts and figures</title>
@@ -3065,6 +3065,14 @@ Confidence intervals are available for the ‘progress score’ if you <a class=
             drawChart(chartContainer + '_image', chartObject);
         }
       }
+
+      // fix focus issue on ie11
+      $('.highcharts-container').each(function() {
+        $(this).attr("tabindex", "-1");
+      });
+      $('.highcharts-root').each(function() {
+        $(this).attr("focusable", "false");
+      });
     };
 
     var chart_divs = document.getElementsByClassName('chart-and-footer');

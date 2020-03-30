@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template eff-template--white">
 <head>
-  <!-- Page built at 2020-03-30T09:14:48.290586 -->
+  <!-- Page built at 2020-03-30T14:12:40.820345 -->
 
   <meta charset="utf-8" />
   <title>NHS staff experiencing discrimination at work - GOV.UK Ethnicity facts and figures</title>
@@ -1094,6 +1094,14 @@ Percentages are given to the nearest whole number. Unrounded figures are in the 
             drawChart(chartContainer + '_image', chartObject);
         }
       }
+
+      // fix focus issue on ie11
+      $('.highcharts-container').each(function() {
+        $(this).attr("tabindex", "-1");
+      });
+      $('.highcharts-root').each(function() {
+        $(this).attr("focusable", "false");
+      });
     };
 
     var chart_divs = document.getElementsByClassName('chart-and-footer');

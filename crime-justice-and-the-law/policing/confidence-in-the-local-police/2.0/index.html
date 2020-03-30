@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template eff-template--white">
 <head>
-  <!-- Page built at 2020-03-30T09:05:10.557867 -->
+  <!-- Page built at 2020-03-30T14:04:14.592182 -->
 
   <meta charset="utf-8" />
   <title>Confidence in the local police - GOV.UK Ethnicity facts and figures</title>
@@ -4707,6 +4707,14 @@ Statisticians rebalance or ‘weight’ the survey results to more accurately re
             drawChart(chartContainer + '_image', chartObject);
         }
       }
+
+      // fix focus issue on ie11
+      $('.highcharts-container').each(function() {
+        $(this).attr("tabindex", "-1");
+      });
+      $('.highcharts-root').each(function() {
+        $(this).attr("focusable", "false");
+      });
     };
 
     var chart_divs = document.getElementsByClassName('chart-and-footer');

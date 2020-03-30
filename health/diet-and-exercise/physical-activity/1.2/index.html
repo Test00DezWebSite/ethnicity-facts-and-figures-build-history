@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template eff-template--white">
 <head>
-  <!-- Page built at 2020-03-30T09:09:25.441118 -->
+  <!-- Page built at 2020-03-30T14:07:57.507701 -->
 
   <meta charset="utf-8" />
   <title>Physical activity - GOV.UK Ethnicity facts and figures</title>
@@ -5561,6 +5561,14 @@ This file contains the following: ethnicity, activity level, year, geography, ge
             drawChart(chartContainer + '_image', chartObject);
         }
       }
+
+      // fix focus issue on ie11
+      $('.highcharts-container').each(function() {
+        $(this).attr("tabindex", "-1");
+      });
+      $('.highcharts-root').each(function() {
+        $(this).attr("focusable", "false");
+      });
     };
 
     var chart_divs = document.getElementsByClassName('chart-and-footer');

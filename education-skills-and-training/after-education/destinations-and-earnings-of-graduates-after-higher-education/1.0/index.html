@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template eff-template--white">
 <head>
-  <!-- Page built at 2020-03-30T09:08:45.452661 -->
+  <!-- Page built at 2020-03-30T14:07:28.539317 -->
 
   <meta charset="utf-8" />
   <title>Destinations and earnings of graduates after higher education - GOV.UK Ethnicity facts and figures</title>
@@ -3510,6 +3510,14 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
             drawChart(chartContainer + '_image', chartObject);
         }
       }
+
+      // fix focus issue on ie11
+      $('.highcharts-container').each(function() {
+        $(this).attr("tabindex", "-1");
+      });
+      $('.highcharts-root').each(function() {
+        $(this).attr("focusable", "false");
+      });
     };
 
     var chart_divs = document.getElementsByClassName('chart-and-footer');

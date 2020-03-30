@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template eff-template--white">
 <head>
-  <!-- Page built at 2020-03-30T09:09:29.213473 -->
+  <!-- Page built at 2020-03-30T14:07:59.968009 -->
 
   <meta charset="utf-8" />
   <title>Overweight adults - GOV.UK Ethnicity facts and figures</title>
@@ -1227,6 +1227,14 @@ The smaller the survey sample, the more uncertain the estimate and the wider the
             drawChart(chartContainer + '_image', chartObject);
         }
       }
+
+      // fix focus issue on ie11
+      $('.highcharts-container').each(function() {
+        $(this).attr("tabindex", "-1");
+      });
+      $('.highcharts-root').each(function() {
+        $(this).attr("focusable", "false");
+      });
     };
 
     var chart_divs = document.getElementsByClassName('chart-and-footer');

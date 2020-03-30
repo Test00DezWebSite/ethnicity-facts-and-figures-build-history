@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template eff-template--white">
 <head>
-  <!-- Page built at 2020-03-30T09:07:12.492331 -->
+  <!-- Page built at 2020-03-30T14:06:03.047973 -->
 
   <meta charset="utf-8" />
   <title>Reading attainments for children aged 7 to 11 (key stage 2) - GOV.UK Ethnicity facts and figures</title>
@@ -12467,6 +12467,14 @@ Progress scores are given to 1 decimal place.</p>
             drawChart(chartContainer + '_image', chartObject);
         }
       }
+
+      // fix focus issue on ie11
+      $('.highcharts-container').each(function() {
+        $(this).attr("tabindex", "-1");
+      });
+      $('.highcharts-root').each(function() {
+        $(this).attr("focusable", "false");
+      });
     };
 
     var chart_divs = document.getElementsByClassName('chart-and-footer');

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template eff-template--white">
 <head>
-  <!-- Page built at 2020-03-30T09:11:47.071588 -->
+  <!-- Page built at 2020-03-30T14:10:00.341335 -->
 
   <meta charset="utf-8" />
   <title>Employment - GOV.UK Ethnicity facts and figures</title>
@@ -7619,6 +7619,14 @@ measure,  year, region, ethnicity, ethnicity_type, sex, age_band, value, confide
             drawChart(chartContainer + '_image', chartObject);
         }
       }
+
+      // fix focus issue on ie11
+      $('.highcharts-container').each(function() {
+        $(this).attr("tabindex", "-1");
+      });
+      $('.highcharts-root').each(function() {
+        $(this).attr("focusable", "false");
+      });
     };
 
     var chart_divs = document.getElementsByClassName('chart-and-footer');

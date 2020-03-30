@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template eff-template--white">
 <head>
-  <!-- Page built at 2020-03-30T09:05:48.394324 -->
+  <!-- Page built at 2020-03-30T14:04:45.257732 -->
 
   <meta charset="utf-8" />
   <title>Feeling of belonging to Britain - GOV.UK Ethnicity facts and figures</title>
@@ -825,6 +825,14 @@ For earlier years, results for ‘White’ and ‘Other’ are available in the 
             drawChart(chartContainer + '_image', chartObject);
         }
       }
+
+      // fix focus issue on ie11
+      $('.highcharts-container').each(function() {
+        $(this).attr("tabindex", "-1");
+      });
+      $('.highcharts-root').each(function() {
+        $(this).attr("focusable", "false");
+      });
     };
 
     var chart_divs = document.getElementsByClassName('chart-and-footer');

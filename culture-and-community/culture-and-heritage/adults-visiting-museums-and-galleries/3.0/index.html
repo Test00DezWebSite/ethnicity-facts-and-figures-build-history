@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template eff-template--white">
 <head>
-  <!-- Page built at 2020-03-30T09:06:00.485137 -->
+  <!-- Page built at 2020-03-30T14:04:53.985235 -->
 
   <meta charset="utf-8" />
   <title>Visits to museums and galleries - GOV.UK Ethnicity facts and figures</title>
@@ -1694,6 +1694,14 @@ The Taking Part survey is a sample survey. It collects information from a random
             drawChart(chartContainer + '_image', chartObject);
         }
       }
+
+      // fix focus issue on ie11
+      $('.highcharts-container').each(function() {
+        $(this).attr("tabindex", "-1");
+      });
+      $('.highcharts-root').each(function() {
+        $(this).attr("focusable", "false");
+      });
     };
 
     var chart_divs = document.getElementsByClassName('chart-and-footer');

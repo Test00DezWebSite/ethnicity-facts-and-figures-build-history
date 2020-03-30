@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template eff-template--white">
 <head>
-  <!-- Page built at 2020-03-30T09:11:30.404309 -->
+  <!-- Page built at 2020-03-30T14:09:43.729033 -->
 
   <meta charset="utf-8" />
   <title>Socioeconomic status - GOV.UK Ethnicity facts and figures</title>
@@ -7039,6 +7039,14 @@ To: &#39;the biggest difference was in the Indian group, where 27% of men and 13
             drawChart(chartContainer + '_image', chartObject);
         }
       }
+
+      // fix focus issue on ie11
+      $('.highcharts-container').each(function() {
+        $(this).attr("tabindex", "-1");
+      });
+      $('.highcharts-root').each(function() {
+        $(this).attr("focusable", "false");
+      });
     };
 
     var chart_divs = document.getElementsByClassName('chart-and-footer');

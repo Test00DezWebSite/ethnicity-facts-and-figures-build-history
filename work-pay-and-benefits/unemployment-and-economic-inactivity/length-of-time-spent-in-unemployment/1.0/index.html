@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template eff-template--white">
 <head>
-  <!-- Page built at 2020-03-30T09:12:12.874268 -->
+  <!-- Page built at 2020-03-30T14:10:23.848305 -->
 
   <meta charset="utf-8" />
   <title>Length of time spent in unemployment - GOV.UK Ethnicity facts and figures</title>
@@ -824,6 +824,14 @@ The achieved sample of approximately 275,000 undergoes weighting which is struct
             drawChart(chartContainer + '_image', chartObject);
         }
       }
+
+      // fix focus issue on ie11
+      $('.highcharts-container').each(function() {
+        $(this).attr("tabindex", "-1");
+      });
+      $('.highcharts-root').each(function() {
+        $(this).attr("focusable", "false");
+      });
     };
 
     var chart_divs = document.getElementsByClassName('chart-and-footer');

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template eff-template--white">
 <head>
-  <!-- Page built at 2020-03-30T09:09:37.877945 -->
+  <!-- Page built at 2020-03-30T14:08:09.672020 -->
 
   <meta charset="utf-8" />
   <title>Well-being: Life satisfaction - GOV.UK Ethnicity facts and figures</title>
@@ -4016,6 +4016,14 @@ Findings are statistically significant when we can be confident that they can be
             drawChart(chartContainer + '_image', chartObject);
         }
       }
+
+      // fix focus issue on ie11
+      $('.highcharts-container').each(function() {
+        $(this).attr("tabindex", "-1");
+      });
+      $('.highcharts-root').each(function() {
+        $(this).attr("focusable", "false");
+      });
     };
 
     var chart_divs = document.getElementsByClassName('chart-and-footer');

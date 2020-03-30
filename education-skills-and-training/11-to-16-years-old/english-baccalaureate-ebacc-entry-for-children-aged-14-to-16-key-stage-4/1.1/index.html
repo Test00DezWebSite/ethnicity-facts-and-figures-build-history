@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template eff-template--white">
 <head>
-  <!-- Page built at 2020-03-30T09:08:15.450163 -->
+  <!-- Page built at 2020-03-30T14:06:59.522153 -->
 
   <meta charset="utf-8" />
   <title>English Baccalaureate (EBacc) entry for children aged 14 to 16 (key stage 4) - GOV.UK Ethnicity facts and figures</title>
@@ -42731,6 +42731,14 @@ This is because, where the size of the ethnic group population is small enough t
             drawChart(chartContainer + '_image', chartObject);
         }
       }
+
+      // fix focus issue on ie11
+      $('.highcharts-container').each(function() {
+        $(this).attr("tabindex", "-1");
+      });
+      $('.highcharts-root').each(function() {
+        $(this).attr("focusable", "false");
+      });
     };
 
     var chart_divs = document.getElementsByClassName('chart-and-footer');

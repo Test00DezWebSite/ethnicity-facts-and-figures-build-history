@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template eff-template--white">
 <head>
-  <!-- Page built at 2020-03-30T09:14:54.120108 -->
+  <!-- Page built at 2020-03-30T14:12:46.508393 -->
 
   <meta charset="utf-8" />
   <title>Self-employment - GOV.UK Ethnicity facts and figures</title>
@@ -1074,6 +1074,14 @@ over this period, Pakistani and Bangladeshi workers remained the most likely to 
             drawChart(chartContainer + '_image', chartObject);
         }
       }
+
+      // fix focus issue on ie11
+      $('.highcharts-container').each(function() {
+        $(this).attr("tabindex", "-1");
+      });
+      $('.highcharts-root').each(function() {
+        $(this).attr("focusable", "false");
+      });
     };
 
     var chart_divs = document.getElementsByClassName('chart-and-footer');

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template eff-template--white">
 <head>
-  <!-- Page built at 2020-03-30T09:09:12.441897 -->
+  <!-- Page built at 2020-03-30T14:07:48.354011 -->
 
   <meta charset="utf-8" />
   <title>Harmful and probable dependent drinking in adults - GOV.UK Ethnicity facts and figures</title>
@@ -1233,6 +1233,14 @@ Confidence intervals for each ethnic group for the detailed risk levels with AUD
             drawChart(chartContainer + '_image', chartObject);
         }
       }
+
+      // fix focus issue on ie11
+      $('.highcharts-container').each(function() {
+        $(this).attr("tabindex", "-1");
+      });
+      $('.highcharts-root').each(function() {
+        $(this).attr("focusable", "false");
+      });
     };
 
     var chart_divs = document.getElementsByClassName('chart-and-footer');

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template eff-template--white">
 <head>
-  <!-- Page built at 2020-03-30T09:10:17.232310 -->
+  <!-- Page built at 2020-03-30T14:08:46.457196 -->
 
   <meta charset="utf-8" />
   <title>Inpatient satisfaction with hospital care - GOV.UK Ethnicity facts and figures</title>
@@ -1782,6 +1782,14 @@ This file contains the following: ethnicity, year, value, unweighted sample size
             drawChart(chartContainer + '_image', chartObject);
         }
       }
+
+      // fix focus issue on ie11
+      $('.highcharts-container').each(function() {
+        $(this).attr("tabindex", "-1");
+      });
+      $('.highcharts-root').each(function() {
+        $(this).attr("focusable", "false");
+      });
     };
 
     var chart_divs = document.getElementsByClassName('chart-and-footer');

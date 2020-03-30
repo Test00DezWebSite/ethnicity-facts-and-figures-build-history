@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template eff-template--white">
 <head>
-  <!-- Page built at 2020-03-30T09:10:51.907607 -->
+  <!-- Page built at 2020-03-30T14:09:09.826451 -->
 
   <meta charset="utf-8" />
   <title>Vulnerable households going into social housing - GOV.UK Ethnicity facts and figures</title>
@@ -2951,6 +2951,14 @@ Measure, Time, Time_type, Ethnicity, Ethnicity_type, Reasonable Preference, Valu
             drawChart(chartContainer + '_image', chartObject);
         }
       }
+
+      // fix focus issue on ie11
+      $('.highcharts-container').each(function() {
+        $(this).attr("tabindex", "-1");
+      });
+      $('.highcharts-root').each(function() {
+        $(this).attr("focusable", "false");
+      });
     };
 
     var chart_divs = document.getElementsByClassName('chart-and-footer');
