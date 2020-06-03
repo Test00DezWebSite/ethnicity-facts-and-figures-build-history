@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template eff-template--white">
 <head>
-  <!-- Page built at 2020-05-26T10:07:23.484573 -->
+  <!-- Page built at 2020-06-03T10:06:54.746149 -->
 
   <meta charset="utf-8" />
   <title>Pupil progress between 11 and 16 years old (‘Progress 8’) - GOV.UK Ethnicity facts and figures</title>
@@ -19,11 +19,8 @@
     <link rel="apple-touch-icon" href="/static/assets/images/govuk-apple-touch-icon.png">
 
   <!--[if !IE 8]><!-->
-    <link href="/static/stylesheets/application-9425d1886e.css" rel="stylesheet" />
+    <link href="/static/stylesheets/application-39bd4dd8bd.css" rel="stylesheet" />
   <!--<![endif]-->
-
-
-
 
     <meta property="description" content="Pupils from the Chinese ethnic group had the highest ‘Progress 8’ score (which measures progress between 11 and 16 years old) in 2017/18." />
 
@@ -36,17 +33,20 @@
 
         <meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39;;script-src &#39;self&#39; &#39;unsafe-inline&#39; http://widget.surveymonkey.com https://ajax.googleapis.com https://www.google-analytics.com  data:;connect-src &#39;self&#39; https://www.google-analytics.com;style-src &#39;self&#39; &#39;unsafe-inline&#39; ;img-src &#39;self&#39; https://www.google-analytics.com ;font-src &#39;self&#39; data:;">
 
+    <script src="/static/javascripts/cookies-aa4112175c.js"></script>
       <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-          ga('create', 'UA-100698377-1', 'auto');
-          ga('set', 'anonymizeIp', true);
-          ga('require', 'eventTracker', {
-            attributePrefix: 'data-'
-          });
-ga('set','contentGroup1','Measure');          ga('send', 'pageview');
+          if (GOVUK.cookie('cookies_policy')!==null && JSON.parse(GOVUK.cookie('cookies_policy')).usage === true) {
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-100698377-1', 'auto');
+            ga('set', 'anonymizeIp', true);
+            ga('require', 'eventTracker', {
+              attributePrefix: 'data-'
+            });
+ga('set','contentGroup1','Measure');            ga('send', 'pageview');
+          }
         </script>
         <script src="/static/vendor/autotrack/autotrack.js"></script>
 
@@ -66,9 +66,46 @@ ga('set','contentGroup1','Measure');          ga('send', 'pageview');
 
     <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
-<div id="global-cookie-message">
-  <div class="cookie-message full-width">
-    <p class="govuk-body">GOV.UK uses cookies to make the site simpler. <a class="govuk-link" href="/cookies">Find out more about cookies</a></p>
+<div id="global-cookie-message"
+     class="cookie-banner govuk-clearfix"
+     data-module="cookie-banner"
+     role="region"
+     aria-label="cookie banner"
+     data-nosnippet>
+  <div id="cookie-actions" class="cookie-banner__wrapper govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="cookie-banner__message">
+          <h2 class="govuk-heading-m">Can we store analytics cookies on your device?</h2>
+          <p class="govuk-body">Analytics cookies help us understand how our website is being used.</p>
+        </div>
+        <div class="cookie-banner__buttons cookie-banner__buttons--flex">
+
+          <button id="cookie-accept"
+                  class="govuk-button button-inline"
+                  data-module="govuk-button">
+            Yes
+          </button>
+          <button id="cookie-decline"
+                  class="govuk-button button-inline"
+                  data-module="govuk-button">
+            No
+          </button>
+
+          <a class="cookie-banner__link govuk-link"
+             href="/cookies">How we use cookies</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookie-confirmation" class="cookie-banner__confirmation govuk-width-container govuk-!-margin-top-1">
+    <p class="govuk-body">
+      You’ve accepted all cookies. You can <a class='govuk-link'
+         href='/cookie-settings'>change your cookie settings</a> at any time.
+    </p>
+    <button id="hide-cookie-banner"
+            class="cookie-banner__hide-button govuk-button govuk-button--secondary">Hide</button>
   </div>
 </div>
 
@@ -49744,7 +49781,7 @@ These statistics cover the data collated for the 2018 secondary school performan
   </div>
 
 </footer>
-          <script type="text/javascript" src="/static/javascripts/all-66226e28ee.js"></script>
+          <script type="text/javascript" src="/static/javascripts/all-2a8a119716.js"></script>
         <script>window.GOVUKFrontend.initAll()</script>
 
 
